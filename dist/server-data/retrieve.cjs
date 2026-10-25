@@ -26,4 +26,5 @@ function retrieve({unit,history,text,scope}){const question=[...history].reverse
  const ranked=docs.map(d=>{let score=0;for(const [w,weight]of terms){const tf=d.tf.get(w)||0;if(!tf)continue;const idf=Math.log(1+(docs.length-(df.get(w)||0)+.5)/((df.get(w)||0)+.5));score+=weight*idf*(tf*2.2)/(tf+1.2*(.25+.75*d.words.length/avg))}return {d,score:score*d.priority}}).sort((a,b)=>b.score-a.score);
  let selected=ranked.filter(x=>x.score>0).slice(0,9).map(x=>x.d);if(unit>=6&&unit<=8){const turbine=docs.filter(d=>d.id.startsWith('turbinas-'));selected=[...turbine,...selected.filter(d=>!d.id.startsWith('turbinas-'))].slice(0,10)}
  const context=selected.map(d=>`[${d.id}] ${d.title}\n${d.text}`).join('\n\n');return {context,allowed:selected.map(d=>({id:d.id,title:d.title})),coverage:{bobbioI:books.filter(p=>p.book==='Bobbio I').length,bobbioII:books.filter(p=>p.book==='Bobbio II').length,searchablePages:books.filter(p=>p.text.length>120).length,units:10}}}
-module.exports={retrieve,topics};
+function sourceTexts(ids){const wanted=new Set(ids||[]);return docs.filter(d=>wanted.has(d.id)).map(d=>`[${d.id}] ${d.title}\n${d.text}`).join('\n\n')}
+module.exports={retrieve,topics,sourceTexts};
