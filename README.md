@@ -1,0 +1,63 @@
+# Cuaderno naval · Finales 2026
+
+Aplicación de estudio para Máquinas térmicas, Sistemas de frío, Motores navales, Electrotecnia, Electrónica y Economía naviera.
+
+**Sitio:** https://finalesmaq2026.vercel.app
+
+## Funciones
+
+- Repaso guiado: 50 lecciones con voz del navegador, mapas conceptuales, ejemplos, esquemas, listas y práctica por tema.
+- Profesor oral con Gemini: texto o audio, niveles de profundidad, velocidades, modo bucle, ayudas y devolución final.
+- Autenticación y progreso con Supabase: intentos, puntuaciones e historial separados por materia y usuario.
+- Taller conceptual de calderas con modelos interactivos y ejercicios de identificación.
+- Biblioteca, programas y notas por materia.
+
+El avance de lectura y las notas se conservan en el navegador, separados por cuenta y materia. Las calificaciones del profesor se guardan en Supabase. Motores y Economía se organizan según los apuntes disponibles; su organización no representa un programa oficial completo.
+
+## Estructura
+
+`dist/` contiene el código fuente de la aplicación, pese al nombre heredado:
+
+- HTML, CSS y JavaScript sin compilador ni dependencias de frontend.
+- `api/`: funciones Node.js para Vercel.
+- `server-data/`: lógica de servidor, bancos didácticos y lecturas de referencia.
+- `assets/`: imágenes y esquemas.
+- `build-static.cjs`: copia únicamente los archivos públicos a `dist/public/`.
+- `vercel.json`: configuración del despliegue.
+
+`supabase/` contiene las migraciones SQL y `tests/` la verificación del repaso guiado.
+
+## Desarrollo y despliegue
+
+Requiere Node.js 20 o superior. Desde `dist/`, ejecutar `vercel dev` con la CLI oficial de Vercel para disponer del frontend y las rutas API. Un servidor estático por sí solo no ejecuta las funciones del profesor, las cuentas ni el repaso.
+
+Configurar en Vercel, exclusivamente como variables de servidor:
+
+| Variable | Uso |
+| --- | --- |
+| `GEMINI_API_KEY` | Evaluación del profesor mediante Gemini |
+| `SUPABASE_SECRET_KEY` | Operaciones autorizadas del backend con Supabase |
+
+El proyecto utiliza el Supabase y el dominio de producción indicados en `dist/server-data/accounts.cjs`. Para migrarlo a otra cuenta, actualizar esa configuración y los destinos OAuth correspondientes. El inicio de sesión Google se configura en Supabase; el secreto OAuth no pertenece al frontend.
+
+En Vercel seleccionar **Root Directory: `dist`**. La configuración ejecuta `node build-static.cjs`, publica `public/` y despliega `api/`. Para publicar con CLI, ejecutar `vercel --prod` desde `dist/` después de vincular el proyecto correcto.
+
+El repositorio no contiene credenciales de despliegue ni archivos `.env`. El directorio generado `public/` y los metadatos locales de Vercel están excluidos de Git.
+
+## Base de datos
+
+Para una base nueva, revisar y aplicar las migraciones de `supabase/` en orden numérico. Incluyen tablas, políticas y funciones para las cuentas y el progreso. Revisar los datos de configuración antes de utilizarlas en otra instalación; no son copias de las respuestas ni del historial de usuarios reales.
+
+## Verificación
+
+Desde la raíz del repositorio:
+
+```sh
+node tests/guided.cjs
+```
+
+Comprueba las 50 lecciones, los mapas, las referencias, las respuestas de práctica, la validación de la API y la pausa, reanudación y cancelación de la narración mediante un motor simulado. La calidad y disponibilidad de voces dependen del navegador y del sistema operativo.
+
+## Materiales
+
+Los desarrollos son ayudas didácticas; los modelos no son planos constructivos. Los materiales de referencia conservan sus derechos originales. Este repositorio se mantiene privado y su publicación en GitHub no modifica los permisos de los originales de Google Drive.

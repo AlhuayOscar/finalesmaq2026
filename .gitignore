@@ -1,0 +1,12 @@
+.openai/
+.vercel/
+dist/.vercel/
+dist/public/
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
