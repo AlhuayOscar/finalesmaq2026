@@ -1,3 +1,4 @@
+const H=require('../dist/server-data/hdp-grading.cjs');
 const assert=require('node:assert/strict');
 const handler=require('../dist/api/exam.js');
 const P=require('../dist/server-data/question-plan.cjs');
@@ -13,11 +14,11 @@ async function call(body){const res={statusCode:200,setHeader(){},status(n){this
    const request=JSON.parse(options.body),system=request.systemInstruction.parts[0].text;
    assert.equal(system.includes('HDP: EXIGENCIA DE PRECISIÓN TÉCNICA.'),level==='hdp');
    if(level==='hdp'){assert(system.includes('Qué dijiste de más'));assert(system.includes('frase breve y literal'));assert(system.includes('no resta puntos'));}
-   return {ok:true,json:async()=>({candidates:[{content:{parts:[{text:JSON.stringify({speech:'Revisá la precisión.',feedback:'Precisión técnica: «calienta» no define el cambio de estado. Qué dijiste de más: No detecté contenido de más. Qué faltó: especificar las condiciones.',transcript:'calienta',score:8,finished:false,evaluated:true,strengths:[],improvements:[],omissions:[],sourceIds:[],betterAnswer:'',keyChecks:card.keyPoints.map((_,index)=>({index,covered:true})),criteria:['concepto','componentes','funcionamiento','conexiones','precision','mantenimiento','fallas'].map(name=>({name,value:name==='precision'?40:100,applicable:true,reason:'Evidencia de prueba'}))})}]}}]})};
+   return {ok:true,json:async()=>({candidates:[{content:{parts:[{text:JSON.stringify({speech:'Revisá la precisión.',feedback:'Precisión técnica: «calienta» no define el cambio de estado. Qué dijiste de más: No detecté contenido de más. Qué faltó: especificar las condiciones.',transcript:'calienta',score:8,finished:false,evaluated:true,strengths:[],improvements:[],omissions:[],sourceIds:[],betterAnswer:'',hdpCoverage:level==='hdp'?H.requirements(card).map(r=>({id:r.id,status:'complete',evidence:'calienta',reason:'Evidencia de prueba'})):[],keyChecks:card.keyPoints.map((_,index)=>({index,covered:true})),criteria:['concepto','componentes','funcionamiento','conexiones','precision','mantenimiento','fallas'].map(name=>({name,value:name==='precision'?40:100,applicable:true,reason:'Evidencia de prueba'}))})}]}}]})};
   };
   const result=await call({...settings,action:'answer',text:'calienta',planToken:start.planToken});
   assert.equal(result.criteria.find(c=>c.name==='precision').weight,level==='hdp'?30:15);
-  assert.equal(result.score,level==='hdp'?8.2:9.1);
+  assert.equal(result.score,level==='hdp'?(card.pdfTopic||card.visual?8.2:8):9.1);
   assert(result.feedback.includes('Qué dijiste de más'));
  }
  console.log('OK: política HDP aislada, corrección explícita y peso real de precisión en rápida y normal. Gemini simulado.');

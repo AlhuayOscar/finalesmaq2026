@@ -1,3 +1,5 @@
+const H=require('../dist/server-data/hdp-grading.cjs');
+const P=require('../dist/server-data/question-plan.cjs');
 const assert=require('node:assert/strict');
 const {jokes,addExamJoke}=require('../dist/server-data/exam-humor.cjs');
 const base={evaluated:true,score:5,feedback:'Corrección técnica.',feedbackSpeech:'Revisá el concepto.',question:'Pregunta siguiente',speech:'Revisá el concepto.\n\nPregunta siguiente'};
@@ -24,10 +26,10 @@ process.env.GEMINI_API_KEY='test-key';delete process.env.SUPABASE_SECRET_KEY;
 async function call(body){const res={statusCode:200,setHeader(){},status(n){this.statusCode=n;return this},json(b){this.body=b;return this}};await handler({method:'POST',headers:{host:'localhost'},body},res);assert.equal(res.statusCode,200);return res.body}
 (async()=>{
  const settings={subject:'termicas',unit:0,scope:'completo',level:'hdp',speed:'normal'};
- const start=await call({...settings,action:'start'});
+ const start=await call({...settings,action:'start'});const card=P.current(P.readPlan(start.planToken,'test-key'));
  global.fetch=async(url,options)=>{
   const request=JSON.parse(options.body);assert(request.systemInstruction.parts[0].text.includes('No agregues bromas'));
-  return {ok:true,json:async()=>({candidates:[{content:{parts:[{text:JSON.stringify({speech:'Revisá la definición.',feedback:'Falta precisión técnica.',score:6,evaluated:true,finished:false,transcript:'Respuesta de prueba',sourceIds:[],strengths:[],improvements:[],omissions:[],keyChecks:[],criteria:[{name:'precision',value:60,applicable:true,reason:'Falta precisión'}]})}]}}]})};
+  return {ok:true,json:async()=>({candidates:[{content:{parts:[{text:JSON.stringify({speech:'Revisá la definición.',feedback:'Falta precisión técnica.',score:6,evaluated:true,finished:false,transcript:'Respuesta de prueba',sourceIds:[],strengths:[],improvements:[],omissions:[],keyChecks:[],hdpCoverage:H.requirements(card).map(r=>({id:r.id,status:'complete',evidence:'Respuesta de prueba',reason:'Evidencia de prueba'})),criteria:['concepto','componentes','funcionamiento','conexiones','precision','mantenimiento','fallas'].map(name=>({name,value:60,applicable:true,reason:'Falta precisión'}))})}]}}]})};
  };
  const answer=await call({...settings,action:'answer',text:'Respuesta de prueba',planToken:start.planToken});
  assert.equal(answer.score,6);assert(jokes.includes(answer.joke));assert.equal(answer.feedback.split(answer.joke).length,2);assert.equal(answer.speech.split(answer.joke).length,2);assert(answer.speech.indexOf(answer.joke)<answer.speech.indexOf(answer.question));

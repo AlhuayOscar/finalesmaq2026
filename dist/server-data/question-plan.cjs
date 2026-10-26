@@ -1,3 +1,4 @@
+const {hdpQuestion}=require('./question-wording.cjs');
 const crypto=require('node:crypto');
 const pdfBank=require('./thermal-pdf-bank.cjs');
 const S=require('./subjects.cjs');const standardCards=[...require('./question-bank.json').cards,...require('./course-bank.json').cards];const visualCards=[...require('./visual-bank.json').cards,...require('./course-visual-bank.json').cards];const cards=[...standardCards,...pdfBank.cards,...visualCards];
@@ -12,5 +13,5 @@ function advance(plan){const next={...plan,index:plan.index+1,hintUsed:false};if
 function visual(plan){const c=current(plan);return c.visual?{...c.visual,targets:c.targets}:null}
 function progress(plan){return {position:plan.index+1,total:plan.ids.length,limit:plan.limit,cycle:plan.cycle,prepared:cards.filter(c=>(c.subject||'termicas')===(plan.subject||'termicas')).length,variants:cards.filter(c=>(c.subject||'termicas')===(plan.subject||'termicas')).length*3}}
 function initial(plan,key){const card=current(plan);const question=card.bookPrompt||card.question;return {speech:question,question,visual:visual(plan),feedbackSpeech:'',hintUsed:false,transcript:'',feedback:'',strengths:[],improvements:[],score:0,finished:false,reference:card.sources.map(s=>s.title).join(' · ')||'Programa de la asignatura / explicación general',omissions:[],betterAnswer:'',criteria:[],sourceIds:card.sources.map(s=>s.id),evaluated:false,sources:card.sources,planToken:signPlan(plan,key),planProgress:progress(plan),speed:plan.speed}}
-function reviewQueue(plan,key){return plan.ids.map((id,index)=>{const item={...plan,index,hintUsed:false};const card=current(item);return {id,position:index+1,question:card.bookPrompt||card.question,visual:visual(item),referenceAnswer:card.answer,sources:card.sources,planToken:signPlan(item,key)}})}
+function reviewQueue(plan,key){return plan.ids.map((id,index)=>{const item={...plan,index,hintUsed:false};const card=current(item);return {id,position:index+1,question:plan.level==='hdp'?hdpQuestion(card.bookPrompt||card.question,card):(card.bookPrompt||card.question),visual:visual(item),referenceAnswer:card.answer,sources:card.sources,planToken:signPlan(item,key)}})}
 module.exports={reviewQueue,visual,createPlan,signPlan,readPlan,current,advance,progress,initial};

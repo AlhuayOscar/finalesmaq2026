@@ -11,7 +11,7 @@ function createCatalogue(){
   const questions=Object.fromEntries(modes.map(level=>[level,Object.fromEntries(speeds.map(speed=>{
    const current=P.current({ids:[c.id],index:0,level,speed});
    const text=current.bookPrompt||current.question;
-   return [speed,level==='hdp'?hdpQuestion(text):text];
+   return [speed,level==='hdp'?hdpQuestion(text,current):text];
   }))]));
   return {id:c.id,subject,subjectName:S.get(subject).name,unit:c.unit,unitName:S.get(subject).topics[c.unit],bank:c.bank,modes,extended:!!c.extended,visual:c.visual?{title:c.visual.title,url:c.visual.url}:null,topicKey:c.topicKey||c.id,title:c.title||'',variant:c.variant,questions,sources:(c.sources||[]).map(s=>({title:s.title}))};
  });
