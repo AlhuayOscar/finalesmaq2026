@@ -16,3 +16,5 @@
 .technical-feedback{white-space:pre-line}
 
 .hdp-intro{padding:16px 18px;margin-bottom:18px;border-left:3px solid var(--green);background:var(--subject-soft);border-radius:8px}.hdp-intro p{margin-bottom:0;font-size:.9rem;line-height:1.6}
+
+.exam-bottom-actions .exam-exit{background:#b42336;color:#fff;border:2px solid #ffabb6;border-radius:8px;padding:10px 16px;font-weight:750;margin-left:auto}.exam-bottom-actions .exam-exit:hover{background:#8c1425}.exam-exit[hidden],.exam-notice[hidden]{display:none}.exam-notice{padding:12px 16px;border-left:3px solid var(--green);background:var(--subject-soft);line-height:1.5}

@@ -1,14 +1,22 @@
 // Responses awaiting a resolution live only on this device, per account/subject.
+let deferredEpoch=0;
 let deferredDB=null,deferredWrites=Promise.resolve(),deferredLoading='',deferredLoaded='',resolutionBusy=false,resolutionRetry=null;
 const deferredKey=()=>maqAccount.user?.id?maqAccount.user.id+':'+currentSubject:null;
 function openDeferredDB(){return deferredDB||(deferredDB=new Promise((resolve,reject)=>{const r=indexedDB.open('naval-pending-exams-v1',1);r.onupgradeneeded=()=>r.result.createObjectStore('exams');r.onsuccess=()=>resolve(r.result);r.onerror=()=>{deferredDB=null;reject(Error('No se pudo abrir el guardado local.'))}}))}
 async function deferredStore(mode,key,value){const db=await openDeferredDB();return new Promise((resolve,reject)=>{const tx=db.transaction('exams',mode),store=tx.objectStore('exams');const r=mode==='readonly'?store.get(key):store.put(value,key);tx.oncomplete=()=>resolve(r.result);tx.onerror=()=>reject(Error('No se pudo guardar en este dispositivo. Descargá una copia antes de salir.'));tx.onabort=tx.onerror})}
 function deferredSnapshot(){return {subject:currentSubject,owner:maqAccount.user.id,unit:exam.unit,level:exam.level,depth:exam.depth,scope:exam.scope,speed:exam.speed,includeVisual:exam.includeVisual,loop:exam.loop,voice:exam.voice,reviewQueue:exam.reviewQueue,reviewItems:exam.reviewItems||[],deferredMode:!!exam.deferredMode,planToken:exam.planToken,planProgress:exam.planProgress,messages:exam.messages,history:exam.history,recordedAudio:exam.blob||null,recordedTranscript:exam.recordedTranscript||null,started:exam.started,finished:exam.finished,followupImage:exam.followupImage||null,followupDraft:exam.followupDraft||'',followupRequest:exam.followupRequest||null,draft:examElement('exam-text')?.value||exam.draft||''}}
 window.cancelResolutionRetry=()=>resolutionRetry?.cancel();
-function persistDeferredExam(){const key=deferredKey();if(!key||!exam.reviewQueue)return Promise.resolve();const snapshot=deferredSnapshot();const write=deferredWrites.catch(()=>{}).then(()=>deferredStore('readwrite',key,snapshot));deferredWrites=write;return write}
-window.deferredOwnerChanged=()=>{deferredLoaded='';deferredLoading=''};
-window.clearDeferredExam=()=>{window.resetFollowupSelection?.();exam.recordedAudio=null;exam.recordedTranscript=null;exam.exportStatus='';exam.followupImage=null;exam.followupImageLoading=false;exam.followupDraft='';exam.followupStatus='';exam.followupRequest=null;exam.reviewQueue=null;exam.reviewItems=[];exam.deferredMode=false;exam.resolutionError='';deferredLoaded=deferredKey()||''};
+function persistDeferredExam(){const key=deferredKey();if(!key||!exam.reviewQueue)return Promise.resolve();const snapshot=deferredSnapshot(),epoch=deferredEpoch;const write=deferredWrites.catch(()=>{}).then(()=>epoch===deferredEpoch?deferredStore('readwrite',key,snapshot):undefined);deferredWrites=write;return write}
+window.deferredOwnerChanged=()=>{deferredEpoch++;deferredLoaded='';deferredLoading=''};
+window.clearDeferredExam=()=>{deferredEpoch++;window.resetFollowupSelection?.();exam.recordedAudio=null;exam.recordedTranscript=null;exam.exportStatus='';exam.followupImage=null;exam.followupImageLoading=false;exam.followupDraft='';exam.followupStatus='';exam.followupRequest=null;exam.reviewQueue=null;exam.reviewItems=[];exam.deferredMode=false;exam.resolutionError='';deferredLoaded=deferredKey()||''};
 function queuePosition(token=exam.planToken){try{const data=JSON.parse(atob(token.split('.')[0].replace(/-/g,'+').replace(/_/g,'/')));return data.index}catch{return -1}}
+window.discardDeferredExam=()=>{
+ const key=deferredKey();window.clearDeferredExam();
+ if(!key)return Promise.resolve();
+ // Serialize the tombstone after older writes so reload cannot restore the exam.
+ const write=deferredWrites.catch(()=>{}).then(()=>deferredStore('readwrite',key,null));
+ deferredWrites=write;return write;
+};
 function currentQueuedQuestion(){return exam.reviewQueue?.[queuePosition()]}
 window.acceptDeferredResult=(action,data,sent)=>{
  if(action==='start'){exam.reviewQueue=data.reviewQueue||null;exam.reviewItems=[];exam.deferredMode=false;deferredLoaded=deferredKey()||''}
@@ -66,10 +74,10 @@ async function consultDeferredResolution(index){
   if(isCurrent())updateExam();
  }
 }
-async function restoreDeferredExam(key){
+async function restoreDeferredExam(key){const epoch=deferredEpoch;
  deferredLoading=key;
- try{const saved=await deferredStore('readonly',key);if(key!==deferredKey()||exam.started)return;deferredLoaded=key;if(saved?.reviewQueue?.length&&saved.owner===maqAccount.user.id&&saved.subject===currentSubject){saved.reviewItems=(saved.reviewItems||[]).map(item=>({...item,consulting:false}));for(const item of saved.reviewItems)if(item.audioText&&['queued','loading','running'].includes(item.audioText.state)){item.audioText.state='cancelled';item.audioText.message='Transcripción pendiente; podés retomarla.'}if(saved.recordedTranscript&&['queued','loading','running'].includes(saved.recordedTranscript.state)){saved.recordedTranscript.state='cancelled';saved.recordedTranscript.message='Transcripción pendiente; podés retomarla.'}exam={...exam,...saved,followupImageLoading:false,busy:false,recording:false,retrying:false,advancing:false,error:'',blob:saved.recordedAudio||null,blobURL:saved.recordedAudio?URL.createObjectURL(saved.recordedAudio):null,image:null,imageURL:null};renderProfessor()}}
- catch(e){if(key===deferredKey())exam.resolutionError=e.message}finally{if(deferredLoading===key)deferredLoading=''}
+ try{const saved=await deferredStore('readonly',key);if(epoch!==deferredEpoch||key!==deferredKey()||exam.started)return;deferredLoaded=key;if(saved?.reviewQueue?.length&&saved.owner===maqAccount.user.id&&saved.subject===currentSubject){saved.reviewItems=(saved.reviewItems||[]).map(item=>({...item,consulting:false}));for(const item of saved.reviewItems)if(item.audioText&&['queued','loading','running'].includes(item.audioText.state)){item.audioText.state='cancelled';item.audioText.message='Transcripción pendiente; podés retomarla.'}if(saved.recordedTranscript&&['queued','loading','running'].includes(saved.recordedTranscript.state)){saved.recordedTranscript.state='cancelled';saved.recordedTranscript.message='Transcripción pendiente; podés retomarla.'}exam={...exam,...saved,followupImageLoading:false,busy:false,recording:false,retrying:false,advancing:false,error:'',blob:saved.recordedAudio||null,blobURL:saved.recordedAudio?URL.createObjectURL(saved.recordedAudio):null,image:null,imageURL:null};renderProfessor()}}
+ catch(e){if(epoch===deferredEpoch&&key===deferredKey())exam.resolutionError=e.message}finally{if(deferredLoading===key)deferredLoading=''}
 }
 function renderDeferredExam(){
  const composer=examElement('exam-composer');if(!composer)return;
