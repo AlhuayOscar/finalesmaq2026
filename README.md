@@ -10,6 +10,7 @@ Aplicación de estudio para Máquinas térmicas, Sistemas de frío, Motores nava
 - Profesor oral con Gemini: texto o audio, niveles de profundidad, velocidades, modo bucle, ayudas y devolución final.
 - Continuación sin Gemini: preguntas precargadas al iniciar, guardado local de respuestas y adjuntos, revisión por pregunta con referencia preparada y «Consultar resolución» al recuperar el servicio. Las consultas no generan calificaciones ni modifican progreso.
 - «Consultar resolución», «Preguntar al profesor» y «Revisar nota seleccionada» reintentan sin límite de intentos hasta recibir respuesta. El mismo botón permite detener la petición o la espera; cambiar de materia, cuenta o salir del oral cancela los reintentos. El intervalo aumenta hasta 30 segundos y respeta las pausas que indique el servidor. Las revisiones ya guardadas se recuperan al reintentar con el mismo identificador.
+- Preguntas con foto: «Preguntar al profesor» admite una imagen PNG, JPG o WebP de hasta 2 MB, con vista previa y opción de quitarla. Puede enviarse sola para pedir identificación y función, o con una consulta escrita. La foto se conserva al detener/reintentar y aparece en la conversación; no modifica calificaciones y también se puede consultar antes de iniciar un examen.
 - Autenticación y progreso con Supabase: intentos, puntuaciones e historial separados por materia y usuario.
 - Taller conceptual de calderas con modelos interactivos y ejercicios de identificación.
 - Biblioteca, programas y notas por materia.
@@ -61,6 +62,7 @@ node tests/followup.cjs
 node tests/deferred-exam.cjs
 node tests/professor-retry.cjs
 node tests/revision-retry.cjs
+node tests/followup-photo.cjs
 ```
 
 Comprueba las 50 lecciones, los mapas, las referencias, las respuestas de práctica, la validación de la API y la pausa, reanudación y cancelación de la narración mediante un motor simulado. La calidad y disponibilidad de voces dependen del navegador y del sistema operativo.
