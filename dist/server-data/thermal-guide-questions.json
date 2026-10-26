@@ -1,0 +1,756 @@
+{
+  "source": "preguntas_oral_maquinas_2026.docx",
+  "notice": "Preguntas de práctica propuestas, no lista oficial del examen. Numeración original conservada.",
+  "questions": [
+    {
+      "number": 1,
+      "unit": 0,
+      "question": "¿Qué es una máquina térmica y cómo se transforma la energía del combustible en trabajo en una planta naval de vapor?"
+    },
+    {
+      "number": 2,
+      "unit": 0,
+      "question": "¿Qué diferencias hay entre calor y temperatura, y entre calor sensible y calor latente? Aplicalas al calentamiento del agua en una caldera."
+    },
+    {
+      "number": 3,
+      "unit": 0,
+      "question": "¿Qué diferencia existe entre líquido subenfriado, líquido saturado, vapor húmedo, vapor saturado seco y vapor sobrecalentado?"
+    },
+    {
+      "number": 4,
+      "unit": 0,
+      "question": "¿Qué es el título o calidad del vapor? ¿Qué representan x = 0 y x = 1 y en qué región puede utilizarse este concepto?"
+    },
+    {
+      "number": 5,
+      "unit": 0,
+      "question": "¿Qué relación existe entre presión y temperatura de saturación? ¿Por qué hay que distinguir presión absoluta de presión manométrica al usar tablas de vapor?"
+    },
+    {
+      "number": 6,
+      "unit": 0,
+      "question": "¿Qué diferencia hay entre vapor sobrecalentado, recalentado y desobrecalentado? ¿Dónde se obtiene cada uno y para qué se utiliza?"
+    },
+    {
+      "number": 7,
+      "unit": 0,
+      "question": "¿Cómo se determina el grado de sobrecalentamiento a partir de la presión y la temperatura del vapor?"
+    },
+    {
+      "number": 8,
+      "unit": 0,
+      "question": "Dibujá la campana de saturación en un diagrama T-s e identificá las regiones del agua y del vapor y el punto crítico."
+    },
+    {
+      "number": 9,
+      "unit": 0,
+      "question": "¿Qué representan la entalpía y la entropía? ¿En qué se diferencian un diagrama T-s y un diagrama h-s o de Mollier?"
+    },
+    {
+      "number": 10,
+      "unit": 0,
+      "question": "Dibujá el ciclo Rankine y ubicá bomba, caldera, turbina y condensador. ¿Dónde se aporta calor, se rechaza calor, se entrega trabajo y se consume trabajo?"
+    },
+    {
+      "number": 11,
+      "unit": 0,
+      "question": "¿Qué diferencias hay entre una expansión ideal isentrópica y una expansión real en la turbina? ¿Cómo influye la humedad final?"
+    },
+    {
+      "number": 12,
+      "unit": 0,
+      "question": "¿Cómo influyen el sobrecalentamiento, el recalentamiento, el calentamiento regenerativo del agua y la presión del condensador sobre el ciclo de vapor?"
+    },
+    {
+      "number": 13,
+      "unit": 1,
+      "question": "Definí caldera o generador de vapor y explicá sus principales aplicaciones a bordo, tanto propulsoras como auxiliares."
+    },
+    {
+      "number": 14,
+      "unit": 1,
+      "question": "¿Cómo se clasifican las calderas según qué fluido circula dentro de los tubos, el modo de circulación y la fuente de calor?"
+    },
+    {
+      "number": 15,
+      "unit": 1,
+      "question": "Compará una caldera humotubular con una acuotubular indicando recorrido del agua, recorrido de los gases y superficies de intercambio."
+    },
+    {
+      "number": 16,
+      "unit": 1,
+      "question": "¿Qué requisitos debe reunir una caldera marina respecto de peso, espacio, seguridad, rendimiento, mantenimiento y respuesta a las maniobras?"
+    },
+    {
+      "number": 17,
+      "unit": 1,
+      "question": "¿Qué ventajas y limitaciones presentan las calderas acuotubulares frente a las humotubulares? ¿Por qué no alcanza con compararlas únicamente por su tamaño?"
+    },
+    {
+      "number": 18,
+      "unit": 1,
+      "question": "¿Qué impulsa la circulación natural? Explicá el recorrido por tubos descendentes y hervidores y el efecto de la diferencia de densidades."
+    },
+    {
+      "number": 19,
+      "unit": 1,
+      "question": "¿Qué diferencia existe entre circulación natural, circulación forzada y alimentación mediante bomba? ¿Por qué tener bomba de alimentación no significa tener circulación forzada?"
+    },
+    {
+      "number": 20,
+      "unit": 1,
+      "question": "Dibujá una caldera tipo D e identificá colectores, hogar, haces tubulares y recorridos de agua, vapor y gases."
+    },
+    {
+      "number": 21,
+      "unit": 1,
+      "question": "Dibujá una caldera tipo A. ¿Cuántos colectores presenta su disposición básica y cómo se relacionan con el hogar y los haces tubulares?"
+    },
+    {
+      "number": 22,
+      "unit": 1,
+      "question": "Dibujá la caldera tipo M del material de estudio e identificá sus colectores, hogares, superficies generadoras y sobrecalentador según ese diseño."
+    },
+    {
+      "number": 23,
+      "unit": 1,
+      "question": "Compará las disposiciones D, A y M: ¿qué cambia en la geometría, el recorrido de gases, el acceso para mantenimiento y la ubicación de las superficies de calefacción?"
+    },
+    {
+      "number": 24,
+      "unit": 1,
+      "question": "¿Para qué aplicaciones se utilizan las calderas D, A y M estudiadas? ¿Qué otros datos, además de la letra, necesitás para conocer su capacidad y condiciones de trabajo?"
+    },
+    {
+      "number": 25,
+      "unit": 1,
+      "question": "¿Qué diferencias constructivas y operativas hay entre una caldera de tubos rectos y una de tubos curvos?"
+    },
+    {
+      "number": 26,
+      "unit": 1,
+      "question": "¿Qué es una caldera de recuperación de gases de escape y cómo se relaciona con el motor principal? ¿De qué depende que cubra la demanda de vapor del buque?"
+    },
+    {
+      "number": 27,
+      "unit": 1,
+      "question": "¿Cómo distinguís un economizador que precalienta agua de alimentación de un generador de vapor por gases de escape denominado también economizador en la práctica naval?"
+    },
+    {
+      "number": 28,
+      "unit": 1,
+      "question": "¿Qué es una caldera compuesta o mixta y cómo combina el aporte de un quemador con el aprovechamiento de gases de escape?"
+    },
+    {
+      "number": 29,
+      "unit": 2,
+      "question": "¿Qué funciones cumplen el hogar, la envuelta, el aislamiento y el refractario? ¿Qué finalidad puede tener una doble envuelta?"
+    },
+    {
+      "number": 30,
+      "unit": 2,
+      "question": "¿Qué funciones cumple el colector superior además de recibir vapor? Ubicá la entrada de alimentación, la salida de vapor y las conexiones de instrumentos."
+    },
+    {
+      "number": 31,
+      "unit": 2,
+      "question": "¿Qué funciones cumple el colector inferior? ¿Qué relación tiene con la distribución del agua, los sedimentos y las extracciones de fondo?"
+    },
+    {
+      "number": 32,
+      "unit": 2,
+      "question": "¿Dónde se ubican los tubos descendentes y los hervidores? ¿Por qué reciben diferente exposición al calor y cómo afecta eso a la circulación?"
+    },
+    {
+      "number": 33,
+      "unit": 2,
+      "question": "¿Para qué sirven los separadores, ciclones, secadores y bafles del domo? ¿Qué diferencia hay entre separar gotas de agua y sobrecalentar vapor?"
+    },
+    {
+      "number": 34,
+      "unit": 2,
+      "question": "¿Dónde se coloca el sobrecalentador y cómo circula el vapor por él? ¿Por qué debe protegerse cuando hay fuego y poco caudal de vapor?"
+    },
+    {
+      "number": 35,
+      "unit": 2,
+      "question": "¿Qué funciones cumplen el recalentador y el desobrecalentador? Compará sus conexiones y explicá cómo se controla la temperatura en el diseño estudiado."
+    },
+    {
+      "number": 36,
+      "unit": 2,
+      "question": "¿Dónde se sitúan el economizador de agua y el precalentador de aire respecto del recorrido de gases? ¿Qué fluido recibe calor en cada uno?"
+    },
+    {
+      "number": 37,
+      "unit": 2,
+      "question": "¿Para qué sirven los sopladores de hollín y qué aspectos deben verificarse antes de utilizarlos?"
+    },
+    {
+      "number": 38,
+      "unit": 2,
+      "question": "¿Qué esfuerzos soportan los colectores y las uniones de tubos? ¿En qué consisten el mandrilado y el acampanado y cuándo corresponde una unión soldada?"
+    },
+    {
+      "number": 39,
+      "unit": 2,
+      "question": "Sobre el esquema de una caldera D, A o M, identificá todas las válvulas representadas y clasificá su función: aislamiento, regulación, retención, seguridad, venteo, drenaje o purga."
+    },
+    {
+      "number": 40,
+      "unit": 2,
+      "question": "¿Dónde se encuentra la válvula principal de salida de vapor y qué función cumple al comunicar o aislar una caldera?"
+    },
+    {
+      "number": 41,
+      "unit": 2,
+      "question": "¿Cómo funciona una válvula globo y por qué puede emplearse para maniobra o regulación de vapor? Comparala con una esclusa o compuerta."
+    },
+    {
+      "number": 42,
+      "unit": 2,
+      "question": "¿Qué significa SDNR y cómo combina una válvula de ese tipo el cierre manual y la retención automática? ¿Dónde aparece en el esquema estudiado?"
+    },
+    {
+      "number": 43,
+      "unit": 2,
+      "question": "¿Qué funciones cumplen las válvulas de cierre y de retención de la alimentación? ¿Qué ocurriría ante una inversión de la diferencia de presiones?"
+    },
+    {
+      "number": 44,
+      "unit": 2,
+      "question": "¿Cómo funciona una válvula de seguridad de resorte? Explicá presión de apertura, apertura rápida y presión de cierre sin confundirlas con la presión normal de trabajo."
+    },
+    {
+      "number": 45,
+      "unit": 2,
+      "question": "¿Dónde se instalan las válvulas de seguridad del domo y, cuando corresponde, del sobrecalentador? ¿Qué protege cada una y cómo se determina su ajuste?"
+    },
+    {
+      "number": 46,
+      "unit": 2,
+      "question": "¿Qué diferencias hay entre comprobar la apertura y el cierre de una válvula de seguridad, verificar su calibración y realizar una prueba de acumulación de presión?"
+    },
+    {
+      "number": 47,
+      "unit": 2,
+      "question": "¿Dónde se ubican las válvulas de extracción de fondo y de superficie o purga continua? ¿Qué problema corrige cada extracción?"
+    },
+    {
+      "number": 48,
+      "unit": 2,
+      "question": "¿Qué función cumplen los venteos y los drenajes de la caldera, del sobrecalentador y de las líneas de vapor durante calentamiento y enfriamiento?"
+    },
+    {
+      "number": 49,
+      "unit": 2,
+      "question": "¿Qué válvulas y conexiones tiene un indicador de nivel? ¿Cómo se comprueba que su indicación sea confiable y cómo se actúa si no coincide con otro indicador?"
+    },
+    {
+      "number": 50,
+      "unit": 2,
+      "question": "¿Qué accesorios permiten medir presión y temperatura? Explicá la función del sifón del manómetro y de sus elementos de aislamiento cuando están instalados."
+    },
+    {
+      "number": 51,
+      "unit": 2,
+      "question": "¿Qué diferencias hay entre una válvula reductora de presión, una de regulación, una de retención y una de seguridad? Da un ejemplo de uso de cada una."
+    },
+    {
+      "number": 52,
+      "unit": 2,
+      "question": "¿Qué función cumplen las trampas de vapor y los bypass de calentamiento cuando existen? ¿Cómo evitarías confundir una trampa con una válvula de seguridad o de retención?"
+    },
+    {
+      "number": 53,
+      "unit": 3,
+      "question": "Explicá dónde se producen radiación, convección y conducción desde la llama hasta el agua dentro de un tubo de caldera."
+    },
+    {
+      "number": 54,
+      "unit": 3,
+      "question": "¿Qué resistencias térmicas introducen las películas de fluido, el metal, el hollín y las incrustaciones? ¿Por qué una incrustación puede recalentar el metal?"
+    },
+    {
+      "number": 55,
+      "unit": 3,
+      "question": "¿Qué condiciones necesita una combustión completa y estable? Explicá la relación entre combustible, oxígeno, mezcla, temperatura y tiempo disponible."
+    },
+    {
+      "number": 56,
+      "unit": 3,
+      "question": "¿Qué es el exceso de aire? ¿Qué consecuencias producen tanto su falta como un exceso innecesario sobre la combustión y el rendimiento?"
+    },
+    {
+      "number": 57,
+      "unit": 3,
+      "question": "Describí el circuito de combustible desde almacenamiento hasta quemador, incluyendo sedimentación, tratamiento, tanque de servicio, bombas, calentamiento y filtración según la instalación."
+    },
+    {
+      "number": 58,
+      "unit": 3,
+      "question": "¿Qué propiedades del combustible interesan para una caldera? Relacioná poder calorífico, viscosidad, agua, sedimentos, cenizas y azufre con su funcionamiento."
+    },
+    {
+      "number": 59,
+      "unit": 3,
+      "question": "¿Qué diferencias hay entre punto de inflamación, punto de combustión sostenida y punto de fluidez? ¿Para qué sirve conocer cada uno?"
+    },
+    {
+      "number": 60,
+      "unit": 3,
+      "question": "¿Por qué se calientan determinados combustibles antes de pulverizarlos? ¿Qué consecuencias tiene una viscosidad inadecuada a la entrada del quemador?"
+    },
+    {
+      "number": 61,
+      "unit": 3,
+      "question": "¿Cómo funcionan la pulverización mecánica y la asistida por vapor o aire? ¿Qué elementos intervienen en la formación y distribución de las gotas?"
+    },
+    {
+      "number": 62,
+      "unit": 3,
+      "question": "Describí el recorrido del aire de combustión y la función de ventiladores, registros y precalentadores. Compará tiro natural, forzado e inducido."
+    },
+    {
+      "number": 63,
+      "unit": 3,
+      "question": "¿Qué investigarías ante humo negro, llama inestable o combustible sin quemar? ¿Qué información aportan el análisis de gases y la temperatura de chimenea?"
+    },
+    {
+      "number": 64,
+      "unit": 3,
+      "question": "¿Qué funciones cumplen el detector de llama, el encendido y las válvulas de corte de combustible? ¿Qué condiciones deben impedir la admisión de combustible?"
+    },
+    {
+      "number": 65,
+      "unit": 4,
+      "question": "Dibujá el circuito completo de una planta de vapor de condensación desde la caldera hasta su regreso a ella, indicando el sentido del flujo y la función de cada equipo."
+    },
+    {
+      "number": 66,
+      "unit": 4,
+      "question": "¿Dónde se ubica funcionalmente el condensador respecto de la turbina? ¿Qué corrientes circulan por él y cómo se evita mezclarlas en un condensador de superficie?"
+    },
+    {
+      "number": 67,
+      "unit": 4,
+      "question": "¿Qué es el pozo caliente o hotwell del condensador y qué relación tiene con la aspiración de la bomba de extracción de condensado?"
+    },
+    {
+      "number": 68,
+      "unit": 4,
+      "question": "¿De dónde aspira y hacia dónde descarga la bomba de extracción de condensado? ¿En qué se diferencia de la bomba de alimentación de caldera?"
+    },
+    {
+      "number": 69,
+      "unit": 4,
+      "question": "¿Qué recorrido puede seguir el condensado entre su bomba de extracción y el desaireador? Ubicá los calentadores que tenga el esquema estudiado."
+    },
+    {
+      "number": 70,
+      "unit": 4,
+      "question": "¿Qué es un tanque desaireador y qué funciones cumple respecto de gases disueltos, temperatura y reserva de agua?"
+    },
+    {
+      "number": 71,
+      "unit": 4,
+      "question": "¿Cómo funciona la desaireación térmica? Explicá el contacto entre agua y vapor y la necesidad de evacuar los gases separados."
+    },
+    {
+      "number": 72,
+      "unit": 4,
+      "question": "¿En qué instalaciones se utiliza un desaireador presurizado? ¿Cómo se diferencia de un tanque atmosférico de alimentación y por qué no deben confundirse?"
+    },
+    {
+      "number": 73,
+      "unit": 4,
+      "question": "¿Dónde está el desaireador dentro del circuito y por qué puede instalarse elevado respecto de las bombas de alimentación?"
+    },
+    {
+      "number": 74,
+      "unit": 4,
+      "question": "¿Qué es la cavitación y cómo se relaciona con temperatura del agua, presión de aspiración, altura estática y NPSH de la bomba?"
+    },
+    {
+      "number": 75,
+      "unit": 4,
+      "question": "¿De dónde aspira la bomba de alimentación y qué componentes atraviesa el agua hasta ingresar al domo en el esquema estudiado?"
+    },
+    {
+      "number": 76,
+      "unit": 4,
+      "question": "¿Por qué la presión de descarga de la bomba de alimentación debe superar la presión de la caldera? ¿Qué pérdidas adicionales hay que vencer?"
+    },
+    {
+      "number": 77,
+      "unit": 4,
+      "question": "¿Para qué sirve la recirculación de caudal mínimo de una bomba de alimentación cuando está instalada y qué riesgo evita?"
+    },
+    {
+      "number": 78,
+      "unit": 4,
+      "question": "¿Cómo se asegura la alimentación ante la falla de una bomba? Explicá la función de bombas de reserva y de sus válvulas de aislamiento y retención."
+    },
+    {
+      "number": 79,
+      "unit": 4,
+      "question": "¿Cómo funcionan los controles de nivel de uno, dos y tres elementos? ¿Qué variables utiliza cada uno y por qué interesa medir el caudal de vapor?"
+    },
+    {
+      "number": 80,
+      "unit": 4,
+      "question": "¿Qué son la expansión aparente y la contracción aparente del nivel —swell y shrink—? ¿Por qué puede subir el nivel indicado aunque la caldera esté perdiendo masa de agua?"
+    },
+    {
+      "number": 81,
+      "unit": 4,
+      "question": "¿Qué daños producen dureza, oxígeno, sales y aceite en el agua de caldera? ¿Qué controles, tratamiento y purgas permiten reducirlos?"
+    },
+    {
+      "number": 82,
+      "unit": 4,
+      "question": "¿Cómo detectarías una entrada de agua de mar al condensado? ¿Qué consecuencias tendría alimentar la caldera con ese condensado y qué medidas exigiría el procedimiento?"
+    },
+    {
+      "number": 83,
+      "unit": 5,
+      "question": "Explicá la puesta en marcha de una caldera fría por etapas, desde las verificaciones iniciales hasta su incorporación al servicio, justificando cada etapa."
+    },
+    {
+      "number": 84,
+      "unit": 5,
+      "question": "¿Qué inspecciones deben completarse después de un mantenimiento antes de llenar o encender la caldera? Considerá interiores, cierres, herramientas, conexiones e instrumentos."
+    },
+    {
+      "number": 85,
+      "unit": 5,
+      "question": "¿Qué calidad y nivel inicial de agua deben comprobarse y cómo se confirma que el sistema de alimentación está disponible antes del encendido?"
+    },
+    {
+      "number": 86,
+      "unit": 5,
+      "question": "¿Cómo verificás la disposición inicial de las válvulas de alimentación, vapor, purga, venteo y drenaje utilizando el plano y el procedimiento del equipo?"
+    },
+    {
+      "number": 87,
+      "unit": 5,
+      "question": "¿Qué servicios auxiliares deben estar disponibles antes del encendido: combustible, aire, atomización, energía eléctrica, control y alimentación?"
+    },
+    {
+      "number": 88,
+      "unit": 5,
+      "question": "¿Por qué debe barrerse o ventilarse el hogar antes de encender? ¿Qué condiciones del sistema confirman que el barrido se completó?"
+    },
+    {
+      "number": 89,
+      "unit": 5,
+      "question": "¿Qué debe ocurrir si el quemador no enciende o pierde la llama? ¿Por qué no corresponde repetir el encendido sin investigar la causa y cumplir el nuevo barrido previsto?"
+    },
+    {
+      "number": 90,
+      "unit": 5,
+      "question": "¿Por qué se aumenta gradualmente la temperatura y la presión durante el arranque? Relacioná el calentamiento con dilataciones, tensiones térmicas y refractarios."
+    },
+    {
+      "number": 91,
+      "unit": 5,
+      "question": "¿Qué función tienen los venteos durante el llenado y el levantamiento de presión, y qué criterios del procedimiento determinan su cierre?"
+    },
+    {
+      "number": 92,
+      "unit": 5,
+      "question": "¿Cómo se protege el sobrecalentador durante el arranque cuando todavía hay poco consumo de vapor? ¿Qué circulación y drenaje requiere el diseño estudiado?"
+    },
+    {
+      "number": 93,
+      "unit": 5,
+      "question": "¿Cómo se calienta una línea de vapor antes de ponerla en servicio? Explicá el propósito de los drenajes y el riesgo de golpe de ariete."
+    },
+    {
+      "number": 94,
+      "unit": 5,
+      "question": "¿Qué significa comunicar una caldera? ¿Qué condiciones de presión, temperatura, drenaje y estado de válvulas deben verificarse antes de conectarla al colector de vapor?"
+    },
+    {
+      "number": 95,
+      "unit": 5,
+      "question": "¿Cómo se incorpora carga a una caldera recién comunicada y qué variables deben vigilarse durante esa transición?"
+    },
+    {
+      "number": 96,
+      "unit": 5,
+      "question": "¿Qué parámetros controlarías durante una guardia de caldera y cómo relacionarías sus cambios con la demanda de los consumidores?"
+    },
+    {
+      "number": 97,
+      "unit": 5,
+      "question": "¿Cómo respondería la planta a un aumento brusco del consumo de vapor? Relacioná presión, combustión, alimentación y variaciones aparentes del nivel."
+    },
+    {
+      "number": 98,
+      "unit": 5,
+      "question": "¿Qué diferencia hay entre nivel bajo, nivel peligrosamente bajo y ausencia de indicación confiable? ¿Qué protecciones deben actuar y por qué es peligroso aportar agua indiscriminadamente a una caldera sobrecalentada?"
+    },
+    {
+      "number": 99,
+      "unit": 5,
+      "question": "¿Qué causas pueden producir nivel alto y arrastre de agua? ¿Qué riesgos crean para el sobrecalentador, las líneas y la turbina?"
+    },
+    {
+      "number": 100,
+      "unit": 5,
+      "question": "¿Qué síntomas podrían indicar un tubo averiado? ¿Cómo se decide la retirada de servicio y qué condiciones se exigen antes de inspeccionar o reparar?"
+    },
+    {
+      "number": 101,
+      "unit": 5,
+      "question": "Explicá una parada normal de caldera: reducción de carga, coordinación con consumidores, retirada del servicio, corte de combustible y controles posteriores según el procedimiento."
+    },
+    {
+      "number": 102,
+      "unit": 5,
+      "question": "¿En qué se diferencia una parada de emergencia de una parada normal? Mencioná fallas de llama, de alimentación, de tiro y de control que puedan exigirla."
+    },
+    {
+      "number": 103,
+      "unit": 5,
+      "question": "¿Qué debe vigilarse durante el enfriamiento de la caldera? ¿Por qué no deben improvisarse un enfriamiento acelerado ni un vaciado estando caliente y presurizada?"
+    },
+    {
+      "number": 104,
+      "unit": 5,
+      "question": "¿Cómo se prepara una caldera para una parada prolongada o una inspección? Compará conservación húmeda y seca, aislamiento de energías, limpieza y comprobaciones previas al retorno al servicio."
+    },
+    {
+      "number": 105,
+      "unit": 6,
+      "question": "¿Cómo transforma una turbina de vapor la energía del fluido en par y potencia en el eje?"
+    },
+    {
+      "number": 106,
+      "unit": 6,
+      "question": "Identificá carcasa, rotor, eje, toberas, álabes fijos, álabes móviles y diafragmas, y explicá la función de cada uno."
+    },
+    {
+      "number": 107,
+      "unit": 6,
+      "question": "¿Qué diferencia existe entre una etapa de acción y una de reacción? ¿Dónde se produce la caída de presión en cada caso?"
+    },
+    {
+      "number": 108,
+      "unit": 6,
+      "question": "¿Qué es una etapa de turbina y por qué se distribuye la expansión en varias etapas? Compará escalonamiento de presión y de velocidad."
+    },
+    {
+      "number": 109,
+      "unit": 6,
+      "question": "¿Qué diferencias hay entre turbinas de condensación, de contrapresión y con extracciones? ¿Qué servicios navales pueden accionar?"
+    },
+    {
+      "number": 110,
+      "unit": 6,
+      "question": "¿Cómo se relacionan las turbinas de alta y baja presión? ¿Por qué pueden cambiar el tamaño de los álabes y las secciones de paso a lo largo de la expansión?"
+    },
+    {
+      "number": 111,
+      "unit": 6,
+      "question": "Dibujá un triángulo de velocidades e identificá velocidad absoluta, relativa y periférica. ¿Cómo se relacionan vectorialmente?"
+    },
+    {
+      "number": 112,
+      "unit": 6,
+      "question": "¿Qué cambio del movimiento del vapor produce el par sobre el rotor? Relacioná cualitativamente los triángulos de velocidades con el trabajo de la etapa."
+    },
+    {
+      "number": 113,
+      "unit": 6,
+      "question": "¿Qué pérdidas reducen el rendimiento de una turbina y cómo influyen fugas, rozamiento, humedad y funcionamiento fuera de diseño?"
+    },
+    {
+      "number": 114,
+      "unit": 6,
+      "question": "¿Qué diferencias hay entre cojinetes radiales y cojinete de empuje? ¿Qué movimientos del rotor controla cada uno?"
+    },
+    {
+      "number": 115,
+      "unit": 6,
+      "question": "¿Qué funciones cumplen los sellos laberínticos y el sistema de vapor de sellado? ¿Cómo cambian los problemas de fugas entre zonas presurizadas y zonas bajo vacío?"
+    },
+    {
+      "number": 116,
+      "unit": 6,
+      "question": "¿Para qué sirven el acoplamiento y el reductor en una planta propulsora de turbinas? ¿Qué relación tienen con las velocidades de turbina y hélice?"
+    },
+    {
+      "number": 117,
+      "unit": 7,
+      "question": "Dibujá el circuito de lubricación de la turbina estudiada e identificá tanque, bombas, filtros, enfriadores, regulación, cojinetes y retorno."
+    },
+    {
+      "number": 118,
+      "unit": 7,
+      "question": "¿Qué funciones cumple el aceite además de reducir el rozamiento? ¿Qué propiedades se requieren del lubricante de turbina?"
+    },
+    {
+      "number": 119,
+      "unit": 7,
+      "question": "¿Qué funciones cumplen las bombas principal, auxiliar y de emergencia cuando están instaladas? ¿En qué momentos debe estar disponible cada una?"
+    },
+    {
+      "number": 120,
+      "unit": 7,
+      "question": "¿Cómo se asegura la lubricación antes del giro, durante la aceleración, a régimen y durante la desaceleración de la turbina?"
+    },
+    {
+      "number": 121,
+      "unit": 7,
+      "question": "¿Qué significa lubricación con retorno por gravedad o por rebalse en el equipo estudiado? ¿Qué ubicación y condiciones de drenaje necesita el retorno al tanque?"
+    },
+    {
+      "number": 122,
+      "unit": 7,
+      "question": "¿Qué función cumple un tanque elevado de aceite cuando existe y en qué se diferencia del tanque principal de retorno?"
+    },
+    {
+      "number": 123,
+      "unit": 7,
+      "question": "¿Qué indican la presión diferencial del filtro y las temperaturas de entrada y salida del enfriador? ¿Cómo se mantiene el servicio con filtros o enfriadores duplicados?"
+    },
+    {
+      "number": 124,
+      "unit": 7,
+      "question": "¿Por qué una presión normal en el colector de aceite no garantiza por sí sola una lubricación correcta de todos los cojinetes?"
+    },
+    {
+      "number": 125,
+      "unit": 7,
+      "question": "¿Qué causas pueden producir agua, emulsión, espuma o aire en el aceite? ¿Qué efectos tienen y cómo investigarías su origen?"
+    },
+    {
+      "number": 126,
+      "unit": 7,
+      "question": "¿En qué se diferencian el circuito de lubricación y el circuito de aceite de regulación o control? ¿Pueden compartir tanque o bombas según el diseño?"
+    },
+    {
+      "number": 127,
+      "unit": 7,
+      "question": "¿Cómo funciona el condensador de superficie y qué efecto tiene su presión sobre la expansión y la potencia de la turbina?"
+    },
+    {
+      "number": 128,
+      "unit": 7,
+      "question": "¿Para qué sirven los eyectores o bombas de vacío? ¿De dónde pueden entrar aire y gases no condensables y por qué deben extraerse?"
+    },
+    {
+      "number": 129,
+      "unit": 7,
+      "question": "Describí el circuito de agua de circulación del condensador. ¿Cómo podrían afectar al vacío una obstrucción, una falla de bomba o una elevada temperatura del agua de refrigeración?"
+    },
+    {
+      "number": 130,
+      "unit": 7,
+      "question": "¿Qué relación existe entre vapor de sellado, extracción de aire, condensador, condensado y desaireador? Dibujá sus conexiones sin confundir sus funciones."
+    },
+    {
+      "number": 131,
+      "unit": 8,
+      "question": "Explicá la puesta en marcha de una turbina por etapas: verificaciones, lubricación, virador, condiciones de vapor, drenajes, sellado y vacío cuando corresponda."
+    },
+    {
+      "number": 132,
+      "unit": 8,
+      "question": "¿Para qué se utiliza el virador durante calentamiento y enfriamiento? ¿Qué enclavamiento impide admitir vapor de marcha mientras está engranado?"
+    },
+    {
+      "number": 133,
+      "unit": 8,
+      "question": "¿Por qué deben calentarse y drenarse las líneas y la turbina antes de tomar carga? ¿Qué daños pueden provocar el agua acumulada y una expansión térmica desigual?"
+    },
+    {
+      "number": 134,
+      "unit": 8,
+      "question": "¿Qué se controla durante el giro inicial y la subida de velocidad? Incluí vibraciones, temperaturas, desplazamiento axial y paso por velocidades críticas según el fabricante."
+    },
+    {
+      "number": 135,
+      "unit": 8,
+      "question": "¿Cómo actúan el regulador de velocidad, la válvula de cierre rápido y el disparo por sobrevelocidad? ¿Qué diferencia existe entre regulación normal y protección de emergencia?"
+    },
+    {
+      "number": 136,
+      "unit": 8,
+      "question": "Explicá la parada normal y la parada de emergencia de la turbina y su coordinación con la caldera. ¿Qué auxiliares deben continuar funcionando durante la desaceleración y el enfriamiento?"
+    },
+    {
+      "number": 137,
+      "unit": 8,
+      "question": "¿Cómo se obtiene marcha atrás en una planta de turbinas de vapor con hélice de paso fijo? ¿Qué función cumple la turbina o sección de ciar?"
+    },
+    {
+      "number": 138,
+      "unit": 8,
+      "question": "En la disposición explicada por el profesor, ¿dónde se encuentra la turbina de marcha atrás respecto de la turbina de baja presión y cómo transmite el par al eje propulsor?"
+    },
+    {
+      "number": 139,
+      "unit": 8,
+      "question": "¿Qué válvulas, mandos y elementos de distribución de vapor intervienen en marcha adelante y marcha atrás? Dibujá ambos recorridos hasta el escape."
+    },
+    {
+      "number": 140,
+      "unit": 8,
+      "question": "¿Por qué no se obtiene normalmente marcha atrás haciendo circular el vapor al revés por la misma sección de marcha adelante? Relacioná la respuesta con toberas y álabes."
+    },
+    {
+      "number": 141,
+      "unit": 8,
+      "question": "¿Cómo se prepara y ejecuta una maniobra de adelante a atrás según el procedimiento de la planta? Explicá reducción o corte de admisión, control del giro, drenajes, calentamiento y enclavamientos."
+    },
+    {
+      "number": 142,
+      "unit": 8,
+      "question": "¿Por qué la marcha atrás puede exigir un consumo elevado de vapor respecto de la potencia útil obtenida? ¿Cómo repercute una orden brusca de atrás sobre presión, nivel y alimentación de la caldera?"
+    },
+    {
+      "number": 143,
+      "unit": 8,
+      "question": "¿Cómo se obtiene empuje hacia atrás con una hélice de paso controlable? Comparalo con invertir el giro de una hélice de paso fijo mediante una turbina de ciar."
+    },
+    {
+      "number": 144,
+      "unit": 8,
+      "question": "¿Por qué un reductor no debe suponerse automáticamente inversor y por qué el virador no sirve para dar marcha atrás al buque? ¿Qué comprobarías si se ordena atrás y no aparece el empuje esperado?"
+    },
+    {
+      "number": 145,
+      "unit": 9,
+      "question": "¿Qué es un sistema de calentamiento por fluido térmico y en qué aplicaciones navales puede utilizarse en lugar de vapor?"
+    },
+    {
+      "number": 146,
+      "unit": 9,
+      "question": "Dibujá su circuito e identificá calentador, bomba de circulación, consumidores, tanque de expansión, válvulas e instrumentos."
+    },
+    {
+      "number": 147,
+      "unit": 9,
+      "question": "¿Qué funciones cumple el tanque de expansión, dónde se conecta y cómo se diferencia de un desaireador de agua de alimentación?"
+    },
+    {
+      "number": 148,
+      "unit": 9,
+      "question": "¿Qué propiedades y controles requiere el fluido térmico? ¿Qué consecuencias tienen su degradación, oxidación y contaminación con agua?"
+    },
+    {
+      "number": 149,
+      "unit": 9,
+      "question": "Explicá la puesta en marcha y la parada de un calentador de fluido térmico. ¿Por qué debe verificarse la circulación antes de encender y mantenerse el tiempo previsto después de cortar el fuego?"
+    },
+    {
+      "number": 150,
+      "unit": 9,
+      "question": "¿Qué alarmas, enclavamientos y mantenimiento necesita el sistema frente a bajo caudal, sobretemperatura, nivel insuficiente, fugas o falla de bomba?"
+    }
+  ]
+}
