@@ -10,7 +10,7 @@ const skip={hidden:false,disabled:false,_text:'',get textContent(){return this._
 const exam={messages:[],level:'acompanado',started:false,finished:false,busy:false,recording:false};
 let mounted=true;
 const context={exam,document:{querySelector(selector){return mounted&&selector==='#exam-skip'?skip:null},querySelectorAll(){return[]},addEventListener(){}},MutationObserver:class{constructor(callback){deliver=callback}observe(){}}};
-vm.createContext(context);
+context.window=context;vm.createContext(context);
 vm.runInContext(fs.readFileSync(path.join(__dirname,'../dist/followup.js'),'utf8'),context);
 function settle(){let count=0;while(pending){assert(++count<10,'El observador debe estabilizarse y permitir al navegador procesar eventos');pending=false;deliver()}return count}
 assert.equal(settle(),1);

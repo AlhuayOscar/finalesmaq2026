@@ -1,12 +1,13 @@
 // Responses awaiting a resolution live only on this device, per account/subject.
-let deferredDB=null,deferredWrites=Promise.resolve(),deferredLoading='',deferredLoaded='',resolutionBusy=false;
+let deferredDB=null,deferredWrites=Promise.resolve(),deferredLoading='',deferredLoaded='',resolutionBusy=false,resolutionRetry=null;
 const deferredKey=()=>maqAccount.user?.id?maqAccount.user.id+':'+currentSubject:null;
 function openDeferredDB(){return deferredDB||(deferredDB=new Promise((resolve,reject)=>{const r=indexedDB.open('naval-pending-exams-v1',1);r.onupgradeneeded=()=>r.result.createObjectStore('exams');r.onsuccess=()=>resolve(r.result);r.onerror=()=>{deferredDB=null;reject(Error('No se pudo abrir el guardado local.'))}}))}
 async function deferredStore(mode,key,value){const db=await openDeferredDB();return new Promise((resolve,reject)=>{const tx=db.transaction('exams',mode),store=tx.objectStore('exams');const r=mode==='readonly'?store.get(key):store.put(value,key);tx.oncomplete=()=>resolve(r.result);tx.onerror=()=>reject(Error('No se pudo guardar en este dispositivo. Descargá una copia antes de salir.'));tx.onabort=tx.onerror})}
-function deferredSnapshot(){return {subject:currentSubject,owner:maqAccount.user.id,unit:exam.unit,level:exam.level,depth:exam.depth,scope:exam.scope,speed:exam.speed,includeVisual:exam.includeVisual,loop:exam.loop,voice:exam.voice,reviewQueue:exam.reviewQueue,reviewItems:exam.reviewItems||[],deferredMode:!!exam.deferredMode,planToken:exam.planToken,planProgress:exam.planProgress,messages:exam.messages,history:exam.history,started:exam.started,finished:exam.finished,draft:examElement('exam-text')?.value||exam.draft||''}}
+function deferredSnapshot(){return {subject:currentSubject,owner:maqAccount.user.id,unit:exam.unit,level:exam.level,depth:exam.depth,scope:exam.scope,speed:exam.speed,includeVisual:exam.includeVisual,loop:exam.loop,voice:exam.voice,reviewQueue:exam.reviewQueue,reviewItems:exam.reviewItems||[],deferredMode:!!exam.deferredMode,planToken:exam.planToken,planProgress:exam.planProgress,messages:exam.messages,history:exam.history,started:exam.started,finished:exam.finished,followupDraft:exam.followupDraft||'',followupRequest:exam.followupRequest||null,draft:examElement('exam-text')?.value||exam.draft||''}}
+window.cancelResolutionRetry=()=>resolutionRetry?.cancel();
 function persistDeferredExam(){const key=deferredKey();if(!key||!exam.reviewQueue)return Promise.resolve();const snapshot=deferredSnapshot();const write=deferredWrites.catch(()=>{}).then(()=>deferredStore('readwrite',key,snapshot));deferredWrites=write;return write}
 window.deferredOwnerChanged=()=>{deferredLoaded='';deferredLoading=''};
-window.clearDeferredExam=()=>{exam.reviewQueue=null;exam.reviewItems=[];exam.deferredMode=false;exam.resolutionError='';deferredLoaded=deferredKey()||''};
+window.clearDeferredExam=()=>{window.resetFollowupSelection?.();exam.followupDraft='';exam.followupStatus='';exam.followupRequest=null;exam.reviewQueue=null;exam.reviewItems=[];exam.deferredMode=false;exam.resolutionError='';deferredLoaded=deferredKey()||''};
 function queuePosition(token=exam.planToken){try{const data=JSON.parse(atob(token.split('.')[0].replace(/-/g,'+').replace(/_/g,'/')));return data.index}catch{return -1}}
 function currentQueuedQuestion(){return exam.reviewQueue?.[queuePosition()]}
 window.acceptDeferredResult=(action,data,sent)=>{
@@ -29,7 +30,7 @@ async function retainCurrentAnswer(){
 }
 function clearDeferredDraft(){exam.draft='';if(examElement('exam-text'))examElement('exam-text').value='';if(exam.blobURL)URL.revokeObjectURL(exam.blobURL);exam.blob=null;exam.blobURL=null;clearExamImage();if(examElement('exam-image'))examElement('exam-image').value=''}
 async function nextDeferredQuestion(finish=false){
- if(exam.recording||resolutionBusy||!exam.started||exam.finished||exam.advancing)return;
+ if(exam.recording||resolutionBusy||window.followupRetryActive?.()||!exam.started||exam.finished||exam.advancing)return;
  const active=exam,key=deferredKey(),token=exam.planToken;exam.advancing=true;
  try{
   if(exam.busy){examAbort?.abort();await window.examRequest;if(active!==exam||key!==deferredKey()||exam.planToken!==token)return}
@@ -47,17 +48,23 @@ async function nextDeferredQuestion(finish=false){
 function finishDeferredExam(){return nextDeferredQuestion(true)}
 function referenceHTML(item){return '<div class="deferred-reference"><strong>Resolución preparada · sin IA</strong><p>'+esc(item.referenceAnswer||'No hay una referencia disponible.')+'</p><p class="source">'+esc((item.sources||[]).map(s=>s.title).join(' · '))+'</p></div>'}
 async function consultDeferredResolution(index){
- if(resolutionBusy||exam.busy||exam.advancing)return;
  const item=exam.reviewItems?.[index];if(!item)return;
- const active=exam,key=deferredKey();resolutionBusy=true;item.consulting=true;item.error='';renderDeferredExam();
+ if(resolutionRetry){if(resolutionRetry.item===item)resolutionRetry.cancel();return}
+ if(resolutionBusy||exam.busy||exam.advancing)return;
+ const active=exam,key=deferredKey(),isCurrent=()=>active===exam&&key===deferredKey();
+ const body={planToken:item.planToken,text:item.text,audio:item.audio,image:item.image};
+ const job=createProfessorRetry({isCurrent,onState:()=>{if(isCurrent()){item.retryAttempt=job.attempt;item.error=job.waiting?job.error+' Reintentando automáticamente. Volvé a tocar el botón para detener.':'';renderDeferredExam()}}});
+ job.item=item;resolutionRetry=job;resolutionBusy=true;active.busy=true;item.consulting=true;item.error='';updateExam();
  try{
-  const r=await fetch('/api/resolution',{method:'POST',headers:{'Content-Type':'application/json'},credentials:'same-origin',signal:AbortSignal.timeout(55000),body:JSON.stringify({planToken:item.planToken,text:item.text,audio:item.audio,image:item.image})});
-  let data;try{data=await r.json()}catch{throw Error('El servidor no respondió correctamente. Tu respuesta sigue guardada.')}
-  if(!r.ok)throw Error(data.error||'No se pudo consultar la resolución.');
-  if(typeof data.resolution!=='string'||data.questionId!==item.id)throw Error('La resolución no corresponde a esta pregunta.');
-  if(active!==exam||key!==deferredKey())return;
-  item.resolution=data.resolution;item.transcript=data.transcript;item.showReference=true;item.status=item.status==='evaluated'?'evaluated':'resolved';await persistDeferredExam();
- }catch(e){if(active===exam&&key===deferredKey())item.error=e.name==='TimeoutError'?'Gemini tardó demasiado. Tu respuesta sigue guardada.':e.message}finally{resolutionBusy=false;item.consulting=false;if(active===exam&&key===deferredKey())renderDeferredExam()}
+  const data=await job.run(async signal=>{const data=await professorRetryJSON('/api/resolution',body,signal);if(typeof data.resolution!=='string'||!data.resolution.trim()||data.questionId!==item.id)throw Error('La resolución no corresponde a esta pregunta.');return data});
+  if(!data||!isCurrent()){if(isCurrent())item.error='Reintento detenido. Tu respuesta sigue guardada.';return}
+  item.resolution=data.resolution;item.transcript=data.transcript;item.showReference=true;item.status=item.status==='evaluated'?'evaluated':'resolved';item.error='';
+  try{await persistDeferredExam()}catch(e){item.error=e.message}
+ }finally{
+  active.busy=false;item.consulting=false;item.retryAttempt=0;
+  if(resolutionRetry===job){resolutionRetry=null;resolutionBusy=false}
+  if(isCurrent())updateExam();
+ }
 }
 async function restoreDeferredExam(key){
  deferredLoading=key;
@@ -69,16 +76,17 @@ function renderDeferredExam(){
  const key=deferredKey();if(key&&!maqAccount.loading&&deferredLoaded!==key&&deferredLoading!==key&&!exam.started)restoreDeferredExam(key);
  let controls=examElement('deferred-controls');if(!controls){controls=document.createElement('section');controls.id='deferred-controls';composer.append(controls)}
  const available=exam.started&&!exam.finished&&!!exam.reviewQueue?.length;
- controls.innerHTML=(available?'<button id="exam-defer-next" class="secondary" '+(exam.recording||exam.advancing||resolutionBusy?'disabled':'')+'>Guardar y pasar a la siguiente pregunta</button><button id="exam-defer-finish" class="text-button" '+(exam.recording||exam.advancing||resolutionBusy?'disabled':'')+'>Guardar y finalizar para revisar</button><p class="source">Si Gemini no responde, seguí sin esperar. Las respuestas quedan pendientes en este dispositivo, sin descuento ni nota automática. Se guardan también el audio y las imágenes de cada pregunta.</p>':'')+(exam.resolutionError?'<p role="alert">'+esc(exam.resolutionError)+'</p>':'');
+ controls.innerHTML=(available?'<button id="exam-defer-next" class="secondary" '+(exam.recording||exam.advancing||resolutionBusy||window.followupRetryActive?.()?'disabled':'')+'>Guardar y pasar a la siguiente pregunta</button><button id="exam-defer-finish" class="text-button" '+(exam.recording||exam.advancing||resolutionBusy||window.followupRetryActive?.()?'disabled':'')+'>Guardar y finalizar para revisar</button><p class="source">Si Gemini no responde, seguí sin esperar. Las respuestas quedan pendientes en este dispositivo, sin descuento ni nota automática. Se guardan también el audio y las imágenes de cada pregunta.</p>':'')+(exam.resolutionError?'<p role="alert">'+esc(exam.resolutionError)+'</p>':'');
  if(available){examElement('exam-defer-next').onclick=()=>nextDeferredQuestion();examElement('exam-defer-finish').onclick=()=>finishDeferredExam()}
  if(exam.deferredMode){examElement('exam-send').textContent='Guardar respuesta y seguir →';examElement('exam-finish').textContent='Finalizar y revisar';examElement('exam-state').textContent=exam.finished?'Examen finalizado · resoluciones por revisar':'Respuesta pendiente · podés seguir sin Gemini';document.querySelector('#exam-skip')?.setAttribute('hidden','');document.querySelectorAll('[data-hint-index]').forEach(b=>b.hidden=true)}
  let panel=examElement('deferred-review');if(!panel){panel=document.createElement('section');panel.id='deferred-review';panel.className='deferred-review';composer.after(panel)}
  const items=exam.reviewItems||[];panel.hidden=!items.length;if(!items.length)return;
- panel.innerHTML='<h3>Revisar las preguntas del examen</h3><p class="source">Elegí qué respuesta revisar. La referencia preparada funciona sin Gemini. «Consultar resolución» envía únicamente esa pregunta y tu respuesta a Gemini; no modifica notas ni progreso.</p>'+items.map((item,i)=>'<details '+(item.open?'open':'')+' data-deferred-detail="'+i+'"><summary>Pregunta '+(i+1)+' · '+esc(item.question)+' <span class="tag">'+(item.status==='evaluated'?'Evaluada · '+Number(item.score).toFixed(2)+'/10':item.status==='resolved'?'Resolución consultada':'Pendiente · sin nota')+'</span></summary><p><strong>Tu respuesta</strong></p><p>'+esc(item.text||'Sin respuesta escrita')+'</p>'+(item.audio?'<audio controls aria-label="Tu respuesta grabada" src="data:'+esc(item.audio.mimeType)+';base64,'+item.audio.data+'"></audio>':'')+(item.image?'<img class="deferred-image" alt="Tu imagen para esta pregunta" src="data:'+esc(item.image.mimeType)+';base64,'+item.image.data+'">':'')+(item.transcript?'<p><strong>Transcripción:</strong> '+esc(item.transcript)+'</p>':'')+(item.feedback?'<p><strong>Devolución del examen:</strong> '+esc(item.feedback)+'</p>':'')+'<div class="actions"><button class="secondary" data-deferred-reference="'+i+'">'+(item.showReference?'Ocultar referencia preparada':'Ver referencia preparada')+'</button><button data-deferred-consult="'+i+'" '+(resolutionBusy||exam.busy||exam.advancing?'disabled':'')+'>'+(item.consulting?'Consultando…':item.resolution?'Volver a consultar resolución':'Consultar resolución')+'</button></div>'+(item.error?'<p class="exam-error" role="alert">'+esc(item.error)+'</p>':'')+(item.showReference?referenceHTML(item):'')+(item.resolution?'<div class="deferred-resolution"><strong>Resolución de Gemini · orientativa</strong><p>'+esc(item.resolution)+'</p></div>':'')+'</details>').join('');
+ panel.innerHTML='<h3>Revisar las preguntas del examen</h3><p class="source">Elegí qué respuesta revisar. La referencia preparada funciona sin Gemini. «Consultar resolución» envía únicamente esa pregunta y tu respuesta a Gemini; no modifica notas ni progreso. Si falla, reintenta hasta recibir respuesta; volvé a tocar el mismo botón para detener.</p>'+items.map((item,i)=>'<details '+(item.open?'open':'')+' data-deferred-detail="'+i+'"><summary>Pregunta '+(i+1)+' · '+esc(item.question)+' <span class="tag">'+(item.status==='evaluated'?'Evaluada · '+Number(item.score).toFixed(2)+'/10':item.status==='resolved'?'Resolución consultada':'Pendiente · sin nota')+'</span></summary><p><strong>Tu respuesta</strong></p><p>'+esc(item.text||'Sin respuesta escrita')+'</p>'+(item.audio?'<audio controls aria-label="Tu respuesta grabada" src="data:'+esc(item.audio.mimeType)+';base64,'+item.audio.data+'"></audio>':'')+(item.image?'<img class="deferred-image" alt="Tu imagen para esta pregunta" src="data:'+esc(item.image.mimeType)+';base64,'+item.image.data+'">':'')+(item.transcript?'<p><strong>Transcripción:</strong> '+esc(item.transcript)+'</p>':'')+(item.feedback?'<p><strong>Devolución del examen:</strong> '+esc(item.feedback)+'</p>':'')+'<div class="actions"><button class="secondary" data-deferred-reference="'+i+'">'+(item.showReference?'Ocultar referencia preparada':'Ver referencia preparada')+'</button><button data-deferred-consult="'+i+'" '+((resolutionBusy||exam.busy||exam.advancing)&&!item.consulting?'disabled':'')+'>'+(item.consulting?'Detener reintento · intento '+(item.retryAttempt||1):item.resolution?'Volver a consultar resolución':'Consultar resolución')+'</button></div>'+(item.error?'<p class="exam-error" role="alert">'+esc(item.error)+'</p>':'')+(item.showReference?referenceHTML(item):'')+(item.resolution?'<div class="deferred-resolution"><strong>Resolución de Gemini · orientativa</strong><p>'+esc(item.resolution)+'</p></div>':'')+'</details>').join('');
  panel.querySelectorAll('[data-deferred-detail]').forEach(d=>d.ontoggle=()=>{items[+d.dataset.deferredDetail].open=d.open});
  panel.querySelectorAll('[data-deferred-reference]').forEach(b=>b.onclick=()=>{const item=items[+b.dataset.deferredReference];item.showReference=!item.showReference;item.open=true;renderDeferredExam()});
  panel.querySelectorAll('[data-deferred-consult]').forEach(b=>b.onclick=()=>{items[+b.dataset.deferredConsult].open=true;consultDeferredResolution(+b.dataset.deferredConsult)});
 }
 function downloadDeferredExam(){const text=['EXAMEN ORAL · '+navalSubjects[currentSubject].name,'Las resoluciones son orientativas. Las preguntas pendientes no tienen nota.',...(exam.reviewItems||[]).map((item,i)=>'PREGUNTA '+(i+1)+'\n'+item.question+'\nTu respuesta: '+(item.text||'(sin texto)')+(item.audio?'\nIncluye audio guardado en este dispositivo; no se incluye en este archivo de texto.':'')+(item.image?'\nIncluye imagen guardada en este dispositivo; no se incluye en este archivo de texto.':'')+'\nTranscripción: '+(item.transcript||'')+'\nEstado: '+item.status+'\nDevolución: '+(item.feedback||'')+'\nReferencia preparada: '+item.referenceAnswer+'\nResolución de Gemini: '+(item.resolution||'Pendiente'))].join('\n\n');const url=URL.createObjectURL(new Blob([text],{type:'text/plain;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='examen-oral-'+currentSubject+'.txt';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+window.persistDeferredExam=persistDeferredExam;
 window.renderDeferredExam=renderDeferredExam;
 if(location.hash==='#profesor')updateExam();

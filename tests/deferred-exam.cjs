@@ -28,8 +28,8 @@ async function call(body,method='POST',origin='http://localhost'){
  global.fetch=async()=>({ok:false,status:503});
  assert.equal((await call({planToken:queue[0].planToken})).statusCode,503);
  const field={value:'Mi respuesta escrita'},nodes=new Map([['exam-text',field],['exam-image',{value:'image'}]]);
- const context={console,Promise,atob,AbortSignal,URL,Blob,setTimeout,clearTimeout,location:{hash:'#test'},currentSubject:'termicas',maqAccount:{user:{id:'student-a'}},navalSubjects:{termicas:{name:'Térmicas'}},exam:{started:true,finished:false,busy:false,recording:false,reviewQueue:queue,reviewItems:[],planToken:queue[0].planToken,planProgress:{limit:2},messages:[],history:[],blob:new Blob(['audio']),image:new Blob(['image']),draft:field.value},examElement:id=>nodes.get(id),clearExamImage(){context.exam.image=null},encodeAudio:async blob=>Buffer.from(await blob.arrayBuffer()).toString('base64'),document:{querySelector(){return null}},updateExam(){},window:null};
- context.window=context;vm.createContext(context);vm.runInContext(fs.readFileSync(require.resolve('../dist/deferred-exam.js'),'utf8'),context);
+ const context={console,Promise,atob,AbortSignal,AbortController,URL,Blob,setTimeout,clearTimeout,location:{hash:'#test'},currentSubject:'termicas',maqAccount:{user:{id:'student-a'}},navalSubjects:{termicas:{name:'Térmicas'}},exam:{started:true,finished:false,busy:false,recording:false,reviewQueue:queue,reviewItems:[],planToken:queue[0].planToken,planProgress:{limit:2},messages:[],history:[],blob:new Blob(['audio']),image:new Blob(['image']),draft:field.value},examElement:id=>nodes.get(id),clearExamImage(){context.exam.image=null},encodeAudio:async blob=>Buffer.from(await blob.arrayBuffer()).toString('base64'),document:{querySelector(){return null}},updateExam(){},window:null};
+ context.window=context;vm.createContext(context);vm.runInContext(fs.readFileSync(require.resolve('../dist/professor-retry.js'),'utf8'),context);vm.runInContext(fs.readFileSync(require.resolve('../dist/deferred-exam.js'),'utf8'),context);
  context.snapshots=[];vm.runInContext('renderDeferredExam=()=>{};persistDeferredExam=async()=>{snapshots.push(structuredCloneForTest(deferredSnapshot()))}',context);
  context.structuredCloneForTest=structuredClone;
  await vm.runInContext('nextDeferredQuestion()',context);
@@ -40,7 +40,7 @@ async function call(body,method='POST',origin='http://localhost'){
  assert.equal(context.exam.finished,true);assert.equal(context.exam.reviewItems.length,2);
  assert(context.exam.reviewItems.every(i=>i.status==='pending'&&i.score===undefined),'La falla del servidor no genera notas ni penalizaciones');
  let request;context.fetch=async(url,options)=>{request=JSON.parse(options.body);return {ok:false,json:async()=>({error:'Gemini saturado'})}};
- await vm.runInContext('consultDeferredResolution(0)',context);assert.equal(context.exam.reviewItems[0].error,'Gemini saturado');assert.equal(context.exam.reviewItems[0].text,'Mi respuesta escrita');
+ const pendingConsult=vm.runInContext('consultDeferredResolution(0)',context);await new Promise(setImmediate);assert(context.exam.reviewItems[0].error.includes('Reintentando'));await vm.runInContext('consultDeferredResolution(0)',context);await pendingConsult;assert(context.exam.reviewItems[0].error.includes('Reintento detenido'));assert.equal(context.exam.reviewItems[0].text,'Mi respuesta escrita');
  context.fetch=async(url,options)=>{request=JSON.parse(options.body);return {ok:true,json:async()=>({questionId:queue[1].id,resolution:'Resolución segunda',transcript:''})}};
  await vm.runInContext('consultDeferredResolution(1)',context);
  assert.equal(request.planToken,queue[1].planToken);assert.equal(request.text,'Segunda respuesta');assert.equal(context.exam.reviewItems[1].resolution,'Resolución segunda');assert.equal(context.exam.reviewItems[0].resolution,undefined);
