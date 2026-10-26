@@ -1,18 +1,12 @@
 const {weights}=require('./hdp-policy.cjs');
 const names=['concepto','componentes','funcionamiento','conexiones','precision','mantenimiento','fallas'];
-const development=[
- ['principio','Principio de funcionamiento o fundamento físico','concepto'],
- ['componentes','Componentes, elementos o variables que intervienen','componentes'],
- ['funciones','Función de los componentes o papel de las variables','funcionamiento'],
- ['conexiones','Conexiones o relaciones técnicas entre los elementos','conexiones'],
- ['recorrido','Recorrido del fluido, transformación de energía o evolución del proceso','funcionamiento'],
- ['sistema','Relación con el sistema o aplicación del concepto','conexiones'],
- ['condiciones','Condiciones relevantes y límites de validez','concepto']
-];
+const profiles=require('./hdp-profiles.cjs');
 function requirements(card){
  // PDF questions and diagrams already ask for specific, enumerated points.
  if(card?.pdfTopic||card?.visual)return card.keyPoints.map((label,i)=>({id:'punto-'+i,label,criterion:null}));
- const required=development.map(([id,label,criterion])=>({id,label,criterion}));
+ const subject=card?.subject||'termicas';
+ const required=profiles.requirements(subject);
+ if(profiles.get(subject).maintenance===false)return required;
  const question=String(card?.bookPrompt||card?.question||'');
  if(/mantenimiento|inspecci[oó]n/i.test(question))required.push({id:'mantenimiento',label:'Mantenimiento solicitado y su justificación',criterion:'mantenimiento'});
  if(/falla|aver[ií]a|corrosi[oó]n|incrustaci[oó]n/i.test(question))required.push({id:'fallas',label:'Fallas o mecanismos de deterioro solicitados y sus consecuencias',criterion:'fallas'});
@@ -21,7 +15,7 @@ function requirements(card){
 const coverageSchema={type:'ARRAY',items:{type:'OBJECT',properties:{id:{type:'STRING'},status:{type:'STRING',enum:['complete','partial','missing']},evidence:{type:'STRING'},reason:{type:'STRING'}},required:['id','status','evidence','reason']}};
 const criteriaSchema={type:'ARRAY',items:{type:'OBJECT',properties:{name:{type:'STRING',enum:names},value:{type:'NUMBER'},applicable:{type:'BOOLEAN'},reason:{type:'STRING'}},required:['name','value','applicable','reason']}};
 function schemaFor(base){return {...base,properties:{...base.properties,criteria:criteriaSchema,hdpCoverage:coverageSchema},required:[...new Set([...base.required,'criteria','hdpCoverage'])]}}
-function context(card){return `CONTRATO DE COBERTURA HDP PARA ESTA PREGUNTA:\n${JSON.stringify(requirements(card))}\nDevolvé hdpCoverage con una entrada por cada id de esta lista. complete: el aspecto se explica correctamente y de forma suficiente; partial: se menciona pero no se desarrolla o sólo se cubre una parte; missing: no se explica o es incorrecto. Para complete o partial incluí en evidence una cita literal de la respuesta ACTUAL del alumno, nunca de la referencia ni del profesor; en imágenes describí sólo lo observable. reason explica la cobertura o lo que faltó. No marques un aspecto completo por inferencia o por sólo nombrarlo. No elimines un aspecto porque el alumno lo omitió. En temas conceptuales evaluá elementos, variables y relaciones físicas, sin inventar piezas ni circuitos inexistentes. La referencia breve contiene mínimos y no sustituye el desarrollo expresamente pedido. Para el PDF o láminas evaluá exclusivamente los puntos enumerados, sin agregar la consigna genérica de otros temas. Mantenimiento y fallas sólo se exigen si están en esta lista. La nota final NO puede superar la fracción de aspectos cubiertos: complete=1, partial=0.5, missing=0; cada aspecto tiene el mismo peso. No se suman multas: se toma el menor valor entre rúbrica y cobertura. La velocidad no cambia esta lista. Explicá las omisiones aunque la terminología usada en la parte respondida sea correcta.`}
+function context(card){return `CONTRATO DE COBERTURA HDP PARA ESTA PREGUNTA:\n${JSON.stringify(requirements(card))}\nDevolvé hdpCoverage con una entrada por cada id de esta lista. complete: el aspecto se explica correctamente y de forma suficiente; partial: se menciona pero no se desarrolla o sólo se cubre una parte; missing: no se explica o es incorrecto. Para complete o partial incluí en evidence una cita literal de la respuesta ACTUAL del alumno, nunca de la referencia ni del profesor; en imágenes describí sólo lo observable. reason explica la cobertura o lo que faltó. No marques un aspecto completo por inferencia o por sólo nombrarlo. No elimines un aspecto porque el alumno lo omitió. Evaluá únicamente las relaciones propias de la materia indicada. En Economía naviera usá conceptos económicos y contractuales; no exijas circuitos, fluidos, componentes mecánicos ni transformaciones de energía. La referencia breve contiene mínimos y no sustituye el desarrollo expresamente pedido. Para el PDF o láminas evaluá exclusivamente los puntos enumerados, sin agregar la consigna genérica de otros temas. Mantenimiento y fallas sólo se exigen si están en esta lista. La nota final NO puede superar la fracción de aspectos cubiertos: complete=1, partial=0.5, missing=0; cada aspecto tiene el mismo peso. No se suman multas: se toma el menor valor entre rúbrica y cobertura. La velocidad no cambia esta lista. No repitas la pauta general de HDP en speech ni feedback: ya se mostró al iniciar el examen. Explicá las omisiones aunque la terminología usada en la parte respondida sea correcta.`}
 const normalize=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 function grade(answer,{card,text='',hasImage=false}){
  const required=requirements(card),checks=answer.hdpCoverage;
@@ -40,7 +34,7 @@ function grade(answer,{card,text='',hasImage=false}){
  answer.criteria=names.map((name,i)=>{
   const original=input.get(name),aspects=coverage.filter(c=>c.criterion===name);
   const ceiling=aspects.length?aspects.reduce((s,c)=>s+c.credit,0)/aspects.length*100:100;
-  return {name,value:Math.min(ceiling,Math.max(0,Math.min(100,original?.value||0))),applicable:mandatory.has(name)||((card?.pdfTopic||card?.visual)&&original?.applicable===true),reason:aspects.some(c=>c.credit<1)?aspects.filter(c=>c.credit<1).map(c=>c.label+': '+c.reason).join(' · ').slice(0,500):String(original?.reason||''),weight:weights[i]};
+  return {name,label:profiles.get(card?.subject||'termicas').labels[name],value:Math.min(ceiling,Math.max(0,Math.min(100,original?.value||0))),applicable:mandatory.has(name)||((card?.pdfTopic||card?.visual)&&original?.applicable===true),reason:aspects.some(c=>c.credit<1)?aspects.filter(c=>c.credit<1).map(c=>c.label+': '+c.reason).join(' · ').slice(0,500):String(original?.reason||''),weight:weights[i]};
  });
  const applicable=answer.criteria.filter(c=>c.applicable&&c.weight),total=applicable.reduce((s,c)=>s+c.weight,0);
  const rubricScore=total?applicable.reduce((s,c)=>s+c.value*c.weight,0)/total/10:0;

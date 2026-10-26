@@ -14,3 +14,5 @@
 .exam-followup{border-top:1px solid var(--line);margin-top:18px;padding-top:16px}.exam-followup label{display:block;font-size:12px;font-weight:600;margin-bottom:8px}.exam-followup textarea{width:100%;min-height:76px;resize:vertical;padding:12px;border:1px solid var(--line);border-radius:5px;background:#fff;font:inherit;font-size:13px}.exam-followup .exam-composer-actions{justify-content:flex-start;margin-top:8px}.review-answer{margin:0 0 10px}.followup-visual img{max-width:100%;max-height:380px;object-fit:contain}
 
 .technical-feedback{white-space:pre-line}
+
+.hdp-intro{padding:16px 18px;margin-bottom:18px;border-left:3px solid var(--green);background:var(--subject-soft);border-radius:8px}.hdp-intro p{margin-bottom:0;font-size:.9rem;line-height:1.6}
