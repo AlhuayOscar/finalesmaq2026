@@ -16,7 +16,7 @@ function syncFollowupRetryUI(){
  const active=followupRetry;
  for(const [id,action,label]of [['exam-followup-send','clarify','Preguntar al profesor'],['exam-revise-send','revise','Revisar nota seleccionada']]){
   const button=document.querySelector('#'+id);if(!button)continue;
-  const running=active?.action===action,text=running?'Detener reintento':label;
+  const running=active?.action===action,text=running?'Cancelar consulta':label;
   if(button.textContent!==text)button.textContent=text;
   button.disabled=!!active&&!running||exam.busy&&!running||!!exam.followupImageLoading||(action==='revise'&&!!exam.followupImage&&!running);if(action==='revise')button.hidden=selectedReviewIndex===null&&!running;
  }
@@ -24,7 +24,7 @@ function syncFollowupRetryUI(){
  document.querySelectorAll('[data-review-index]').forEach(b=>b.disabled=!!active);
  syncFollowupPhotoUI();
  const status=document.querySelector('#exam-followup-status');
- if(status){const text=active?(active.waiting?active.error+' Reintentando automáticamente · intento '+active.attempt+'. Volvé a tocar el botón para detener.':'Consultando al profesor · intento '+active.attempt+'. Volvé a tocar el botón para detener.'):(exam.followupStatus||'');if(status.textContent!==text)status.textContent=text}
+ if(status){const text=active?'Consultando al profesor. Volvé a tocar el botón para cancelar.':(exam.followupStatus||'');if(status.textContent!==text)status.textContent=text}
 }
 function renderFollowupPhoto(image){return image&&['image/png','image/jpeg','image/webp'].includes(image.mimeType)&&typeof image.data==='string'&&image.data.length>0&&image.data.length<=2800000&&/^[A-Za-z0-9+/]*={0,2}$/.test(image.data)?'<img class="followup-photo" alt="Foto enviada al profesor" src="data:'+image.mimeType+';base64,'+image.data+'">':''}
 function syncFollowupPhotoUI(){
@@ -64,7 +64,7 @@ async function sendExamFollowup(action){
  active.busy=true;active.error='';active.followupStatus='';active.followupDraft=draft;updateExam();syncFollowupRetryUI();
  try{
   const data=await job.run(async signal=>{const data=await professorRetryJSON('/api/exam',body,signal);if(typeof data.speech!=='string'||!Array.isArray(data.strengths)||!Array.isArray(data.improvements)||(action==='revise'&&!Number.isFinite(data.score)))throw Error('El profesor devolvió una respuesta incompleta.');return data});
-  if(!data||!isCurrent()){if(isCurrent())active.followupStatus='Reintento detenido. La consulta sigue disponible.';return}
+  if(!data||!isCurrent()){if(isCurrent())active.followupStatus=job.cancelled?'Consulta cancelada. La consulta sigue disponible.':job.error+' La consulta sigue disponible. Volvé a hacer clic para reintentar.';return}
   data.depthLabel=depthLabels[active.depth];
   if(action==='revise'){target.data.score=data.score;target.data.feedback=data.feedback;target.data.reference=data.reference;target.data.sources=data.sources;selectedReviewIndex=null;data.evaluated=false;data.revision=true;
    const item=active.reviewItems?.find(item=>item.planToken===target.data.attemptToken);if(item){item.score=data.score;item.feedback=data.feedback}

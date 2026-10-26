@@ -40,7 +40,7 @@ async function call(body,method='POST',origin='http://localhost'){
  assert.equal(context.exam.finished,true);assert.equal(context.exam.reviewItems.length,2);
  assert(context.exam.reviewItems.every(i=>i.status==='pending'&&i.score===undefined),'La falla del servidor no genera notas ni penalizaciones');
  let request;context.fetch=async(url,options)=>{request=JSON.parse(options.body);return {ok:false,json:async()=>({error:'Gemini saturado'})}};
- const pendingConsult=vm.runInContext('consultDeferredResolution(0)',context);await new Promise(setImmediate);assert(context.exam.reviewItems[0].error.includes('Reintentando'));await vm.runInContext('consultDeferredResolution(0)',context);await pendingConsult;assert(context.exam.reviewItems[0].error.includes('Reintento detenido'));assert.equal(context.exam.reviewItems[0].text,'Mi respuesta escrita');
+ await vm.runInContext('consultDeferredResolution(0)',context);assert(context.exam.reviewItems[0].error.includes('Volvé a hacer clic'));assert.equal(context.exam.busy,false);assert.equal(context.exam.reviewItems[0].text,'Mi respuesta escrita');
  context.fetch=async(url,options)=>{request=JSON.parse(options.body);return {ok:true,json:async()=>({questionId:queue[1].id,resolution:'Resolución segunda',transcript:''})}};
  await vm.runInContext('consultDeferredResolution(1)',context);
  assert.equal(request.planToken,queue[1].planToken);assert.equal(request.text,'Segunda respuesta');assert.equal(context.exam.reviewItems[1].resolution,'Resolución segunda');assert.equal(context.exam.reviewItems[0].resolution,undefined);

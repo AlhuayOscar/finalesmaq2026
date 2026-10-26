@@ -1,10 +1,9 @@
-// One cancellable request at a time per job; retries have no attempt limit.
+// One cancellable request per click. A failure never schedules another request.
 function createProfessorRetry({isCurrent,onState=()=>{}}){
  const job={attempt:0,error:'',waiting:false,cancelled:false,controller:null,timer:null,wake:null};
  job.cancel=()=>{job.cancelled=true;job.controller?.abort();clearTimeout(job.timer);job.wake?.();job.wake=null};
  job.run=async request=>{
-  let delay=2000;
-  while(!job.cancelled&&isCurrent()){
+  if(!job.cancelled&&isCurrent()){
    job.attempt++;job.waiting=false;job.controller=new AbortController();onState(job);
    const timeout=setTimeout(()=>job.controller?.abort(),55000);
    try{
@@ -14,12 +13,7 @@ function createProfessorRetry({isCurrent,onState=()=>{}}){
    }catch(e){
     if(job.cancelled||!isCurrent())return null;
     job.error=e.name==='AbortError'||e.name==='TimeoutError'?'El profesor tardó demasiado.':e.message||'No se pudo conectar con el profesor.';
-    job.waiting=true;onState(job);
-    // Respect server throttling without a tight retry loop.
-    const wait=Math.max(delay,Math.min(120000,Number(e.retryAfter)||0));
-    clearTimeout(timeout);
-    await new Promise(resolve=>{job.wake=resolve;job.timer=setTimeout(resolve,wait)});
-    job.wake=null;job.timer=null;delay=Math.min(30000,Math.round(delay*1.7));
+    onState(job);
    }finally{clearTimeout(timeout)}
   }
   return null;
