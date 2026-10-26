@@ -1,6 +1,6 @@
 // Schematic surfaces and connected paths share coordinates, including exploded view.
 const boilerVec={add:(a,b)=>a.map((x,i)=>x+b[i]),sub:(a,b)=>a.map((x,i)=>x-b[i]),mul:(a,n)=>a.map(x=>x*n)};
-function buildBoilerGeometry(type,explosion=0) {
+function buildBoilerGeometry(type,explosion=0,layers=new Set()) {
   const {add,sub,mul}=boilerVec, faces=[], paths=[], anchors={}, bounds={};
   const norm=a=>mul(a,1/Math.hypot(...a));
   const cross=(a,b)=>[a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]];
@@ -85,6 +85,7 @@ function buildBoilerGeometry(type,explosion=0) {
     paths.push({id:'furnace',kind:'gas',points:gases});
     if(type!=='D')paths.push({id:'furnace2',kind:'gas',points:[[.65,-.5,.2],[.85,.5,.2],[1.05,1.8,.2],[1.05,2.8,.2]]});
   }
+  addBoilerSystems(type,layers,{pipe,box,cylinder,face,paths});
   for(const [id,b]of Object.entries(bounds)){
     const center=mul(add(b.min,b.max),.5);
     // Attach leaders to an actual surface, not to empty space between grouped tubes.
