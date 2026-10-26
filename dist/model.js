@@ -1,10 +1,11 @@
 let yaw=-.38,pitch=.16,zoom=1,raf,drawn=[],canvas,ctx,W,H;
 let showLabels=true,focusPart=false,cutaway=false,flowKind='water',labelHits=[],geometryKey='',mesh;
+let lastModelFrame=0,lastStaticFrame='';
 const internalParts=new Set(['takeoff','separator','feed','desuperheater']);
 function partIds(){return [...boilerIds(model),...boilerLayerIds(activeBoilerLayers)]}
 function part(id){return boilerPart(id,model)}
 function renderWorkshop(){
-  window.stopModel?.();const t=types[model];
+  window.stopModel?.();if(window.startBoilerPractice&&boilerPractice.active){renderBoilerPractice();return}const t=types[model];
   if(model!=='catalog'&&!partIds().includes(selected))selected='upper';
   if(model==='simple'&&flowKind==='gas')flowKind='water';
   app.innerHTML=`<div class="workshop-head"><div><div class="eyebrow">LABORATORIO INTERACTIVO · CALDERAS ACUOTUBULARES</div><h1>Reconocé cada parte.<br><em>Seguí el recorrido.</em></h1></div><span class="lab-badge">3D · EXPLORACIÓN + MONTAJE</span></div><div class="model-tabs" aria-label="Tipos de caldera">${Object.entries(types).map(([id,t])=>`<button data-model="${id}" class="${model===id?'active':''}">${t.name}</button>`).join('')}</div>${model==='catalog'?catalog():workshopBody(t)}`;
@@ -22,12 +23,13 @@ function renderWorkshop(){
   for(const [id,get,set] of [['labels-toggle',()=>showLabels,v=>showLabels=v],['focus-toggle',()=>focusPart,v=>focusPart=v],['cut-toggle',()=>cutaway,v=>cutaway=v]])document.querySelector('#'+id).onclick=e=>{set(!get());e.currentTarget.setAttribute('aria-pressed',String(get()))};
   document.querySelector('#flow-select').onchange=e=>{flowKind=e.target.value;flow=flowKind!=='off'};
   document.querySelector('#restart')?.addEventListener('click',()=>{placed.clear();updateParts();document.querySelector('#feedback').textContent='Montaje reiniciado.'});
+  document.querySelector("#boiler-practice-open")?.addEventListener("click",()=>window.startBoilerPractice(model));
   updateParts();bindCanvas();bindBoilerSystems();raf=requestAnimationFrame(draw);
 }
 function workshopBody(t){
   const ref=boilerReference[model];
   return `<div class="model-intro"><div><h2>${t.name}</h2><p>${ref.feature}</p></div><div class="segmented"><button id="explore" class="${mode==='explore'?'active':''}">Explorar</button><button id="assemble" class="${mode==='assemble'?'active':''}">Armar caldera</button></div></div>
-  <div class="lab-layout"><section class="viewport"><div class="viewport-top"><span class="tag">CORTE DIDÁCTICO · SIN ESCALA</span><span id="counter"></span></div>
+  <div class="practice-cta"><p><strong>Antes de continuar: probá lo que reconocés.</strong><br>Identificá piezas, interpretá fallas y elegí el mantenimiento con referencias.</p><button id="boiler-practice-open">Practicar</button></div><div class="lab-layout"><section class="viewport"><div class="viewport-top"><span class="tag">CORTE DIDÁCTICO · SIN ESCALA</span><span id="counter"></span></div>
   ${currentBoilerFault()?`<div class="model-fault-banner"><strong>Rojo: ${currentBoilerFault().name}</strong><span>${currentBoilerFault().parts.length?'Zonas de estudio resaltadas; ver explicación debajo.':'Circuito externo: ver esquema debajo.'}</span></div>`:''}<canvas id="model-canvas" tabindex="0" aria-label="Caldera 3D. Arrastrá para girar, flechas para rotar, más y menos para zoom. Las piezas también se seleccionan en el inspector."></canvas>
   <div class="canvas-help">Arrastrá para girar · Tocá una pieza o su número · Rueda para zoom</div>
   <div class="viewport-tools"><button id="reset-view" class="secondary">↺ Vista inicial</button><button id="front-view" class="secondary">Vista frontal</button><button id="zoom-out" class="secondary" aria-label="Alejar">−</button><button id="zoom-in" class="secondary" aria-label="Acercar">+</button></div>
@@ -36,7 +38,7 @@ function workshopBody(t){
   <div class="explode-control"><label for="explode">Despiece</label><input id="explode" type="range" min="0" max="100" value="${explode*100}" aria-label="Separación de las piezas"><span>Montada ↔ Separada</span></div>
   <div class="legend"><span><i style="background:#367fc1"></i>Agua</span><span><i style="background:#ca8946"></i>Mezcla</span><span><i style="background:#ba5f7b"></i>Vapor</span><span><i style="background:#e57745"></i>Gases</span></div></section>
   <section class="parts-panel"><div class="eyebrow">${mode==='assemble'?'BANCO DE PIEZAS':'INSPECTOR DE COMPONENTES'}</div><p class="panel-help">${mode==='assemble'?'Elegí una pieza y tocá su ubicación. Los contornos muestran lo que falta.':'Cada número identifica una pieza del modelo. Seleccionala para ver su función, conexiones y referencia en el apunte.'}</p><div id="parts-list"></div><div id="part-detail" aria-live="polite"></div><div class="feedback" id="feedback" role="status"></div>${mode==='assemble'?'<button id="restart" class="secondary">Reiniciar montaje</button>':''}</section></div>
-  ${boilerSystemsPanel()}<div class="source-bar"><strong>Referencia del modelo</strong><p>Apunte «Máquinas Térmicas», páginas PDF ${ref.pages} (impresas ${ref.printed}). Los números del visor son propios; el inspector indica las referencias originales. Se simplifican tubos y accesorios. Envuelta retirada para ver el interior; no es un plano constructivo. ${model==='M'?'El sobrecalentador se representa como un conjunto, sin reproducir sus etapas.':''}</p><a href="${sources.book}" target="_blank" rel="noopener">Ampliar con Bobbio ↗</a></div>
+  ${boilerSystemsPanel()}<div class="source-bar"><strong>Referencia del modelo</strong><p>Apunte «Máquinas Térmicas», páginas PDF ${ref.pages} (impresas ${ref.printed}). Los números del visor son propios; el inspector indica las referencias originales. Se simplifican tubos y accesorios. Domos, bridas, volantes, motores y registros tienen geometría propia de pocos polígonos. La bomba de agua es una representación centrífuga genérica, no un diseño comercial específico. Referencias de forma: <a href="https://www.ksb.com/en-global/centrifugal-pump-lexicon/article/volute-casing-pump-1117514" target="_blank" rel="noopener">KSB · bombas</a> y <a href="https://www.spiraxsarco.com/learn-about-steam/the-boiler-house/boiler-fittings-and-mountings" target="_blank" rel="noopener">Spirax Sarco · accesorios</a>. Envuelta retirada para ver el interior; no es un plano constructivo. ${model==='M'?'El sobrecalentador se representa como un conjunto, sin reproducir sus etapas.':''}</p><a href="${sources.book}" target="_blank" rel="noopener">Ampliar con Bobbio ↗</a></div>
   <div class="study-strip"><div><h3>Explicá el recorrido.</h3><p>Distinguí agua, mezcla, vapor y gases. ¿Qué circula dentro de cada componente y qué intercambia calor por fuera?</p></div><a class="button" href="#profesor">Practicar el oral →</a></div>`;
 }
 function updateParts(){
@@ -61,7 +63,10 @@ function shade(hex,n){return 'rgb('+hex.match(/\w\w/g).map(x=>Math.min(255,Math.
 function visiblePart(id){return !(focusPart&&id!==selected)&&!(['separator','desuperheater'].includes(id)&&!cutaway)}
 function draw(time){
   if(!canvas?.isConnected)return;
+  if(time-lastModelFrame<32){raf=requestAnimationFrame(draw);return}lastModelFrame=time;
   const r=canvas.getBoundingClientRect(),dpr=Math.min(devicePixelRatio||1,2);W=r.width;H=r.height;
+  const staticKey=[model,explode,[...activeBoilerLayers],activeBoilerFault,yaw,pitch,zoom,showLabels,focusPart,cutaway,selected,W,H,mode,[...placed],window.startBoilerPractice&&boilerPractice.active?[...boilerPractice.picks]:[]].join('|');
+  if(!flow&&canvas.width===Math.round(W*dpr)&&lastStaticFrame===staticKey){raf=requestAnimationFrame(draw);return}lastStaticFrame=staticKey;
   if(canvas.width!==Math.round(W*dpr)||canvas.height!==Math.round(H*dpr)){canvas.width=Math.round(W*dpr);canvas.height=Math.round(H*dpr)}
   ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,W,H);ctx.strokeStyle='#d5e2d8';ctx.lineWidth=.6;
   for(let n=-3;n<=3;n++){const a=project([n,-1.9,-3]),b=project([n,-1.9,3]),c=project([-3,-1.9,n]),d=project([3,-1.9,n]);ctx.beginPath();ctx.moveTo(a[0],a[1]);ctx.lineTo(b[0],b[1]);ctx.moveTo(c[0],c[1]);ctx.lineTo(d[0],d[1]);ctx.stroke()}
@@ -69,7 +74,7 @@ function draw(time){
   drawn=mesh.faces.map(f=>({...f,p:f.v.map(project)})).map(f=>({...f,depth:f.p.reduce((s,p)=>s+p[2],0)/f.p.length})).sort((a,b)=>b.depth-a.depth);
   for(const f of drawn){
     if(f.internal&&!cutaway)continue;
-    const affected=boilerFaultAffected(f.id);const ghost=mode==='assemble'&&!placed.has(f.id),hot=f.id===selected,dim=focusPart&&!hot,glass=(f.id==='upper'&&cutaway)||f.id.startsWith('furnace');
+    const affected=boilerFaultAffected(f.id);const ghost=mode==='assemble'&&!placed.has(f.id),hot=window.startBoilerPractice?practiceHot(f.id):f.id===selected,dim=focusPart&&!hot,glass=(f.id==='upper'&&cutaway)||f.id.startsWith('furnace');
     ctx.beginPath();f.p.forEach((p,i)=>i?ctx.lineTo(p[0],p[1]):ctx.moveTo(p[0],p[1]));ctx.closePath();ctx.globalAlpha=dim?.035:ghost?.08:glass?(affected?.26:.1):1;
     ctx.fillStyle=shade(affected?'#d43b31':part(f.id)[1],hot?f.shade+.15:f.shade);ctx.fill();ctx.globalAlpha=dim?.04:ghost?.25:glass?.2:.5;ctx.strokeStyle=hot?'#143f3d':shade(part(f.id)[1],.7);ctx.lineWidth=hot?.85:.22;ctx.stroke();
   }
@@ -86,7 +91,7 @@ function drawLabels(){
   labelHits=[];if(!showLabels)return;const ids=partIds().filter(id=>visiblePart(id)),sides=[[],[]];
   ids.map(id=>({id,p:project(mesh.anchors[id])})).sort((a,b)=>a.p[0]-b.p[0]).forEach((item,i)=>sides[i<Math.ceil(ids.length/2)?0:1].push(item));
   sides.forEach((items,side)=>{items.sort((a,b)=>a.p[1]-b.p[1]);items.forEach(({id,p},i)=>{
-    const x=side?W-27:27,y=65+(H-110)*(i+.5)/Math.max(1,items.length),hot=id===selected;ctx.globalAlpha=mode==='assemble'&&!placed.has(id)?.5:1;
+    const x=side?W-27:27,y=65+(H-110)*(i+.5)/Math.max(1,items.length),hot=window.startBoilerPractice?practiceHot(id):id===selected;ctx.globalAlpha=mode==='assemble'&&!placed.has(id)?.5:1;
     ctx.strokeStyle=boilerFaultAffected(id)?'#c43229':hot?'#163e3c':'#8a9e96';ctx.lineWidth=hot?1.4:.7;ctx.beginPath();ctx.moveTo(p[0],p[1]);ctx.lineTo(x+(side?-17:17),y);ctx.lineTo(x,y);ctx.stroke();ctx.beginPath();ctx.arc(p[0],p[1],2.5,0,Math.PI*2);ctx.fillStyle=part(id)[1];ctx.fill();
     ctx.beginPath();ctx.arc(x,y,13,0,Math.PI*2);ctx.fillStyle=boilerFaultAffected(id)?'#c43229':hot?'#163e3c':'#fffff7';ctx.fill();ctx.stroke();ctx.fillStyle=hot||boilerFaultAffected(id)?'#fff':'#163e3c';ctx.font='bold 11px system-ui';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(String(partIds().indexOf(id)+1),x,y);labelHits.push({id,x,y});
   })});ctx.globalAlpha=1;
@@ -96,12 +101,12 @@ function bindCanvas(){
   let last=null,start=null,moved=false;canvas.onpointerdown=e=>{last=[e.clientX,e.clientY];start=last;moved=false;canvas.setPointerCapture(e.pointerId)};
   canvas.onpointermove=e=>{if(!last)return;if(Math.hypot(e.clientX-start[0],e.clientY-start[1])>5)moved=true;yaw+=(e.clientX-last[0])*.008;pitch=Math.max(-.7,Math.min(.9,pitch+(e.clientY-last[1])*.006));last=[e.clientX,e.clientY]};
   canvas.onpointerup=e=>{last=null;if(moved)return;const r=canvas.getBoundingClientRect(),p=[e.clientX-r.left,e.clientY-r.top],marker=labelHits.find(h=>Math.hypot(p[0]-h.x,p[1]-h.y)<16),hits=[...drawn].reverse().filter(f=>visiblePart(f.id)&&inside(p,f.p));
-    const hit=marker||hits.filter(f=>!f.internal||cutaway).find(f=>!f.id.startsWith('furnace')&&!(f.id==='upper'&&cutaway))||hits.find(f=>!f.internal||cutaway);if(!hit)return;if(mode==='assemble')place(hit.id);else{selected=hit.id;if(internalParts.has(selected)){cutaway=true;document.querySelector('#cut-toggle').setAttribute('aria-pressed','true')}updateParts()}
+    const hit=marker||hits.filter(f=>!f.internal||cutaway).find(f=>!f.id.startsWith('furnace')&&!(f.id==='upper'&&cutaway))||hits.find(f=>!f.internal||cutaway);if(!hit)return;if(window.startBoilerPractice&&boilerPractice.active){practicePartSelected(hit.id);return}if(mode==='assemble')place(hit.id);else{selected=hit.id;if(internalParts.has(selected)){cutaway=true;document.querySelector('#cut-toggle').setAttribute('aria-pressed','true')}updateParts()}
   };
   canvas.onpointercancel=()=>last=null;canvas.onwheel=e=>{e.preventDefault();zoom=Math.max(.55,Math.min(1.7,zoom-e.deltaY*.001))};
   canvas.onkeydown=e=>{if(['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','+','-','='].includes(e.key)){e.preventDefault();if(e.key==='ArrowLeft')yaw-=.12;if(e.key==='ArrowRight')yaw+=.12;if(e.key==='ArrowUp')pitch=Math.min(.9,pitch+.1);if(e.key==='ArrowDown')pitch=Math.max(-.7,pitch-.1);if(e.key==='+'||e.key==='=')zoom=Math.min(1.7,zoom+.1);if(e.key==='-')zoom=Math.max(.55,zoom-.1)}};
 }
-window.stopModel=()=>cancelAnimationFrame(raf);
+window.stopModel=()=>{cancelAnimationFrame(raf);lastStaticFrame='';lastModelFrame=0};
 
 function catalog(){return `<div class="page-top"><h2>Tipos encontrados en Bobbio</h2><p class="lead">Estas fichas organizan lo que sigue. Los modelos 3D disponibles son los de las pestañas anteriores.</p></div><div class="grid">${[['Tubos rectos','Capítulo 3 · desde p. 15','Cabezal y tubos rectos: otra disposición de caldera acuotubular.'],['ESD II · Foster Wheeler','Capítulo 6 · desde p. 39','Caldera con sobrecalentador externo.'],['MR y M12 · Babcock & Wilcox','Capítulo 7 · pp. 51–55','Diseños radiantes descritos en el libro.'],['V2M y V2M8 · Combustion Engineering','Capítulo 7 · pp. 55–61','Variantes con sobrecalentador vertical.'],['Circuitos UR y UB · Kawasaki','Capítulo 7 · pp. 61–69','Circuitos de alta eficiencia y recalentamiento.'],['¿Tipo W?','Pendiente de verificar','No se confirmó esta denominación en el índice consultado. No se presenta como tipo validado.']].map(([title,ref,text])=>`<article class="card"><span class="tag ${title.includes('W?')?'pending':''}">${title.includes('W?')?'POR CONFIRMAR':'REFERENCIA LOCALIZADA'}</span><h3>${title}</h3><p>${text}</p><p class="source">${ref}</p></article>`).join('')}</div><p class="source"><a href="${sources.book}" target="_blank" rel="noopener">Ver índice y capítulos en Bobbio ↗</a></p>`}
 

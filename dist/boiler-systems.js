@@ -58,25 +58,31 @@ const boilerFaults=[
 ];
 function boilerLayerIds(layers){return [...new Set([...layers].flatMap(k=>boilerLayers[k]?.ids||[]))]}
 function boilerFaultParts(f,type){return f.parts.filter(id=>[...boilerIds(type),...boilerLayerIds(f.layers)].includes(id))}
-function addBoilerSystems(type,layers,{pipe,box,cylinder,face,paths}){
+function addBoilerSystems(type,layers,{pipe,box,cylinder,face,paths,lathe,ring,valve}){
  const sx=type==='D'?.5:0,hx=type==='simple'?-.48:type==='A'?-.65:type==='M'?-1.1:-.8;
  if(layers.has('fuel')){
-  box([-2.7,-1.1,1.4],[.5,.65,.5],'fuelTank');
+  cylinder([-2.7,-1.42,1.4],[-2.7,-.8,1.4],.26,'fuelTank');
   cylinder([-2.7,-.55,1.25],[-2.7,-.55,1.55],.17,'fuelPump');
-  box([-2.7,.05,1.4],[.32,.38,.3],'fuelHeater');box([-2.7,.65,1.4],[.25,.28,.25],'fuelFilter');
-  box([-2.1,.65,1.4],[.24,.2,.24],'fuelValve');
+  cylinder([-2.7,-.17,1.4],[-2.7,.27,1.4],.16,'fuelHeater');
+  for(const y of [-.17,.25])cylinder([-2.7,y,1.4],[-2.7,y+.03,1.4],.19,'fuelHeater');
+  cylinder([-2.7,.5,1.4],[-2.7,.79,1.4],.13,'fuelFilter');cylinder([-2.7,.78,1.4],[-2.7,.82,1.4],.16,'fuelFilter');
+  valve([-2.1,.65,1.4],'fuelValve',false);
+  cylinder([-2.7,-.55,1.55],[-2.7,-.55,1.83],.12,'fuelPump');box([-2.7,-.75,1.55],[.35,.08,.6],'fuelPump');
   pipe([[-2.7,-1.1,1.4],[-2.7,.65,1.4],[-1.8,.65,1.4],[-1.8,-.85,1.4],[hx,-.85,1.4]],.035,'fuelLine','fuel');
   const burners=type==='simple'?[[hx,-.85]]:(type==='D'?[hx]:[hx,.65]).flatMap(x=>[-.85,-.4].map(y=>[x,y]));
   for(const [x,y]of burners){
    pipe([[hx,-.85,1.4],[x,-.85,1.4],...(y===-.85?[]:[[x,y,1.4]])].filter((p,i,a)=>!i||p.some((v,j)=>v!==a[i-1][j])),.025,'fuelLine');
    cylinder([x,y,1.35],[x,y,1.27],.24,'airRegister');
+   ring([x,y,1.38],.25,'airRegister');
+   for(let i=0;i<8;i++){const a=i*Math.PI/4;face([[x+.12*Math.cos(a),y+.12*Math.sin(a),1.36],[x+.23*Math.cos(a+.2),y+.23*Math.sin(a+.2),1.36],[x+.23*Math.cos(a+.45),y+.23*Math.sin(a+.45),1.29]],'airRegister',.85)}
    cylinder([x,y,1.26],[x,y,.86],.07,'atomizer');
-   for(let i=0;i<8;i++){const a=i*Math.PI/4,b=(i+1)*Math.PI/4;face([[x,y,.86],[x+.16*Math.cos(a),y+.16*Math.sin(a),.45],[x+.16*Math.cos(b),y+.16*Math.sin(b),.45]],'atomizer',.9);face([[x,y,-.6],[x+.21*Math.cos(a),y+.21*Math.sin(a),.42],[x+.21*Math.cos(b),y+.21*Math.sin(b),.42]],'flame',.8+i*.03);}
+   lathe([x,y,0],[[.86,.02],[.7,.07],[.45,.16]],'atomizer');
+   lathe([x,y,0],[[-.7,0],[-.45,.09],[-.1,.2],[.2,.23],[.42,.12]],'flame');
   }
  }
  if(layers.has('controls')){
-  pipe([[sx,1.65,-.65],[sx,2,-.65],[sx+.3,2,-.65]],.07,'safetyValve');box([sx,1.85,-.65],[.22,.23,.22],'safetyValve');
-  const stop=type==='simple'?[sx+.45,2.15,.35]:[1.65,.8,1.3];box(stop,[.25,.22,.25],'steamStop');
+  pipe([[sx,1.65,-.65],[sx,2,-.65],[sx+.3,2,-.65]],.07,'safetyValve');cylinder([sx,1.8,-.65],[sx,2.25,-.65],.11,'safetyValve');cylinder([sx,1.8,-.65],[sx,1.84,-.65],.16,'safetyValve');
+  const stop=type==='simple'?[sx+.45,2.15,.35]:[1.65,.8,1.3];valve(stop,'steamStop');
   pipe([[sx,1.5,-.9],[2.45,1.5,-.9]],.018,'pressureSwitch');box([2.45,1.5,-.9],[.32,.32,.22],'pressureSwitch');
   box([-2.7,.05,1.75],[.23,.22,.18],'temperatureControl');
   pipe([[sx,1.57,1.05],[sx+.55,1.57,1.05],[sx+.55,.95,1.05],[sx,1.15,1.05]],.035,'levelControl');
@@ -89,7 +95,11 @@ function addBoilerSystems(type,layers,{pipe,box,cylinder,face,paths}){
   if(layers.has('water'))paths.push({id:'levelControl',kind:'control',points:[[sx+.55,1.3,1.05],[2.65,1.3,1.05],[2.65,-.6,.68]]});
  }
  if(layers.has('water')){
-  cylinder([2.65,-1.4,.5],[2.65,-1.4,.85],.22,'feedPump');box([2.65,-.6,.68],[.25,.25,.25],'feedValve');
+  // Representative centrifugal casing, coupling, motor and base; not a manufacturer model.
+  lathe([2.65,-1.4,0],[[.45,.12],[.52,.23],[.72,.25],[.85,.18]],'feedPump');
+  cylinder([2.65,-1.4,.85],[2.65,-1.4,1.02],.07,'feedPump');cylinder([2.65,-1.4,1.02],[2.65,-1.4,1.45],.17,'feedPump');
+  for(const z of [1.06,1.18,1.3,1.42])ring([2.65,-1.4,z],.18,'feedPump');
+  box([2.65,-1.68,1],[.55,.08,1.05],'feedPump');valve([2.65,-.6,.68],'feedValve');
   const target=type==='simple'?[sx,1.23,-.95]:[type==='D'?1.05:.65,1.8,-.15];
   pipe([[2.65,-1.4,.68],[2.65,-.6,.68],[2.65,1.8,.68],target],.045,'feedValve','water');
   for(const x of type==='A'?[-1.5,1.5]:type==='M'?[0,1.5]:[sx]){pipe([[x,-1.55,.8],[x,-2,.8],[2,-2,.8]],.045,'bottomBlow','blow');box([x,-1.8,.8],[.18,.18,.18],'bottomBlow');}

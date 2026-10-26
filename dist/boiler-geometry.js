@@ -14,21 +14,47 @@ function buildBoilerGeometry(type,explosion=0,layers=new Set()) {
     for(const p of points)for(let i=0;i<3;i++){bounds[id].min[i]=Math.min(bounds[id].min[i],p[i]);bounds[id].max[i]=Math.max(bounds[id].max[i],p[i]);}
   }
   function cylinder(a,b,r,id,cut=false) {
-    const dir=norm(sub(b,a)),u=norm(cross(dir,Math.abs(dir[1])>.95?[1,0,0]:[0,1,0])),v=cross(dir,u),n=16,A=[],B=[];
+    const dir=norm(sub(b,a)),u=norm(cross(dir,Math.abs(dir[1])>.95?[1,0,0]:[0,1,0])),v=cross(dir,u),n=r>.1?20:10,A=[],B=[];
     for(let i=0;i<n;i++){const off=add(mul(u,r*Math.cos(i*2*Math.PI/n)),mul(v,r*Math.sin(i*2*Math.PI/n)));A.push(add(a,off));B.push(add(b,off));}
     for(let i=0;i<n;i++)face([A[i],A[(i+1)%n],B[(i+1)%n],B[i]],id,.64+.23*Math.sin(i*2*Math.PI/n));
     face(A,id,.85);if(!cut)face(B,id,.9);
   }
   function pipe(points,r,id,kind) {
-    for(let i=1;i<points.length;i++)cylinder(points[i-1],points[i],r,id);
+    const smooth=points.length?[points[0]]:[];
+    for(let i=1;i<points.length-1;i++){
+      const a=points[i-1],b=points[i],c=points[i+1],d=Math.min(r*2.5,Math.hypot(...sub(a,b))*.22,Math.hypot(...sub(c,b))*.22);
+      if(!d){smooth.push(b);continue}
+      const p=add(b,mul(norm(sub(a,b)),d)),q=add(b,mul(norm(sub(c,b)),d));smooth.push(p);
+      for(let k=1;k<=3;k++){const t=k/3;smooth.push(add(add(mul(p,(1-t)**2),mul(b,2*t*(1-t))),mul(q,t*t)))}
+    }
+    if(points.length>1)smooth.push(points.at(-1));
+    for(let i=1;i<smooth.length;i++)if(Math.hypot(...sub(smooth[i],smooth[i-1]))>1e-8)cylinder(smooth[i-1],smooth[i],r,id);
     if(kind)paths.push({id,kind,points:points.map(p=>shift(p,id))});
+  }
+  // Surfaces of revolution: dished heads and tapered bodies, with a modest polygon budget.
+  function lathe(c,profile,id){
+    const rings=profile.map(([z,r])=>Array.from({length:20},(_,i)=>[c[0]+r*Math.cos(i*Math.PI/10),c[1]+r*Math.sin(i*Math.PI/10),c[2]+z]));
+    for(let j=1;j<rings.length;j++)for(let i=0;i<20;i++)face([rings[j-1][i],rings[j-1][(i+1)%20],rings[j][(i+1)%20],rings[j][i]],id,.7+.2*Math.sin(i*Math.PI/10));
+  }
+  function ring(c,r,id,axis='z'){
+    const pts=Array.from({length:21},(_,i)=>{const a=i*Math.PI/10;return axis==='y'?[c[0]+r*Math.cos(a),c[1],c[2]+r*Math.sin(a)]:[c[0]+r*Math.cos(a),c[1]+r*Math.sin(a),c[2]]});
+    for(let i=1;i<pts.length;i++)cylinder(pts[i-1],pts[i],.018,id);
+  }
+  function valve(c,id,manual=true){
+    const [x,y,z]=c;cylinder([x-.15,y,z],[x+.15,y,z],.09,id);
+    for(const dx of [-.15,.15])cylinder([x+dx-.025,y,z],[x+dx+.025,y,z],.135,id);
+    cylinder([x,y,z],[x,y+.17,z],.07,id);cylinder([x,y+.17,z],[x,y+.32,z],.026,id);
+    if(manual){ring([x,y+.33,z],.15,id,'y');for(const dx of [-.15,.15])cylinder([x,y+.33,z],[x+dx,y+.33,z],.015,id)}
+    else cylinder([x,y+.2,z],[x,y+.38,z],.085,id);
   }
   function box(c,size,id){const [a,b,d]=size.map(x=>x/2);const v=[[-a,-b,-d],[a,-b,-d],[a,b,-d],[-a,b,-d],[-a,-b,d],[a,-b,d],[a,b,d],[-a,b,d]].map(p=>add(p,c));[[0,1,2,3],[4,5,6,7],[0,1,5,4],[3,2,6,7],[1,2,6,5],[0,3,7,4]].forEach((f,i)=>face(f.map(k=>v[k]),id,.65+i*.045));}
   function coil(x,y,w,h,id,kind,z=0){const pts=[];for(let i=0;i<8;i++){const yy=y+h*i/7;pts.push([x+(i%2?w:0),yy,z],[x+(i%2?0:w),yy,z]);}pipe(pts,.045,id,kind);return pts;}
   const sx=type==='D'? .5:0, top=[sx,1.35,0];
   cylinder([sx,1.35,-1.15],[sx,1.35,1.15],.36,'upper');
+  for(const end of [-1,1])lathe([sx,1.35,0],[[end*1.15,.36],[end*1.22,.33],[end*1.29,.23],[end*1.33,0]],'upper');
+  for(const z of [-.85,.85])ring([sx,1.35,z],.365,'upper');
   const lowers=type==='A'?[[-1.5,'lower'],[1.5,'lower2']]:type==='M'?[[0,'lower'],[1.5,'lower2']]:[[sx,'lower']];
-  for(const [x,id]of lowers)cylinder([x,-1.35,-1.1],[x,-1.35,1.1],.24,id);
+  for(const [x,id]of lowers){cylinder([x,-1.35,-1.1],[x,-1.35,1.1],.24,id);for(const end of [-1,1])lathe([x,-1.35,0],[[end*1.1,.24],[end*1.18,.2],[end*1.23,0]],id)}
   for(const [x]of lowers){
     for(let z=-.95;z<=1;z+=.19){
       const mid=type==='D'?x+.37:x;
@@ -46,6 +72,8 @@ function buildBoilerGeometry(type,explosion=0,layers=new Set()) {
     for(const x of type==='D'?[hx]:[hx,.65])for(const y of [-.85,-.4]){
       cylinder([x,y,1.35],[x,y,.9],.14,'burner');
       cylinder([x,y,1.42],[x,y,1.34],.2,'burner');
+      lathe([x,y,0],[[.92,.14],[1.12,.19],[1.32,.19],[1.43,.12]],'burner');
+      ring([x,y,1.35],.205,'burner');
     }
     const headerX=type==='A'?0:-1.9;
     cylinder([headerX,-1.6,-1.1],[headerX,-1.6,1.1],.11,'header');
@@ -85,7 +113,7 @@ function buildBoilerGeometry(type,explosion=0,layers=new Set()) {
     paths.push({id:'furnace',kind:'gas',points:gases});
     if(type!=='D')paths.push({id:'furnace2',kind:'gas',points:[[.65,-.5,.2],[.85,.5,.2],[1.05,1.8,.2],[1.05,2.8,.2]]});
   }
-  addBoilerSystems(type,layers,{pipe,box,cylinder,face,paths});
+  addBoilerSystems(type,layers,{pipe,box,cylinder,face,paths,lathe,ring,valve});
   for(const [id,b]of Object.entries(bounds)){
     const center=mul(add(b.min,b.max),.5);
     // Attach leaders to an actual surface, not to empty space between grouped tubes.
