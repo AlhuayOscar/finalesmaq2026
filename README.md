@@ -84,3 +84,9 @@ Los desarrollos son ayudas didácticas; los modelos no son planos constructivos.
 Simulacro y HDP incorporan 90 consignas (dos enfoques para 45 títulos), con páginas verificadas del PDF de Fernandez Hanna Jorge Gabriel. Se mezclan con el banco existente dentro de la unidad elegida. Práctica acompañada conserva su banco. Cada tema define dos criterios básicos, tres en Simulacro (+50 %) y cuatro en HDP (+100 %); los porcentajes describen cantidad de criterios, no una medición objetiva de dificultad. La velocidad modifica la devolución, no elimina criterios del nuevo banco. Las referencias revisadas aclaran contradicciones del apunte y no convierten valores o maniobras históricas en procedimientos universales.
 
 Verificación: `node tests/thermal-pdf.cjs`.
+
+## Precisión en HDP
+
+HDP exige relaciones técnicas explícitas y revisa términos vagos y afirmaciones agregadas. La devolución cita la respuesta y separa precisión técnica, qué se dijo de más y qué faltó; distingue errores de contenido correcto innecesario, que no se penaliza. Precisión tiene peso 30; concepto 15, componentes 10, funcionamiento 20, conexiones 15, mantenimiento y fallas 5 cada uno. Se normalizan únicamente los criterios aplicables. La política también se envía al revisar notas y se conserva en velocidad rápida.
+
+Verificación: `node tests/hdp-precision.cjs` (Gemini simulado; no acredita la calidad de respuestas del modelo real).
