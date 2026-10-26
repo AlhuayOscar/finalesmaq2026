@@ -1,8 +1,8 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
-const nodes=new Map(),store=new Map(),revoked=[];let requests=0;
-const node=id=>{if(!nodes.has(id))nodes.set(id,{value:'',hidden:false,disabled:false,innerHTML:'',textContent:'',scrollHeight:0});return nodes.get(id)};
+const nodes=new Map(),store=new Map(),revoked=[];let requests=0,zenLeaves=0;
+const node=id=>{if(!nodes.has(id))nodes.set(id,{value:'',hidden:false,disabled:false,innerHTML:'',textContent:'',scrollHeight:0,querySelector:()=>({})});return nodes.get(id)};
 const context={location:{hash:'#test'},console,units:[],URL:{revokeObjectURL:s=>revoked.push(s)},AbortController,AbortSignal,setTimeout,clearTimeout,setInterval,clearInterval,atob,currentSubject:'termicas',maqAccount:{user:{id:'a'},loading:false},navigator:{},navalSubjects:{termicas:{name:'Máquinas Térmicas',icon:'T'}},coursePractice:{termicas:{basis:'programa'}},app:{innerHTML:''},head:()=>'',progressMarkup:()=>'',esc:s=>String(s),document:{getElementById:node,querySelectorAll:()=>[]},window:null,fetch:async()=>{requests++;throw Error('Salir no debe llamar al servidor')}};
-context.window=context;vm.createContext(context);
+context.window=context;context.leaveProfessorZen=()=>zenLeaves++;vm.createContext(context);
 vm.runInContext(fs.readFileSync(require.resolve('../dist/professor-retry.js'),'utf8'),context);
 vm.runInContext(fs.readFileSync(require.resolve('../dist/profesor.js'),'utf8'),context);
 vm.runInContext(fs.readFileSync(require.resolve('../dist/deferred-exam.js'),'utf8'),context);
@@ -15,13 +15,14 @@ async function flush(){for(let i=0;i<15;i++)await Promise.resolve()}
  for(const level of ['acompanado','examen','hdp']){
   set(`exam=createExamState({started:true,level:'${level}',unit:2,scope:'completo',speed:'sobrepensada',planToken:'old',reviewQueue:[{id:'old'}],reviewItems:[{text:'Borrador'}],messages:[],blobURL:'blob:audio',imageURL:'blob:photo',draft:'Borrador'})`);
   store.set('a:termicas',{reviewQueue:[{id:'old'}],started:true});
-  await context.exitProfessorExam();
+  context.renderProfessor();await node('exam-exit-top').onclick();
   assert.equal(get('exam.started'),false);assert.equal(get('exam.finished'),false);assert.equal(get('exam.planToken'),null);assert.equal(get('exam.messages.length'),0);assert.equal(get('exam.reviewItems.length'),0);
   assert.equal(get('exam.level'),level);assert.equal(get('exam.unit'),2);assert.equal(get('exam.speed'),'sobrepensada');
   assert.equal(node('exam-unit').disabled,false);assert.equal(node('exam-level').disabled,false);assert.equal(node('exam-scope').disabled,false);assert.equal(node('exam-speed').disabled,false);assert.equal(node('exam-start').disabled,false);
   assert.equal(node('exam-start').textContent,'Comenzar examen');assert.equal(node('exam-exit').hidden,true);assert(context.app.innerHTML.includes('class="exam-exit"'));assert(node('exam-notice').textContent.includes('sin generar una nota final'));
   assert.equal(store.get('a:termicas'),null);await context.restoreDeferredExam('a:termicas');assert.equal(get('exam.started'),false);
  }
+ assert.equal(zenLeaves,3,'El botón superior sale también de ZEN');await context.exitProfessorExam();assert.equal(zenLeaves,4,'Se puede salir de ZEN antes de comenzar');
  assert(revoked.includes('blob:audio'));assert(revoked.includes('blob:photo'));assert.equal(requests,0,'Salir no manda finish, skip ni answer');
  // A queued snapshot must be cleared after the old write completes.
  set("exam=createExamState({started:true,reviewQueue:[{id:'old'}],planToken:'old'})");

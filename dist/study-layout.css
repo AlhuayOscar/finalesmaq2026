@@ -1,0 +1,26 @@
+.sidebar-toggle{position:fixed;top:12px;left:12px;z-index:60;min-height:40px;padding:9px 12px;border:1px solid #ffffff80;border-radius:8px;background:var(--subject-sidebar,var(--green));color:#fff;font:600 12px 'DM Sans',sans-serif;cursor:pointer}
+body>aside{padding-top:76px}
+body.sidebar-collapsed>aside{display:none}
+body.sidebar-collapsed>main{margin-left:0;max-width:none}
+body.sidebar-collapsed>main>header{padding-left:145px;gap:12px}
+.professor-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;color:var(--green)}
+.professor-toolbar>strong{font-size:13px;line-height:1.5}
+.professor-toolbar-actions{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.professor-toolbar #exam-exit-top{display:none}
+.professor-toolbar .exam-exit{background:#b42336;color:#fff;border:2px solid #ffabb6;border-radius:8px;min-height:44px;padding:9px 16px;font-weight:750;cursor:pointer}
+.professor-toolbar .exam-exit:hover{background:#8c1425}
+body.professor-zen>aside,body.professor-zen>.sidebar-toggle,body.professor-zen>main>header,body.professor-zen #topics,body.professor-zen>main>footer,body.professor-zen #app>.page-top,body.professor-zen #learning-progress{display:none!important}
+body.professor-zen>main{margin-left:0;max-width:none;padding:0 24px 24px}
+.professor-zen .professor-toolbar{position:sticky;top:0;z-index:40;min-height:68px;background:var(--paper);border-bottom:1px solid var(--line);margin-bottom:18px}
+.professor-zen .professor-toolbar #exam-exit-top{display:inline-flex;align-items:center}
+.professor-zen #exam-zen-open,.professor-zen #exam-exit{display:none!important}
+.professor-zen .exam-shell{grid-template-columns:280px minmax(0,1fr);gap:20px}
+.professor-zen .exam-settings{display:block;position:sticky;top:86px;max-height:calc(100dvh - 110px);overflow-y:auto}
+.professor-zen .exam-settings .teacher-icon,.professor-zen .exam-privacy,.professor-zen .corpus-note,.professor-zen .exam-settings>.text-link{display:none}
+.professor-zen .exam-settings h2{font-size:17px;margin-top:0}
+.professor-zen .exam-conversation{min-height:calc(100dvh - 110px)}
+.professor-zen .exam-messages{max-height:60dvh;min-height:30dvh}
+@media(max-width:900px){.professor-zen .exam-shell{grid-template-columns:1fr}.professor-zen .exam-settings{position:static;max-height:none}.professor-zen .exam-conversation{min-height:60dvh}}
+@media(max-width:700px){body.sidebar-collapsed>main>header{padding-left:140px}body.sidebar-collapsed>main>header>span{display:none}body.sidebar-collapsed>main>header .account-badge{margin-left:auto}body.professor-zen>main{padding:0 12px 16px}.professor-toolbar{gap:8px}.professor-toolbar>strong{font-size:11px}.professor-toolbar-actions{gap:6px}.professor-toolbar .exam-exit{font-size:12px;padding:8px 10px}}
+
+@media(max-width:700px){.professor-toolbar{flex-wrap:wrap}.professor-toolbar-actions{flex-wrap:wrap;justify-content:flex-end;max-width:100%;margin-left:auto}}

@@ -1,0 +1,13 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const classes=new Set(),saved=new Map(),attributes={};
+const button={setAttribute:(k,v)=>attributes[k]=v},sidebar={};
+const context={window:null,location:{hash:'#taller'},localStorage:{getItem:k=>saved.get(k),setItem:(k,v)=>saved.set(k,v)},document:{body:{classList:{toggle(k,on){on?classes.add(k):classes.delete(k)}}},getElementById:id=>id==='sidebar-toggle'?button:sidebar}};context.window=context;
+vm.createContext(context);vm.runInContext(fs.readFileSync(require.resolve('../dist/study-layout.js'),'utf8'),context);
+assert.equal(attributes['aria-expanded'],'true');button.onclick();assert(classes.has('sidebar-collapsed'));assert.equal(saved.get('naval-sidebar-collapsed-v1'),'1');assert(sidebar.inert);
+context.location.hash='#profesor';context.syncStudyLayout('profesor');assert(classes.has('professor-zen'));assert.equal(attributes['aria-expanded'],'false');
+context.leaveProfessorZen();assert(!classes.has('professor-zen'));assert(classes.has('sidebar-collapsed'),'Salir de ZEN conserva la preferencia del menú');context.syncStudyLayout('profesor');assert(!classes.has('professor-zen'),'Una actualización del examen no vuelve a activar ZEN después de salir');
+context.enterProfessorZen();assert(classes.has('professor-zen'));
+context.location.hash='#cuenta';context.syncStudyLayout('cuenta');assert(!classes.has('professor-zen'),'Cuenta y otras secciones recuperan la navegación');
+context.location.hash='#profesor';context.syncStudyLayout('profesor');assert(classes.has('professor-zen'));
+context.leaveProfessorZen();button.onclick();assert(!classes.has('sidebar-collapsed'));assert.equal(attributes['aria-expanded'],'true');assert.equal(sidebar.inert,false);
+console.log('OK: barra colapsable persistente, ZEN automático por ruta, salida y reentrada explícita sin perder la preferencia del menú.');

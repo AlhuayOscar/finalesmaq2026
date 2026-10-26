@@ -114,3 +114,7 @@ La pauta se entrega en `hdpIntro` sólo al comenzar un examen, se muestra en un 
 El botón rojo «Salir del examen» cierra la práctica local y libera modalidad, unidad, alcance y velocidad para comenzar otra. No llama a `finish`, `skip` ni `answer`: no crea una nota final ni registra una omisión por salir. Los intentos que ya se corrigieron conservan su registro. Detiene grabación, voz y peticiones del navegador, descarta borradores y limpia la copia local del examen; las respuestas o restauraciones tardías no pueden reabrirlo ni cambiar la configuración nueva. Si el guardado local falla, se informa para reemplazar la copia antes de recargar. Verificación: `node tests/exam-exit.cjs`.
 
 Prueba del envío automático y cancelable del oral: `node tests/oral-retry.cjs`. Salir del examen o continuar sin IA cancela el envío automático.
+
+## Barra lateral y modo ZEN
+
+«Ocultar menú / Mostrar menú» colapsa la barra lateral y recuerda la preferencia en este navegador. Entrar en Profesor IA activa ZEN: sólo quedan el chat, sus opciones de examen y una barra superior con «Salir del examen» a la derecha. Salir cierra la práctica sin una evaluación adicional, recupera la navegación y conserva la preferencia previa del menú. Se puede volver a activar ZEN con su botón o al comenzar otro examen. La ruta de cuenta conserva la navegación y, sin sesión iniciada, ZEN muestra el acceso para ingresar. Verificación: `node tests/study-layout.cjs` y `node tests/exam-exit.cjs`.
