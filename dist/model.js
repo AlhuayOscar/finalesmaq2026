@@ -1,6 +1,16 @@
 let yaw=-.38,pitch=.16,zoom=1,raf,drawn=[],canvas,ctx,W,H;
 let showLabels=true,focusPart=false,cutaway=false,flowKind='water',labelHits=[],geometryKey='',mesh;
 let lastModelFrame=0,lastStaticFrame='';
+let modelPartTooltip=null,modelPartTipTimer=null,modelPartTipPinned=false;
+function hideModelPartTip(){if(modelPartTipTimer!==null)clearTimeout(modelPartTipTimer);modelPartTipTimer=null;modelPartTipPinned=false;if(modelPartTooltip){modelPartTooltip.remove();modelPartTooltip=null}}
+function showModelPartTip(id,event,pinned=false){
+  if(!partIds().includes(id))return;
+  hideModelPartTip();const tip=document.createElement('div');modelPartTooltip=tip;tip.className='model-part-tooltip';tip.id='model-part-tooltip';tip.setAttribute('role','tooltip');tip.setAttribute('aria-live','polite');tip.textContent=`Zona ${partIds().indexOf(id)+1} · ${part(id)[0]}`;document.body.appendChild(tip);
+  const anchor=event?.currentTarget?.getBoundingClientRect?.(),x=Number.isFinite(event?.clientX)&&event.clientX!==0?event.clientX:anchor?anchor.left+anchor.width/2:innerWidth/2,y=Number.isFinite(event?.clientY)&&event.clientY!==0?event.clientY:anchor?anchor.top:100;
+  const size=tip.getBoundingClientRect();tip.style.left=Math.max(8,Math.min(innerWidth-size.width-8,x-size.width/2))+'px';tip.style.top=Math.max(8,Math.min(innerHeight-size.height-8,y-size.height-14))+'px';
+  modelPartTipPinned=pinned;modelPartTipTimer=setTimeout(hideModelPartTip,3000);
+}
+function leaveModelPartTip(){if(!modelPartTipPinned)hideModelPartTip()}
 const internalParts=new Set(['takeoff','separator','feed','desuperheater']);
 function partIds(){return [...boilerIds(model),...boilerLayerIds(activeBoilerLayers)]}
 function part(id){return boilerPart(id,model)}
@@ -97,16 +107,19 @@ function drawLabels(){
   })});ctx.globalAlpha=1;
 }
 function inside(p,vs){let hit=false;for(let i=0,j=vs.length-1;i<vs.length;j=i++){const a=vs[i],b=vs[j];if((a[1]>p[1])!==(b[1]>p[1])&&p[0]<(b[0]-a[0])*(p[1]-a[1])/(b[1]-a[1])+a[0])hit=!hit}return hit}
+function modelHitAt(e){const r=canvas.getBoundingClientRect(),p=[e.clientX-r.left,e.clientY-r.top],marker=labelHits.find(h=>Math.hypot(p[0]-h.x,p[1]-h.y)<16);if(marker)return marker;
+ const hits=[...drawn].reverse().filter(f=>visiblePart(f.id)&&(!f.internal||cutaway)&&inside(p,f.p));return hits.find(f=>!f.id.startsWith('furnace')&&!(f.id==='upper'&&cutaway))||hits[0];
+}
 function bindCanvas(){
-  let last=null,start=null,moved=false;canvas.onpointerdown=e=>{last=[e.clientX,e.clientY];start=last;moved=false;canvas.setPointerCapture(e.pointerId)};
-  canvas.onpointermove=e=>{if(!last)return;if(Math.hypot(e.clientX-start[0],e.clientY-start[1])>5)moved=true;yaw+=(e.clientX-last[0])*.008;pitch=Math.max(-.7,Math.min(.9,pitch+(e.clientY-last[1])*.006));last=[e.clientX,e.clientY]};
-  canvas.onpointerup=e=>{last=null;if(moved)return;const r=canvas.getBoundingClientRect(),p=[e.clientX-r.left,e.clientY-r.top],marker=labelHits.find(h=>Math.hypot(p[0]-h.x,p[1]-h.y)<16),hits=[...drawn].reverse().filter(f=>visiblePart(f.id)&&inside(p,f.p));
-    const hit=marker||hits.filter(f=>!f.internal||cutaway).find(f=>!f.id.startsWith('furnace')&&!(f.id==='upper'&&cutaway))||hits.find(f=>!f.internal||cutaway);if(!hit)return;if(window.startBoilerPractice&&boilerPractice.active){practicePartSelected(hit.id);return}if(mode==='assemble')place(hit.id);else{selected=hit.id;if(internalParts.has(selected)){cutaway=true;document.querySelector('#cut-toggle').setAttribute('aria-pressed','true')}updateParts()}
+  let last=null,start=null,moved=false,hoverId=null;canvas.onpointerdown=e=>{last=[e.clientX,e.clientY];start=last;moved=false;canvas.setPointerCapture(e.pointerId)};
+  canvas.onpointermove=e=>{if(!last){const hit=modelHitAt(e);if(hit?.id!==hoverId){hoverId=hit?.id;if(hit)showModelPartTip(hit.id,e);else leaveModelPartTip()}return}if(Math.hypot(e.clientX-start[0],e.clientY-start[1])>5)moved=true;if(moved)hideModelPartTip();yaw+=(e.clientX-last[0])*.008;pitch=Math.max(-.7,Math.min(.9,pitch+(e.clientY-last[1])*.006));last=[e.clientX,e.clientY]};
+  canvas.onpointerleave=()=>{hoverId=null;leaveModelPartTip()};
+  canvas.onpointerup=e=>{last=null;if(moved)return;const hit=modelHitAt(e);if(!hit)return;showModelPartTip(hit.id,e,true);if(window.startBoilerPractice&&boilerPractice.active){practicePartSelected(hit.id);return}if(mode==='assemble')place(hit.id);else{selected=hit.id;if(internalParts.has(selected)){cutaway=true;document.querySelector('#cut-toggle').setAttribute('aria-pressed','true')}updateParts()}
   };
   canvas.onpointercancel=()=>last=null;canvas.onwheel=e=>{e.preventDefault();zoom=Math.max(.55,Math.min(1.7,zoom-e.deltaY*.001))};
   canvas.onkeydown=e=>{if(['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','+','-','='].includes(e.key)){e.preventDefault();if(e.key==='ArrowLeft')yaw-=.12;if(e.key==='ArrowRight')yaw+=.12;if(e.key==='ArrowUp')pitch=Math.min(.9,pitch+.1);if(e.key==='ArrowDown')pitch=Math.max(-.7,pitch-.1);if(e.key==='+'||e.key==='=')zoom=Math.min(1.7,zoom+.1);if(e.key==='-')zoom=Math.max(.55,zoom-.1)}};
 }
-window.stopModel=()=>{cancelAnimationFrame(raf);lastStaticFrame='';lastModelFrame=0};
+window.stopModel=()=>{cancelAnimationFrame(raf);hideModelPartTip();lastStaticFrame='';lastModelFrame=0};
 
 function catalog(){return `<div class="page-top"><h2>Tipos encontrados en Bobbio</h2><p class="lead">Estas fichas organizan lo que sigue. Los modelos 3D disponibles son los de las pestañas anteriores.</p></div><div class="grid">${[['Tubos rectos','Capítulo 3 · desde p. 15','Cabezal y tubos rectos: otra disposición de caldera acuotubular.'],['ESD II · Foster Wheeler','Capítulo 6 · desde p. 39','Caldera con sobrecalentador externo.'],['MR y M12 · Babcock & Wilcox','Capítulo 7 · pp. 51–55','Diseños radiantes descritos en el libro.'],['V2M y V2M8 · Combustion Engineering','Capítulo 7 · pp. 55–61','Variantes con sobrecalentador vertical.'],['Circuitos UR y UB · Kawasaki','Capítulo 7 · pp. 61–69','Circuitos de alta eficiencia y recalentamiento.'],['¿Tipo W?','Pendiente de verificar','No se confirmó esta denominación en el índice consultado. No se presenta como tipo validado.']].map(([title,ref,text])=>`<article class="card"><span class="tag ${title.includes('W?')?'pending':''}">${title.includes('W?')?'POR CONFIRMAR':'REFERENCIA LOCALIZADA'}</span><h3>${title}</h3><p>${text}</p><p class="source">${ref}</p></article>`).join('')}</div><p class="source"><a href="${sources.book}" target="_blank" rel="noopener">Ver índice y capítulos en Bobbio ↗</a></p>`}
 
