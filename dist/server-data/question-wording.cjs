@@ -1,0 +1,2 @@
+function hdpQuestion(question){if(String(question).startsWith('Hablame sobre: '))return question;return 'Hablame sobre: '+String(question||'el tema de examen').replace(/^[¿¡\s]+|[?]$/g,'').trim()+'. Desarrollá una explicación técnica completa: principio de funcionamiento, componentes y función, conexiones y recorrido del fluido o transformación de energía, relación con el sistema y condiciones relevantes. Incluí mantenimiento o fallas sólo cuando correspondan.'}
+module.exports={hdpQuestion};

@@ -11,7 +11,10 @@ async function call(body){const res={statusCode:200,setHeader(){},status(s){this
   const plan=P.createPlan({subject:'termicas',unit:-1,scope:'completo',speed,level,includeVisual:true});
   assert.equal(P.readPlan(P.signPlan(plan,'test'),'test').ids.length,plan.ids.length);
   const queue=P.reviewQueue(plan,'test');
-  assert.equal(queue.filter(q=>q.id.startsWith('mtpdf-')).length,level==='acompanado'?0:90);
+  const pdfIds=plan.ids.filter(id=>id.startsWith('mtpdf-'));
+  assert.equal(new Set(pdfIds.map(id=>id.replace(/-[01]$/,''))).size,pdfIds.length,'Un solo enfoque por tema PDF en cada examen');
+  assert.equal(new Set(plan.ids).size,plan.ids.length,'Sin IDs repetidos en una vuelta');
+  assert.equal(queue.filter(q=>q.id.startsWith('mtpdf-')).length,level==='acompanado'?0:45);
   for(let index=0;index<plan.ids.length;index++){
    const card=P.current({...plan,index});if(!card.pdfTopic)continue;
    assert.equal(card.keyPoints.length,level==='hdp'?4:3);
@@ -28,7 +31,7 @@ async function call(body){const res={statusCode:200,setHeader(){},status(s){this
  process.env.GEMINI_API_KEY='test-key';delete process.env.SUPABASE_SECRET_KEY;
  for(const level of ['examen','hdp']){
   const start=await call({action:'start',unit:-1,subject:'termicas',level,scope:'completo',speed:'normal'});
-  assert.equal(start.statusCode,200);assert.equal(start.body.reviewQueue.filter(q=>q.id.startsWith('mtpdf-')).length,90);
+  assert.equal(start.statusCode,200);assert.equal(start.body.reviewQueue.filter(q=>q.id.startsWith('mtpdf-')).length,45);
   const mismatch=await call({action:'hint',unit:-1,subject:'termicas',level:level==='hdp'?'examen':'hdp',scope:'completo',speed:'normal',planToken:start.body.planToken});
   assert.equal(mismatch.statusCode,400);
  }

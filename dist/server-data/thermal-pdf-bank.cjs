@@ -4,7 +4,7 @@ const topics=require('./thermal-pdf-topics.json');
 const url='https://drive.google.com/file/d/1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY/view';
 const cards=topics.flatMap(([unit,page,title,labels,answers],topic)=>{
  const prompts=labels.split('|'),points=answers.split('|');
- return [0,1].map(variant=>({id:`mtpdf-${topic}-${variant}`,subject:'termicas',unit,extended:unit>=10,pdfTopic:true,title,variant,
+ return [0,1].map(variant=>({id:`mtpdf-${topic}-${variant}`,topicKey:`mtpdf-${topic}`,subject:'termicas',unit,extended:unit>=10,pdfTopic:true,title,variant,
   sources:[{id:`MTPDF-${page}`,title:`Máquinas Térmicas · ${title} · página PDF ${page} (impresa ${page-1})`,url}],
   prompts,points,bookCheck:true}));
 });
