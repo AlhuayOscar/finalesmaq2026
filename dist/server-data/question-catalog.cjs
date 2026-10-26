@@ -5,7 +5,7 @@ const {hdpQuestion}=require('./question-wording.cjs');
 const speeds=['rapida','normal','sobrepensada'],levels=['acompanado','examen','hdp'];
 function createCatalogue(){
  const banks=['question-bank','course-bank','visual-bank','course-visual-bank'];
- const raw=banks.flatMap(bank=>require('./'+bank+'.json').cards.map(c=>({...c,bank}))).concat(pdf.cards.map(c=>({...c,bank:'thermal-pdf-bank'})));
+ const raw=banks.flatMap(bank=>require('./'+bank+'.json').cards.map(c=>({...c,bank}))).concat(pdf.cards.map(c=>({...c,bank:'thermal-pdf-bank'})),require('./frio-slides.cjs').cards.map(c=>({...c,bank:'frio-slides'})));
  const cards=raw.map(c=>{
   const subject=c.subject||'termicas',modes=c.pdfTopic?['examen','hdp']:levels;
   const questions=Object.fromEntries(modes.map(level=>[level,Object.fromEntries(speeds.map(speed=>{

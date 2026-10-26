@@ -24,7 +24,7 @@ module.exports=async(req,res)=>{
    bytes+=file.data.length;parts.push({inlineData:{mimeType:file.mimeType,data:file.data}});
   }
   if(bytes>4000000)return res.status(413).json({error:'Los adjuntos son demasiado grandes. Consultá por separado o por escrito.'});
-  const card=P.current(plan);
+  const card=P.current(plan);parts.unshift(...require('../server-data/frio-slides.cjs').sourceParts(card));
   parts.unshift({text:`Pregunta exacta: ${card.bookPrompt||card.question}\nRespuesta de referencia: ${card.answer}\nConceptos esenciales: ${card.keyPoints.join('; ')}\nFuentes: ${card.sources.map(s=>s.title).join('; ')}\nRespuesta escrita del alumno: ${text||'(Sin texto; revisar los adjuntos si los hay)'}`});
   const upstream=await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent',{
    method:'POST',headers:{'Content-Type':'application/json','x-goog-api-key':key},signal:AbortSignal.timeout(50000),
