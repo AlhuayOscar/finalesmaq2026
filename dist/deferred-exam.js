@@ -41,7 +41,7 @@ async function nextDeferredQuestion(finish=false){
  if(exam.recording||resolutionBusy||window.followupRetryActive?.()||!exam.started||exam.finished||exam.advancing)return;
  const active=exam,key=deferredKey(),token=exam.planToken;exam.advancing=true;
  try{
-  if(exam.busy){examAbort?.abort();await window.examRequest;if(active!==exam||key!==deferredKey()||exam.planToken!==token)return}
+  if(exam.busy){window.cancelExamAnswer?.();examAbort?.abort();await window.examRequest;if(active!==exam||key!==deferredKey()||exam.planToken!==token)return}
   window.speechSynthesis?.cancel();
   const item=await retainCurrentAnswer();if(active!==exam||key!==deferredKey())return;
   exam.deferredMode=true;exam.error='';exam.resolutionError='';

@@ -1,9 +1,10 @@
-// One cancellable request per click. A failure never schedules another request.
-function createProfessorRetry({isCurrent,onState=()=>{}}){
+// Repetition is opt-in: oral answer submission retries until success or cancellation.
+function createProfessorRetry({isCurrent,onState=()=>{},repeat=false}){
  const job={attempt:0,error:'',waiting:false,cancelled:false,controller:null,timer:null,wake:null};
  job.cancel=()=>{job.cancelled=true;job.controller?.abort();clearTimeout(job.timer);job.wake?.();job.wake=null};
  job.run=async request=>{
-  if(!job.cancelled&&isCurrent()){
+  let delay=2000;
+  while(!job.cancelled&&isCurrent()){
    job.attempt++;job.waiting=false;job.controller=new AbortController();onState(job);
    const timeout=setTimeout(()=>job.controller?.abort(),55000);
    try{
@@ -13,7 +14,11 @@ function createProfessorRetry({isCurrent,onState=()=>{}}){
    }catch(e){
     if(job.cancelled||!isCurrent())return null;
     job.error=e.name==='AbortError'||e.name==='TimeoutError'?'El profesor tardó demasiado.':e.message||'No se pudo conectar con el profesor.';
-    onState(job);
+    if(!repeat){onState(job);return null}
+    job.waiting=true;onState(job);clearTimeout(timeout);
+    const wait=Math.max(delay,Math.min(120000,Number(e.retryAfter)||0));
+    await new Promise(resolve=>{job.wake=resolve;job.timer=setTimeout(resolve,wait)});
+    job.wake=null;job.timer=null;delay=Math.min(30000,Math.round(delay*1.7));
    }finally{clearTimeout(timeout)}
   }
   return null;

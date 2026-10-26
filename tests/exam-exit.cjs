@@ -3,6 +3,7 @@ const nodes=new Map(),store=new Map(),revoked=[];let requests=0;
 const node=id=>{if(!nodes.has(id))nodes.set(id,{value:'',hidden:false,disabled:false,innerHTML:'',textContent:'',scrollHeight:0});return nodes.get(id)};
 const context={location:{hash:'#test'},console,units:[],URL:{revokeObjectURL:s=>revoked.push(s)},AbortController,AbortSignal,setTimeout,clearTimeout,setInterval,clearInterval,atob,currentSubject:'termicas',maqAccount:{user:{id:'a'},loading:false},navigator:{},navalSubjects:{termicas:{name:'Máquinas Térmicas',icon:'T'}},coursePractice:{termicas:{basis:'programa'}},app:{innerHTML:''},head:()=>'',progressMarkup:()=>'',esc:s=>String(s),document:{getElementById:node,querySelectorAll:()=>[]},window:null,fetch:async()=>{requests++;throw Error('Salir no debe llamar al servidor')}};
 context.window=context;vm.createContext(context);
+vm.runInContext(fs.readFileSync(require.resolve('../dist/professor-retry.js'),'utf8'),context);
 vm.runInContext(fs.readFileSync(require.resolve('../dist/profesor.js'),'utf8'),context);
 vm.runInContext(fs.readFileSync(require.resolve('../dist/deferred-exam.js'),'utf8'),context);
 context.memoryStore=async(mode,key,value)=>mode==='readonly'?store.get(key):store.set(key,value);
@@ -34,7 +35,7 @@ async function flush(){for(let i=0;i<15;i++)await Promise.resolve()}
  // Ignore a late network success even if the transport disregards abort.
  set("exam=createExamState({started:true,planToken:'old',unit:0,voice:false})");node('exam-text').value='Respuesta pendiente';let reply;
  context.fetch=async()=>{requests++;return new Promise(resolve=>reply=resolve)};
- const pending=context.askExam('answer');await flush();await context.exitProfessorExam();
+ const pending=context.askExam('answer');await flush();await context.exitProfessorExam();assert.equal(node('exam-send').disabled,true);assert.equal(node('exam-send').textContent,'Enviar respuesta →');
  set("exam.planToken='new';exam.busy=true;exam.draft='Nuevo borrador'");node('exam-text').value='Nuevo borrador';
  reply({ok:true,json:async()=>({speech:'Tardía',score:0,feedback:'No debe aparecer',evaluated:true,finished:true,planToken:'old-next'})});await pending;
  assert.equal(get('exam.planToken'),'new');assert.equal(get('exam.busy'),true);assert.equal(get('exam.messages.length'),0);assert.equal(node('exam-text').value,'Nuevo borrador');assert.equal(requests,1);

@@ -8,6 +8,9 @@ async function flush(){for(let i=0;i<20;i++)await Promise.resolve()}
  assert.equal(await failed.run(async()=>{calls++;throw Error('Saturado')}),null);
  assert.equal(calls,1);assert.equal(failed.error,'Saturado');assert.equal(timers.size,0,'Sin reenvío programado tras el error');
  const manual=context.createProfessorRetry({isCurrent:()=>true});assert.equal(await manual.run(async()=>{calls++;return 'OK'}),'OK');assert.equal(calls,2);
+ const retryTimeout=context.createProfessorRetry({repeat:true,isCurrent:()=>true});let timeoutAttempts=0;
+ const retryTimed=retryTimeout.run(signal=>++timeoutAttempts===1?new Promise((resolve,reject)=>signal.addEventListener('abort',()=>reject(Object.assign(Error('Timeout'),{name:'AbortError'})),{once:true})):Promise.resolve('Recuperado'));
+ let scheduled=[...timers][0];assert.equal(scheduled[1].ms,55000);scheduled[1].fn();await flush();scheduled=[...timers][0];assert.equal(scheduled[1].ms,2000);timers.delete(scheduled[0]);scheduled[1].fn();assert.equal(await retryTimed,'Recuperado');assert.equal(timeoutAttempts,2);assert.equal(timers.size,0);
  const running=context.createProfessorRetry({isCurrent:()=>true});let signal;
  const pending=running.run(s=>new Promise((resolve,reject)=>{signal=s;s.addEventListener('abort',()=>reject(Object.assign(Error('Abortado'),{name:'AbortError'})),{once:true})}));
  running.cancel();assert(signal.aborted);assert.equal(await pending,null);assert.equal(timers.size,0);
@@ -26,5 +29,5 @@ async function flush(){for(let i=0;i<20;i++)await Promise.resolve()}
  nodes.get('#exam-followup-text').value='Consulta que debe conservarse';context.fetch=async(url,options)=>new Promise((resolve,reject)=>options.signal.addEventListener('abort',()=>reject(Object.assign(Error('Abortado'),{name:'AbortError'})),{once:true}));
  const clarify=context.sendExamFollowup('clarify');await flush();assert.equal(nodes.get('#exam-followup-send').textContent,'Cancelar consulta');await context.sendExamFollowup('clarify');await clarify;
  assert.equal(nodes.get('#exam-followup-text').value,'Consulta que debe conservarse');assert(context.exam.followupStatus.includes('cancelada'));assert.equal(context.exam.messages.length,3);assert.equal(timers.size,0);
- console.log('OK: una petición por clic, sin reintentos automáticos tras error/timeout, reintento manual idempotente y cancelación sin perder borradores.');
+ console.log('OK: consultas manuales, envío automático optativo con recuperación tras timeout y cancelación sin perder borradores.');
 })().catch(e=>{console.error(e);process.exitCode=1});
