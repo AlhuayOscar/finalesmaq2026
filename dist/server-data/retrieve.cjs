@@ -20,6 +20,7 @@ const stop=new Set('para como porque donde cuando cuales cual esta este estos es
 function tokens(s){return String(s).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().match(/[a-z0-9]{3,}/g)?.filter(w=>!stop.has(w))||[]}
 const docs=books.filter(p=>p.text.length>120).map(p=>({...p,id:(p.book==='Bobbio I'?'BI':'BII')+'-'+p.pdfPage,title:p.book+' · página PDF '+p.pdfPage,priority:(p.text.match(/CAP[IÍ]TULO/gi)||[]).length>3?.2:1.15}));
 for(const m of materials){let chunks=m.text.match(/[\s\S]{1,5000}/g)||[];chunks.forEach((text,i)=>docs.push({id:m.id+'-'+(i+1),title:m.title+' · sección de texto '+(i+1),text,priority:m.id==='clase'?.25:.8}))}
+docs.push(...require('./thermal-pdf-pages.json'));
 for(const d of docs){d.words=tokens(d.text);d.tf=new Map();for(const w of d.words)d.tf.set(w,(d.tf.get(w)||0)+1)}
 const df=new Map();for(const d of docs)for(const w of d.tf.keys())df.set(w,(df.get(w)||0)+1);const avg=docs.reduce((s,d)=>s+d.words.length,0)/docs.length;
 function retrieve({unit,history,text,scope}){const question=[...history].reverse().find(m=>m.role==='model')?.text||'';const terms=new Map();for(const [s,weight]of [[topics[unit]?.[1]||topics.map(t=>t[1]).join(' '),.55],[question,1.6],[text,1.2],[scope==='completo'?'componentes circuito mantenimiento fallas averías síntomas causas prevención':'',.3]])for(const w of tokens(s))terms.set(w,(terms.get(w)||0)+weight);

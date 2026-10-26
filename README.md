@@ -78,3 +78,9 @@ La exportación distingue la respuesta escrita de las transcripciones local y de
 ## Materiales
 
 Los desarrollos son ayudas didácticas; los modelos no son planos constructivos. Los materiales de referencia conservan sus derechos originales. Este repositorio se mantiene privado y su publicación en GitHub no modifica los permisos de los originales de Google Drive.
+
+## Preguntas del apunte Máquinas Térmicas
+
+Simulacro y HDP incorporan 90 consignas (dos enfoques para 45 títulos), con páginas verificadas del PDF de Fernandez Hanna Jorge Gabriel. Se mezclan con el banco existente dentro de la unidad elegida. Práctica acompañada conserva su banco. Cada tema define dos criterios básicos, tres en Simulacro (+50 %) y cuatro en HDP (+100 %); los porcentajes describen cantidad de criterios, no una medición objetiva de dificultad. La velocidad modifica la devolución, no elimina criterios del nuevo banco. Las referencias revisadas aclaran contradicciones del apunte y no convierten valores o maniobras históricas en procedimientos universales.
+
+Verificación: `node tests/thermal-pdf.cjs`.
