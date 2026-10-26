@@ -1,10 +1,10 @@
-let selectedReviewIndex=null,followupRetry=null;
-window.resetFollowupSelection=()=>{selectedReviewIndex=null};
+let selectedReviewIndex=null,followupRetry=null,followupImageRead=0;
+window.resetFollowupSelection=()=>{selectedReviewIndex=null;followupImageRead++};
 window.followupRetryActive=()=>!!followupRetry;
 window.cancelProfessorRetries=()=>{followupRetry?.cancel();window.cancelResolutionRetry?.()};
 function mountExamFollowup(){
  const composer=document.querySelector('#exam-composer');
- if(composer&&!document.querySelector('#exam-followup')){const section=document.createElement('section');section.id='exam-followup';section.className='exam-followup';section.innerHTML='<label for="exam-followup-text">Preguntarle algo al profesor o pedir que revise una nota</label><textarea id="exam-followup-text" maxlength="3000" placeholder="¿En qué archivo y sección aparece? ¿Podés mostrarme un esquema? Para revisar una nota, seleccioná primero su devolución."></textarea><div class="exam-composer-actions"><button id="exam-followup-send" class="secondary">Preguntar al profesor</button><button id="exam-revise-send" class="secondary" hidden>Revisar nota seleccionada</button></div><p class="source">Las consultas no cambian la nota. Una revisión compara tu ampliación con la respuesta original y puede subirla o bajarla.</p><p id="exam-followup-status" role="status"></p>';composer.append(section);const field=section.querySelector('#exam-followup-text');field.value=exam.followupDraft||'';field.oninput=()=>{exam.followupDraft=field.value}}
+ if(composer&&!document.querySelector('#exam-followup')){const section=document.createElement('section');section.id='exam-followup';section.className='exam-followup';section.innerHTML='<label for="exam-followup-text">Preguntarle algo al profesor o pedir que revise una nota</label><textarea id="exam-followup-text" maxlength="3000" placeholder="Escribí tu consulta o adjuntá una foto y preguntá: ¿qué es esto y cómo funciona? Para revisar una nota, seleccioná primero su devolución."></textarea><div class="followup-photo-upload"><label for="exam-followup-image">Adjuntar foto para preguntarle al profesor</label><input id="exam-followup-image" type="file" accept="image/png,image/jpeg,image/webp"><div id="exam-followup-image-preview" class="exam-image-preview"></div><p class="source">PNG, JPG o WebP · hasta 2 MB. La foto se envía a Gemini con «Preguntar al profesor» y se conserva durante los reintentos. No cambia tu nota.</p></div><div class="exam-composer-actions"><button id="exam-followup-send" class="secondary">Preguntar al profesor</button><button id="exam-revise-send" class="secondary" hidden>Revisar nota seleccionada</button></div><p class="source">Las consultas no cambian la nota. Una revisión compara tu ampliación con la respuesta original y puede subirla o bajarla.</p><p id="exam-followup-status" role="status"></p>';composer.append(section);const field=section.querySelector('#exam-followup-text');field.value=exam.followupDraft||'';field.oninput=()=>{exam.followupDraft=field.value};section.querySelector('#exam-followup-image').onchange=loadFollowupPhoto}
  if(composer&&!document.querySelector('#exam-skip')){const button=document.createElement('button');button.id='exam-skip';button.className='text-button';composer.querySelector('.exam-composer-actions')?.append(button)}
  const skip=document.querySelector('#exam-skip');if(skip){const current=exam.messages.at(-1)?.data;skip.hidden=exam.deferredMode||!['examen','hdp'].includes(exam.level)||!exam.started||exam.finished;skip.disabled=exam.busy||exam.recording;const label=`Pasar pregunta · −${current?.skipPenaltyNext||1} punto${(current?.skipPenaltyNext||1)===1?'':'s'}`;if(skip.textContent!==label)skip.textContent=label}
  const articles=[...document.querySelectorAll('#exam-messages .exam-message.teacher')];const graded=exam.messages.filter(m=>m.role==='model'&&m.data.evaluated&&!m.data.finished);
@@ -18,27 +18,50 @@ function syncFollowupRetryUI(){
   const button=document.querySelector('#'+id);if(!button)continue;
   const running=active?.action===action,text=running?'Detener reintento':label;
   if(button.textContent!==text)button.textContent=text;
-  button.disabled=!!active&&!running||exam.busy&&!running;if(action==='revise')button.hidden=selectedReviewIndex===null&&!running;
+  button.disabled=!!active&&!running||exam.busy&&!running||!!exam.followupImageLoading||(action==='revise'&&!!exam.followupImage&&!running);if(action==='revise')button.hidden=selectedReviewIndex===null&&!running;
  }
  const field=document.querySelector('#exam-followup-text');if(field)field.disabled=!!active;
  document.querySelectorAll('[data-review-index]').forEach(b=>b.disabled=!!active);
+ syncFollowupPhotoUI();
  const status=document.querySelector('#exam-followup-status');
  if(status){const text=active?(active.waiting?active.error+' Reintentando automáticamente · intento '+active.attempt+'. Volvé a tocar el botón para detener.':'Consultando al profesor · intento '+active.attempt+'. Volvé a tocar el botón para detener.'):(exam.followupStatus||'');if(status.textContent!==text)status.textContent=text}
+}
+function renderFollowupPhoto(image){return image&&['image/png','image/jpeg','image/webp'].includes(image.mimeType)&&typeof image.data==='string'&&image.data.length>0&&image.data.length<=2800000&&/^[A-Za-z0-9+/]*={0,2}$/.test(image.data)?'<img class="followup-photo" alt="Foto enviada al profesor" src="data:'+image.mimeType+';base64,'+image.data+'">':''}
+function syncFollowupPhotoUI(){
+ const input=document.querySelector('#exam-followup-image'),preview=document.querySelector('#exam-followup-image-preview');if(!input||!preview)return;
+ input.disabled=!!followupRetry||exam.busy||!!exam.followupImageLoading;
+ const image=exam.followupImage||null;
+ if(preview.followupImage!==image){preview.followupImage=image;preview.innerHTML=image?renderFollowupPhoto(image)+'<span>'+esc(image.name)+'</span><button id="exam-followup-remove-image" type="button" class="text-button">Quitar foto</button>':'';
+  const remove=preview.querySelector('#exam-followup-remove-image');if(remove)remove.onclick=()=>{if(followupRetry||exam.followupImageLoading)return;exam.followupImage=null;exam.followupRequest=null;input.value='';syncFollowupRetryUI()};
+ }
+ const remove=preview.querySelector('#exam-followup-remove-image');if(remove)remove.disabled=!!followupRetry||!!exam.followupImageLoading;
+}
+async function loadFollowupPhoto(event){
+ const input=event.target,file=input.files?.[0];if(!file||followupRetry||exam.busy)return;
+ if(!['image/png','image/jpeg','image/webp'].includes(file.type)||file.size>2*1024*1024){input.value='';exam.followupStatus='Usá una foto PNG, JPG o WebP de hasta 2 MB.';syncFollowupRetryUI();return}
+ const active=exam,owner=maqAccount.user?.id,subject=currentSubject,read=++followupImageRead;
+ const current=()=>active===exam&&owner===maqAccount.user?.id&&subject===currentSubject&&read===followupImageRead;
+ active.followupImageLoading=true;active.followupStatus='Cargando foto…';syncFollowupRetryUI();
+ try{const data=await encodeAudio(file);if(!current())return;active.followupImage={mimeType:file.type,data,name:file.name};active.followupRequest=null;active.followupStatus='Foto lista. Podés preguntar qué es o escribir una consulta.'}
+ catch{if(current()){active.followupStatus='No se pudo leer la foto. Elegila nuevamente.';input.value=''}}
+ finally{active.followupImageLoading=false;if(current())syncFollowupRetryUI()}
 }
 async function sendExamFollowup(action){
  if(followupRetry){if(followupRetry.action===action)followupRetry.cancel();return}
  if(exam.busy)return;
- const field=document.querySelector('#exam-followup-text'),text=field?.value.trim()||'';
+ const field=document.querySelector('#exam-followup-text'),draft=field?.value.trim()||'',photo=action==='clarify'?exam.followupImage:null,text=draft||(photo?'¿Qué es lo que aparece en esta foto? Identificá lo visible y explicá su función.':'');
+ if(exam.followupImageLoading)return;
+ if(action==='revise'&&exam.followupImage){exam.error='La foto se usa con Preguntar al profesor. Quitala para revisar una nota.';updateExam();return}
  if(!text){exam.error='Escribí tu consulta o ampliación.';updateExam();return}
  const target=selectedReviewIndex===null?null:exam.messages[selectedReviewIndex];
  if(action==='revise'&&!target?.data?.attemptToken){exam.error='Seleccioná primero la devolución que querés revisar.';updateExam();return}
  const active=exam,owner=maqAccount.user?.id,subject=currentSubject;
  const isCurrent=()=>exam===active&&maqAccount.user?.id===owner&&currentSubject===subject;
  const prior=[...exam.messages].reverse().find(m=>m.role==='model'&&m.data.evaluated);
- const body={action,subject:exam.subject||currentSubject,unit:exam.unit,level:exam.level,scope:exam.scope,speed:exam.speed,depth:exam.depth,loop:exam.loop,planToken:exam.planToken,attemptToken:target?.data.attemptToken,text,history:exam.history.slice(-12),visualUrl:prior?.data.attemptVisual?.url||null};
+ const body={action,subject:exam.subject||currentSubject,unit:exam.unit,level:exam.level,scope:exam.scope,speed:exam.speed,depth:exam.depth,loop:exam.loop,planToken:exam.planToken,attemptToken:target?.data.attemptToken,text,history:exam.history.slice(-12),visualUrl:prior?.data.attemptVisual?.url||null,...(photo?{image:{mimeType:photo.mimeType,data:photo.data}}:{})};
  const signature=JSON.stringify(body);if(active.followupRequest?.signature!==signature)active.followupRequest={signature,requestId:crypto.randomUUID()};body.requestId=active.followupRequest.requestId;
  const job=createProfessorRetry({isCurrent,onState:()=>{if(isCurrent())syncFollowupRetryUI()}});job.action=action;followupRetry=job;
- active.busy=true;active.error='';active.followupStatus='';active.followupDraft=text;updateExam();syncFollowupRetryUI();
+ active.busy=true;active.error='';active.followupStatus='';active.followupDraft=draft;updateExam();syncFollowupRetryUI();
  try{
   const data=await job.run(async signal=>{const data=await professorRetryJSON('/api/exam',body,signal);if(typeof data.speech!=='string'||!Array.isArray(data.strengths)||!Array.isArray(data.improvements)||(action==='revise'&&!Number.isFinite(data.score)))throw Error('El profesor devolvió una respuesta incompleta.');return data});
   if(!data||!isCurrent()){if(isCurrent())active.followupStatus='Reintento detenido. La consulta sigue disponible.';return}
@@ -46,8 +69,8 @@ async function sendExamFollowup(action){
   if(action==='revise'){target.data.score=data.score;target.data.feedback=data.feedback;target.data.reference=data.reference;target.data.sources=data.sources;selectedReviewIndex=null;data.evaluated=false;data.revision=true;
    const item=active.reviewItems?.find(item=>item.planToken===target.data.attemptToken);if(item){item.score=data.score;item.feedback=data.feedback}
   }
-  active.messages.push({role:'user',text:(action==='revise'?'Ampliación para revisar la nota: ':'Consulta al profesor: ')+text});active.history.push({role:'user',text:(action==='revise'?'Ampliación para revisar la nota: ':'Consulta al profesor: ')+text});active.history.push({role:'model',text:data.speech});active.messages.push({role:'model',data});
-  active.followupDraft='';active.followupRequest=null;if(field.value.trim()===text)field.value='';active.followupStatus='Consulta recibida.';
+  active.messages.push({role:'user',text:(action==='revise'?'Ampliación para revisar la nota: ':'Consulta al profesor: ')+text,...(photo?{image:photo}:{})});active.history.push({role:'user',text:(action==='revise'?'Ampliación para revisar la nota: ':'Consulta al profesor: ')+text});active.history.push({role:'model',text:data.speech});active.messages.push({role:'model',data});
+  active.followupDraft='';active.followupRequest=null;if(field.value.trim()===draft)field.value='';if(photo&&active.followupImage===photo){active.followupImage=null;const input=document.querySelector('#exam-followup-image');if(input)input.value=''}active.followupStatus='Consulta recibida.';
   if(data.learningProgress){maqAccount.progress=data.learningProgress;updateAccountUI()}
   try{await window.persistDeferredExam?.()}catch(e){active.followupStatus+=' '+e.message}
  }finally{
