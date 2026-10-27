@@ -1,7 +1,7 @@
 {
   "title": "Guía integral de preguntas de Motores Navales",
   "date": "27 de octubre de 2026",
-  "intro": "364 preguntas para preparar el examen anual, organizadas en las 15 unidades del programa. Se conservan los códigos M001–M330 y se incorporan M331–M364. La revisión contrasta siete exámenes únicos fotografiados (63 consignas), los dos cuestionarios docentes y los bancos complementarios identificados en las fuentes.",
+  "intro": "400 preguntas para preparar el examen anual, organizadas en las 15 unidades del programa. Se conservan los códigos M001–M330 y se incorporan las ampliaciones M331–M400. La revisión contrasta 15 exámenes y cuestionarios docentes (140 consignas), las dos guías originales del profesor y los bancos complementarios de la carpeta de fuentes.",
   "method": "Las preguntas marcadas Prioridad docente reformulan o integran consignas de las guías, conservando su alcance. Las restantes son ampliaciones de ChatGPT a partir del programa, materiales de clase revisados e investigación técnica. Los ejes orientan qué debe abarcar la respuesta; no constituyen un solucionario ni una garantía de las preguntas que aparecerán en el examen. Las marcas EXAMEN enlazan cada consigna revisada con su pregunta de estudio. Una correspondencia puede requerir varias preguntas; no significa que una pregunta aislada cubra todos los puntos del examen.",
   "use": "Respondé primero sin mirar los ejes. Para cada pieza explicá qué es, dónde está, qué hace, con qué se conecta y cómo puede fallar. Para cada sistema seguí el recorrido del fluido o de la energía. En los casos, separá síntoma, causas posibles, comprobación y decisión. Marcá Repasar o Dominada sólo después de explicarla en voz alta.",
   "limits": "Los valores de presión, temperatura, huelgo, apriete y actuación de protecciones corresponden al motor, su régimen y su manual. La guía pide interpretar y consultar esos datos; no convierte cifras de un ejemplo de clase en límites de todos los motores.",
@@ -187,6 +187,27 @@
       "url": "https://www.ms-motorservice.com/MediaAssets/1809301_ks_50003982_web.pdf",
       "locator": "Estructura y materiales de cojinetes.",
       "note": "Apoyo técnico para distinguir capas y materiales de construcciones específicas."
+    },
+    {
+      "id": "GO1",
+      "title": "Gastón Tolay · Guía orientativa N° 1 (Cilindros, camisas, pistones, aros y cruceta)",
+      "url": "https://drive.google.com/file/d/13PaHmWK8JjdJujMidBleu9tX__lb5jGZ/view",
+      "locator": "PDF de 7 páginas con 34 preguntas y respuestas de cátedra.",
+      "note": "Fuente directa para materiales de camisas y pistones, métodos de refrigeración del pistón, fijación de pernos, aros, lateralización y ovalización."
+    },
+    {
+      "id": "LV",
+      "title": "Tablas de efectos de huelgo mínimo y máximo en válvulas de admisión y escape",
+      "url": "https://drive.google.com/file/d/1nA35vdi9oWOFub1vyAYqdTrINgK6dzZn/view",
+      "locator": "PDF de 3 páginas para motores de cuatro y dos tiempos.",
+      "note": "Respalda las preguntas de examen sobre alteración del diagrama, cruce de válvulas, barrido y pérdidas por luz excesiva o insuficiente."
+    },
+    {
+      "id": "COMP",
+      "title": "Compendio técnico de motores de combustión interna",
+      "url": "https://drive.google.com/file/d/1cnTGwUL4TvyXbJ0Rt6GOHaOOU9tKkZcF/view",
+      "locator": "PDF de 8 páginas sobre bloque, mecanizado, juntas, pistones, aros, pernos, bielas, cojinetes trimetálicos y Plastigage.",
+      "note": "Complementa las preguntas sobre mandrilado-rectificado-bruñido, portaaro Ni-Resist, corte oblicuo de biela, las cinco capas del cojinete trimetálico y medición con galga plástica."
     }
   ],
   "unitSources": {
@@ -195,7 +216,10 @@
       "G",
       "EXAMS",
       "B132",
-      "D21"
+      "D21",
+      "GO1",
+      "LV",
+      "COMP"
     ],
     "2": [
       "P",
@@ -207,7 +231,10 @@
       "W",
       "EXAMS",
       "B132",
-      "D21"
+      "D21",
+      "GO1",
+      "LV",
+      "COMP"
     ],
     "3": [
       "P",
@@ -215,7 +242,10 @@
       "C",
       "EXAMS",
       "B132",
-      "D21"
+      "D21",
+      "GO1",
+      "LV",
+      "COMP"
     ],
     "4": [
       "P",
@@ -224,14 +254,20 @@
       "T",
       "EXAMS",
       "B132",
-      "D21"
+      "D21",
+      "GO1",
+      "LV",
+      "COMP"
     ],
     "5": [
       "P",
       "W",
       "EXAMS",
       "B132",
-      "D21"
+      "D21",
+      "GO1",
+      "LV",
+      "COMP"
     ],
     "6": [
       "P",
@@ -240,7 +276,10 @@
       "W",
       "EXAMS",
       "B132",
-      "D21"
+      "D21",
+      "GO1",
+      "LV",
+      "COMP"
     ],
     "7": [
       "P",
@@ -256,7 +295,10 @@
       "F2",
       "EXAMS",
       "B132",
-      "D21"
+      "D21",
+      "GO1",
+      "LV",
+      "COMP"
     ],
     "9": [
       "P",
@@ -266,7 +308,10 @@
       "W",
       "EXAMS",
       "B132",
-      "D21"
+      "D21",
+      "GO1",
+      "LV",
+      "COMP"
     ],
     "10": [
       "P",
@@ -274,7 +319,10 @@
       "W",
       "EXAMS",
       "B132",
-      "D21"
+      "D21",
+      "GO1",
+      "LV",
+      "COMP"
     ],
     "11": [
       "P",
@@ -466,6 +514,17 @@
       "sources": [
         "D21",
         "W"
+      ]
+    },
+    {
+      "title": "Sobrealimentador en cuatro tiempos frente a dos tiempos y distribución frente a accionamiento valvular",
+      "refs": "M365 M366 M377 DA-05 C24T-01 GB-09",
+      "text": "En un motor de cuatro tiempos las carreras de admisión y escape existen por el propio desplazamiento del pistón, de modo que el sobrealimentador se utiliza para incrementar la densidad del aire admitido, elevar la potencia y reducir el consumo específico. En un diésel de dos tiempos sin compresión en el cárter no hay carrera exclusiva de admisión ni de escape: un soplante o turbocompresor resulta indispensable primero para efectuar el barrido (expulsar los gases residuales y renovar la carga alrededor del PMI) y luego, si el cierre de escape lo permite (por ejemplo con válvula de escape en culata), también sobrealimentar. Asimismo, en las correcciones de cátedra se distingue el mecanismo de distribución (transmisión sincronizada del cigüeñal al árbol de levas por engranajes, cadena o correa) del mecanismo de accionamiento valvular (leva, botador, varilla, balancín, válvula y resortes).",
+      "sources": [
+        "P",
+        "T",
+        "B132",
+        "D21"
       ]
     }
   ],

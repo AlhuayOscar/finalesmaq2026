@@ -2,7 +2,7 @@
   "meta": {
     "title": "Guía integral de preguntas de Motores Navales",
     "date": "27 de octubre de 2026",
-    "intro": "364 preguntas para preparar el examen anual, organizadas en las 15 unidades del programa. Se conservan los códigos M001–M330 y se incorporan M331–M364. La revisión contrasta siete exámenes únicos fotografiados (63 consignas), los dos cuestionarios docentes y los bancos complementarios identificados en las fuentes.",
+    "intro": "400 preguntas para preparar el examen anual, organizadas en las 15 unidades del programa. Se conservan los códigos M001–M330 y se incorporan las ampliaciones M331–M400. La revisión contrasta 15 exámenes y cuestionarios docentes (140 consignas), las dos guías originales del profesor y los bancos complementarios de la carpeta de fuentes.",
     "method": "Las preguntas marcadas Prioridad docente reformulan o integran consignas de las guías, conservando su alcance. Las restantes son ampliaciones de ChatGPT a partir del programa, materiales de clase revisados e investigación técnica. Los ejes orientan qué debe abarcar la respuesta; no constituyen un solucionario ni una garantía de las preguntas que aparecerán en el examen. Las marcas EXAMEN enlazan cada consigna revisada con su pregunta de estudio. Una correspondencia puede requerir varias preguntas; no significa que una pregunta aislada cubra todos los puntos del examen.",
     "use": "Respondé primero sin mirar los ejes. Para cada pieza explicá qué es, dónde está, qué hace, con qué se conecta y cómo puede fallar. Para cada sistema seguí el recorrido del fluido o de la energía. En los casos, separá síntoma, causas posibles, comprobación y decisión. Marcá Repasar o Dominada sólo después de explicarla en voz alta.",
     "limits": "Los valores de presión, temperatura, huelgo, apriete y actuación de protecciones corresponden al motor, su régimen y su manual. La guía pide interpretar y consultar esos datos; no convierte cifras de un ejemplo de clase en límites de todos los motores.",
@@ -188,6 +188,27 @@
         "url": "https://www.ms-motorservice.com/MediaAssets/1809301_ks_50003982_web.pdf",
         "locator": "Estructura y materiales de cojinetes.",
         "note": "Apoyo técnico para distinguir capas y materiales de construcciones específicas."
+      },
+      {
+        "id": "GO1",
+        "title": "Gastón Tolay · Guía orientativa N° 1 (Cilindros, camisas, pistones, aros y cruceta)",
+        "url": "https://drive.google.com/file/d/13PaHmWK8JjdJujMidBleu9tX__lb5jGZ/view",
+        "locator": "PDF de 7 páginas con 34 preguntas y respuestas de cátedra.",
+        "note": "Fuente directa para materiales de camisas y pistones, métodos de refrigeración del pistón, fijación de pernos, aros, lateralización y ovalización."
+      },
+      {
+        "id": "LV",
+        "title": "Tablas de efectos de huelgo mínimo y máximo en válvulas de admisión y escape",
+        "url": "https://drive.google.com/file/d/1nA35vdi9oWOFub1vyAYqdTrINgK6dzZn/view",
+        "locator": "PDF de 3 páginas para motores de cuatro y dos tiempos.",
+        "note": "Respalda las preguntas de examen sobre alteración del diagrama, cruce de válvulas, barrido y pérdidas por luz excesiva o insuficiente."
+      },
+      {
+        "id": "COMP",
+        "title": "Compendio técnico de motores de combustión interna",
+        "url": "https://drive.google.com/file/d/1cnTGwUL4TvyXbJ0Rt6GOHaOOU9tKkZcF/view",
+        "locator": "PDF de 8 páginas sobre bloque, mecanizado, juntas, pistones, aros, pernos, bielas, cojinetes trimetálicos y Plastigage.",
+        "note": "Complementa las preguntas sobre mandrilado-rectificado-bruñido, portaaro Ni-Resist, corte oblicuo de biela, las cinco capas del cojinete trimetálico y medición con galga plástica."
       }
     ],
     "unitSources": {
@@ -196,7 +217,10 @@
         "G",
         "EXAMS",
         "B132",
-        "D21"
+        "D21",
+        "GO1",
+        "LV",
+        "COMP"
       ],
       "2": [
         "P",
@@ -208,7 +232,10 @@
         "W",
         "EXAMS",
         "B132",
-        "D21"
+        "D21",
+        "GO1",
+        "LV",
+        "COMP"
       ],
       "3": [
         "P",
@@ -216,7 +243,10 @@
         "C",
         "EXAMS",
         "B132",
-        "D21"
+        "D21",
+        "GO1",
+        "LV",
+        "COMP"
       ],
       "4": [
         "P",
@@ -225,14 +255,20 @@
         "T",
         "EXAMS",
         "B132",
-        "D21"
+        "D21",
+        "GO1",
+        "LV",
+        "COMP"
       ],
       "5": [
         "P",
         "W",
         "EXAMS",
         "B132",
-        "D21"
+        "D21",
+        "GO1",
+        "LV",
+        "COMP"
       ],
       "6": [
         "P",
@@ -241,7 +277,10 @@
         "W",
         "EXAMS",
         "B132",
-        "D21"
+        "D21",
+        "GO1",
+        "LV",
+        "COMP"
       ],
       "7": [
         "P",
@@ -257,7 +296,10 @@
         "F2",
         "EXAMS",
         "B132",
-        "D21"
+        "D21",
+        "GO1",
+        "LV",
+        "COMP"
       ],
       "9": [
         "P",
@@ -267,7 +309,10 @@
         "W",
         "EXAMS",
         "B132",
-        "D21"
+        "D21",
+        "GO1",
+        "LV",
+        "COMP"
       ],
       "10": [
         "P",
@@ -275,7 +320,10 @@
         "W",
         "EXAMS",
         "B132",
-        "D21"
+        "D21",
+        "GO1",
+        "LV",
+        "COMP"
       ],
       "11": [
         "P",
@@ -468,6 +516,17 @@
           "D21",
           "W"
         ]
+      },
+      {
+        "title": "Sobrealimentador en cuatro tiempos frente a dos tiempos y distribución frente a accionamiento valvular",
+        "refs": "M365 M366 M377 DA-05 C24T-01 GB-09",
+        "text": "En un motor de cuatro tiempos las carreras de admisión y escape existen por el propio desplazamiento del pistón, de modo que el sobrealimentador se utiliza para incrementar la densidad del aire admitido, elevar la potencia y reducir el consumo específico. En un diésel de dos tiempos sin compresión en el cárter no hay carrera exclusiva de admisión ni de escape: un soplante o turbocompresor resulta indispensable primero para efectuar el barrido (expulsar los gases residuales y renovar la carga alrededor del PMI) y luego, si el cierre de escape lo permite (por ejemplo con válvula de escape en culata), también sobrealimentar. Asimismo, en las correcciones de cátedra se distingue el mecanismo de distribución (transmisión sincronizada del cigüeñal al árbol de levas por engranajes, cadena o correa) del mecanismo de accionamiento valvular (leva, botador, varilla, balancín, válvula y resortes).",
+        "sources": [
+          "P",
+          "T",
+          "B132",
+          "D21"
+        ]
       }
     ],
     "formulas": [
@@ -552,7 +611,10 @@
         "G",
         "EXAMS",
         "B132",
-        "D21"
+        "D21",
+        "GO1",
+        "LV",
+        "COMP"
       ],
       "coverage": "Definiciones, clasificación general, encendido, ciclo y utilización a bordo.",
       "questions": [
@@ -568,7 +630,8 @@
         "M010",
         "M011",
         "M012",
-        "M333"
+        "M333",
+        "M369"
       ]
     },
     {
@@ -584,7 +647,10 @@
         "W",
         "EXAMS",
         "B132",
-        "D21"
+        "D21",
+        "GO1",
+        "LV",
+        "COMP"
       ],
       "coverage": "Materiales y órganos fijos; camisas y estanqueidad; culatas; pistones, aros, pernos y bielas; cruceta; cigüeñal, lubricación interna, cojinetes, huelgos, tiraje y volante.",
       "questions": [
@@ -664,7 +730,15 @@
         "M342",
         "M344",
         "M345",
-        "M346"
+        "M346",
+        "M387",
+        "M388",
+        "M389",
+        "M390",
+        "M391",
+        "M392",
+        "M399",
+        "M400"
       ]
     },
     {
@@ -676,7 +750,10 @@
         "C",
         "EXAMS",
         "B132",
-        "D21"
+        "D21",
+        "GO1",
+        "LV",
+        "COMP"
       ],
       "coverage": "PMS y PMI, carrera, manivela, longitud de biela, S/D, superficie, cilindrada, cámaras, compresión, numeración, giro y torque.",
       "questions": [
@@ -696,7 +773,10 @@
         "M089",
         "M090",
         "M091",
-        "M343"
+        "M343",
+        "M367",
+        "M368",
+        "M370"
       ]
     },
     {
@@ -709,7 +789,10 @@
         "T",
         "EXAMS",
         "B132",
-        "D21"
+        "D21",
+        "GO1",
+        "LV",
+        "COMP"
       ],
       "coverage": "Diésel y Otto de dos y cuatro tiempos; Carnot, ideal y real; diagramas presión volumen y circulares; adelantos, retrasos, lumbreras, trabajo y comparación.",
       "questions": [
@@ -744,7 +827,10 @@
         "M357",
         "M358",
         "M359",
-        "M360"
+        "M360",
+        "M376",
+        "M377",
+        "M397"
       ]
     },
     {
@@ -755,7 +841,10 @@
         "W",
         "EXAMS",
         "B132",
-        "D21"
+        "D21",
+        "GO1",
+        "LV",
+        "COMP"
       ],
       "coverage": "Levas y árboles, válvulas, asientos, guías, resortes, balancines, varillas y botadores; accionamientos, relaciones de velocidad y puesta a punto.",
       "questions": [
@@ -782,7 +871,14 @@
         "M348",
         "M349",
         "M350",
-        "M356"
+        "M356",
+        "M366",
+        "M371",
+        "M372",
+        "M373",
+        "M374",
+        "M375",
+        "M398"
       ]
     },
     {
@@ -795,7 +891,10 @@
         "W",
         "EXAMS",
         "B132",
-        "D21"
+        "D21",
+        "GO1",
+        "LV",
+        "COMP"
       ],
       "coverage": "Propiedades del combustible, combustión, atomización y penetración; circuito completo, bombas Bosch, sistemas de inyección, toberas, apertura, estanqueidad y mantenimiento.",
       "questions": [
@@ -830,7 +929,12 @@
         "M351",
         "M352",
         "M363",
-        "M364"
+        "M364",
+        "M382",
+        "M383",
+        "M384",
+        "M385",
+        "M386"
       ]
     },
     {
@@ -874,7 +978,10 @@
         "F2",
         "EXAMS",
         "B132",
-        "D21"
+        "D21",
+        "GO1",
+        "LV",
+        "COMP"
       ],
       "coverage": "Objeto, circuitos abiertos y cerrados, aire, agua directa e indirecta, quilla y casco; tanque de compenso, termostato, corrosión, incrustación y mantenimiento.",
       "questions": [
@@ -897,7 +1004,12 @@
         "M199",
         "M200",
         "M354",
-        "M355"
+        "M355",
+        "M378",
+        "M379",
+        "M380",
+        "M381",
+        "M395"
       ]
     },
     {
@@ -911,7 +1023,10 @@
         "W",
         "EXAMS",
         "B132",
-        "D21"
+        "D21",
+        "GO1",
+        "LV",
+        "COMP"
       ],
       "coverage": "Funciones, propiedades, clasificaciones, bases y aditivos; sistemas, circuitos y puntos a lubricar; filtración, controles, contaminación y seguridad.",
       "questions": [
@@ -936,7 +1051,8 @@
         "M219",
         "M220",
         "M221",
-        "M222"
+        "M222",
+        "M396"
       ]
     },
     {
@@ -948,7 +1064,10 @@
         "W",
         "EXAMS",
         "B132",
-        "D21"
+        "D21",
+        "GO1",
+        "LV",
+        "COMP"
       ],
       "coverage": "Filtros, silenciadores, múltiples y tuberías; barrido, bombas, turbo, enfriadores de aire y escape.",
       "questions": [
@@ -968,7 +1087,10 @@
         "M236",
         "M237",
         "M238",
-        "M362"
+        "M362",
+        "M365",
+        "M393",
+        "M394"
       ]
     },
     {
@@ -1174,7 +1296,9 @@
       ],
       "exams": [
         "GA26-02",
-        "GA26-03"
+        "GA26-03",
+        "GB-02",
+        "GB-03"
       ]
     },
     {
@@ -1200,7 +1324,8 @@
       ],
       "exams": [
         "GA26-02",
-        "GA26-03"
+        "GA26-03",
+        "GB-03"
       ]
     },
     {
@@ -1215,7 +1340,8 @@
       ],
       "exams": [
         "GA26-02",
-        "GA26-03"
+        "GA26-03",
+        "GB-03"
       ]
     },
     {
@@ -1396,7 +1522,8 @@
       "axes": "Aspecto, cara afectada y causas probables.",
       "teacher": [],
       "exams": [
-        "PB26-08"
+        "PB26-08",
+        "REF-09"
       ]
     },
     {
@@ -1470,7 +1597,8 @@
       "axes": "Sellado, transferencia térmica y regulación de película; diferencias por diseño.",
       "teacher": [],
       "exams": [
-        "PA26-05"
+        "PA26-05",
+        "P21-05"
       ]
     },
     {
@@ -1501,7 +1629,8 @@
       "axes": "Instrumentos, escuadrado, posición de medida y límites del fabricante.",
       "teacher": [],
       "exams": [
-        "PA26-05"
+        "PA26-05",
+        "P21-06"
       ]
     },
     {
@@ -1545,7 +1674,9 @@
       "exams": [
         "PA26-03",
         "PA26-04",
-        "CB26-06"
+        "CB26-06",
+        "P21-03",
+        "P21-04"
       ]
     },
     {
@@ -1586,7 +1717,9 @@
       "teacher": [],
       "exams": [
         "PA26-09",
-        "G21-02"
+        "G21-02",
+        "P21-07",
+        "P21-08"
       ]
     },
     {
@@ -2003,7 +2136,8 @@
       "exams": [
         "PA26-03",
         "PA26-04",
-        "CB26-06"
+        "CB26-06",
+        "P21-04"
       ]
     },
     {
@@ -2026,7 +2160,9 @@
       "teacher": [
         "C28"
       ],
-      "exams": []
+      "exams": [
+        "DT2-06"
+      ]
     },
     {
       "id": "M074",
@@ -2109,7 +2245,8 @@
       "exams": [
         "GA26-08",
         "GA26-09",
-        "PA26-10"
+        "PA26-10",
+        "GB-07"
       ]
     },
     {
@@ -2168,7 +2305,8 @@
       "exams": [
         "GA26-08",
         "GA26-09",
-        "PA26-10"
+        "PA26-10",
+        "GB-04"
       ]
     },
     {
@@ -2275,7 +2413,8 @@
         "GA26-06",
         "GA26-07",
         "G21-06",
-        "G21-07"
+        "G21-07",
+        "C24T-03"
       ]
     },
     {
@@ -2577,7 +2716,8 @@
       "axes": "Entrada y salida de gases y relación con inyección o encendido.",
       "teacher": [],
       "exams": [
-        "GA26-10"
+        "GA26-10",
+        "GB-09"
       ]
     },
     {
@@ -2588,7 +2728,8 @@
       "axes": "Círculo base, rampas, flancos y nariz.",
       "teacher": [],
       "exams": [
-        "GA26-10"
+        "GA26-10",
+        "DT1-04"
       ]
     },
     {
@@ -2619,7 +2760,11 @@
       "axes": "Contacto, ajuste de holgura, alimentación de aceite y fallas.",
       "teacher": [],
       "exams": [
-        "GA26-10"
+        "GA26-10",
+        "DT1-03",
+        "DT1-07",
+        "DT2-06",
+        "DT2-10"
       ]
     },
     {
@@ -2706,7 +2851,8 @@
       "axes": "Sincronismo, tensión, juego, lubricación y mantenimiento.",
       "teacher": [],
       "exams": [
-        "GA26-10"
+        "GA26-10",
+        "DT2-03"
       ]
     },
     {
@@ -2717,7 +2863,8 @@
       "axes": "Mitad de rpm o mismas rpm cuando el árbol acciona eventos de cada ciclo.",
       "teacher": [],
       "exams": [
-        "GA26-10"
+        "GA26-10",
+        "DT2-04"
       ]
     },
     {
@@ -2817,7 +2964,10 @@
       "question": "Dibujá el recorrido completo del combustible desde almacenamiento hasta retorno. ¿Qué hace cada equipo?",
       "axes": "Trasiego, decantación cuando existe, tratamiento, servicio, alimentación, filtros e inyección.",
       "teacher": [],
-      "exams": []
+      "exams": [
+        "INY-01",
+        "INY-02"
+      ]
     },
     {
       "id": "M146",
@@ -2835,7 +2985,9 @@
       "question": "¿Cómo compararías bomba línea inyector, bomba unitaria, inyector bomba y common rail?",
       "axes": "Lugar donde se genera presión, acumulación y control de entrega.",
       "teacher": [],
-      "exams": []
+      "exams": [
+        "INY-01"
+      ]
     },
     {
       "id": "M148",
@@ -2856,7 +3008,8 @@
       "axes": "Fin de inyección, presión residual y geometría de líneas según diseño.",
       "teacher": [],
       "exams": [
-        "D26-05"
+        "D26-05",
+        "INY-04"
       ]
     },
     {
@@ -3176,7 +3329,9 @@
       "question": "¿Cómo se transfiere calor desde gases y piezas al refrigerante y al ambiente?",
       "axes": "Conducción, convección y resistencia térmica de depósitos.",
       "teacher": [],
-      "exams": []
+      "exams": [
+        "REF-01"
+      ]
     },
     {
       "id": "M185",
@@ -3185,7 +3340,9 @@
       "question": "¿Cómo se diferencian refrigeración por aire, agua directa e indirecta?",
       "axes": "Recorrido y fluido que toca el motor.",
       "teacher": [],
-      "exams": []
+      "exams": [
+        "GB-06"
+      ]
     },
     {
       "id": "M186",
@@ -3203,7 +3360,9 @@
       "question": "Dibujá un circuito de agua dulce y otro de agua de mar. ¿Dónde intercambian calor?",
       "axes": "Tomas, filtros, bombas, motor, termostato, enfriador y descarga.",
       "teacher": [],
-      "exams": []
+      "exams": [
+        "REF-07"
+      ]
     },
     {
       "id": "M188",
@@ -3230,7 +3389,9 @@
       "question": "¿Qué función cumple el tanque de expansión o compenso y por qué importa su ubicación?",
       "axes": "Dilatación, reserva, desaireación y presión estática.",
       "teacher": [],
-      "exams": []
+      "exams": [
+        "REF-03"
+      ]
     },
     {
       "id": "M191",
@@ -3267,7 +3428,8 @@
       "axes": "Ataque químico, depósito térmico y colapso de burbujas.",
       "teacher": [],
       "exams": [
-        "PB26-08"
+        "PB26-08",
+        "REF-09"
       ]
     },
     {
@@ -3407,7 +3569,9 @@
       "question": "Trazá el recorrido del aceite desde el depósito hasta un cojinete. ¿Qué hace cada componente?",
       "axes": "Aspiración, bomba, alivio, filtro, enfriador, galería y retorno según circuito.",
       "teacher": [],
-      "exams": []
+      "exams": [
+        "GB-06"
+      ]
     },
     {
       "id": "M210",
@@ -3888,7 +4052,9 @@
       "question": "¿Qué función cumple el regulador de velocidad cuando cambia la carga?",
       "axes": "Equilibrio de par, velocidad medida y combustible entregado.",
       "teacher": [],
-      "exams": []
+      "exams": [
+        "GB-08"
+      ]
     },
     {
       "id": "M259",
@@ -3897,7 +4063,9 @@
       "question": "¿Cómo actúan masas centrífugas y resorte en un regulador mecánico?",
       "axes": "Equilibrio de fuerzas y desplazamiento de mando.",
       "teacher": [],
-      "exams": []
+      "exams": [
+        "GB-08"
+      ]
     },
     {
       "id": "M260",
@@ -3906,7 +4074,9 @@
       "question": "¿Cómo se amplifica la señal en un regulador mecánico hidráulico Woodward?",
       "axes": "Captación, válvula piloto, servopistón y realimentación; identificar modelo.",
       "teacher": [],
-      "exams": []
+      "exams": [
+        "GB-08"
+      ]
     },
     {
       "id": "M261",
@@ -4007,7 +4177,8 @@
         "G03"
       ],
       "exams": [
-        "GA26-01"
+        "GA26-01",
+        "GB-01"
       ]
     },
     {
@@ -4020,7 +4191,8 @@
         "G04"
       ],
       "exams": [
-        "GA26-01"
+        "GA26-01",
+        "GB-01"
       ]
     },
     {
@@ -4032,7 +4204,9 @@
       "teacher": [
         "G07"
       ],
-      "exams": []
+      "exams": [
+        "GB-01"
+      ]
     },
     {
       "id": "M273",
@@ -4043,7 +4217,9 @@
       "teacher": [
         "G08"
       ],
-      "exams": []
+      "exams": [
+        "GB-01"
+      ]
     },
     {
       "id": "M274",
@@ -4651,7 +4827,8 @@
       "axes": "Combina materiales elegidos para diferentes solicitaciones, por ejemplo corona de acero y falda de otro material según diseño. La corona resiste cargas térmicas y presión; la falda cumple guiado y otras funciones. Dibujá la unión y su refrigeración. No todos los pistones compuestos usan hierro fundido ni tienen la misma fijación o aplicación.",
       "teacher": [],
       "exams": [
-        "PA26-02"
+        "PA26-02",
+        "P21-02"
       ]
     },
     {
@@ -4662,7 +4839,8 @@
       "axes": "Identificá corona, falda, ranuras de aros y alojamiento del perno. La forma de la cabeza depende de cámara, combustión y distribución: puede incorporar cavidad o rebajes. Comparalo con pistón unido a vástago y cruceta. El nombre usado en el apunte debe contrastarse con el corte del motor; no implica siempre una falda postiza.",
       "teacher": [],
       "exams": [
-        "PA26-01"
+        "PA26-01",
+        "P21-01"
       ]
     },
     {
@@ -4684,7 +4862,8 @@
       "axes": "Se encuentran cortes rectos, oblicuos o escalonados según el aro. La elección depende del diseño y no hay un corte universalmente mejor. Verificá luz entre puntas, juego en la ranura, orientación y elementos de posicionamiento cuando existan. En dos tiempos evitá que las puntas enganchen lumbreras y respetá la indicación del fabricante.",
       "teacher": [],
       "exams": [
-        "PA26-08"
+        "PA26-08",
+        "P21-06"
       ]
     },
     {
@@ -4694,7 +4873,9 @@
       "question": "¿Qué se denomina biela extensible y qué precauciones exige interpretar ese diseño?",
       "axes": "En los diseños que lo permiten, elementos o suplementos de ajuste pueden modificar la longitud efectiva o posición del conjunto. Se identifica el mecanismo concreto y se vincula con la altura del pistón y las separaciones prescritas. No se utiliza como corrección improvisada de desgaste ni se cambian suplementos o aprietes sin procedimiento del fabricante.",
       "teacher": [],
-      "exams": []
+      "exams": [
+        "P21-07"
+      ]
     },
     {
       "id": "M342",
@@ -4717,7 +4898,8 @@
       "exams": [
         "GA26-04",
         "GA26-05",
-        "PB26-05"
+        "PB26-05",
+        "GB-05"
       ]
     },
     {
@@ -4762,7 +4944,9 @@
       "question": "¿Qué diferencia una válvula con linterna de una sin linterna al desmontarla?",
       "axes": "En la terminología del material, la linterna es un alojamiento o jaula desmontable que reúne elementos del conjunto valvular y puede permitir retirarlos sin desmontar toda la culata. Sin ella, los elementos se alojan directamente en la culata. El alcance del desmontaje depende del motor: identificá asiento, guía, vástago y fijación en su plano.",
       "teacher": [],
-      "exams": []
+      "exams": [
+        "DT1-06"
+      ]
     },
     {
       "id": "M348",
@@ -4772,7 +4956,9 @@
       "axes": "Pueden existir admisión, escape, inyección, aire de arranque, indicadora o purga y dispositivos de seguridad, según el motor. Un motor neumático que mueve el volante no equivale a distribuir aire de arranque dentro de los cilindros. No todos los dos tiempos tienen válvulas de admisión ni todas las culatas llevan seis válvulas: primero se define el diseño.",
       "teacher": [],
       "exams": [
-        "PB26-04"
+        "PB26-04",
+        "DT1-09",
+        "DT2-09"
       ]
     },
     {
@@ -4782,7 +4968,9 @@
       "question": "Compará una leva de distribución con el mando de aire de arranque y explicá qué sincronizan.",
       "axes": "La distribución gobierna eventos de intercambio de gases con perfil de apertura y cierre apropiado. El distribuidor de arranque ordena la admisión de aire en cilindros y posiciones que produzcan par en el sentido solicitado, cuando ese sistema existe. Los perfiles y accionamientos dependen del fabricante; el sistema de arranque no se describe como idéntico a la válvula de admisión.",
       "teacher": [],
-      "exams": []
+      "exams": [
+        "DT1-05"
+      ]
     },
     {
       "id": "M350",
@@ -4800,7 +4988,10 @@
       "question": "¿Qué significan distribución interior y exterior de la inyección en el material de clase?",
       "axes": "En el esquema mecánico del apunte se distinguen procesos en la bomba y procesos hasta la entrega por el inyector. Relacioná llenado, cierre de lumbreras y generación de presión en la bomba con propagación en la tubería, apertura y cierre de aguja y pulverización. Identificá el esquema antes de usar los nombres: no describen igual un common rail.",
       "teacher": [],
-      "exams": []
+      "exams": [
+        "INY-06",
+        "INY-07"
+      ]
     },
     {
       "id": "M352",
@@ -4809,7 +5000,9 @@
       "question": "Explicá la acción diferencial de la aguja del inyector.",
       "axes": "La presión del combustible actúa sobre superficies efectivas de la aguja y genera una fuerza de apertura frente al resorte y otras fuerzas. Cuando se alcanza la condición de apertura la aguja se levanta y permite la entrega; al caer la presión vuelve a asentar según el diseño. Dibujá áreas y fuerzas; no supongas igualdad entre presión de apertura e inyección durante todo el evento.",
       "teacher": [],
-      "exams": []
+      "exams": [
+        "INY-03"
+      ]
     },
     {
       "id": "M353",
@@ -4820,7 +5013,10 @@
       "teacher": [],
       "exams": [
         "GA26-08",
-        "PB26-06"
+        "PB26-06",
+        "INY-10",
+        "INY-11",
+        "INY-13"
       ]
     },
     {
@@ -4830,7 +5026,9 @@
       "question": "¿Qué son los ánodos de sacrificio o panes de cinc y dónde se emplean?",
       "axes": "El ánodo de un material adecuado se consume preferentemente para proteger metales conectados en un circuito electroquímico. Puede instalarse en equipos en contacto con agua de mar cuando el fabricante lo prevé. Se verifica material, continuidad eléctrica, consumo y ubicación; no se coloca cinc indiscriminadamente en todos los circuitos ni sustituye el tratamiento del agua.",
       "teacher": [],
-      "exams": []
+      "exams": [
+        "REF-06"
+      ]
     },
     {
       "id": "M355",
@@ -4848,7 +5046,11 @@
       "question": "Marcá en un diagrama qué cambia con luz excesiva o insuficiente en admisión y escape.",
       "axes": "En un tren mecánico convencional, luz excesiva tiende a retrasar la apertura y adelantar el cierre, reduciendo duración y alzada efectiva. Luz insuficiente tiende al efecto opuesto y puede impedir el cierre en caliente. En admisión afecta llenado; en escape puede afectar evacuación, sellado y refrigeración del asiento. Dibujá ambas situaciones respecto del reglaje nominal sin universalizar ángulos ni diseños hidráulicos.",
       "teacher": [],
-      "exams": []
+      "exams": [
+        "DT1-02",
+        "DT2-02",
+        "DA-06"
+      ]
     },
     {
       "id": "M357",
@@ -4859,7 +5061,9 @@
       "teacher": [],
       "exams": [
         "D26-04",
-        "D26-07"
+        "D26-07",
+        "DT1-08",
+        "DA-02"
       ]
     },
     {
@@ -4872,7 +5076,10 @@
       "exams": [
         "GA26-07",
         "D26-02",
-        "D26-04"
+        "D26-04",
+        "DT1-01",
+        "DT2-01",
+        "DA-03"
       ]
     },
     {
@@ -4883,7 +5090,8 @@
       "axes": "Un dos tiempos realiza un ciclo por vuelta y un cuatro tiempos por dos, pero eso no determina por sí solo su potencia específica o rendimiento. Compará igual base de potencia y servicio, masa total instalada, régimen, barrido, mantenimiento y acoplamiento a la hélice. Los dos tiempos lentos grandes y cuatro tiempos semirrápidos tienen aplicaciones distintas; evitá una regla universal de prevalencia.",
       "teacher": [],
       "exams": [
-        "D26-06"
+        "D26-06",
+        "DA-05"
       ]
     },
     {
@@ -4894,7 +5102,8 @@
       "axes": "Representá 720 grados y los procesos de admisión, compresión, combustión-expansión y escape. Ubicá aperturas, cierres e inyección respecto de PMS y PMI con datos del motor; el solape es el intervalo en que admisión y escape permanecen abiertas. Diferenciá el diagrama de eventos del P-V y explicá por qué los eventos reales no coinciden todos con puntos muertos.",
       "teacher": [],
       "exams": [
-        "D26-01"
+        "D26-01",
+        "DA-01"
       ]
     },
     {
@@ -4904,7 +5113,9 @@
       "question": "¿Qué instrumento llama el apunte pímetro y qué diferencia hay entre presión máxima y presión media indicada?",
       "axes": "Identificá el instrumento y su manual: un medidor de presión máxima registra el pico de presión y no equivale a un indicador que obtiene el diagrama del ciclo. La presión media indicada corresponde al trabajo indicado dividido por cilindrada. No se calcula solo con la presión máxima ni se interpreta un nombre del apunte como especificación universal.",
       "teacher": [],
-      "exams": []
+      "exams": [
+        "C24T-10"
+      ]
     },
     {
       "id": "M362",
@@ -4913,7 +5124,9 @@
       "question": "¿Qué es el rendimiento volumétrico y cómo se compara en motores atmosféricos y sobrealimentados?",
       "axes": "Relaciona la masa realmente admitida con una masa de referencia definida a partir del volumen desplazado y condiciones especificadas. Se deben declarar presión y temperatura de referencia y si se considera aire atrapado o suministrado. En sobrealimentación la comparación puede superar la unidad con una referencia atmosférica; no es sinónimo de rendimiento térmico.",
       "teacher": [],
-      "exams": []
+      "exams": [
+        "DA-04"
+      ]
     },
     {
       "id": "M363",
@@ -4922,7 +5135,9 @@
       "question": "Distinguí intertiempo, retraso hidráulico y retraso de encendido en inyección diésel.",
       "axes": "Ubicá inicio de acción de bomba, inicio real de inyección e inicio de combustión en tiempo o grados. La propagación y respuesta hidráulica no coinciden con la preparación físico-química hasta ignición. El término intertiempo se interpreta con el diagrama y convención del docente; no se usa para sumar o confundir intervalos distintos sin definir sus extremos.",
       "teacher": [],
-      "exams": []
+      "exams": [
+        "INY-12"
+      ]
     },
     {
       "id": "M364",
@@ -4931,7 +5146,441 @@
       "question": "¿Qué hace un purificador centrífugo de combustible y cuáles son sus límites?",
       "axes": "Separa fases y partículas por diferencias de densidad bajo fuerza centrífuga, con configuración y condiciones de caudal y temperatura previstas. Se distinguen purificación con separación de agua y clarificación según equipo. No elimina cualquier contaminante disuelto ni sustituye filtros, análisis y corrección del origen de contaminación; se sigue el manual del separador.",
       "teacher": [],
-      "exams": []
+      "exams": [
+        "C24T-08"
+      ]
+    },
+    {
+      "id": "M365",
+      "number": 365,
+      "unit": 10,
+      "question": "¿En qué se diferencia la función del sobrealimentador o soplante en un motor de cuatro tiempos frente a uno de dos tiempos?",
+      "axes": "En un cuatro tiempos el pistón cumple carreras dedicadas de admisión y escape, por lo que puede aspirar naturalmente y el sobrealimentador se emplea para aumentar la densidad y masa de aire admitida, incrementar la potencia y reducir el consumo específico. En un diésel de dos tiempos sin compresión en el cárter no existen carreras exclusivas de admisión y escape: un soplante o turbocompresor es indispensable primero para realizar el barrido (desalojar los gases quemados y renovar la carga alrededor del PMI) y luego, según el diagrama y el cierre de escape, también permite sobrealimentar el cilindro.",
+      "teacher": [],
+      "exams": [
+        "GA26-07",
+        "DT1-08",
+        "DA-04",
+        "DA-05",
+        "C24T-01",
+        "C24T-06"
+      ]
+    },
+    {
+      "id": "M366",
+      "number": 366,
+      "unit": 5,
+      "question": "¿Qué diferencia establece la cátedra entre mecanismo de distribución y mecanismo de accionamiento valvular?",
+      "axes": "En la corrección docente se distingue el mecanismo de distribución o mando de sincronismo (que vincula el giro del cigüeñal con el árbol de levas mediante tren de engranajes, cadena o correa dentada, manteniendo la relación 2:1 en cuatro tiempos y 1:1 en dos tiempos) respecto del mecanismo de accionamiento valvular propiamente dicho (leva o camón, botador o taqué, varilla de empuje, balancín, válvula y resortes). Al responder en examen conviene identificar ambos subsistemas sin mezclarlos.",
+      "teacher": [],
+      "exams": [
+        "GA26-10",
+        "GB-09",
+        "DT1-04",
+        "DT2-04"
+      ]
+    },
+    {
+      "id": "M367",
+      "number": 367,
+      "unit": 3,
+      "question": "¿Qué limita conceptualmente la relación de compresión en un motor diésel frente a un motor naftero?",
+      "axes": "En el motor naftero (Otto) se comprime mezcla aire-combustible y el límite superior lo fija el riesgo de autoinflamación o detonación de la mezcla antes del frente de llama de la bujía (con valores de referencia en el apunte de 4:1 a 7:1 o superiores según octanaje y diseño). En el motor diésel se comprime únicamente aire hasta superar la temperatura de autoignición del combustible (14:1 a 22:1 en el apunte) y el límite lo imponen las solicitaciones mecánicas y térmicas admisibles sobre pistón, camisa, culata, biela, cigüeñal y cojinetes.",
+      "teacher": [],
+      "exams": [
+        "GA26-08",
+        "GB-04"
+      ]
+    },
+    {
+      "id": "M368",
+      "number": 368,
+      "unit": 3,
+      "question": "¿Cómo se controla en la práctica el espacio nocivo mediante aplastamiento de material maleable y qué precauciones requiere?",
+      "axes": "En los motores donde el manual contempla este control lineal, se introduce o apoya un testigo de material blando maleable (como plomo) sobre la cabeza del pistón, se cierra el cilindro, se hace pasar el pistón por el PMS con el virador y luego se retira y mide el espesor aplastado con calibre o micrómetro para verificar la separación mínima entre pistón y culata. Debe ejecutarse con motor detenido, frío y bloqueado, sin confundir esa luz lineal de aplastamiento con el volumen total de la cámara de combustión.",
+      "teacher": [],
+      "exams": [
+        "PB26-05",
+        "GB-05"
+      ]
+    },
+    {
+      "id": "M369",
+      "number": 369,
+      "unit": 1,
+      "question": "Enumerá los sistemas o circuitos principales relacionados al motor principal y describí su interacción operativa.",
+      "axes": "Alrededor del motor principal interactúan los sistemas de alimentación e inyección de combustible, admisión y barrido o sobrealimentación, evacuación de gases de escape, lubricación, refrigeración (agua dulce y agua exterior), distribución, arranque e inversión de marcha, regulación de velocidad y vigilancia o alarmas. En el examen se exige listarlos en forma completa y explicar cómo el circuito consultado (por ejemplo lubricación o refrigeración) sostiene la operación continua y protege las piezas.",
+      "teacher": [],
+      "exams": [
+        "GB-02",
+        "GB-06"
+      ]
+    },
+    {
+      "id": "M370",
+      "number": 370,
+      "unit": 3,
+      "question": "¿A qué se denomina motor cuadrado o supercuadrado y qué componentes integran su tren alternativo?",
+      "axes": "Se denomina motor cuadrado a aquel en que la carrera del pistón es igual al diámetro del cilindro (S/D = 1) y supercuadrado o corto cuando la carrera es menor que el diámetro (S/D < 1), configuración que permite mayores regímenes de rotación manteniendo acotada la velocidad media del pistón. En su ejecución habitual de pistón tronco, el tren alternativo está integrado por pistón, aros, perno o bulón, biela y manivela del cigüeñal.",
+      "teacher": [],
+      "exams": [
+        "GB-07"
+      ]
+    },
+    {
+      "id": "M371",
+      "number": 371,
+      "unit": 5,
+      "question": "Compará y esquematizá los sistemas de accionamiento valvular directo, semidirecto e indirecto, indicando dónde se mide la luz.",
+      "axes": "En el accionamiento directo el árbol de levas se ubica en la culata y el camón actúa directamente sobre el botador o platillo de la válvula; en el semidirecto el árbol en culata acciona la válvula mediante un balancín o palanca intermedia con rodillo; en el indirecto el árbol alojado en el bloque mueve botador, varilla de empuje y balancín. La luz de válvulas se mide con calibre sonda en el punto previsto por el fabricante (entre punta de balancín y vástago o entre leva y botador) con la leva en su círculo base.",
+      "teacher": [],
+      "exams": [
+        "DT1-03",
+        "DT2-05"
+      ]
+    },
+    {
+      "id": "M372",
+      "number": 372,
+      "unit": 5,
+      "question": "¿Por qué una válvula puede llevar hasta dos o tres resortes concéntricos y qué función cumple cada uno?",
+      "axes": "Los resortes deben vencer la inercia del mecanismo para que el seguidor copie el perfil de la leva sin despegarse y asegurar el cierre estanco de la válvula sobre su asiento. Emplear dos o tres resortes helicoidales concéntricos de distinto diámetro y paso reparte la carga, reduce la altura necesaria, evita la resonancia o flotación al tener frecuencias naturales diferentes y aporta seguridad mecánica para sostener la válvula si uno de los resortes se rompe.",
+      "teacher": [],
+      "exams": [
+        "DT2-07"
+      ]
+    },
+    {
+      "id": "M373",
+      "number": 373,
+      "unit": 5,
+      "question": "¿Qué diferencias constructivas existen entre la válvula de admisión y la de escape y cómo se comparan los asientos de 45° y 30°?",
+      "axes": "La válvula de admisión suele construirse con mayor diámetro de cabeza para maximizar el llenado y opera refrigerada por el aire fresco; la de escape es de menor diámetro, soporta el barrido de gases muy calientes y corrosivos y utiliza aceros aleados (al cromo-silicio o níquel-cromo) y recargues duros tipo Stellite en el asiento. El asiento cónico a 45° logra mayor presión de contacto, buen autocentraje y mejor resistencia frente a depósitos de escape; el asiento a 30° ofrece mayor área de pasaje para una misma alzada pero menor presión específica de cierre.",
+      "teacher": [],
+      "exams": [
+        "DT2-08"
+      ]
+    },
+    {
+      "id": "M374",
+      "number": 374,
+      "unit": 5,
+      "question": "¿Qué tipos de compensadores automáticos de luz de válvulas cita el apunte y de qué depende el huelgo en trenes mecánicos?",
+      "axes": "El material de clase distingue los compensadores automáticos hidráulicos (que emplean presión de aceite y válvula de retención interna) y los mecánicos de resorte, ambos destinados a absorber las variaciones por dilatación térmica sin requerir ajustes manuales periódicos. En los trenes mecánicos convencionales el huelgo prescrito depende de la longitud del vástago, el coeficiente de dilatación y la temperatura de servicio, razón por la cual la válvula de escape suele llevar mayor luz en frío que la de admisión.",
+      "teacher": [],
+      "exams": [
+        "DT1-07",
+        "DT2-10"
+      ]
+    },
+    {
+      "id": "M375",
+      "number": 375,
+      "unit": 5,
+      "question": "En un motor de dos tiempos con lumbreras y válvula en culata, ¿cómo alteran el diagrama y el ciclo un huelgo mínimo o máximo en la válvula?",
+      "axes": "Con huelgo mínimo la válvula abre anticipadamente y cierra con retraso: en una válvula de escape pierde trabajo de expansión, altera la sobrealimentación y corre riesgo de no asentar en caliente quemando asiento y platillo; en una válvula de barrido/admisión en culata prolonga la apertura retrasando el inicio efectivo de compresión. Con huelgo máximo la válvula abre tarde y cierra antes: acorta el tiempo y la sección de pasaje, dificulta evacuar gases quemados cuando se descubren las lumbreras, retiene gases residuales y provoca llenado pobre y combustión incompleta.",
+      "teacher": [],
+      "exams": [
+        "DT1-01",
+        "DT1-02",
+        "DT2-01",
+        "DT2-02",
+        "DA-03"
+      ]
+    },
+    {
+      "id": "M376",
+      "number": 376,
+      "unit": 4,
+      "question": "Dibujá un diagrama P-V real de un diésel de cuatro tiempos sobrealimentado y explicá qué cambia si la luz de admisión es mínima.",
+      "axes": "En un cuatro tiempos sobrealimentado la carrera de admisión transcurre a una presión superior a la atmosférica impuesta por el turbocompresor, y durante el cruce de válvulas alrededor del PMS ese exceso de presión barre los gases residuales de la cámara. Si la válvula de admisión tiene huelgo mínimo o insuficiente, permanece abierta más grados de los debidos o no cierra herméticamente al subir el pistón: parte de la carga refluye al múltiple, caen la presión y temperatura finales de compresión, empeora la combustión y cae la potencia.",
+      "teacher": [],
+      "exams": [
+        "DA-01",
+        "DA-06"
+      ]
+    },
+    {
+      "id": "M377",
+      "number": 377,
+      "unit": 4,
+      "question": "¿Qué problema presenta un diésel de dos tiempos sólo con lumbreras simétricas en la carrera ascendente y cómo se corrige el ciclo?",
+      "axes": "En un cilindro con lumbreras controladas únicamente por la falda del pistón, las lumbreras de escape son más altas que las de barrido: al descender abren primero para aliviar presión, pero al ascender el pistón tapa primero las de barrido mientras las de escape siguen abiertas, permitiendo que escape parte del aire fresco y formando hollín por mal llenado. La corrección del ciclo de dos tiempos incorpora bomba de barrido o turbocompresor y una válvula de escape en culata (o válvula rotativa/asimetría) que permite cerrar el escape antes que el barrido y sobrealimentar.",
+      "teacher": [],
+      "exams": [
+        "GA26-07",
+        "C24T-02"
+      ]
+    },
+    {
+      "id": "M378",
+      "number": 378,
+      "unit": 8,
+      "question": "¿Qué requisitos debe cumplir un buen refrigerante naval, qué son los inhibidores y cómo influyen los puntos de ebullición y congelación?",
+      "axes": "El fluido refrigerante debe poseer alta capacidad térmica, elevar el punto de ebullición (evitando bolsas de vapor y película aislante en zonas calientes, ayudado por la presurización del sistema), reducir el punto de congelación en climas fríos, proteger los metales frente a la corrosión, mitigar la cavitación en camisas húmedas y bombas y cuidar sellos elastoméricos. Los inhibidores son aditivos químicos que forman una barrera pasivante protectora sobre las superficies metálicas internas y deben controlarse según el programa de tratamiento.",
+      "teacher": [],
+      "exams": [
+        "REF-02",
+        "REF-09"
+      ]
+    },
+    {
+      "id": "M379",
+      "number": 379,
+      "unit": 8,
+      "question": "¿Por qué el tanque del circuito cerrado se llama de expansión y compenso y cómo debe estar su válvula de comunicación en marcha normal?",
+      "axes": "Se llama tanque de expansión porque su cámara superior admite el aumento de volumen del agua dulce al elevarse su temperatura de régimen, y de compenso porque repone fluido ante pequeñas fugas y mantiene una altura estática positiva sobre la aspiración de la bomba de circulación, favoreciendo además la desaireación. La válvula que comunica el tanque con el circuito cerrado debe encontrarse abierta durante el funcionamiento normal; sólo la válvula de llenado desde la red externa permanece cerrada salvo al reponer nivel.",
+      "teacher": [],
+      "exams": [
+        "REF-04"
+      ]
+    },
+    {
+      "id": "M380",
+      "number": 380,
+      "unit": 8,
+      "question": "Esquematizá las tres condiciones operativas de una válvula termostática de doble asiento y el recorrido del agua en cada una.",
+      "axes": "1) Válvula cerrada (motor frío): el asiento hacia el enfriador permanece cerrado y el asiento de bypass abierto, recirculando el agua desde la descarga de las culatas directamente a la aspiración de la bomba para alcanzar pronto la temperatura de régimen. 2) Apertura parcial (regulación intermedia): ambos asientos quedan parcialmente abiertos, repartiendo caudal entre el enfriador y la línea de derivación. 3) Apertura total (motor a plena temperatura): cierra por completo el bypass y envía todo el caudal a través del enfriador hacia la aspiración de la bomba.",
+      "teacher": [],
+      "exams": [
+        "REF-03",
+        "REF-05"
+      ]
+    },
+    {
+      "id": "M381",
+      "number": 381,
+      "unit": 8,
+      "question": "¿Qué diferencia constructiva requiere una bomba de refrigeración acoplada a un motor reversible frente a uno de un solo sentido de giro?",
+      "axes": "En un motor de sentido de giro único, la bomba acoplada mecánicamente puede ser centrífuga con rodete y voluta diseñados para rotar en una sola dirección. En cambio, en un motor directamente reversible que invierte su sentido de rotación para dar marcha atrás, una bomba arrastrada por el propio motor debe mantener el sentido de bombeo en ambas rotaciones (mediante bomba alternativa de pistón con juego de válvulas de retención, diseño bidireccional con carcasa simétrica o bien empleando electrobombas independientes del giro del cigüeñal).",
+      "teacher": [],
+      "exams": [
+        "REF-08"
+      ]
+    },
+    {
+      "id": "M382",
+      "number": 382,
+      "unit": 6,
+      "question": "¿Por qué la bomba de inyección tipo Bosch tiene carrera geométrica constante y cómo varía el volumen dosificado?",
+      "axes": "La leva impulsa al émbolo siempre entre el mismo PMI y PMS geométricos, pero el suministro efectivo comienza cuando el borde superior del émbolo obtura las lumbreras de entrada y termina cuando su rampa o ranura helicoidal descubre el orificio de descarga, aliviando bruscamente la presión hacia la galería de baja. Al desplazar la cremallera gira el émbolo dentro de su cilindro y cambia la altura a la que la hélice abre el derrame, modificando la carrera útil y la dosis inyectada según la carga.",
+      "teacher": [],
+      "exams": [
+        "INY-05"
+      ]
+    },
+    {
+      "id": "M383",
+      "number": 383,
+      "unit": 6,
+      "question": "Enumerá y describí las tres etapas de la distribución exterior y las tres etapas de la distribución interior en el examen de inyección.",
+      "axes": "Según la clasificación evaluada en la cátedra, la distribución exterior (realizada por el sistema de bombeo y regulación) abarca tres etapas: 1) Dosificación (entregar a cada cilindro la masa necesaria), 2) Regulación (introducirla en el momento o ángulo oportuno del ciclo) y 3) Graduación (adecuar el caudal al régimen y carga). La distribución interior (realizada por el inyector dentro de la cámara) comprende: 1) Pulverización (subdividir el líquido en gotas finísimas), 2) Penetración (dar alcance al chorro en el aire denso) y 3) Difusión (mezclar homogéneamente el combustible con todo el aire).",
+      "teacher": [],
+      "exams": [
+        "INY-06",
+        "INY-07"
+      ]
+    },
+    {
+      "id": "M384",
+      "number": 384,
+      "unit": 6,
+      "question": "Esquematizá las tres posiciones del émbolo con rebaje helicoidal (plena marcha, ralentí y parada) y la válvula de descarga Bosch.",
+      "axes": "a) En plena marcha el giro del émbolo orienta el tramo más largo de pared maciza frente a la lumbrera de descarga, logrando máxima carrera efectiva y máximo caudal. b) En ralentí la rampa helicoidal descubre la lumbrera casi de inmediato tras cubrir la entrada, inyectando el caudal mínimo estable. c) En motor parado la ranura vertical coincide con la lumbrera durante toda la subida y no se genera presión. En la salida del elemento, la válvula de descarga actúa como retención unidireccional y su collarín de retracción descomprime la tubería al cerrar para lograr un corte limpio sin goteo en la tobera.",
+      "teacher": [],
+      "exams": [
+        "INY-02",
+        "INY-05"
+      ]
+    },
+    {
+      "id": "M385",
+      "number": 385,
+      "unit": 6,
+      "question": "¿Por qué se contraponen la pulverización y el grado de penetración del chorro de combustible en la cámara de combustión?",
+      "axes": "La pulverización divide el chorro en gotas muy pequeñas para multiplicar la superficie de contacto con el aire caliente y acelerar su vaporización, pero al tener muy poca masa individual esas microgotas pierden velocidad rápidamente por el rozamiento con el aire comprimido denso y penetran poco. En cambio, un chorro compacto de gotas más gruesas conserva mayor cantidad de movimiento y llega lejos en la cámara, pero se evapora y mezcla con mayor lentitud; por eso la presión de inyección y la geometría de los orificios de la tobera buscan un compromiso acorde al tamaño y turbulencia de la cámara.",
+      "teacher": [],
+      "exams": [
+        "INY-13"
+      ]
+    },
+    {
+      "id": "M386",
+      "number": 386,
+      "unit": 6,
+      "question": "Compará los motores diésel de inyección directa con los de inyección indirecta (precombustión, turbulencia y celda de energía).",
+      "axes": "En inyección directa el inyector multiorificio pulveriza a alta presión directamente sobre la cámara principal labrada en la cabeza del pistón: tiene menores pérdidas de calor por paredes, mayor rendimiento térmico, menor consumo específico y mejor arranque en frío, aunque mayor pico de presión y ruido. En inyección indirecta se emplea una cámara auxiliar en la culata (antecámara de precombustión, cámara esférica/tangencial de turbulencia o celda acumuladora de energía con el inyector fuera de la celda apuntando al pasaje): aprovecha la gran turbulencia generada en el conducto para usar menor presión de inyección e inyector de espiga con marcha más suave, a costa de mayor consumo y requerir bujía incandescente en frío.",
+      "teacher": [],
+      "exams": [
+        "INY-08",
+        "INY-09",
+        "INY-14",
+        "INY-15",
+        "INY-16"
+      ]
+    },
+    {
+      "id": "M387",
+      "number": 387,
+      "unit": 2,
+      "question": "¿Qué aleaciones y tratamientos se emplean en la fabricación de camisas y cuáles son las tres fases de su mecanizado interno?",
+      "axes": "Según la guía orientativa de cátedra, las camisas se fabrican en fundición gris centrifugada o aleada con cromo-níquel (con tratamiento térmico) o níquel-cromo-molibdeno-aluminio, y en ciertas aplicaciones llevan cromo poroso depositado electrolíticamente en capa delgada. Para lograr cilindricidad y sellado sin desgaste prematuro, su interior pasa por tres operaciones: 1) Mandrilado de desbaste con herramienta de corte, 2) Rectificado de precisión con muela abrasiva y 3) Bruñido o pomado final, que elimina crestas agudas y deja un tramado de microrrayas cruzadas capaz de retener el aceite lubricante y facilitar el asentamiento de los aros.",
+      "teacher": [],
+      "exams": [
+        "C24T-04"
+      ]
+    },
+    {
+      "id": "M388",
+      "number": 388,
+      "unit": 2,
+      "question": "Describí la estratificación funcional de los tres aros, el portaaro de Ni-Resist y el concepto de cerraje y sacrificio del aro.",
+      "axes": "En pistones diésel exigidos la primera ranura suele incorporar un inserto de fundición austenítica (Ni-Resist) para resistir el golpeteo axial y radial a alta temperatura. El 1° aro (de fuego o choque) soporta la máxima presión y temperatura, a menudo con cara convexa y recubrimiento de cromo o molibdeno; el 2° aro (compresión inferior y rascador, perfil cónico o escalonado Napier) complementa la estanqueidad y realiza un prerraspado descendente; el 3° aro (rascaaceite con ranuras de drenaje o expansor) calibra la película lubricante. El cerraje es la luz entre puntas dentro del cilindro para que la dilatación térmica no haga tope ni gripe el aro, fabricándose el aro en material más fácil de reemplazar que la camisa.",
+      "teacher": [],
+      "exams": [
+        "PA26-06",
+        "P21-05",
+        "P21-06"
+      ]
+    },
+    {
+      "id": "M389",
+      "number": 389,
+      "unit": 2,
+      "question": "Compará los pistones de fundición gris, de aleación liviana y forjados, y explicá los tres métodos de refrigeración del pistón.",
+      "axes": "El pistón de hierro fundido presenta igual coeficiente de dilatación que la camisa (permitiendo menor huelgo en frío) y buena resistencia al desgaste en motores lentos, aunque su mayor peso eleva las fuerzas de inercia. Los de aleaciones livianas de aluminio (aluminio-cobre-silicio, duraluminio) se usan en motores rápidos por su baja masa y alta conductividad térmica, exigiendo controlar la mayor dilatación; el forjado mejora la tenacidad y resistencia a fatiga bajo sobrealimentación. Su refrigeración puede realizarse: a) con aceite lubricante en circuito o galería dedicada, b) con agua en diseños específicos o c) por proyección/salpicado de aceite desde el pie de biela contra el fondo de la corona.",
+      "teacher": [],
+      "exams": [
+        "PA26-01",
+        "P21-01"
+      ]
+    },
+    {
+      "id": "M390",
+      "number": 390,
+      "unit": 2,
+      "question": "¿Por qué se emplea el corte oblicuo en la cabeza de biela de motores rápidos y por qué deben equilibrarse las masas del juego de bielas?",
+      "axes": "En motores rápidos y semirrápidos con muñones de cigüeñal de gran diámetro respecto del cilindro, una cabeza de biela partida a 90° sería demasiado ancha para pasar por el interior de la camisa. El plano de corte oblicuo o inclinado entre el cuerpo y el sombrero reduce el ancho transversal máximo y permite extraer el conjunto pistón-biela por arriba a través del cilindro sin desmontar el cigüeñal. Además, todas las bielas de un motor deben igualar su masa total y su reparto entre extremo alternativo (pie) y rotativo (cabeza) para evitar fuerzas de inercia desbalanceadas y vibraciones armónicas.",
+      "teacher": [],
+      "exams": [
+        "P21-07",
+        "P21-08"
+      ]
+    },
+    {
+      "id": "M391",
+      "number": 391,
+      "unit": 2,
+      "question": "Detallá las cinco capas de un cojinete trimetálico con barrera de difusión y explicá cómo progresa en él la falla por fatiga.",
+      "axes": "Desde el exterior hacia la superficie de roce comprende: 1) Respaldo de acero estructural que asegura rigidez y ajuste en el alojamiento, 2) Capa intermedia portante de bronce al plomo de alta capacidad de carga, 3) Barrera galvánica de níquel (de pocos micrones) que impide la difusión del estaño hacia el bronce, 4) Sobreplaca galvánica de plomo-estaño-cobre con alta incrustabilidad y adaptabilidad y 5) Baño micrométrico de estaño para asentamiento y protección anticorrosiva. Ante sobrecarga térmica y cíclica, las microfisuras de fatiga se inician en la superficie de roce, descienden hasta frenarse en la barrera de níquel/bronce y avanzan paralelas a ella desprendiendo escamas sin despegar el acero.",
+      "teacher": [],
+      "exams": [
+        "CSF-05",
+        "C24T-07"
+      ]
+    },
+    {
+      "id": "M392",
+      "number": 392,
+      "unit": 2,
+      "question": "¿Cómo se mide la holgura de lubricación de un cojinete de bancada o biela mediante galga plástica calibrada (Plastigage)?",
+      "axes": "Con el muñón y los semicasquillos limpios y sin película de aceite que falsee la medida, se apoya un tramo de filamento plástico calibrado longitudinalmente sobre el muñón, se instala la tapa o sombrero y se aprietan los pernos en etapas con torquímetro hasta el par o ángulo nominal, con prohibición absoluta de girar el cigüeñal durante la prueba. Al retirar nuevamente el sombrero con cuidado vertical, se compara el ancho del filamento aplastado contra la escala impresa del envoltorio, obteniendo directamente la luz diametral de aceite en centésimas de milímetro; luego se limpia el plástico y se lubrica abundantemente para el montaje final.",
+      "teacher": [],
+      "exams": [
+        "C24T-07"
+      ]
+    },
+    {
+      "id": "M393",
+      "number": 393,
+      "unit": 10,
+      "question": "¿Cuáles son los cuatro métodos de barrido clasificados en el banco docente y qué ventajas ofrece el diseño de pistones opuestos?",
+      "axes": "El cuestionario clasifica el barrido o lavaje en cuatro variantes: 1) Barrido por lumbreras en la camisa (directo o transversal, en rizo o retorno, y de corrientes paralelas), 2) Barrido por válvulas en la cabeza o culata, 3) Barrido con comando de válvulas supletorias y 4) Barrido de corrientes equivalentes mediante pistones opuestos. En el motor de pistones opuestos dos émbolos comparten el mismo cilindro controlando uno las lumbreras de barrido y el otro las de escape: logra un barrido unidireccional eficiente y elimina las culatas y sus mecanismos valvulares, con la complejidad adicional de vincular dos cigüeñales.",
+      "teacher": [],
+      "exams": [
+        "C24T-02",
+        "C24T-05"
+      ]
+    },
+    {
+      "id": "M394",
+      "number": 394,
+      "unit": 10,
+      "question": "¿Cómo se clasifican los sobrealimentadores o sopladores en el apunte y por qué la sobrealimentación reduce el consumo específico?",
+      "axes": "El banco los divide en tres grupos: a) Compresores centrífugos de alta velocidad (acoplados a una turbina movida por los gases de escape), b) Bombas de pistón alternativas y c) Sopladores rotativos de desplazamiento positivo (como los de lóbulos Roots). Al entregar aire a presión superior a la atmosférica aumenta la densidad y la masa de oxígeno por ciclo, permitiendo quemar más combustible con mejor turbulencia y mayor presión media efectiva; cuando el turbocompresor aprovecha la energía residual del escape, las pérdidas relativas disminuyen y baja el consumo específico por unidad de potencia.",
+      "teacher": [],
+      "exams": [
+        "C24T-01",
+        "C24T-06"
+      ]
+    },
+    {
+      "id": "M395",
+      "number": 395,
+      "unit": 8,
+      "question": "¿Cómo se clasifican los intercambiadores de calor en motores diésel y cómo intervienen conducción, convección y radiación?",
+      "axes": "Los intercambiadores transfieren calor entre dos fluidos separados por paredes metálicas sin mezclarlos; en motores navales cumplen función de enfriadores (de agua dulce de camisas, de aceite lubricante y de aire de carga) o de calentadores (precalentamiento de agua o combustible), construyéndose de tipo radiador, de placas o de casco y tubos (envuelta y tubo). En el motor el calor pasa de los gases de combustión a las paredes por convección y radiación, atraviesa las paredes metálicas de camisa y culata por conducción y se cede al agua de refrigeración por convección.",
+      "teacher": [],
+      "exams": [
+        "REF-01",
+        "C24T-09"
+      ]
+    },
+    {
+      "id": "M396",
+      "number": 396,
+      "unit": 9,
+      "question": "Definí punto de inflamación, punto de escurrimiento, demulsibilidad y residuo carbonoso en las propiedades del aceite lubricante.",
+      "axes": "El punto de inflamación es la temperatura mínima a la cual el aceite calentado desprende vapores que se inflaman al acercar una llama (su descenso en servicio advierte dilución por combustible). El punto de escurrimiento o fluidez es la temperatura mínima a la que el aceite aún fluye antes de inmovilizarse por frío. La demulsibilidad es la aptitud del aceite para separarse rápidamente del agua sin formar emulsiones estables, propiedad indispensable para que la centrífuga pueda deshidratarlo. El residuo carbonoso caracteriza la tendencia a dejar depósitos carbonosos ante altas temperaturas.",
+      "teacher": [],
+      "exams": [
+        "C24T-08"
+      ]
+    },
+    {
+      "id": "M397",
+      "number": 397,
+      "unit": 4,
+      "question": "Desarrollá las cuatro fases del ciclo práctico de un motor diésel de cuatro tiempos vinculando cada evento con sus ángulos respecto de PMS y PMI.",
+      "axes": "1) Admisión: la válvula de admisión abre con adelanto antes del PMS (AAA, p. ej. ~15° en el ejemplo de cátedra) y cierra con retraso después del PMI (RCA, ~20°) aprovechando la inercia del aire para mejorar el llenado. 2) Compresión: con válvulas cerradas el pistón sube hasta el PMS elevando presión y temperatura del aire por encima del punto de inflamación del gasoil. 3) Combustión-expansión (carrera motriz): el inyector abre con adelanto antes del PMS (AAI, ~7°) para compensar el retardo de ignición y la combustión se extiende durante el inicio del descenso. 4) Escape: la válvula de escape abre con adelanto antes del PMI (AAE, ~42°) para aliviar la presión del cilindro y cierra después del PMS siguiente (RCE, ~12°), generando el cruce de válvulas con la nueva admisión.",
+      "teacher": [],
+      "exams": [
+        "C24T-03"
+      ]
+    },
+    {
+      "id": "M398",
+      "number": 398,
+      "unit": 5,
+      "question": "Compará los cuatro sistemas de transmisión de la distribución evaluados en examen: correa, cadena, engranajes y barra con engranaje helicoidal.",
+      "axes": "1) Por correa dentada: conecta cigüeñal y árbol de levas en seco con un tensor calibrado; es silenciosa pero exige mayor mantenimiento y reemplazo preventivo para evitar rotura y pérdida de sincronismo. 2) Por cadena de rodillos: trabaja lubricada entre piñones con guías y tensor, apta para distancias medias aunque sufre estiramiento progresivo. 3) Por tren de engranajes (directo o con piñones intermedios): es el sistema más robusto y duradero en motores diésel navales, requiriendo control de juego entre dientes y marcas de puesta a punto. 4) Por eje o barra vertical con engranajes helicoidales o cónicos: se emplea en diseños específicos con árbol de levas en culata distante del cigüeñal.",
+      "teacher": [],
+      "exams": [
+        "DT2-03"
+      ]
+    },
+    {
+      "id": "M399",
+      "number": 399,
+      "unit": 2,
+      "question": "Compará las culatas de motores de dos y cuatro tiempos y explicá cómo resuelve la junta de culata el sellado de gases y fluidos.",
+      "axes": "En un dos tiempos con barrido por lumbreras la culata puede ser individual y simétrica (alojando inyector, válvula de aire de arranque, seguridad e indicadora, o además la válvula de escape en uniflujo), reduciendo gradientes térmicos frente a una culata de cuatro tiempos que debe labrar conductos múltiples de admisión y escape. La junta de culata debe sellar presiones y temperaturas extremas de combustión mediante anillos metálicos de fuego (cobre, hierro dulce o láminas de acero MLS) y simultáneamente estancar pasos de agua y aceite de menor presión mediante inserciones o anillos elastoméricos resistentes al calor.",
+      "teacher": [],
+      "exams": [
+        "PB26-04",
+        "DT1-09"
+      ]
+    },
+    {
+      "id": "M400",
+      "number": 400,
+      "unit": 2,
+      "question": "Explicá los tres grados de libertad de fijación del perno de pistón, el montaje por dilatación y los controles metrológicos de muñones y biela.",
+      "axes": "El perno puede montarse: 1) Estacionario o fijo al pistón, 2) Semiflotante (fijo al pie de biela por interferencia o prisionero y libre en los mamelones, o viceversa) y 3) Totalmente flotante (libre tanto en el buje del pie de biela como en los alojamientos del pistón, retenido axialmente por seguros Seeger). Cuando lleva ajuste fijo al pistón o a la biela, se calienta homogéneamente la pieza hembra para dilatar el orificio e insertar el perno sin forzarlo. En el control dimensional se verifican diámetro, conicidad y ovalización de muñones con micrómetro exterior y la concentricidad del alojamiento de cabeza de biela armada a torque nominal con alesómetro.",
+      "teacher": [],
+      "exams": [
+        "P21-03"
+      ]
     }
   ],
   "teacher": [
@@ -5840,11 +6489,15 @@
             "M097",
             "M098",
             "M099",
-            "M358"
+            "M358",
+            "M377",
+            "M365"
           ],
           "oralIds": [
             "motores-u9-q4",
-            "motores-u9-q1"
+            "motores-u9-q1",
+            "motores-u9-q6",
+            "motores-u10-q4"
           ]
         },
         {
@@ -5857,11 +6510,13 @@
             "M077",
             "M079",
             "M081",
-            "M084"
+            "M084",
+            "M367"
           ],
           "oralIds": [
             "motores-u5-q5",
-            "motores-u8-q2"
+            "motores-u8-q2",
+            "motores-u8-q5"
           ]
         },
         {
@@ -5896,10 +6551,12 @@
             "M125",
             "M130",
             "M133",
-            "M134"
+            "M134",
+            "M366"
           ],
           "oralIds": [
-            "motores-u1-q9"
+            "motores-u1-q9",
+            "motores-u1-q11"
           ]
         }
       ]
@@ -5919,11 +6576,13 @@
             "M040",
             "M041",
             "M044",
-            "M045"
+            "M045",
+            "M389"
           ],
           "oralIds": [
             "motores-u2-q4",
-            "motores-u3-q5"
+            "motores-u3-q5",
+            "motores-u2-q10"
           ]
         },
         {
@@ -5981,10 +6640,12 @@
           "number": 6,
           "text": "Presiones que soportan los aros.",
           "guideIds": [
-            "M339"
+            "M339",
+            "M388"
           ],
           "oralIds": [
-            "motores-u2-q5"
+            "motores-u2-q5",
+            "motores-u2-q9"
           ]
         },
         {
@@ -6092,11 +6753,13 @@
           "text": "Culata cuatro tiempos con inyección indirecta y distribuidor de arranque; válvulas.",
           "guideIds": [
             "M336",
-            "M348"
+            "M348",
+            "M399"
           ],
           "oralIds": [
             "motores-u1-q3",
-            "motores-u1-q5"
+            "motores-u1-q5",
+            "motores-u1-q18"
           ]
         },
         {
@@ -6104,10 +6767,12 @@
           "number": 5,
           "text": "Espacio nocivo, control y volumen de cámara.",
           "guideIds": [
-            "M343"
+            "M343",
+            "M368"
           ],
           "oralIds": [
-            "motores-u8-q1"
+            "motores-u8-q1",
+            "motores-u8-q6"
           ]
         },
         {
@@ -6620,10 +7285,12 @@
           "number": 5,
           "text": "Cojinete trimetálico, esquema y análisis de aceite.",
           "guideIds": [
-            "M331"
+            "M331",
+            "M391"
           ],
           "oralIds": [
-            "motores-u4-q3"
+            "motores-u4-q3",
+            "motores-u4-q10"
           ]
         },
         {
@@ -6672,7 +7339,1026 @@
           ]
         }
       ]
+    },
+    {
+      "id": "GB",
+      "title": "Generalidades de los Motores Térmicos · Tema B y TP corregido",
+      "url": "https://drive.google.com/file/d/1yKtgC79wgZgLzyrrDqeJ-A8UMqwX9wwb/view",
+      "reading": "Consignas extraídas del examen escrito de Generalidades Tema B (páginas 12 a 15) y las cuatro páginas fotografiadas del TP con correcciones docentes.",
+      "questions": [
+        {
+          "id": "GB-01",
+          "number": 1,
+          "text": "Representación gráfica del balance térmico (Sankey) y conclusiones sobre pérdidas operativas y estandarizadas.",
+          "guideIds": [
+            "M270",
+            "M271",
+            "M272",
+            "M273"
+          ],
+          "oralIds": [
+            "motores-u8-q3"
+          ]
+        },
+        {
+          "id": "GB-02",
+          "number": 2,
+          "text": "Definición de motores térmicos de combustión interna y ejemplos de aplicación a bordo.",
+          "guideIds": [
+            "M002",
+            "M369"
+          ],
+          "oralIds": [
+            "motores-u8-q4",
+            "motores-u8-q7"
+          ]
+        },
+        {
+          "id": "GB-03",
+          "number": 3,
+          "text": "Motores de combustión interna a volumen constante: descripción y ejemplos.",
+          "guideIds": [
+            "M002",
+            "M004",
+            "M005"
+          ],
+          "oralIds": [
+            "motores-u8-q4"
+          ]
+        },
+        {
+          "id": "GB-04",
+          "number": 4,
+          "text": "Relación de compresión y límites conceptuales en motor a explosión y en motor diésel.",
+          "guideIds": [
+            "M367",
+            "M084"
+          ],
+          "oralIds": [
+            "motores-u8-q5",
+            "motores-u8-q2"
+          ]
+        },
+        {
+          "id": "GB-05",
+          "number": 5,
+          "text": "Cómo se controla en la práctica el espacio nocivo en un motor de combustión interna.",
+          "guideIds": [
+            "M368",
+            "M343"
+          ],
+          "oralIds": [
+            "motores-u8-q6",
+            "motores-u8-q1"
+          ]
+        },
+        {
+          "id": "GB-06",
+          "number": 6,
+          "text": "Enumeración de sistemas principales relacionados al motor principal y descripción de lubricación y refrigeración.",
+          "guideIds": [
+            "M369",
+            "M185",
+            "M209"
+          ],
+          "oralIds": [
+            "motores-u8-q7",
+            "motores-u6-q5"
+          ]
+        },
+        {
+          "id": "GB-07",
+          "number": 7,
+          "text": "Definición de motores cuadrados y componentes del tren alternativo.",
+          "guideIds": [
+            "M370",
+            "M079"
+          ],
+          "oralIds": [
+            "motores-u8-q8",
+            "motores-u8-q2"
+          ]
+        },
+        {
+          "id": "GB-08",
+          "number": 8,
+          "text": "Definición y función del regulador de velocidad en un motor.",
+          "guideIds": [
+            "M258",
+            "M259",
+            "M260"
+          ],
+          "oralIds": [
+            "motores-u12-q0"
+          ]
+        },
+        {
+          "id": "GB-09",
+          "number": 9,
+          "text": "Diferencia entre mecanismo de distribución y mecanismo de accionamiento valvular.",
+          "guideIds": [
+            "M366",
+            "M120"
+          ],
+          "oralIds": [
+            "motores-u1-q11",
+            "motores-u1-q9"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DT1",
+      "title": "Distribución · Tema 1",
+      "url": "https://drive.google.com/file/d/1yKtgC79wgZgLzyrrDqeJ-A8UMqwX9wwb/view",
+      "reading": "Consignas del examen escrito de Distribución Tema 1 (páginas 4 a 7) y tablas de huelgo de válvulas.",
+      "questions": [
+        {
+          "id": "DT1-01",
+          "number": 1,
+          "text": "Diagrama real P-V de un motor de dos tiempos con válvula de escape y lumbrera de admisión.",
+          "guideIds": [
+            "M358",
+            "M375"
+          ],
+          "oralIds": [
+            "motores-u9-q1",
+            "motores-u1-q16"
+          ]
+        },
+        {
+          "id": "DT1-02",
+          "number": 2,
+          "text": "Problemas en el ciclo de funcionamiento si existe un mínimo huelgo en la válvula de escape.",
+          "guideIds": [
+            "M375",
+            "M356"
+          ],
+          "oralIds": [
+            "motores-u1-q16",
+            "motores-u1-q8"
+          ]
+        },
+        {
+          "id": "DT1-03",
+          "number": 3,
+          "text": "Esquema de accionamiento directo de válvulas, punto de medición de luz y definición de alzada.",
+          "guideIds": [
+            "M371",
+            "M124"
+          ],
+          "oralIds": [
+            "motores-u1-q12",
+            "motores-u1-q9",
+            "motores-u1-q10"
+          ]
+        },
+        {
+          "id": "DT1-04",
+          "number": 4,
+          "text": "Definición de árbol de levas y eje de camones y elementos que accionan.",
+          "guideIds": [
+            "M121",
+            "M366"
+          ],
+          "oralIds": [
+            "motores-u1-q9",
+            "motores-u1-q11"
+          ]
+        },
+        {
+          "id": "DT1-05",
+          "number": 5,
+          "text": "Diferencias constructivas y de funcionamiento entre leva de válvulas y camón de aire de arranque.",
+          "guideIds": [
+            "M349"
+          ],
+          "oralIds": [
+            "motores-u1-q6"
+          ]
+        },
+        {
+          "id": "DT1-06",
+          "number": 6,
+          "text": "Válvula con linterna y sin linterna y diferencia en el desmontaje.",
+          "guideIds": [
+            "M347"
+          ],
+          "oralIds": [
+            "motores-u1-q4"
+          ]
+        },
+        {
+          "id": "DT1-07",
+          "number": 7,
+          "text": "Tipos de compensadores automáticos de luz de válvulas y su función.",
+          "guideIds": [
+            "M374",
+            "M124"
+          ],
+          "oralIds": [
+            "motores-u1-q15",
+            "motores-u1-q9",
+            "motores-u1-q10"
+          ]
+        },
+        {
+          "id": "DT1-08",
+          "number": 8,
+          "text": "Definición de pérdidas por bombeo y cómo se reducen en cuatro y dos tiempos.",
+          "guideIds": [
+            "M357",
+            "M365"
+          ],
+          "oralIds": [
+            "motores-u9-q0",
+            "motores-u10-q4"
+          ]
+        },
+        {
+          "id": "DT1-09",
+          "number": 9,
+          "text": "Válvulas presentes en una culata con cámara auxiliar de dos tiempos con lumbreras y motor neumático de arranque.",
+          "guideIds": [
+            "M348",
+            "M399"
+          ],
+          "oralIds": [
+            "motores-u1-q5",
+            "motores-u1-q18"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DT2",
+      "title": "Distribución · Tema 2",
+      "url": "https://drive.google.com/file/d/1yKtgC79wgZgLzyrrDqeJ-A8UMqwX9wwb/view",
+      "reading": "Consignas del examen escrito de Distribución Tema 2 (páginas 1 a 4) y tablas de huelgo de válvulas.",
+      "questions": [
+        {
+          "id": "DT2-01",
+          "number": 1,
+          "text": "Diagrama real P-V de un motor de dos tiempos con válvula de admisión y lumbrera de escape.",
+          "guideIds": [
+            "M375",
+            "M358"
+          ],
+          "oralIds": [
+            "motores-u1-q16",
+            "motores-u9-q1"
+          ]
+        },
+        {
+          "id": "DT2-02",
+          "number": 2,
+          "text": "Problemas en el ciclo de funcionamiento si existe un máximo huelgo en la válvula de admisión.",
+          "guideIds": [
+            "M375",
+            "M356"
+          ],
+          "oralIds": [
+            "motores-u1-q16",
+            "motores-u1-q8"
+          ]
+        },
+        {
+          "id": "DT2-03",
+          "number": 3,
+          "text": "Sistemas de transmisión de la distribución (correa, cadena, engranajes y barra helicoidal) y sincronización.",
+          "guideIds": [
+            "M398",
+            "M133"
+          ],
+          "oralIds": [
+            "motores-u1-q17",
+            "motores-u1-q9"
+          ]
+        },
+        {
+          "id": "DT2-04",
+          "number": 4,
+          "text": "Relación de giro en cuatro tiempos entre cigüeñal y árbol de levas: justificación.",
+          "guideIds": [
+            "M134",
+            "M366"
+          ],
+          "oralIds": [
+            "motores-u1-q9",
+            "motores-u1-q11"
+          ]
+        },
+        {
+          "id": "DT2-05",
+          "number": 5,
+          "text": "Sistemas de accionamiento valvular (directo, semidirecto e indirecto) y esquema del indirecto con medición de luz.",
+          "guideIds": [
+            "M371"
+          ],
+          "oralIds": [
+            "motores-u1-q12"
+          ]
+        },
+        {
+          "id": "DT2-06",
+          "number": 6,
+          "text": "Definición de alzada de la válvula y descripción del calibre sonda.",
+          "guideIds": [
+            "M124",
+            "M073"
+          ],
+          "oralIds": [
+            "motores-u1-q9",
+            "motores-u1-q10",
+            "motores-u4-q9"
+          ]
+        },
+        {
+          "id": "DT2-07",
+          "number": 7,
+          "text": "Cantidad de resortes que puede tener una válvula y función de cada uno.",
+          "guideIds": [
+            "M372"
+          ],
+          "oralIds": [
+            "motores-u1-q13"
+          ]
+        },
+        {
+          "id": "DT2-08",
+          "number": 8,
+          "text": "Diferencias constructivas entre válvula de admisión y de escape e inclinación de asientos (45° y 30°).",
+          "guideIds": [
+            "M373"
+          ],
+          "oralIds": [
+            "motores-u1-q14"
+          ]
+        },
+        {
+          "id": "DT2-09",
+          "number": 9,
+          "text": "Válvulas en una culata de cuatro tiempos con cámara auxiliar y arranque por distribuidora.",
+          "guideIds": [
+            "M348"
+          ],
+          "oralIds": [
+            "motores-u1-q5"
+          ]
+        },
+        {
+          "id": "DT2-10",
+          "number": 10,
+          "text": "Descripción y función de un compensador automático hidráulico.",
+          "guideIds": [
+            "M124",
+            "M374"
+          ],
+          "oralIds": [
+            "motores-u1-q9",
+            "motores-u1-q10",
+            "motores-u1-q15"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P21",
+      "title": "Pistón, pernos, aros y bielas · 27/09/2021",
+      "url": "https://docs.google.com/document/d/11u1PI1A4myAmozVZvp29auivG7fdJYHg/edit",
+      "reading": "Ocho consignas del examen escrito de elementos móviles del 27/09/2021 y Guía Orientativa N° 1.",
+      "questions": [
+        {
+          "id": "P21-01",
+          "number": 1,
+          "text": "Descripción constructiva de un pistón tronco tubular y terminaciones en la cabeza.",
+          "guideIds": [
+            "M338",
+            "M389"
+          ],
+          "oralIds": [
+            "motores-u2-q4",
+            "motores-u2-q10"
+          ]
+        },
+        {
+          "id": "P21-02",
+          "number": 2,
+          "text": "Descripción y aplicación de un pistón bimetálico.",
+          "guideIds": [
+            "M337"
+          ],
+          "oralIds": [
+            "motores-u2-q3"
+          ]
+        },
+        {
+          "id": "P21-03",
+          "number": 3,
+          "text": "Función del perno del pistón, clasificación (fijo, semiflotante y flotante), montaje por dilatación y esquema.",
+          "guideIds": [
+            "M400",
+            "M039"
+          ],
+          "oralIds": [
+            "motores-u2-q11",
+            "motores-u2-q7"
+          ]
+        },
+        {
+          "id": "P21-04",
+          "number": 4,
+          "text": "Huelgo entre perno y cojinete de pistón, efecto en el ciclo de trabajo y quién lo determina.",
+          "guideIds": [
+            "M071",
+            "M039"
+          ],
+          "oralIds": [
+            "motores-u2-q7"
+          ]
+        },
+        {
+          "id": "P21-05",
+          "number": 5,
+          "text": "Clasificación de los aros según su trabajo (fuego, compresión y rascaaceite), función y ubicación.",
+          "guideIds": [
+            "M388",
+            "M032"
+          ],
+          "oralIds": [
+            "motores-u2-q9",
+            "motores-u2-q8"
+          ]
+        },
+        {
+          "id": "P21-06",
+          "number": 6,
+          "text": "Huelgos a controlar en los aros (cerraje entre puntas y juego en ranura) y precaución en dos tiempos.",
+          "guideIds": [
+            "M388",
+            "M340",
+            "M035"
+          ],
+          "oralIds": [
+            "motores-u2-q9",
+            "motores-u2-q6",
+            "motores-u2-q8"
+          ]
+        },
+        {
+          "id": "P21-07",
+          "number": 7,
+          "text": "Clasificación de las bielas (normal, horquillada, articulada y extensible) y materiales empleados.",
+          "guideIds": [
+            "M042",
+            "M341",
+            "M390"
+          ],
+          "oralIds": [
+            "motores-u3-q4",
+            "motores-u3-q3",
+            "motores-u3-q6"
+          ]
+        },
+        {
+          "id": "P21-08",
+          "number": 8,
+          "text": "Descripción, plano de corte oblicuo y esquema de una biela según su clasificación.",
+          "guideIds": [
+            "M390",
+            "M042"
+          ],
+          "oralIds": [
+            "motores-u3-q6",
+            "motores-u3-q4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "REF",
+      "title": "Sistema de Refrigeración · Examen temático",
+      "url": "https://drive.google.com/file/d/1yKtgC79wgZgLzyrrDqeJ-A8UMqwX9wwb/view",
+      "reading": "Nueve consignas del examen escrito de Sistema de Refrigeración (páginas 9 a 11) y preguntas 123 a 132 del banco.",
+      "questions": [
+        {
+          "id": "REF-01",
+          "number": 1,
+          "text": "Funciones de la refrigeración y por qué perjudica que el motor trabaje sobrecalentado o subenfriado.",
+          "guideIds": [
+            "M184",
+            "M395"
+          ],
+          "oralIds": [
+            "motores-u6-q5",
+            "motores-u6-q10"
+          ]
+        },
+        {
+          "id": "REF-02",
+          "number": 2,
+          "text": "Requisitos que debe cumplir un buen refrigerante y función de los inhibidores.",
+          "guideIds": [
+            "M378"
+          ],
+          "oralIds": [
+            "motores-u6-q6"
+          ]
+        },
+        {
+          "id": "REF-03",
+          "number": 3,
+          "text": "Función de la válvula termostática en un sistema por enfriador de quilla y en uno de enfriamiento doble.",
+          "guideIds": [
+            "M190",
+            "M380"
+          ],
+          "oralIds": [
+            "motores-u6-q5",
+            "motores-u6-q8"
+          ]
+        },
+        {
+          "id": "REF-04",
+          "number": 4,
+          "text": "Por qué el tanque se denomina de expansión o compenso y en qué condición debe estar su válvula en marcha normal.",
+          "guideIds": [
+            "M379"
+          ],
+          "oralIds": [
+            "motores-u6-q7"
+          ]
+        },
+        {
+          "id": "REF-05",
+          "number": 5,
+          "text": "Esquema de las tres condiciones de una válvula termostática de doble asiento: cerrada, apertura parcial y apertura total.",
+          "guideIds": [
+            "M380"
+          ],
+          "oralIds": [
+            "motores-u6-q8"
+          ]
+        },
+        {
+          "id": "REF-06",
+          "number": 6,
+          "text": "Ánodos de sacrificio (panes de cinc) y ubicación en refrigeración doble y por enfriador de quilla.",
+          "guideIds": [
+            "M354"
+          ],
+          "oralIds": [
+            "motores-u6-q3"
+          ]
+        },
+        {
+          "id": "REF-07",
+          "number": 7,
+          "text": "Diferencia constructiva y operativa entre enfriador de quilla y enfriador de casco.",
+          "guideIds": [
+            "M187"
+          ],
+          "oralIds": [
+            "motores-u6-q5"
+          ]
+        },
+        {
+          "id": "REF-08",
+          "number": 8,
+          "text": "Características de las bombas de refrigeración para un motor de un solo sentido de giro frente a uno reversible.",
+          "guideIds": [
+            "M381"
+          ],
+          "oralIds": [
+            "motores-u6-q9"
+          ]
+        },
+        {
+          "id": "REF-09",
+          "number": 9,
+          "text": "Significado de punto de ebullición y de congelamiento y dónde se presenta la cavitación en el sistema.",
+          "guideIds": [
+            "M378",
+            "M194",
+            "M024"
+          ],
+          "oralIds": [
+            "motores-u6-q6",
+            "motores-u0-q8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "INY",
+      "title": "Sistema de Inyección y Combustión · Examen temático",
+      "url": "https://drive.google.com/file/d/1yKtgC79wgZgLzyrrDqeJ-A8UMqwX9wwb/view",
+      "reading": "Dieciséis consignas del examen escrito de Inyección (páginas 15 a 19) y preguntas 104 a 122 del banco.",
+      "questions": [
+        {
+          "id": "INY-01",
+          "number": 1,
+          "text": "Composición del sistema de alimentación e inyección, sistemas por acumulación y por bomba y ubicación de retenciones.",
+          "guideIds": [
+            "M145",
+            "M147"
+          ],
+          "oralIds": [
+            "motores-u5-q7"
+          ]
+        },
+        {
+          "id": "INY-02",
+          "number": 2,
+          "text": "Elementos principales del sistema de combustible, función de las válvulas de retención y sus tres ubicaciones.",
+          "guideIds": [
+            "M145",
+            "M384"
+          ],
+          "oralIds": [
+            "motores-u5-q7",
+            "motores-u5-q12"
+          ]
+        },
+        {
+          "id": "INY-03",
+          "number": 3,
+          "text": "Acción diferencial de la aguja de la válvula de inyección de combustible.",
+          "guideIds": [
+            "M352"
+          ],
+          "oralIds": [
+            "motores-u5-q4"
+          ]
+        },
+        {
+          "id": "INY-04",
+          "number": 4,
+          "text": "Ondas de presión en las cañerías de inyección: origen y consecuencias.",
+          "guideIds": [
+            "M149"
+          ],
+          "oralIds": [
+            "motores-u5-q6",
+            "motores-u5-q7"
+          ]
+        },
+        {
+          "id": "INY-05",
+          "number": 5,
+          "text": "Principio de funcionamiento de la bomba tipo Bosch: carrera constante y dosificación variable por hélice.",
+          "guideIds": [
+            "M382",
+            "M384"
+          ],
+          "oralIds": [
+            "motores-u5-q10",
+            "motores-u5-q12"
+          ]
+        },
+        {
+          "id": "INY-06",
+          "number": 6,
+          "text": "Las tres etapas de la distribución interior de un sistema de inyección: pulverización, penetración y difusión.",
+          "guideIds": [
+            "M383",
+            "M351"
+          ],
+          "oralIds": [
+            "motores-u5-q11",
+            "motores-u5-q3"
+          ]
+        },
+        {
+          "id": "INY-07",
+          "number": 7,
+          "text": "Las tres etapas de la distribución exterior de un sistema de inyección: dosificación, regulación y graduación.",
+          "guideIds": [
+            "M383",
+            "M351"
+          ],
+          "oralIds": [
+            "motores-u5-q11",
+            "motores-u5-q3"
+          ]
+        },
+        {
+          "id": "INY-08",
+          "number": 8,
+          "text": "Descripción de una cámara de turbulencia en inyección indirecta.",
+          "guideIds": [
+            "M386"
+          ],
+          "oralIds": [
+            "motores-u5-q14"
+          ]
+        },
+        {
+          "id": "INY-09",
+          "number": 9,
+          "text": "Descripción de una cámara con celda de energía (acumulador de energía).",
+          "guideIds": [
+            "M386"
+          ],
+          "oralIds": [
+            "motores-u5-q14"
+          ]
+        },
+        {
+          "id": "INY-10",
+          "number": 10,
+          "text": "Picado diésel en un motor de combustión interna: orígenes y consecuencias.",
+          "guideIds": [
+            "M353"
+          ],
+          "oralIds": [
+            "motores-u5-q5"
+          ]
+        },
+        {
+          "id": "INY-11",
+          "number": 11,
+          "text": "Picado nafta (detonación) en un motor de combustión interna: orígenes y consecuencias.",
+          "guideIds": [
+            "M353"
+          ],
+          "oralIds": [
+            "motores-u5-q5"
+          ]
+        },
+        {
+          "id": "INY-12",
+          "number": 12,
+          "text": "Retraso en la inyección e intertiempo: períodos que influyen y consecuencias.",
+          "guideIds": [
+            "M363"
+          ],
+          "oralIds": [
+            "motores-u5-q8"
+          ]
+        },
+        {
+          "id": "INY-13",
+          "number": 13,
+          "text": "Qué caracteriza al picado diésel y por qué se contraponen la pulverización y el grado de penetración.",
+          "guideIds": [
+            "M385",
+            "M353"
+          ],
+          "oralIds": [
+            "motores-u5-q13",
+            "motores-u5-q5"
+          ]
+        },
+        {
+          "id": "INY-14",
+          "number": 14,
+          "text": "Cámara de precombustión: descripción, bujía incandescente y ventajas y desventajas frente a inyección directa.",
+          "guideIds": [
+            "M386"
+          ],
+          "oralIds": [
+            "motores-u5-q14"
+          ]
+        },
+        {
+          "id": "INY-15",
+          "number": 15,
+          "text": "Diferencias constructivas entre una cámara de celda de energía y una de precombustión.",
+          "guideIds": [
+            "M386"
+          ],
+          "oralIds": [
+            "motores-u5-q14"
+          ]
+        },
+        {
+          "id": "INY-16",
+          "number": 16,
+          "text": "Tabla comparativa de parámetros entre motores de inyección directa e inyección a cámaras auxiliares.",
+          "guideIds": [
+            "M386"
+          ],
+          "oralIds": [
+            "motores-u5-q14"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DA",
+      "title": "Diagramas Motores Diésel · Tema A y TP Diagramas",
+      "url": "https://docs.google.com/document/d/1rYhyocE40YWPUgAYYv2d2cbMyiYZbnOM/edit",
+      "reading": "Consignas de Diagramas Tema A (página 21) y del Trabajo Práctico de Diagramas del 10/08/2021.",
+      "questions": [
+        {
+          "id": "DA-01",
+          "number": 1,
+          "text": "Diagrama P-V real de un motor diésel de cuatro tiempos sobrealimentado, ciclo y cruce de válvulas.",
+          "guideIds": [
+            "M376",
+            "M360"
+          ],
+          "oralIds": [
+            "motores-u9-q5",
+            "motores-u9-q3"
+          ]
+        },
+        {
+          "id": "DA-02",
+          "number": 2,
+          "text": "Definición de pérdidas por bombeo en el diagrama P-V, dónde se desarrollan y cómo se reducen.",
+          "guideIds": [
+            "M357"
+          ],
+          "oralIds": [
+            "motores-u9-q0"
+          ]
+        },
+        {
+          "id": "DA-03",
+          "number": 3,
+          "text": "Diagrama circular real de un diésel de dos tiempos con válvula y lumbreras y sincronización del mecanismo valvular.",
+          "guideIds": [
+            "M375",
+            "M358"
+          ],
+          "oralIds": [
+            "motores-u1-q16",
+            "motores-u9-q1"
+          ]
+        },
+        {
+          "id": "DA-04",
+          "number": 4,
+          "text": "Definición de rendimiento volumétrico y relación con la relación de compresión y la sobrealimentación.",
+          "guideIds": [
+            "M362",
+            "M365"
+          ],
+          "oralIds": [
+            "motores-u10-q3",
+            "motores-u10-q4"
+          ]
+        },
+        {
+          "id": "DA-05",
+          "number": 5,
+          "text": "Comparación peso-potencia entre cuatro y dos tiempos y diferencia del uso del sobrealimentador/soplante en 4T y 2T.",
+          "guideIds": [
+            "M365",
+            "M359"
+          ],
+          "oralIds": [
+            "motores-u10-q4",
+            "motores-u9-q2"
+          ]
+        },
+        {
+          "id": "DA-06",
+          "number": 6,
+          "text": "Efecto sobre el diagrama P-V y el ciclo si el huelgo de la válvula de admisión es mínimo o excesivo.",
+          "guideIds": [
+            "M376",
+            "M356"
+          ],
+          "oralIds": [
+            "motores-u9-q5",
+            "motores-u1-q8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C24T",
+      "title": "Cuestionario integrador 2T/4T, Banco 132 y Compendio técnico",
+      "url": "https://drive.google.com/file/d/1bm2C0sffJOaUXfEQ_-rSVm07ZRrG8F2W/view",
+      "reading": "Consignas del cuestionario de 2T y 4T (páginas 19 a 21), Banco de 132 preguntas, Guía Orientativa N° 1 y Compendio técnico.",
+      "questions": [
+        {
+          "id": "C24T-01",
+          "number": 1,
+          "text": "Diferencia de función del sobrealimentador o soplante en un motor de 4T (aumentar potencia) frente a uno de 2T (barrido indispensable y sobrealimentación).",
+          "guideIds": [
+            "M365",
+            "M394"
+          ],
+          "oralIds": [
+            "motores-u10-q4",
+            "motores-u10-q6"
+          ]
+        },
+        {
+          "id": "C24T-02",
+          "number": 2,
+          "text": "Problema del motor de dos tiempos con lumbreras al no tener cruce de válvulas en la carrera ascendente y cómo se soluciona.",
+          "guideIds": [
+            "M377",
+            "M393"
+          ],
+          "oralIds": [
+            "motores-u9-q6",
+            "motores-u10-q5"
+          ]
+        },
+        {
+          "id": "C24T-03",
+          "number": 3,
+          "text": "Desarrollo práctico de las cuatro carreras de un diésel de 4T con sus ángulos de apertura y cierre de válvulas e inyección.",
+          "guideIds": [
+            "M397",
+            "M094"
+          ],
+          "oralIds": [
+            "motores-u9-q7",
+            "motores-u9-q4"
+          ]
+        },
+        {
+          "id": "C24T-04",
+          "number": 4,
+          "text": "Materiales utilizados en la fabricación de camisas y etapas de mandrilado, rectificado y bruñido.",
+          "guideIds": [
+            "M387"
+          ],
+          "oralIds": [
+            "motores-u0-q9"
+          ]
+        },
+        {
+          "id": "C24T-05",
+          "number": 5,
+          "text": "Cuatro métodos de barrido o lavaje y ventajas del motor de corrientes equivalentes o pistones opuestos.",
+          "guideIds": [
+            "M393"
+          ],
+          "oralIds": [
+            "motores-u10-q5"
+          ]
+        },
+        {
+          "id": "C24T-06",
+          "number": 6,
+          "text": "Clasificación de sobrealimentadores/sopladores y por qué reducen el consumo específico.",
+          "guideIds": [
+            "M394",
+            "M365"
+          ],
+          "oralIds": [
+            "motores-u10-q6",
+            "motores-u10-q4"
+          ]
+        },
+        {
+          "id": "C24T-07",
+          "number": 7,
+          "text": "Cinco capas de un cojinete trimetálico, propagación de la fatiga y medición de huelgo con Plastigage.",
+          "guideIds": [
+            "M391",
+            "M392"
+          ],
+          "oralIds": [
+            "motores-u4-q10",
+            "motores-u4-q11"
+          ]
+        },
+        {
+          "id": "C24T-08",
+          "number": 8,
+          "text": "Propiedades del aceite lubricante (inflamación, escurrimiento, demulsibilidad y residuo carbonoso) y purificación centrífuga.",
+          "guideIds": [
+            "M396",
+            "M364"
+          ],
+          "oralIds": [
+            "motores-u7-q8",
+            "motores-u5-q9"
+          ]
+        },
+        {
+          "id": "C24T-09",
+          "number": 9,
+          "text": "Tipos de intercambiadores de calor (radiador, placas, casco y tubos) y transferencia por conducción, convección y radiación.",
+          "guideIds": [
+            "M395"
+          ],
+          "oralIds": [
+            "motores-u6-q10"
+          ]
+        },
+        {
+          "id": "C24T-10",
+          "number": 10,
+          "text": "Pímetro o indicador de presión máxima frente a presión media indicada en el grifo de purga.",
+          "guideIds": [
+            "M361"
+          ],
+          "oralIds": [
+            "motores-u12-q3"
+          ]
+        }
+      ]
     }
   ],
-  "reviewScope": "Siete exámenes únicos en fotografías. Los dos duplicados con otro nombre y el DOCX de cigüeñal de 2021 coinciden con consignas ya vinculadas. TP y bancos se usan como material complementario; no se afirma cobertura exhaustiva de todos los archivos de Drive."
+  "reviewScope": "Quince exámenes y cuestionarios integrados (140 consignas vinculadas): siete exámenes únicos en fotografías y ocho exámenes escritos, trabajos prácticos y cuestionarios docentes de la carpeta de fuentes. Cada pregunta evaluada lleva su marcador EXAMEN visible y enlace directo."
 }
