@@ -17,7 +17,7 @@ assert(!G.lesson('frio',0).documentQuestions);
 // Use the real speech/step functions to verify continuous narration advances within a module first.
 const nodes=new Map(),engine={queue:[],speak(u){this.queue.push(u)},cancel(){},pause(){},resume(){},getVoices(){return[]},addEventListener(){}};
 const noop=()=>{},ctx={console,location:{hash:'#oral'},currentSubject:'termicas',saved:{},persist:noop,esc:s=>String(s),SpeechSynthesisUtterance:function(text){this.text=text},speechSynthesis:engine,addEventListener:noop,document:{querySelector(id){if(!nodes.has(id))nodes.set(id,{textContent:'',value:0,innerHTML:'',hidden:false,addEventListener:noop,scrollIntoView:noop});return nodes.get(id)},querySelectorAll(){return[]}},window:null};ctx.window=ctx;
-vm.createContext(ctx);for(const name of ['guided-thermal.js','guided-review.js'])vm.runInContext(fs.readFileSync(root+'/'+name,'utf8').replace("if(location.hash==='#oral')render();",''),ctx);
+vm.createContext(ctx);vm.runInContext(fs.readFileSync(root+'/speech-voice.js','utf8'),ctx);for(const name of ['guided-thermal.js','guided-review.js'])vm.runInContext(fs.readFileSync(root+'/'+name,'utf8').replace("if(location.hash==='#oral')render();",''),ctx);
 ctx.lesson=G.lesson('termicas',0);const run=s=>vm.runInContext(s,ctx);
 run("guided.lesson=lesson;guided.index=lesson.sections.findIndex(s=>s.id==='documento-rankine');guidedSection();guidedSpeak()");
 const section=run('guided.index');let guard=0;while(run('guidedVisual.index')===0&&guard++<100)engine.queue.at(-1).onend();assert.equal(run('guidedVisual.index'),1);assert.equal(run('guided.index'),section);assert(engine.queue.at(-1).text.includes('Paso 2'));

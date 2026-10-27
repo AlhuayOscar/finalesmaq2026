@@ -1,0 +1,10 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+let voices=[],queue=[];const engine={getVoices:()=>voices,speak:u=>queue.push(u),cancel(){}};
+const ctx={speechSynthesis:engine,SpeechSynthesisUtterance:function(text){this.text=text;this.lang='';this.voice=null;this.rate=1;this.pitch=1;this.volume=1}};ctx.window=ctx;vm.createContext(ctx);vm.runInContext(fs.readFileSync('dist/speech-voice.js','utf8'),ctx);
+const speech=ctx.finalesSpeech,ar={name:'Argentina',lang:'es-AR',voiceURI:'ar'},google={name:'Google español',lang:'es-ES',voiceURI:'google'},en={name:'Google English',lang:'en-US',voiceURI:'en'},system={name:'Sistema',lang:'es-ES',voiceURI:'sys',default:true};
+voices=[en,system,google,ar];assert.equal(speech.choose(),ar);voices=[en,system,google];assert.equal(speech.choose(),google);assert.equal(speech.choose('sys'),system);voices=[en,system];assert.equal(speech.choose(),null);
+voices=[];speech.speak(new ctx.SpeechSynthesisUtterance('Sin voces'));assert.equal(queue.at(-1).voice,null);assert.equal(queue.at(-1).lang,'');
+voices=[google,ar];let ended=0,failed=0;const u=new ctx.SpeechSynthesisUtterance('Pregunta');u.rate=.92;u.onend=()=>ended++;u.onerror=()=>failed++;speech.speak(u);assert.equal(u.voice,ar);u.onerror({error:'network'});const fallback=queue.at(-1);assert.notEqual(fallback,u);assert.equal(fallback.voice,null);assert.equal(fallback.lang,'');assert.equal(fallback.rate,.92);fallback.onend();assert.equal(ended,1);fallback.onerror({error:'synthesis-failed'});assert.equal(failed,1);assert.equal(queue.at(-1),fallback);
+for(const error of ['canceled','interrupted','not-allowed']){const next=new ctx.SpeechSynthesisUtterance('No reanudar');speech.speak(next);const count=queue.length;next.onerror({error});assert.equal(queue.length,count)}
+const stopped=new ctx.SpeechSynthesisUtterance('Detenida');speech.speak(stopped);engine.cancel();const count=queue.length;stopped.onerror({error:'network'});assert.equal(queue.length,count);
+console.log('OK: prioridades, voces tardías, sistema, reintento único, velocidad y cancelación.');

@@ -130,3 +130,7 @@ La corrección recibe la página original como imagen fuente, separada de la res
 Simulacro y HDP de Frío exigen cobertura con evidencia textual. Completo=1; parcial=0,5 en Simulacro y 0,25 en HDP; ausente=0. Cualquier aspecto incompleto limita a 6,90/10 o 5,90/10 respectivamente, además del límite proporcional y la rúbrica (se aplica el menor). Velocidad rápida no recorta requisitos ni omisiones. La identificación semántica sigue dependiendo de Gemini: las pruebas simulan sus respuestas y verifican el contrato, los topes y el rechazo de evidencia inválida.
 
 Importación reproducible: python scripts/import-frio-slides.py guia.pdf lijo.pdf (PyMuPDF). Pruebas: node tests/frio-slides.cjs, node tests/question-catalog.cjs, node tests/hdp-coverage-api.cjs y regresiones del examen.
+
+## Voz automática sin cuentas ni API
+
+El profesor y el repaso usan `dist/speech-voice.js`: selección manual del repaso, Google argentino si está disponible, otra voz es-AR, Google en español y finalmente la voz predeterminada del sistema. La lista depende del navegador y dispositivo y se consulta en cada lectura. Los errores de síntesis reintentan una sola vez con la voz del sistema; cancelar, salir o bloquear la reproducción no dispara reintentos. No requiere tarjeta, clave ni plan de facturación. Verificación: `node tests/speech-voice.cjs`, `node tests/guided.cjs` y `node tests/thermal-guide.cjs`.
