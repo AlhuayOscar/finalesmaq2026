@@ -183,6 +183,92 @@ window.studentNotesBySubject={
       ],
       "originalUrl": "https://docs.google.com/document/d/1CrpRcZQbFobmRIaC2eXAWkjljfXeEQ6ts77LUIDXZ70/edit?usp=drivesdk",
       "revisedUrl": "https://docs.google.com/document/d/1Zsc9LBBK0yEhQmwpjzgeoFkylO0ZRkc9Lgsr2iD2aZ8/edit?usp=drivesdk"
+    },
+    {
+      "id": "nota-3",
+      "title": "Nota del estudiante 3",
+      "subtitle": "Órganos fijos móviles y sistemas complementarios",
+      "intro": "Esta nota organiza las piezas del motor según su función y movimiento, repasa los sistemas complementarios y completa la descripción general de un motor naval de cruceta. La clasificación es didáctica: debe aplicarse al diseño concreto, porque no todos los motores tienen los mismos mecanismos.",
+      "date": "27 de octubre de 2026",
+      "subject": "Motores navales",
+      "original": "Bueno, como nota del estudiante 3 tenemos órganos fijos: bloque de cilindro, culata, cárter, bancadas, cojinetes, bastidor, camisas. Como órganos móviles tenemos pistón, biela, cigüeñal, árbol de levas, válvulas, volante, aros del pistón, perno, perno de vástago. Luego dice sistemas complementarios: tenemos el sistema de refrigeración, sistema de lubricación, sistema de inyección de combustible, sistema de distribución, sistema o regulador de velocidad, sistema de escape, sistema aire de emisión, sistema o aire de arranque y alarma de control. Bien. Acá dice que los motores largos tienen tapa de balancín, culata, bloque de cilindros, bastidor, bancada, cárter, como una descripción de todo lo que hay desde arriba hasta abajo, general, de los motores largos que normalmente son dos tiempos. Falta los patines deslizantes en el dos tiempos y la fruseta y un par más de cosas que está en el cabronero Mesa, o el de anteje cosas, los libros.",
+      "revisedTitle": "Nota del estudiante 3 Revisada ChatGPT",
+      "sections": [
+        {
+          "title": "Órganos fijos y estructura resistente",
+          "text": "El bloque o estructura de cilindros aloja o sostiene los cilindros y sus camisas. La camisa forma la superficie interior de deslizamiento y trabajo del pistón. La culata cierra la parte superior del cilindro y puede alojar inyectores y válvulas, según el diseño. El bastidor une estructuralmente la parte superior con la bancada. La bancada constituye la base resistente que sostiene los apoyos del cigüeñal y transmite las cargas a la fundación. El cárter es el recinto que encierra la zona del cigüeñal; su parte inferior puede recoger el aceite, pero el cárter no debe confundirse únicamente con la bandeja de aceite."
+        },
+        {
+          "title": "Cómo clasificar los cojinetes",
+          "text": "No todos los cojinetes pertenecen al grupo de órganos fijos. Los casquillos de los cojinetes de bancada se alojan en apoyos fijos de la estructura, mientras el cigüeñal gira dentro de ellos. Los cojinetes de cabeza de biela acompañan el movimiento de la biela y los de cruceta pertenecen a ese conjunto móvil. Por eso conviene especificar de qué cojinete se habla. La palabra bancada también puede nombrar los apoyos principales del cigüeñal, además de la estructura inferior del motor, según el vocabulario del apunte."
+        },
+        {
+          "title": "Órganos móviles del mecanismo principal",
+          "text": "El pistón y sus aros se desplazan alternativamente. La biela conecta el pistón o la cruceta con el cigüeñal, según la construcción, y transmite fuerzas mientras cambia su inclinación. El cigüeñal gira y entrega el par al eje. El volante gira con él y ayuda a reducir las variaciones cíclicas de velocidad. En el motor de pistón troncal, el bulón o perno del pistón articula la unión del pistón con el pie de biela. Los aros se clasifican como móviles porque acompañan al pistón, aunque su función principal sea la estanqueidad y, cuando corresponde, el control del aceite."
+        },
+        {
+          "title": "Órganos móviles de distribución y accionamiento",
+          "text": "El árbol de levas gira y gobierna los mecanismos que le correspondan. Las válvulas de admisión y escape abren y cierran sus pasos de gases; balancines, empujadores y botadores también se mueven cuando el diseño los utiliza. Esta enumeración no es universal: existen motores con distribución por lumbreras y motores navales con accionamientos electrónicos e hidráulicos que prescinden del árbol de levas convencional. Una válvula pertenece al grupo móvil por su vástago y obturador, mientras su asiento y su guía permanecen fijos respecto de la culata."
+        },
+        {
+          "title": "Cruceta vástago patines y guías",
+          "text": "En un motor de cruceta, el pistón se une rígidamente a un vástago que transmite la fuerza a la cruceta; la biela articula con ese conjunto. La cruceta se desplaza alternativamente y sus patines o zapatas deslizan sobre guías fijas del bastidor. Esa disposición transmite el empuje lateral a las guías y evita que el pistón tenga que soportarlo como en un motor troncal. Son móviles el vástago, la cruceta y sus patines; las guías son fijas. Se interpreta «fruseta» como una probable transcripción de «cruceta». «Perno de vástago» queda pendiente de identificar en un dibujo: no se equipara automáticamente al bulón de pistón ni al muñón de cruceta."
+        },
+        {
+          "title": "Otros elementos característicos del motor de cruceta",
+          "text": "Para completar el esquema conviene ubicar el prensaestopas o caja de empaquetadura del vástago, situado en la separación entre el espacio de barrido y el cárter; sus anillos de sellado y rascado limitan el paso de gases y aceite entre zonas. También deben identificarse las guías de cruceta, los tirantes estructurales, las tapas de inspección del cárter y sus válvulas de alivio. En el circuito de aire aparecen el colector o receptor de barrido, los enfriadores de aire, el turbocompresor y las soplantes auxiliares, según el diseño. Estos elementos completan la explicación técnica; no se atribuyen a un libro cuya página todavía no se ha identificado."
+        },
+        {
+          "title": "Sistemas de refrigeración lubricación y combustible",
+          "text": "Refrigeración: retira calor y mantiene temperaturas de funcionamiento adecuadas en los componentes previstos. Lubricación: distribuye aceite para reducir el rozamiento y el desgaste; también puede refrigerar y transportar contaminantes hacia los equipos de separación o filtrado. Combustible e inyección: acondiciona, alimenta, presuriza, dosifica y pulveriza el combustible de acuerdo con la carga y la fase del ciclo. Sus equipos y recorridos dependen del tipo de motor."
+        },
+        {
+          "title": "Sistemas de distribución admisión barrido y escape",
+          "text": "Distribución: coordina la apertura y el cierre de los pasos de gases y, según el diseño, otros eventos del ciclo. Admisión o suministro de aire: conduce el aire hacia el motor y puede incluir filtrado, compresión y enfriamiento. En los dos tiempos debe explicarse además el barrido, que desplaza los gases quemados e introduce aire fresco. Escape: conduce los gases fuera de los cilindros y puede entregar parte de su energía al turbocompresor. Se interpreta «aire de emisión» como una probable referencia al aire de admisión, conservando la expresión original para cotejarla."
+        },
+        {
+          "title": "Regulación arranque supervisión y protección",
+          "text": "El regulador de velocidad ajusta el aporte de energía para sostener o modificar el régimen solicitado frente a cambios de carga, dentro de sus límites. El sistema de arranque hace girar inicialmente el motor; en aplicaciones navales puede ser eléctrico o por aire comprimido, con válvulas en los cilindros o un motor neumático. La supervisión mide variables y presenta su estado. Las alarmas advierten condiciones anormales y las protecciones pueden ordenar reducción de carga o parada, según la lógica del fabricante. Una alarma no equivale necesariamente a una parada automática. «Alarma de control» se organiza aquí como supervisión, alarmas y protección."
+        },
+        {
+          "title": "Recorrido general desde la parte superior hasta la base",
+          "text": "Como esquema de un motor lento de dos tiempos y cruceta, se puede recorrer: cubierta del mecanismo superior cuando exista; culata; estructura de cilindros y camisas; zona de barrido y paso del vástago por el prensaestopas; bastidor con cruceta, patines, guías y biela; cigüeñal y apoyos principales; bancada y bandeja inferior de recogida de aceite. Las piezas se superponen: no forman una pila de capas independientes y el cárter comprende el recinto inferior, no sólo el último nivel. La tapa de balancines sólo corresponde si el motor tiene ese mecanismo y esa cubierta. «De carrera larga» es una clasificación geométrica: aunque sea característica de muchos grandes diésel navales de dos tiempos, no significa por sí sola que un motor sea de dos tiempos o de cruceta."
+        },
+        {
+          "title": "Referencias del estudiante pendientes de identificar",
+          "text": "Los nombres «cabronero Mesa» y «anteje cosas» no permiten identificar con certeza los libros dictados. En Drive está localizado Motores endotérmicos de Dante Giacosa; podría corresponder a la segunda referencia, pero esa equivalencia no está confirmada y no se atribuye a ese libro ninguna página ni lista de piezas. El otro título queda pendiente. La ampliación sobre cruceta y estructura se apoya en documentación de fabricantes identificada en las fuentes."
+        }
+      ],
+      "corrections": [
+        "Se conservó íntegro el dictado y se señalaron como interpretaciones probables «fruseta» por «cruceta» y «aire de emisión» por «aire de admisión».",
+        "Se precisó que los cojinetes no son todos fijos: su clasificación depende del conjunto en el que están montados. Se añadieron vástago, cruceta y patines al mecanismo móvil, y sus guías a la estructura fija.",
+        "La tapa de balancines y el árbol de levas no se presentan como elementos obligatorios de todo motor lento de dos tiempos. Se distingue carrera larga de ciclo de dos tiempos y de construcción con cruceta.",
+        "Quedan pendientes la identificación de «perno de vástago», el primer libro citado y la confirmación de que la segunda referencia sea Dante Giacosa. No se inventaron citas de esos libros."
+      ],
+      "sources": [
+        {
+          "title": "Wärtsilä — Crosshead",
+          "url": "https://www.wartsila.com/encyclopedia/term/crosshead"
+        },
+        {
+          "title": "MAN Energy Solutions — G90ME C10 5 Project Guide y descripción del motor ME",
+          "url": "https://man-es.com/applications/projectguides/2stroke/content/printed/G90ME-C10_5.pdf"
+        },
+        {
+          "title": "Everllence — S50ME C10 7 Project Guide y conjunto de cruceta",
+          "url": "https://man-es.com/applications/projectguides/2stroke/content/printed/S50ME-C10_7.pdf"
+        },
+        {
+          "title": "Wärtsilä — Scavenge Air System",
+          "url": "https://www.wartsila.com/encyclopedia/term/scavenge-air-system"
+        },
+        {
+          "title": "Departamento de Energía de Estados Unidos — Internal Combustion Engine Basics",
+          "url": "https://www.energy.gov/cmei/vehicles/articles/internal-combustion-engine-basics"
+        }
+      ],
+      "originalUrl": "https://docs.google.com/document/d/1oRLgCAWD2vHTT_CIsTdbvJPXm92FYut7CC3agsz0IiI/edit?usp=drivesdk",
+      "revisedUrl": "https://docs.google.com/document/d/1iDFnle8Ixtb5RHmdAFaDzy2_zFtb73K-5NsCrKALDdg/edit?usp=drivesdk"
     }
   ]
 };
