@@ -1,0 +1,502 @@
+[
+  {
+    "id": "G01",
+    "text": "Definición de motores térmicos",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G02",
+    "text": "¿cómo se denomina la distancia que recorre el pistón desde abajo hacia arriba?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G03",
+    "text": "Defina Balance térmico",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G04",
+    "text": "Diagrama de sankey (representación gráfica)",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G05",
+    "text": "Órganos fijos, órganos móviles y sistemas relacionados al motor",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G06",
+    "text": "A que llamamos “movimiento” y “tren alternativo” en un motor?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G07",
+    "text": "A que llamamos “perdidas estandarizadas” de acuerdo al balance térmico?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G08",
+    "text": "A que llamamos “pérdidas operativas” en un motor diesel?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G09",
+    "text": "Que son las “perdidas térmicas” y “perdidas mecánicas” de acuerdo al balance térmico.",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G10",
+    "text": "¿Cuál es la diferencia fundamental entre un motor de combustión interna y uno de combustión externa según el texto?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G11",
+    "text": "En un motor Diesel de cuatro tiempos, ¿qué ocurre durante la fase de compresión?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G12",
+    "text": "En el ciclo práctico de un motor Diesel, ¿por qué se realiza el 'adelanto a la inyección'?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G13",
+    "text": "¿A qué se denomina 'cruce de válvulas' (o ángulo de solape) en el funcionamiento de un motor?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G14",
+    "text": "Durante el ciclo práctico, ¿cuál es el valor aproximado de la presión máxima que se alcanza durante la combustión en un motor Diesel?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G15",
+    "text": "¿Cuál es la función principal del 'volante' montado sobre el eje cigüeñal?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G16",
+    "text": "En un motor de dos tiempos, ¿qué componente se encarga generalmente de abrir y cerrar las galerías de escape y barrido?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G17",
+    "text": "¿Por qué el rendimiento mecánico de un motor de dos tiempos suele ser inferior al de uno de cuatro tiempos de iguales características?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G18",
+    "text": "Dentro de la constitución del motor, ¿qué es la 'bancada'?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G19",
+    "text": "¿Cuál es el objetivo de retrasar el cierre de la válvula de aspiración en el ciclo práctico?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G20",
+    "text": "Que son los motores térmicos?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G21",
+    "text": "Como se clasifican los motores térmicos?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G22",
+    "text": "Defina motor térmico de combustión externa-",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G23",
+    "text": "Defina motor térmico de combustión interna",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G24",
+    "text": "Como se clasifican los motores de combustión interna?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G25",
+    "text": "Que caracteriza al motor a explosión?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G26",
+    "text": "Que caracteriza al motor diesel?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G27",
+    "text": "Que se entiende por ciclo de trabajo?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G28",
+    "text": "A que llamamos ciclo de funcionamiento de un motor?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G29",
+    "text": "Cuál es el principio fundamental de los motores diesel?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G30",
+    "text": "Enumere el ciclo de trabajo en los motores diesel de 4 tiempos",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G31",
+    "text": "Clasificación de los motores según su utilización abordo.",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G32",
+    "text": "Que entendemos por carrera del pistón?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G33",
+    "text": "Defina cámara de combustión y cámara de compresión",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G34",
+    "text": "Defina cilindrada en un motor",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G35",
+    "text": "Defina espacio nocivo..",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G36",
+    "text": "Describa la manivela de un cigüeñal.",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G37",
+    "text": "Determine la relación entre la carrera del pistón y las vueltas de la manivela del cigüeñal.",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G38",
+    "text": "Descripción del funcionamiento de un tren alternativo",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G39",
+    "text": "A que llamamos tiempos del motor?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G40",
+    "text": "Cuál de los cuatro tiempos es la carrera motriz?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G41",
+    "text": "Cuál es el motivo de los adelantos y retrasos de los diferentes periodos del ciclo de trabajo de cuatro tiempos?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G42",
+    "text": "Por qué se debe de cerrarse la válvula de aspiración con cierto adelanto?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G43",
+    "text": "A qué se debe que el combustible tenga que inyectarse con cierto adelanto?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G44",
+    "text": "A qué se debe el adelanto de la apertura de la válvula de escape?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G45",
+    "text": "Para qué sirve el retraso del cierre de la válvula de escape?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G46",
+    "text": "A que se denomina ángulo de solape?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G47",
+    "text": "Cuál es la compresión en los motores diesel?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G48",
+    "text": "Que temperatura se consigue al finalizar la compresión en los motores diesel?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G49",
+    "text": "Cuál es la presión máxima de compresión en los motores diesel?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G50",
+    "text": "Cuál es la presión máxima de combustión en los motores diesel?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G51",
+    "text": "Que temperatura máxima se consigue la finalizar la combustión en los motores diesel?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G52",
+    "text": "Cuál es la presión de los gases de escape?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G53",
+    "text": "Que fases del ciclo de funcionamiento de los motores de 2 T se realizan durante la carrera descendente del embolo?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G54",
+    "text": "Que fases del ciclo de funcionamiento de los motores de 2T se realizan durante la carrera ascendente del embolo?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G55",
+    "text": "De cuantas maneras se produce la entrada de aire puro en el interior del cilindro en motores diesel de 2 T.",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G56",
+    "text": "Que presión debe llevar el aire de barrido?",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "G57",
+    "text": "Ciclos de trabajo de los motores diesel de 2 T",
+    "guide": "Generalidades"
+  },
+  {
+    "id": "C01",
+    "text": "¿cuál es la función del eje de cigüeñal? Y ¿por qué decimos que es dicho movimiento es circular, continuo y uniforme?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C02",
+    "text": "¿cómo deben ser los materiales empleados para la fabricación del eje del cigüeñal y cuáles son los más utilizados?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C03",
+    "text": "¿cuándo se utilizan cigüeñales enterizos y cuando en secciones? ¿qué se debe evitar en un cigüeñal?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C04",
+    "text": "¿a qué esfuerzos o deformaciones se ve sometido el eje cigüeñal?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C05",
+    "text": "5) ¿a que llamamos “dámper” o antivibrador?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C06",
+    "text": "6) ¿qué es el flexímetro?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C07",
+    "text": "¿cuál es la función u objetivo de los cojinetes de bancada?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C08",
+    "text": "¿a que llamamos explosión en el Carter?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C09",
+    "text": "¿de qué manera evitamos la condición de explosividad?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C10",
+    "text": "¿cómo se clasifican los cojinetes en función de su carga? explicar cada uno de ellos.",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C11",
+    "text": "¿cómo se clasifican los cojinetes en función de su construcción? explicar cada uno de ellos.",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C12",
+    "text": "¿cómo se clasifican los cojinetes de bancada y biela (perno o muñón) en función de su carga? explicar cada uno de ellos.",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C13",
+    "text": "¿cuáles son las fuerzas que actúan en un cojinete de un motor diesel?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C14",
+    "text": "¿cuáles son las temperaturas y presiones que soportan un cojinete de fuerza?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C15",
+    "text": "¿cuáles son las temperaturas y presiones que soportan un cojinete de motor?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C16",
+    "text": "¿cómo se fabrican los cojinetes de contacto y que material se usa?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C17",
+    "text": "¿cuáles son las ventajas de un cojinete rodante (rulemans)?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C18",
+    "text": "¿cuáles son las desventajas de un cojinete rodante (rulemans)?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C19",
+    "text": "¿con que elemento se lubrican los cojinetes a bolilla y cuál es el objetivo?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C20",
+    "text": "¿cuál es el espacio máximo que debe llenarse con grasa en un cojinete a bolilla o rodillo y cuál es el inconveniente que genera si se agrega mayor cantidad que la solicitada?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C21",
+    "text": "nombrar los tipos de cojinete más utilizados en un motor.",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C22",
+    "text": "¿cuál es la función de un cojinete de empuje y cuáles son los tipos que se utilizan en un motor?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C23",
+    "text": "¿de qué depende el espesor de una película de aceite (cuña lubricante) que hay entre dos superficies metálicas que se desplazan entre sí?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C24",
+    "text": "¿a qué se denomina película fina y película densa (gruesa)?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C25",
+    "text": "¿a qué se denomina fricción seca?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C26",
+    "text": "¿a que denominamos huelgo entre perno y cojinete de pistón?, que ocurre si el huelgo es grande y como afecta al ciclo de trabajo. ¿quién determina dicho huelgo?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C27",
+    "text": "¿qué es un micrómetro y con qué precisión pueden llegar a medir?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C28",
+    "text": "¿a qué se denomina lámina calibre o sonda y en qué consisten?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C29",
+    "text": "¿a qué se denomina calibre puente y para que se utilizan?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C30",
+    "text": "¿Por qué es vital realizar mediciones periódicas con un flexímetro y qué fenómeno mecánico se busca prevenir específicamente para evitar una rotura catastrófica del eje?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C31",
+    "text": "¿Cuáles son los riesgos mecánicos y de seguridad derivados de la contaminación del aceite con agua o combustible, y qué componente es considerado el \"pulmón\" del sistema para mitigar estos daños?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C32",
+    "text": "¿Cuál es la alarma más crítica en la operación del sistema de lubricación a bordo y por qué la dilución por combustible representa un riesgo extremo para la integridad del motor?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C33",
+    "text": "¿Qué propiedades metalúrgicas diferencian al Metal Blanco (Babbitt) de la aleación de Cobre-Plomo y en qué aplicaciones específicas se recomienda cada uno?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C34",
+    "text": "¿Qué elemento geométrico del cigüeñal es el encargado de dictaminar la \"carrera\" del pistón?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C35",
+    "text": "¿Cuál es el objetivo primario del eje cigüeñal en un motor de combustión interna?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C36",
+    "text": "¿Cuál es la principal característica de los cigüeñales denominados \"enterizos\"?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C37",
+    "text": "¿Por qué es metalúrgicamente necesario fabricar cigüeñales ensamblados en motores marinos colosales?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C38",
+    "text": "En la fabricación de cigüeñales semi-ensamblados, ¿qué componentes se forjan típicamente en una sola pieza en forma de \"U\"?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C39",
+    "text": "¿Cuál es la función del grafito esférico en los cigüeñales de fundición nodular?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C40",
+    "text": "¿Qué proceso se utiliza para endurecer la superficie de los muñones y resistir el roce de los cojinetes?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C41",
+    "text": "¿Cuál es la consecuencia directa de un desgaste desigual en los cojinetes de bancada?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C42",
+    "text": "¿Cómo detecta un flexímetro el riesgo de rotura catastrófica en un cigüeñal?",
+    "guide": "Cigüeñal y cojinetes"
+  },
+  {
+    "id": "C43",
+    "text": "¿Por qué se dice que el cigüeñal es \"elástico\" a nivel micrométrico?",
+    "guide": "Cigüeñal y cojinetes"
+  }
+]

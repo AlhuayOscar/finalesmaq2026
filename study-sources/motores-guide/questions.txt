@@ -1,0 +1,345 @@
+# 1 Generalidades
+¿Qué es un motor térmico y qué transformaciones de energía ocurren desde el combustible hasta el eje? | Energía química, calor, trabajo útil y pérdidas. | G01 G20
+¿Qué distingue la combustión interna de la externa y qué ejemplos navales corresponden a cada una? | Lugar de combustión y fluido que realiza trabajo. | G10 G22 G23
+¿Cómo se clasifican los motores térmicos y cuáles de esas clasificaciones corresponden a motores alternativos de combustión interna? | Combustión, encendido, ciclo, disposición y servicio. | G21 G24
+¿Qué caracteriza al motor Otto o de encendido por chispa? | Preparación de mezcla, bujía y diferencia entre motor real y ciclo ideal. | G25
+¿Qué caracteriza al diésel y por qué el combustible se enciende sin bujía de chispa? | Aire comprimido caliente, inyección y autoencendido. | G26 G29
+¿Cómo se clasifican los motores por su utilización a bordo? | Propulsión, generación eléctrica, auxiliares y emergencia. | G31
+¿Cómo distinguirías un motor de dos tiempos de uno de cuatro tiempos observando su funcionamiento? | Renovación de carga, vueltas y carreras por ciclo. | -
+¿Qué criterios se usan para hablar de motores lentos, semirrápidos y rápidos? | Régimen, diseño y aplicación; evitar límites universales. | -
+¿Qué ventajas y limitaciones tienen las disposiciones en línea, V, W, horizontales opuestos y radiales? | Espacio, accesibilidad y complejidad; aplicación naval habitual o excepcional. | -
+¿Qué significan monocilíndrico, policilíndrico, simple efecto y doble efecto? | Cantidad de cilindros y caras del pistón sobre las que actúa el gas; distinguir pistones opuestos. | -
+¿Cómo se relacionan potencia, régimen y servicio al elegir un motor propulsor o un grupo electrógeno? | Curvas del motor, carga accionada y régimen continuo admisible. | -
+¿Qué datos de la placa y del manual necesitás antes de estudiar u operar un motor concreto? | Modelo, serie, potencia, rpm, combustible, límites y esquema de sistemas. | -
+# 2 Elementos del motor
+¿Cuáles son los órganos fijos, los móviles y los sistemas complementarios de un motor? | Identificarlos en un corte y justificar su clasificación. | G05
+¿Qué funciones cumplen fundación, bancada, bastidor y bloque de cilindros? | Sostén, rigidez, alineación y transmisión de cargas al casco. | G18
+¿Cómo llegan las fuerzas de combustión desde la culata y el pistón hasta la bancada? | Trayectoria de esfuerzos por tirantes, estructura, biela y cojinetes. | -
+¿Qué es el cárter y cómo cambian sus funciones en un motor de tronco y uno de cruceta? | Encerramiento, lubricante, separación de espacios y ventilación prevista. | -
+¿Qué materiales y características se requieren en bloque, bastidor y bancada? | Resistencia, rigidez, amortiguación, peso y reparación. | -
+¿En qué se diferencian un cilindro enterizo, una camisa seca y una camisa húmeda? | Contacto con refrigerante, apoyo y transferencia de calor. | -
+¿Qué ventajas y dificultades presenta una camisa húmeda frente a una seca? | Sustitución, refrigeración, estanqueidad y cavitación. | -
+¿Qué sellos separan gases, agua y aceite alrededor de una camisa húmeda? | Apoyo superior, juntas inferiores y vías de fuga. | -
+¿Por qué importan el asiento y la protrusión de la camisa en el bloque? | Apriete de la junta, apoyo uniforme y medida prescrita. | -
+¿Qué función cumplen el material, el acabado y el bruñido de una camisa? | Resistencia al desgaste, retención de aceite y asentamiento de aros. | -
+¿Cómo se miden conicidad, ovalización y desgaste de una camisa? | Alturas, direcciones, alesómetro y comparación con límites. | -
+¿Cómo distinguirías desgaste abrasivo, corrosión y cavitación en una camisa? | Aspecto, cara afectada y causas probables. | -
+¿Qué función cumplen culata, culatín y tapa de cilindro y cómo se emplean esos nombres? | Cierre, cámara, alojamientos y terminología del fabricante. | -
+¿Qué diferencias constructivas esperarías entre una culata Otto, una diésel de cuatro tiempos y una diésel uniflujo de dos tiempos? | Bujía o inyector, válvulas y refrigeración. | -
+¿Qué señales hacen sospechar una junta de culata dañada, una fisura o una deformación? | Fugas de gases, mezclas de fluidos y comprobaciones diferenciales. | -
+¿Por qué deben respetarse orden, método y condiciones de apriete de la culata? | Carga de sujeción, deformación, tornillos y especificación del manual. | -
+¿Qué partes tiene un pistón y qué función cumple cada una? | Corona, falda, gargantas y alojamientos del perno o vástago. | -
+¿Cómo se seleccionan materiales y refrigeración del pistón según las cargas térmicas y mecánicas? | Aleaciones, acero, pistón compuesto y circulación de refrigerante. | -
+¿Por qué el juego pistón camisa y la dilatación térmica condicionan el funcionamiento? | Medición en puntos definidos, gripado y golpeteo. | -
+¿Cuáles son las funciones de los aros de compresión, intermedios y de control de aceite? | Sellado, transferencia térmica y regulación de película; diferencias por diseño. | -
+¿Cómo intervienen la elasticidad del aro y los gases detrás de él en el sellado? | Presión radial, garganta y contacto con la camisa. | -
+¿Qué propiedades necesitan los materiales y revestimientos de los aros? | Desgaste, elasticidad, temperatura y compatibilidad con la camisa. | -
+¿Cómo se verifican la luz entre puntas, el juego axial y el juego radial de los aros? | Instrumentos, escuadrado, posición de medida y límites del fabricante. | -
+¿Qué errores de montaje de aros pueden producir consumo de aceite o rayado? | Orientación, expansor, herramienta y posiciones de juntas según diseño. | -
+¿Qué es el blow-by y cómo se relaciona con aros, camisa, compresión y aceite? | Paso de gases, indicios y diagnóstico sin atribuir toda fuga a una sola pieza. | -
+¿Por qué las lumbreras exigen cuidados particulares en aros y camisas de motores de dos tiempos? | Bordes, orientación, retenciones cuando existan y riesgo de enganche. | -
+¿Qué función cumple el perno del pistón y qué tipos de montaje puede tener? | Fijo, semiflotante o flotante, seguros, bujes y lubricación. | -
+¿Qué es el tren alternativo y cómo transforma el movimiento del pistón en giro? | Pistón, biela, manivela y diferencia entre movimiento alternativo y rotativo. | G06 G38
+¿Qué partes, materiales y esfuerzos caracterizan a una biela? | Pie, cuerpo, cabeza; compresión, tracción, flexión y fatiga. | -
+¿Qué diferencias presentan una biela convencional, una articulada y una de horquilla? | Uniones al cigüeñal, disposición de cilindros y geometría. | -
+¿Por qué los tornillos de biela y las superficies de unión son críticos? | Precarga, método de apriete, reutilización permitida y consecuencias del aflojamiento. | -
+¿Qué son vástago, cruceta, patines y guías, y qué elemento recibe el empuje lateral? | Cadena de movimiento y diferencia entre patines móviles y guías fijas. | -
+¿Qué función cumple la caja de empaquetadura del vástago en un motor de cruceta? | Separación entre espacios, rascado, drenajes y control de fugas. | -
+¿Qué función cumple el cigüeñal y cómo se obtiene un giro continuo con velocidad relativamente uniforme? | Conversión de movimiento, superposición de impulsos, orden de encendido y volante. | C01 C35
+¿Cómo identificás muñones de bancada, muñequillas de biela, brazos, radios de unión y contrapesos? | Nomenclatura y función de cada parte en un croquis. | -
+¿Qué requisitos mecánicos y metalúrgicos debe cumplir el material del cigüeñal? | Resistencia a fatiga, flexión y torsión; acero forjado o fundición según diseño. | C02
+¿Qué diferencia hay entre cigüeñal enterizo, ensamblado y semien­samblado? | Piezas integrantes, uniones, fabricación y escala de aplicación. | C03 C36
+¿Por qué se usan cigüeñales ensamblados en motores de gran tamaño? | Límites industriales de fabricación y transporte; evitar una prohibición metalúrgica absoluta. | C37
+¿Qué componentes integran una sección en U de un cigüeñal semien­samblado y cómo se une al resto? | Brazos, muñequilla y montaje por interferencia según construcción. | C38
+¿Qué aporta el grafito esferoidal a una fundición nodular empleada en cigüeñales? | Menor concentración de tensiones que el grafito laminar y propiedades resultantes. | C39
+¿Qué tratamientos pueden mejorar las superficies de los muñones? | Temple por inducción, nitruración u otros según material; no todos reciben el mismo proceso. | C40
+¿Qué esfuerzos soporta el cigüeñal y por qué puede deformarse elásticamente durante el servicio? | Flexión, torsión, cargas cíclicas, inercia y concentradores de tensión. | C04 C43
+¿Qué consecuencias tiene el desgaste desigual de los cojinetes de bancada? | Redistribución de cargas, desalineación, flexión y fatiga. | C41
+¿Qué mide el flexímetro y cómo se toman lecturas comparables entre brazos de manivela? | Posiciones angulares, referencias, condición térmica y procedimiento del motor. | C06
+¿Cómo ayudan las tendencias de deflexión a prevenir una rotura por fatiga? | Comparación con línea base y límites; una lectura no demuestra por sí sola una grieta. | C30 C42
+¿Qué función tienen las cánulas y los taladros de lubricación del cigüeñal? | Recorrido del aceite, limpieza y efecto de una obstrucción. | -
+¿Qué funciones cumplen los cojinetes de bancada y de biela? | Soportar cargas, guiar el eje, permitir película lubricante y evacuar calor. | C07
+¿Cómo se clasifican los cojinetes según dirección y variación de la carga? | Radiales, axiales y combinados; cargas constantes o variables. | C10 C12
+¿Cómo se clasifican por construcción los cojinetes deslizantes y los rodamientos? | Superficies, elementos rodantes y ejemplos en motores y auxiliares. | C11 C21
+¿Qué fuerzas de gases e inercia actúan sobre los cojinetes de un diésel? | Fuerzas alternativas y rotativas, magnitud y dirección variable. | C13
+¿Cómo se construye un cojinete deslizante y qué función cumplen respaldo y capas antifricción? | Semicasquillos, alojamiento, ajuste y construcciones mono o multicapa. | C16
+¿Cómo compararías metal blanco Babbitt y aleaciones cobre plomo para cojinetes? | Conformabilidad, incrustabilidad, fatiga y selección según diseño, sin regla exclusiva por combustible. | C33
+¿Qué ventajas ofrecen los rodamientos frente a cojinetes deslizantes en aplicaciones apropiadas? | Fricción de arranque, precisión y condiciones de montaje y lubricación. | C17
+¿Qué limitaciones tienen los rodamientos frente a cargas, desalineación, contaminación y velocidad? | Vida a fatiga, montaje, ruido y límites del tipo seleccionado. | C18
+¿Por qué se lubrican los rodamientos con aceite o grasa? | Reducción de fricción y desgaste, protección anticorrosiva y eventual extracción de calor. | C19
+¿Cómo se determina la cantidad de grasa de un rodamiento y qué ocurre por exceso? | Volumen libre, velocidad y recomendación específica; batido y calentamiento. | C20
+¿Qué función tiene el cojinete de empuje y qué tipos pueden emplearse? | Collar plano, rodante o patines basculantes; transmisión del empuje al casco. | C22
+¿Cómo se comprueban el juego axial o tiraje del cigüeñal y sus efectos sobre el motor? | Referencia del fabricante, instrumento, desplazamiento y desgaste del apoyo axial. | -
+¿Qué significa huelgo diametral entre perno y cojinete y qué ocurre si es excesivo o insuficiente? | Diferencia de diámetros, caudal, película, impactos y límites; no confundir con luz radial. | C26
+¿Qué puede medir un micrómetro y cómo distinguís resolución, exactitud y repetibilidad? | Selección del instrumento, calibración, temperatura y técnica de lectura. | C27
+¿Qué es una sonda o lámina calibrada y qué limitaciones tiene al medir luces? | Espesor marcado, limpieza y ajuste sin forzar. | C28
+¿Qué mide un calibre puente y cómo se interpreta la caída del eje respecto de una referencia? | Tendencia de desgaste; no equiparar automáticamente con huelgo directo. | C29
+¿Qué función cumple el volante y por qué importan su fijación y balanceo? | Energía cinética, fluctuaciones de velocidad e inspección. | G15
+# 3 Nomenclatura térmica y magnitudes
+¿Qué son PMS, PMI y carrera del pistón? | Posiciones extremas y distancia entre ellas; una carrera corresponde a media vuelta. | G02 G32 G37
+¿Qué relación existe entre radio de manivela y carrera? | S = 2r; distinguir radio de manivela de longitud de biela. | C34
+¿Cómo describirías geométricamente una manivela de cigüeñal? | Eje de bancada, muñequilla excéntrica, brazos y radio. | G36
+¿Qué expresa la relación carrera diámetro y cómo distingue motores largos, cuadrados y supercuadrados? | S/D mayor, igual o menor que uno; no determina por sí sola el ciclo. | -
+¿Cómo influye la longitud de biela respecto del radio de manivela en el movimiento del pistón? | Oblicuidad, velocidad variable y empuje lateral; explicación con croquis sin desarrollar ecuaciones. | -
+¿Cómo se calculan superficie del pistón, cilindrada unitaria y cilindrada total? | A = pi D²/4; Vd = A S; Vtotal desplazado = z Vd, con unidades consistentes. | G34
+¿Qué es el volumen de cámara o espacio nocivo y en qué se diferencia de la cilindrada? | Volumen remanente en PMS y volumen barrido. | G35
+¿Cómo se emplean cámara de compresión y cámara de combustión al describir un diésel? | Espacio ocupado por el gas y zonas donde se inicia y desarrolla la combustión. | G33
+¿Qué es la relación de compresión geométrica y cómo se obtiene? | epsilon = (Vd + Vc)/Vc; no es una presión en bar. | -
+¿Por qué la presión final de compresión no queda determinada únicamente por esa relación? | Presión y temperatura inicial, fugas, cierre de admisión, velocidad y transferencia de calor. | G47
+¿Cómo se numeran los cilindros y se define el sentido de giro de un motor? | Punto de observación y convención del fabricante. | -
+¿Qué diferencias hay entre régimen del cigüeñal y velocidad media del pistón? | rpm frente a m/s; cm = 2 S n/60. | -
+¿Qué es el torque y qué relación tiene con fuerza y brazo perpendicular? | M = F r; unidad N m y dependencia de la posición de la manivela. | -
+¿Cómo se relacionan potencia y torque con las rpm? | P en kW = M n/9550; interpretar antes de reemplazar datos. | -
+Un motor tiene cuatro cilindros, diámetro de 100 mm y carrera de 120 mm. ¿Cuál es su cilindrada total y su relación S/D? | Convertir unidades, calcular y explicar el resultado físico. | -
+Si el motor anterior gira a 1500 rpm y entrega 400 N m, ¿cuáles son su velocidad media de pistón y su potencia? | Aplicar dos fórmulas básicas y distinguir ambas magnitudes. | -
+# 4 Ciclos de los motores
+¿Qué se entiende por ciclo de trabajo o de funcionamiento de un motor? | Secuencia completa, renovación de carga y repetición del estado operativo. | G27 G28
+¿Qué es un tiempo del motor y cuál es la carrera motriz del cuatro tiempos? | Carrera de pistón, expansión y diferencia entre fase y carrera. | G39 G40
+¿Cómo se desarrolla el ciclo diésel de cuatro tiempos? | Admisión, compresión, combustión expansión y escape con posición de válvulas. | G30
+¿Qué ocurre con aire, presión y temperatura durante la compresión de un diésel? | Trabajo de compresión, calentamiento y estanqueidad. | G11
+¿Cómo se desarrolla el ciclo Otto de cuatro tiempos y dónde se prepara la mezcla? | Variantes carburadas, inyección indirecta y directa. | -
+¿Cómo se desarrolla un ciclo diésel de dos tiempos a lo largo de una vuelta? | Compresión, combustión, expansión, escape y barrido. | G57
+¿Qué procesos ocurren durante la carrera descendente del pistón en un diésel de dos tiempos? | Expansión, apertura de escape y comienzo de barrido según diseño. | G53
+¿Qué procesos ocurren durante la carrera ascendente en un diésel de dos tiempos? | Final del barrido, cierre de comunicaciones, compresión e inyección. | G54
+¿Cómo trabaja un Otto de dos tiempos que comprime la mezcla en el cárter? | Aspiración al cárter, transferencia, escape y encendido; diferencia con diésel de cruceta. | -
+¿Qué elementos abren y cierran lumbreras y válvulas en distintos motores de dos tiempos? | Pistón para lumbreras y mecanismo de válvula de escape en uniflujo cuando existe. | G16
+¿Qué representa el ciclo de Carnot y por qué sirve como límite conceptual? | Dos isotermas, dos adiabáticas reversibles y temperaturas absolutas. | -
+¿Qué diferencias hay entre los ciclos ideales Otto, Diesel y mixto? | Forma idealizada de aportación de calor y diagrama presión volumen. | -
+¿Qué diferencias separan el ciclo ideal del ciclo real? | Combustión finita, transferencia de calor, renovación de carga y pérdidas. | -
+¿Qué representa el área encerrada en un diagrama presión volumen? | Trabajo neto por ciclo y unidades; identificar el lazo de bombeo. | -
+¿Cómo dibujarías un diagrama circular de cuatro tiempos? | PMS, PMI, 720 grados y eventos de admisión, escape e inyección. | -
+¿Cómo dibujarías un diagrama circular de dos tiempos? | 360 grados, aperturas y cierres y fase de barrido. | -
+¿Por qué se adelantan o retrasan los eventos respecto de los puntos muertos? | Tiempo de apertura, movimiento del gas y duración de combustión. | G41
+¿Para qué se adelanta el inicio de inyección y qué diferencia hay con retraso del encendido? | Inicio de suministro, comienzo de combustión y evolución de presión. | G12 G43
+¿Por qué se adelanta la apertura de escape y qué compromiso supone? | Descarga inicial, pérdida de expansión y menor trabajo de expulsión. | G44
+¿Para qué se retrasa el cierre de escape y cuándo puede perjudicar? | Renovación de carga, solape y condiciones de presión. | G45
+¿Qué es el cruce o ángulo de solape de válvulas? | Coincidencia de aperturas alrededor del PMS de renovación de carga. | G13 G46
+¿Para qué suele retrasarse el cierre de admisión y en qué diseños puede adelantarse? | Inercia de carga, régimen y estrategias Miller; aclarar la discrepancia de la guía. | G19 G42
+¿Qué presión y temperatura puede alcanzar el aire al terminar la compresión? | Citar un motor o ejemplo documentado, carga y presión absoluta o manométrica. | G48 G49
+¿Qué presión y temperatura máximas se alcanzan durante la combustión? | Distinguir pico de gas, temperatura de metal y dato específico del motor. | G14 G50 G51
+¿Cómo cambian presión y temperatura de escape desde la apertura de la válvula hasta el colector? | Descarga, pulsos, turbina y lugar de medición; no usar un único valor. | G52
+¿Qué ventajas y desventajas presentan diésel y Otto para distintas tareas navales? | Consumo, masa, costo, seguridad del combustible y mantenimiento. | -
+¿Cómo compararías dos y cuatro tiempos sin suponer que uno siempre tiene menor rendimiento mecánico? | Fricción, auxiliares de barrido, potencia y condiciones de comparación. | G17
+¿Cómo distinguirías en un diagrama indicado una baja compresión de una combustión atrasada? | Forma de las curvas, sincronización y contraste con otros cilindros. | -
+# 5 Sistema de distribución
+¿Qué función tiene la distribución y qué procesos sincroniza con el cigüeñal? | Entrada y salida de gases y relación con inyección o encendido. | -
+¿Qué es un camón o leva y cómo su perfil determina alzada, duración y aceleración? | Círculo base, rampas, flancos y nariz. | -
+¿Qué materiales, apoyos y lubricación requiere un árbol de levas? | Desgaste de contactos, rigidez, engrase y fijación axial. | -
+¿Cómo se transmite el movimiento desde una leva hasta una válvula? | Botador, varilla, balancín y variantes de accionamiento directo. | -
+¿Qué diferencias hay entre botadores mecánicos, de rodillo e hidráulicos? | Contacto, ajuste de holgura, alimentación de aceite y fallas. | -
+¿Qué funciones cumplen varillas y balancines y qué defectos alteran su trabajo? | Transmisión, relación de palanca, desgaste y deformación. | -
+¿Qué partes y materiales caracterizan a una válvula de admisión y a una de escape? | Cabeza, vástago, asiento y distintas exigencias térmicas. | -
+¿Cómo cambian la distribución y la cámara al disponer válvulas laterales, en culata o varias por cilindro? | Recorrido de gases, espacio disponible y mecanismos de accionamiento. | -
+¿Qué funciones cumplen asiento y guía de válvula? | Estanqueidad, centrado, disipación de calor y juego de vástago. | -
+¿Cómo se distinguen asientos integrales, insertados y denominados flotantes en el material de clase? | Identificar la construcción del dibujo y confirmar la nomenclatura específica. | -
+¿Para qué sirven los resortes de válvula y qué ocurre si pierden fuerza o se rompen? | Cierre, seguimiento de leva y riesgo de contacto con el pistón. | -
+¿Qué es la luz de válvulas y por qué se ajusta en una condición definida? | Dilatación, leva en círculo base y valor en frío o caliente según manual. | -
+¿Qué síntomas provoca una luz de válvula demasiado pequeña o demasiado grande? | Pérdida de cierre, quemado, ruido y alteración de eventos. | -
+¿Qué ventajas y fallas presentan cadenas, correas y trenes de engranajes de distribución? | Sincronismo, tensión, juego, lubricación y mantenimiento. | -
+¿Qué relación de velocidades corresponde al árbol de levas de un cuatro tiempos y al de un dos tiempos convencional? | Mitad de rpm o mismas rpm cuando el árbol acciona eventos de cada ciclo. | -
+¿Cómo se verifica la puesta a punto de distribución? | Marcas, PMS de referencia, sentido de giro y comprobación de eventos. | -
+¿Qué diferencias hay entre distribución mecánica y accionamiento electrohidráulico en motores grandes? | Orden electrónica, actuador, fluido de mando y ausencia posible de árbol convencional. | -
+¿Cómo distinguirías una válvula que no sella de un inyector que no aporta combustible? | Compresión, temperatura de escape y pruebas autorizadas. | -
+Después de intervenir distribución, ¿qué comprobaciones preceden al primer arranque? | Sincronismo, holguras, giro controlado, herramientas retiradas y protecciones. | -
+# 6 Diésel e inyección de combustible
+¿Qué propiedades del combustible condicionan el funcionamiento de un diésel naval? | Densidad, viscosidad, poder calorífico, cetano, inflamación, derrame, azufre y contaminantes. | -
+¿Cómo distinguís poder calorífico del combustible y potencia térmica suministrada al motor? | Energía por masa frente a energía por tiempo; PCI y caudal másico. | -
+¿Qué expresa el número de cetano y cómo influye en el retraso de encendido? | Aptitud de autoencendido, arranque y brusquedad de combustión. | -
+¿Qué diferencias hay entre punto de inflamación, autoignición y punto de derrame? | Fenómenos y ensayos distintos; consecuencias operativas. | -
+¿Por qué importan viscosidad y temperatura a la entrada del sistema de inyección? | Bombeabilidad, atomización y lubricación de componentes. | -
+¿Cómo afecta el azufre del combustible a depósitos, corrosión y selección del aceite? | Formación de compuestos ácidos, temperatura y reserva alcalina apropiada. | -
+Dibujá el recorrido completo del combustible desde almacenamiento hasta retorno. ¿Qué hace cada equipo? | Trasiego, decantación cuando existe, tratamiento, servicio, alimentación, filtros e inyección. | -
+¿Qué diferencias funcionales hay entre alimentación de baja presión e inyección de alta presión? | Caudal, filtrado, dosificación, presión y momento de entrega. | -
+¿Cómo compararías bomba línea inyector, bomba unitaria, inyector bomba y common rail? | Lugar donde se genera presión, acumulación y control de entrega. | -
+¿Cómo funciona una bomba inyectora tipo Bosch de émbolo y hélice? | Llenado, carrera efectiva, derrame, cremallera y corte de suministro. | -
+¿Qué función tiene la válvula de impulsión y qué efectos producen las ondas de presión en las tuberías? | Fin de inyección, presión residual y geometría de líneas según diseño. | -
+¿Qué hace el acumulador common rail y cómo se relacionan bomba, sensor, regulador e inyectores? | Presión almacenada y control del instante y cantidad inyectada. | -
+¿Cuáles son las partes de un inyector mecánico y cómo abre y cierra su aguja? | Cuerpo, tobera, aguja, resorte y fuerzas hidráulicas. | -
+¿Qué significa presión de apertura o de ruptura del inyector? | Apertura de aguja; distinguir de presión máxima de inyección y de combustión. | -
+¿Por qué la presión de inyección debe superar la del cilindro durante la entrega? | Diferencia de presión, flujo y formación del chorro. | -
+¿Qué significan pulverización, atomización y penetración del combustible? | Gotas, distribución espacial, evaporación y uso de términos del curso. | -
+¿Qué sucede si el chorro penetra demasiado o demasiado poco? | Mezcla deficiente, contacto con paredes, humo y cargas térmicas. | -
+¿Qué fases reconocés en la combustión diésel real? | Retraso de encendido, combustión premezclada y controlada por mezcla. | -
+¿Qué diferencia hay entre inyección directa e indirecta con cámara auxiliar? | Cámara principal, precámara o torbellino, pérdidas y arranque. | -
+¿Cómo funcionan las cámaras de precombustión, turbulencia y célula de energía descritas en los apuntes? | Pasajes, movimiento de gases y finalidad; distinguir diseños históricos. | -
+¿Qué diferencias presentan la inyección neumática histórica y la inyección mecánica? | Fuente de energía para introducir combustible, equipos y limitaciones. | -
+¿Cómo se comprueban estanqueidad, apertura y patrón de pulverización de un inyector? | Banco adecuado, procedimiento, protección y comparación con datos del modelo. | -
+¿Qué mantenimiento requieren tobera, aguja, filtros y retorno del sistema? | Limpieza controlada, inspección, sustitución y prueba final. | -
+¿Qué síntomas esperarías de una tobera que gotea o un inyector trabado? | Humo, temperatura de escape, golpeteo, dilución y cilindro afectado. | -
+¿Cómo distinguís aire en alimentación, filtro obstruido y bomba de inyección defectuosa? | Presiones, continuidad del suministro, diferencial del filtro y pruebas ordenadas. | -
+¿Qué consecuencias tienen inyección demasiado adelantada, atrasada o desigual entre cilindros? | Picos de presión, trabajo, temperatura de escape y reparto de carga. | -
+¿Qué riesgos presenta intervenir un sistema de alta presión y cómo se verifica la ausencia de presión residual? | Aislamiento y descarga según manual; nunca buscar fugas con la mano. | -
+¿Por qué no alcanza con aumentar combustible para recuperar potencia? | Aire disponible, límites térmicos, humo y sobrecarga. | -
+# 7 Otto y sistemas de mezcla y encendido
+¿Qué significa relación aire combustible y qué distingue mezcla rica, pobre y estequiométrica? | Relación másica, lambda y dependencia de composición del combustible. | -
+¿Cómo funciona un carburador elemental? | Cuba, flotante, surtidor, venturi y mariposa. | -
+¿Qué circuitos permiten al carburador trabajar en arranque, ralentí, aceleración y carga? | Enriquecimiento, transición y dosificación. | -
+¿Qué diferencias hay entre carburadores de flujo ascendente, descendente y horizontal? | Dirección del aire y disposición física; reconocer un esquema. | -
+¿Cómo se comparan carburación e inyección de nafta en control de mezcla y consumo? | Dosificación, transitorios y compensación de condiciones. | -
+¿Qué diferencias hay entre inyección monopunto, multipunto y directa de nafta? | Número y ubicación de inyectores; distinguir ubicación de estrategia temporal. | -
+¿Qué significan inyección continua, intermitente, simultánea y secuencial? | Momento de accionamiento; no suponer que toda secuencial ocurre con válvula abierta. | -
+¿Cómo relaciona una ECU las señales de MAP o MAF, TPS y temperaturas con el combustible inyectado? | Carga, masa de aire, arranque y actuadores. | -
+¿Qué informa la sonda lambda y cuándo puede regularse la mezcla en lazo cerrado? | Oxígeno en escape, condiciones de funcionamiento y límites del diagnóstico. | -
+¿Cómo funciona un encendido convencional con bobina, ruptor, condensador y distribuidor? | Circuitos primario y secundario y sincronización de la chispa. | -
+¿Qué cambia en un encendido electrónico y qué señales necesita? | Captación de posición, módulo o ECU y bobinas. | -
+¿Qué función cumplen la bujía, su grado térmico y la luz entre electrodos? | Chispa, disipación de calor y diagnóstico visual. | -
+¿Por qué se adelanta la chispa y cómo se verifica la puesta a punto? | Tiempo de combustión, régimen, carga y referencia del fabricante. | -
+¿Qué diferencia hay entre detonación y preencendido en un Otto? | Autoencendido del gas final frente a ignición antes de la chispa; daños. | -
+¿Cómo investigarías un motor Otto que gira pero no enciende? | Alimentación, chispa, compresión y sincronismo sin cambiar piezas al azar. | -
+¿Qué precauciones particulares requieren nafta, vapores y equipos eléctricos en una instalación naval? | Ventilación prevista, fugas y prevención de fuentes de ignición. | -
+# 8 Refrigeración
+¿Por qué es necesario refrigerar un motor y por qué enfriarlo demasiado también perjudica? | Temperatura de materiales, película lubricante, condensación y eficiencia. | -
+¿Cómo se transfiere calor desde gases y piezas al refrigerante y al ambiente? | Conducción, convección y resistencia térmica de depósitos. | -
+¿Cómo se diferencian refrigeración por aire, agua directa e indirecta? | Recorrido y fluido que toca el motor. | -
+¿Qué significan circuito abierto y cerrado y cómo se combinan en una instalación naval? | Agua externa y circuito interno recirculado. | -
+Dibujá un circuito de agua dulce y otro de agua de mar. ¿Dónde intercambian calor? | Tomas, filtros, bombas, motor, termostato, enfriador y descarga. | -
+¿Cómo funcionan enfriadores de quilla y de casco y qué mantenimiento requieren? | Transferencia al agua exterior, incrustación y protección de superficies. | -
+¿Qué son los circuitos de alta y baja temperatura cuando el motor los incorpora? | Camisas, aire de carga y aceite; temperaturas según diseño. | -
+¿Qué función cumple el tanque de expansión o compenso y por qué importa su ubicación? | Dilatación, reserva, desaireación y presión estática. | -
+¿Cómo trabaja un termostato con derivación y qué ocurre si queda abierto o cerrado? | Reparto de caudal, calentamiento y sobretemperatura. | -
+¿Qué diferencias hay entre bombas centrífugas y de impulsor flexible en refrigeración? | Principio, cebado, desgaste y funcionamiento sin líquido. | -
+¿Por qué se controla la calidad del agua y la concentración de aditivos? | Corrosión, depósitos, cavitación y compatibilidad con materiales. | -
+¿Cómo se originan corrosión, incrustaciones y cavitación y qué señales permiten distinguirlas? | Ataque químico, depósito térmico y colapso de burbujas. | -
+¿Qué comprobaciones harías ante aumento de temperatura con poco caudal de agua de mar? | Toma, filtro, impulsor, aire y obstrucciones. | -
+¿Cómo detectarías una fuga interna en un intercambiador? | Diferencia de presiones, contaminación y prueba aislada. | -
+¿Qué precauciones cambian al operar en zonas muy frías o cálidas? | Congelación, viscosidad, capacidad del enfriador y límites de carga. | -
+¿Cómo interpretarías temperaturas de entrada y salida junto con caudal y carga? | Balance de calor; un salto térmico aislado no basta para diagnosticar. | -
+¿Qué permite estimar Q por unidad de tiempo = caudal másico por calor específico por salto de temperatura? | Potencia evacuada y unidades; ejemplo de agua. | -
+¿Qué mantenimiento preventivo corresponde a bombas, filtros, enfriadores, termostatos y mangueras? | Inspección, limpieza, pruebas y registro de tendencias. | -
+# 9 Lubricación
+¿Qué funciones cumple el aceite además de reducir fricción? | Refrigerar, limpiar, sellar, proteger y transmitir fuerza donde corresponda. | -
+¿Qué propiedades debe conservar un lubricante diésel u Otto durante el servicio? | Viscosidad, estabilidad, detergencia, dispersancia, protección y compatibilidad. | -
+¿Qué diferencia hay entre viscosidad, índice de viscosidad y grado SAE? | Propiedad medida, variación con temperatura y clasificación. | -
+¿Qué indican una clasificación de servicio y una aprobación del fabricante? | Desempeño requerido; viscosidad por sí sola no asegura aptitud. | -
+¿Qué aportan bases minerales o sintéticas y aditivos detergentes, dispersantes, antioxidantes y antidesgaste? | Funciones, agotamiento y compatibilidad al mezclar. | -
+¿Cómo compararías salpicadura, presión total y sistemas mixtos? | Forma de llevar lubricante a cada superficie y sus limitaciones. | -
+¿Qué diferencia hay entre cárter húmedo y seco? | Depósito, bombas de presión y recuperación y control del nivel. | -
+¿Por qué un motor de cruceta puede tener lubricación de cilindros separada de la del sistema? | Consumo de aceite, contacto con productos de combustión y reserva alcalina. | -
+Trazá el recorrido del aceite desde el depósito hasta un cojinete. ¿Qué hace cada componente? | Aspiración, bomba, alivio, filtro, enfriador, galería y retorno según circuito. | -
+¿De qué depende la formación de la cuña hidrodinámica en un cojinete? | Viscosidad, velocidad relativa, carga, geometría y huelgo. | C23
+¿Cómo distinguís lubricación de película completa, mixta y límite? | Separación de superficies, espesor relativo a rugosidad y condiciones transitorias. | C24
+¿Qué ocurre cuando se pierde la película y aparece fricción seca? | Calentamiento, adhesión, arrastre y posible gripado. | C25
+¿En qué se diferencian presión del aceite de suministro y presión específica de carga del cojinete? | Magnitudes, puntos de medición y límites de temperatura del modelo. | C14 C15
+¿Qué diferencias hay entre filtro de paso total, derivación, bypass y separación centrífuga? | Qué retienen, continuidad de caudal y limitaciones de separación. | -
+¿Qué revela el diferencial de presión de un filtro y cómo se interpreta con aceite frío? | Restricción, viscosidad y apertura posible de bypass. | -
+¿Qué controles de lubricación se realizan antes de arrancar y en los primeros instantes de marcha? | Nivel, prelubricación cuando corresponde, presión, temperatura y fugas. | -
+¿Qué efectos tienen agua y combustible en el aceite y qué equipos pueden detectarlos o tratarlos? | Emulsión, dilución, corrosión y análisis; ventilación no limpia aceite ni elimina todo riesgo. | C31
+¿Por qué es crítica la caída de presión en la galería y cómo agrava el riesgo la dilución? | Pérdida de película, confirmación segura y respuesta prevista de alarma, reducción o parada. | C32
+¿Cómo se toma una muestra representativa de aceite usado y qué tendencias se comparan? | Punto, condición de máquina, limpieza, horas y reposiciones. | -
+¿Qué pueden sugerir agua, combustible, hollín y metales de desgaste en el análisis? | Asociar causas posibles con otras pruebas, sin diagnóstico por un único elemento. | -
+¿Cómo diferenciarías bajo nivel, aireación, bomba desgastada y huelgos excesivos ante baja presión? | Temperatura, ruido, presión, retorno y pruebas de circuito. | -
+¿Qué señales justifican revisar el aceite antes del intervalo habitual y qué registros conservarías? | Contaminación, variación de viscosidad, consumo, alarmas y criterio del fabricante. | -
+# 10 Admisión escape y sobrealimentación
+¿Qué elementos componen la admisión y el escape y qué función cumple cada uno? | Filtros, silenciadores, colectores, enfriadores, turbina y tuberías. | -
+¿Qué distingue un motor atmosférico de uno sobrealimentado? | Masa de aire admitida, presión de carga y límites de diseño. | -
+¿Qué diferencia hay entre barrido y sobrealimentación? | Renovar gases frente a aumentar masa de carga; pueden coexistir. | -
+¿Qué formas de barrido y qué equipos pueden introducir aire en un diésel de dos tiempos? | Transversal, lazo o uniflujo; soplantes y turbo según disposición. | G55
+¿Qué relación debe existir entre presión de barrido y presión del cilindro durante el intercambio? | Gradiente de presión y pérdidas; valor específico de régimen y diseño. | G56
+¿Cómo funciona una bomba de barrido tipo Roots y qué energía consume? | Desplazamiento, accionamiento y diferencia respecto de turbocompresor. | -
+¿Cómo se relacionan turbina de escape, eje y compresor de un turbo? | Recuperación de energía del gas y compresión del aire. | -
+¿Por qué puede necesitar una soplante auxiliar un diésel de dos tiempos con turbo? | Energía insuficiente de escape al arranque o baja carga. | -
+¿Para qué se enfría el aire después de comprimirlo? | Densidad, masa admitida, temperatura de carga y condensación. | -
+¿Qué consecuencias tiene una fuga o suciedad en el enfriador de aire? | Menor carga, mayor temperatura y posible ingreso de agua. | -
+¿Qué efectos producen un filtro de aire tapado o una contrapresión excesiva de escape? | Llenado, pérdidas de bombeo, humo y temperatura. | -
+¿Qué es el bombeo o surge del compresor y qué condiciones pueden favorecerlo? | Inestabilidad de flujo, ruido, restricciones y respuesta según fabricante. | -
+¿Qué inspecciones corresponden a lubricación, apoyos y limpieza del turbocompresor? | Suministro y drenaje, vibración y procedimiento específico de limpieza. | -
+¿Para qué sirven drenajes y registros del espacio de barrido? | Retiro de líquidos, inspección de depósitos y detección de fugas. | -
+¿Qué función cumplen aislamiento y compensadores de dilatación del escape? | Protección térmica, esfuerzos sobre equipos y prevención de fugas. | -
+¿Cómo se distinguen riesgos de un escape seco y uno húmedo? | Superficies calientes, contrapresión y retorno de agua según instalación. | -
+# 11 Arranque e inversión de marcha
+¿Qué condiciones necesita un diésel para arrancar? | Giro suficiente, compresión, aire, combustible y sincronismo. | -
+¿Qué componentes integran el arranque eléctrico y cuál es su secuencia funcional? | Batería, mando, solenoide, motor, piñón y corona. | -
+¿Cómo distinguirías batería descargada, mala conexión y motor de arranque defectuoso? | Caída de tensión, velocidad de giro y pruebas seguras. | -
+¿Por qué se limita la duración y repetición de los intentos de arranque eléctrico? | Calentamiento y recuperación según manual. | -
+¿Qué equipos integran un sistema de arranque por aire comprimido? | Compresores, botellas, purgas, válvula principal, distribuidor y válvulas de cilindro. | -
+¿Qué diferencia hay entre introducir aire en los cilindros y usar un motor neumático de arranque? | Aplicación del par y circuito de mando. | -
+¿Cómo se sincroniza la distribución de aire de arranque con el cigüeñal? | Orden, posiciones efectivas y sentido de giro. | -
+¿Qué riesgos producen aceite, agua y retorno de gases en el sistema de aire de arranque? | Contaminación, corrosión, ignición y elementos antirretorno o protección. | -
+¿Qué verificaciones requieren botellas, compresores, purgas y válvulas de arranque? | Disponibilidad de aire, fugas, condensados y pruebas programadas. | -
+¿Qué ayudas de arranque pueden emplearse en frío? | Precalentamiento de aire, agua o bujías incandescentes según diseño. | -
+¿Qué es un virador y para qué sirve su enclavamiento con el arranque? | Giro lento de inspección y prevención de arranque acoplado. | -
+¿Qué es un motor reversible y qué debe cambiar para invertir su giro? | Distribución de aire, combustible y gases según diseño de dos o cuatro tiempos. | -
+¿Cómo se obtiene marcha atrás con un motor no reversible? | Caja inversora, transmisión eléctrica o cambio de paso de hélice según instalación. | -
+¿Qué diferencias hay entre acoplamiento directo, reductor y embrague? | Régimen, par, transmisión e independencia de ejes. | -
+¿Qué tipos de embrague se emplean y qué cuidados exige su operación? | Fricción, accionamiento mecánico o hidráulico y límites de acoplamiento. | -
+¿Qué expresa la relación de reducción y cómo se relacionan rpm de motor y hélice? | i = n motor/n hélice; no confundir con rendimiento propulsivo. | -
+¿Por qué no debe ordenarse una inversión brusca fuera de la secuencia permitida? | Inercia, esfuerzos, presión de mando y coordinación con el puente. | -
+¿Cómo procederías si el motor no obedece una orden de arranque o inversión? | Confirmar mando, enclavamientos, energía disponible e informar antes de nuevos intentos. | -
+# 12 Controles y prestaciones
+¿Qué diferencias hay entre carga interna y externa del motor? | Pérdidas y auxiliares frente al equipo accionado. | -
+¿Qué función cumple el regulador de velocidad cuando cambia la carga? | Equilibrio de par, velocidad medida y combustible entregado. | -
+¿Cómo actúan masas centrífugas y resorte en un regulador mecánico? | Equilibrio de fuerzas y desplazamiento de mando. | -
+¿Cómo se amplifica la señal en un regulador mecánico hidráulico Woodward? | Captación, válvula piloto, servopistón y realimentación; identificar modelo. | -
+¿Qué secuencia funcional ocurre al aumentar la carga de un motor regulado? | Caída inicial de rpm, mayor combustible y estabilización. | -
+¿Qué secuencia ocurre al retirar bruscamente la carga? | Aceleración inicial, reducción de combustible y riesgo de sobrevelocidad. | -
+¿Qué diferencias hay entre regulación de velocidad constante, variable, isócrona y con estatismo? | Consigna, caída permanente y uso en reparto de carga. | -
+¿Qué es el hunting y cómo distinguirías inestabilidad del regulador de fallas del motor? | Oscilación, combustible, aire, varillaje y ajuste autorizado. | -
+¿Qué diferencias hay entre regulador, limitador de carga y protección independiente de sobrevelocidad? | Control normal, restricción y actuación de seguridad. | -
+¿Qué son presión media indicada y presión media efectiva al freno? | Trabajo por cilindrada; no son la presión máxima del cilindro. | -
+¿Qué diferencia hay entre potencia indicada y efectiva y cómo se obtienen? | Diagrama indicado frente a par medido en el eje. | -
+¿Cómo se calcula y se interpreta el rendimiento mecánico? | eta mecánica = potencia efectiva/potencia indicada. | -
+¿Qué es el rendimiento térmico y cuándo puede multiplicarse por el mecánico? | Base indicada o efectiva y balance de energía consistente. | -
+¿Qué es el balance térmico de un motor? | Energía del combustible y destinos en eje, gases, refrigeración y otras pérdidas. | G03
+¿Cómo representarías ese balance mediante un diagrama de Sankey? | Anchos proporcionales, frontera y suma de entradas y salidas. | G04
+¿Qué llama el apunte pérdidas estandarizadas y qué datos necesitás para interpretarlas? | Definición del docente, condición de referencia y distinción de pérdidas adicionales; término pendiente de precisar. | G07
+¿Qué llama el apunte pérdidas operativas y qué fallas pueden incrementarlas? | Comparación con condición sana; ensuciamiento, fugas, fricción y combustión deficiente. | G08
+¿Cómo distinguirías pérdidas térmicas y mecánicas sin contarlas dos veces? | Frontera del balance: la fricción termina en calor; distinguir balance energético de pérdidas de potencia. | G09
+¿Qué es el consumo específico de combustible y por qué se compara a carga definida? | g/kWh, potencia efectiva y caudal de combustible. | -
+¿Qué representan potencia específica por litro y velocidad media del pistón al comparar motores? | Densidad de potencia y solicitación; no sustituyen límites de servicio. | -
+¿Qué sensores e instrumentos usarías para seguir presiones, temperaturas, rpm y carga? | Ubicación, unidades, calibración y verificación cruzada. | -
+¿Cómo distinguís alarma, reducción automática de carga y parada automática? | Lógica causa efecto específica, severidad y ausencia de umbrales universales. | -
+# 13 Vibraciones
+¿Qué son amplitud, frecuencia y fase de una vibración? | Magnitudes físicas y comparación entre registros. | -
+¿Cómo distinguís sacudimiento, balanceo, cabeceo, guiñada y vibración torsional? | Direcciones de traslación y ejes de rotación. | -
+¿Qué fuerzas de inercia y de combustión generan vibraciones en un motor? | Masas alternativas, rotativas y pulsos de par. | -
+¿Qué diferencia hay entre desequilibrio, desalineación y resonancia? | Causa de excitación frente a respuesta del sistema. | -
+¿Por qué la torsión alternante existe también durante la marcha estable? | Impulsos de combustión y par resistente variables, además de transitorios. | -
+¿Qué función cumple el dámper o amortiguador torsional? | Reducir amplitud y tensiones de vibración; no es el freno de sobrevelocidad. | C05
+¿Qué diferencia hay entre volante, contrapeso y dámper? | Regularidad energética, compensación de masas y amortiguación. | -
+¿Qué es una banda de velocidad restringida y por qué debe respetarse? | Resonancias identificadas y procedimiento del equipo. | -
+¿Cómo influyen soportes, fundación, casco y acoplamientos sobre las vibraciones? | Rigidez, transmisión y aislamiento; revisión de fijaciones. | -
+¿Qué mediciones registrarías para comparar una vibración con la condición normal? | Punto, dirección, carga, rpm, amplitud y frecuencia. | -
+¿Qué síntomas acompañan a una vibración causada por combustión desigual? | Diferencias de escape, potencia por cilindro y regularidad del giro. | -
+¿Cuándo una vibración nueva obliga a reducir carga o detener según procedimiento? | Magnitud, evolución, ruido, temperatura y riesgo mecánico. | -
+# 14 Conducción del motor diésel
+¿Qué preparativos realizás antes de una puesta en marcha normal? | Niveles, válvulas, energías auxiliares, inspección y autorización operativa. | -
+¿Cómo verificás prelubricación, precalentamiento y disponibilidad de refrigeración? | Condiciones exigidas para ese motor y confirmación de circulación. | -
+¿Qué comprobaciones evitan un arranque con personas, herramientas o virador en zona peligrosa? | Aislamientos, comunicación, recuento y enclavamientos. | -
+¿Por qué se comprueba la ausencia de líquido en cilindros cuando el procedimiento lo exige? | Incompresibilidad, bloqueo hidráulico y giro controlado autorizado. | -
+¿Qué parámetros observás inmediatamente después del arranque? | Presión de aceite, giro, refrigeración, fugas, ruido y alarmas. | -
+¿Cómo se aumenta la carga sin exceder los límites térmicos y mecánicos? | Calentamiento, rampa del fabricante, aire disponible y respuesta de temperaturas. | -
+¿Qué anotás en una ronda de guardia para detectar deterioro progresivo? | Carga, rpm, presiones, temperaturas, consumos y observaciones comparables. | -
+¿Cómo se comparan temperaturas de escape entre cilindros de un mismo motor? | Carga estable, ubicación de sensores y diferencia respecto de tendencia propia. | -
+¿Cómo relacionás presiones y temperaturas de aceite, combustible, barrido y refrigeración? | Buscar causas comunes y distinguir síntoma primario de efectos secundarios. | -
+¿Qué implica pasar del mando remoto al local ante una falla? | Prioridad de mando, comunicación con puente y comprobación del procedimiento. | -
+¿Qué diferencia hay entre parada normal y parada de emergencia? | Descarga y enfriamiento planificados frente a respuesta inmediata al peligro. | -
+¿Qué controles y servicios pueden mantenerse después de parar? | Postlubricación, enfriamiento, fugas y bloqueo según instrucciones. | -
+¿Qué cambia al operar prolongadamente a baja carga o cerca de la máxima continua? | Combustión, depósitos, margen térmico y recomendaciones del fabricante. | -
+¿Cómo prepararías el motor para una parada prolongada y posterior retorno al servicio? | Conservación, corrosión, baterías, fluidos y verificaciones de reactivación. | -
+¿Qué datos entregarías al relevo después de una anomalía o intervención? | Secuencia del evento, medidas adoptadas, límites y trabajos pendientes. | -
+# 15 Fallas y mantenimiento
+El motor no gira al ordenar arranque. ¿Cómo organizarías el diagnóstico? | Energía, mando, enclavamientos y resistencia mecánica antes de repetir. | -
+El motor gira pero no enciende. ¿Qué causas separarías y cómo las comprobarías? | Velocidad, compresión, combustible, sincronismo y temperatura. | -
+El motor arranca y se detiene al poco tiempo. ¿Qué revisarías primero? | Suministro, aire en combustible, protecciones y registros. | -
+El motor pierde potencia. ¿Cómo distinguirías falta de aire, falta de combustible, baja compresión y carga externa excesiva? | Comparación de parámetros y pruebas ordenadas. | -
+Aparece humo negro al aumentar carga. ¿Qué causas considerarías? | Aire insuficiente, exceso de combustible, inyección y sobrecarga. | -
+Hay humo azulado y aumenta el consumo de aceite. ¿Qué piezas y sistemas investigarías? | Aros, guías, turbo, nivel y ventilación según diseño. | -
+Hay humo blanco persistente. ¿Cómo distinguirías combustible sin quemar de ingreso de agua? | Condición térmica, olor observado a distancia, niveles, compresión y pruebas. | -
+Un cilindro tiene escape mucho más caliente. ¿Qué hipótesis y comprobaciones proponés? | Sobrecarga, inyección, válvula de escape, aire y error de sensor. | -
+Un cilindro tiene escape muy frío. ¿Cómo investigás falta de combustión? | Inyección, compresión y medición antes de concluir. | -
+La presión de aceite cae y la temperatura sube. ¿Qué decisiones y verificaciones corresponden? | Protección del motor, aviso, nivel, contaminación, bomba y enfriamiento. | -
+Sube el nivel del cárter y el aceite huele a combustible. ¿Qué sospechás y qué evitás hacer? | Dilución, origen de fuga, análisis y no seguir operando por normalidad aparente de nivel. | -
+Se pierde refrigerante y aparece agua en el aceite. ¿Qué vías de comunicación revisarías? | Enfriador, camisa, juntas, culata y otras según diseño. | -
+El motor se recalienta. ¿Cómo investigarías refrigeración, carga, combustión y lubricación? | Prioridad de protección y diagnóstico; evitar apertura en caliente o enfriamiento brusco. | -
+¿Qué es una explosión de cárter y cómo se forma la mezcla peligrosa? | Niebla de aceite, aire ya presente y fuente caliente; apertura no es requisito de explosión. | C08
+¿Qué medidas previenen o mitigan una explosión de cárter y cómo se actúa ante alarma de niebla? | Detector, alivio con arrestallamas, mantenimiento y parada según manual; no abrir en caliente. | C09
+¿Cómo se origina un incendio de barrido y qué indicios pueden advertirlo? | Depósitos combustibles, paso de gases calientes y cambios de temperatura. | -
+¿Qué diferencias de actuación existen ante incendio de barrido, de escape y fuga externa de combustible? | Identificación, comunicación, aislamiento y extinción según sistema instalado. | -
+Aparece golpeteo metálico. ¿Cómo separarías combustión anormal de un problema mecánico? | Relación con carga, cilindro, vibración, aceite y necesidad de detener. | -
+El motor se acelera sin responder al mando. ¿Qué riesgos y protecciones considerarías? | Sobrevelocidad, posible combustible alternativo por admisión y parada prevista. | -
+Aumenta el consumo específico manteniendo igual potencia. ¿Qué revisás? | Medición, combustible, aire, ensuciamiento, fugas y ajuste. | -
+¿Qué diferencias hay entre mantenimiento correctivo, preventivo y predictivo? | Objetivo, disparadores y ejemplos concretos del motor. | -
+¿Cómo elaborarías un plan de mantenimiento con horas de servicio y condición? | Manual, criticidad, tendencias, recursos, repuestos y ventanas operativas. | -
+¿Qué aislaciones y verificaciones se necesitan antes de desmontar componentes? | Energía eléctrica, neumática, hidráulica, combustible, temperatura y giro accidental. | -
+¿Qué mediciones y evidencias conservarías durante una inspección de pistón, camisa y cojinetes? | Identificación, dimensiones, fotos, límites, patrón de desgaste y decisión justificada. | -
+¿Cómo verificarías la reparación y cerrarías un informe de falla? | Causa raíz, montaje, pruebas, comparación de parámetros y seguimiento. | -

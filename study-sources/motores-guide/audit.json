@@ -1,0 +1,26 @@
+{
+  "questions": 330,
+  "teacher_originals": 100,
+  "teacher_covered": 100,
+  "priority_questions": 77,
+  "additional_questions": 253,
+  "unit_counts": {
+    "1": 12,
+    "2": 63,
+    "3": 16,
+    "4": 28,
+    "5": 19,
+    "6": 28,
+    "7": 16,
+    "8": 18,
+    "9": 22,
+    "10": 16,
+    "11": 18,
+    "12": 22,
+    "13": 12,
+    "14": 15,
+    "15": 25
+  },
+  "duplicates": 0,
+  "source_date": "27 de octubre de 2026"
+}
