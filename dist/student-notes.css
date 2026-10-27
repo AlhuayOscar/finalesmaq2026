@@ -1,0 +1,10 @@
+.student-note{max-width:900px;margin:0 auto 3rem;line-height:1.75;overflow-wrap:anywhere}
+.student-note .student-note-heading{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;padding:0 0 1.5rem;border-bottom:1px solid var(--subject-soft);margin-bottom:2rem}
+.student-note h2{font-size:1.8rem;margin:.3rem 0}
+.student-note h3{font-size:1.45rem;line-height:1.35;margin:1rem 0}
+.student-note h4{font-size:1.15rem;line-height:1.4;margin:1.8rem 0 .65rem}
+.student-note p{max-width:78ch}
+.student-original-text{white-space:pre-wrap}
+.student-revision{border-top:2px solid var(--subject-soft);margin-top:2.5rem;padding-top:2rem}
+.student-note li{margin-bottom:.7rem}
+@media(max-width:600px){.student-note h2{font-size:1.5rem}.student-note{line-height:1.65}.student-note .button{width:100%;text-align:center}}
