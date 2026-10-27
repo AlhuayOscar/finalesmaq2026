@@ -146,6 +146,20 @@
         "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/engine-thermodynamic-analysis/",
         "locator": "Ciclo Otto ideal, trabajo y diferencias con un motor real.",
         "note": "Referencia conceptual para ciclos y diagramas; no prescribe datos de un motor naval."
+      },
+      {
+        "id": "MC",
+        "title": "MAN · Seguridad de cárter y detector de niebla (SL2015-607)",
+        "url": "https://www.man-es.com/docs/default-source/service-letters/sl2015-607.pdf",
+        "locator": "SL2015-607, página 2: OMD, protección y mantenimiento.",
+        "note": "Referencia de prevención; las actuaciones concretas corresponden al manual de cada motor."
+      },
+      {
+        "id": "WC",
+        "title": "WinGD X62-B · Manual de operación y alarma de niebla",
+        "url": "https://my.wingd.com/media/g5bd21zh/om_wingd-x62-b.pdf",
+        "locator": "Manual de operación: alarma de niebla de aceite y precauciones antes de abrir el cárter.",
+        "note": "Ejemplo de fabricante; no se generalizan sus tiempos de espera a otros motores."
       }
     ],
     "unitSources": {
@@ -234,7 +248,9 @@
         "F2",
         "L",
         "W",
-        "E"
+        "E",
+        "MC",
+        "WC"
       ]
     },
     "coverage": [
@@ -265,12 +281,19 @@
         ]
       },
       {
-        "title": "Explosión de cárter",
+        "title": "Explosividad en el cárter: formación, protección y alarma",
         "refs": "C08 C09 C31",
-        "text": "Puede iniciarse con niebla de aceite y un punto caliente en un cárter que ya contiene aire. Abrirlo no es un requisito para que ocurra y puede agravar la situación. Venteos, detector y válvulas de alivio cumplen funciones diferentes. Ante una alarma se aplica el procedimiento del motor y se respeta su enfriamiento antes de inspeccionar.",
+        "text": "Una superficie sobrecalentada puede evaporar lubricante; al enfriarse ese vapor se condensa en gotitas muy finas y forma niebla de aceite. La niebla mezclada con el aire del cárter puede alcanzar una concentración inflamable. Un punto caliente puede encenderla y provocar una combustión rápida con aumento de presión. No es necesario abrir el cárter ni que entre combustible de inyección para que exista el peligro. El aire ya presente aporta oxígeno; el aceite líquido acumulado no equivale por sí solo a una mezcla explosiva. La pérdida local de película lubricante aumenta el contacto y la fricción, y puede sobrecalentar un cojinete u otra superficie. Ese punto caliente favorece la formación de niebla y puede actuar como fuente de ignición. Una presión general normal no descarta una obstrucción local, caudal insuficiente, holgura incorrecta, desalineación o deterioro del lubricante. Se relacionan tendencias térmicas, lubricación y vigilancia de cojinetes, según el motor. No se diagnostica una avería concreta con una sola lectura ni se adoptan límites de otro motor. El detector de niebla de aceite, u OMD, advierte una concentración anormal y permite actuar antes de una explosión. Su conexión a alarmas, reducción de carga o parada depende del sistema aprobado del motor. El respiradero cumple la ventilación prevista por el diseño; no sustituye al detector ni a la protección contra sobrepresión. La válvula de alivio limita la sobrepresión de una explosión y su arrestallamas reduce la salida de llama. Mitiga consecuencias, no elimina la causa del punto caliente. El mantenimiento y las pruebas de estas protecciones se realizan según fabricante. Se avisa y se aplica el procedimiento de emergencia del motor y del buque, incluida la reducción de carga o parada indicada. No se ignora la alarma ni se anula el detector para continuar operando. Se mantiene al personal alejado de puertas y válvulas de alivio. No se abre el cárter caliente ni se introduce aire para enfriarlo: aportar aire fresco con niebla y focos calientes puede causar una nueva ignición o una explosión secundaria. La inspección requiere enfriamiento, aislamiento y condiciones de seguridad según el manual. No existe un tiempo de espera universal. Antes de volver a operar se investiga y corrige la causa y se verifican las protecciones.",
         "sources": [
           "E",
-          "W"
+          "MC",
+          "WC"
+        ],
+        "paragraphs": [
+          "Una superficie sobrecalentada puede evaporar lubricante; al enfriarse ese vapor se condensa en gotitas muy finas y forma niebla de aceite. La niebla mezclada con el aire del cárter puede alcanzar una concentración inflamable. Un punto caliente puede encenderla y provocar una combustión rápida con aumento de presión. No es necesario abrir el cárter ni que entre combustible de inyección para que exista el peligro. El aire ya presente aporta oxígeno; el aceite líquido acumulado no equivale por sí solo a una mezcla explosiva.",
+          "La pérdida local de película lubricante aumenta el contacto y la fricción, y puede sobrecalentar un cojinete u otra superficie. Ese punto caliente favorece la formación de niebla y puede actuar como fuente de ignición. Una presión general normal no descarta una obstrucción local, caudal insuficiente, holgura incorrecta, desalineación o deterioro del lubricante. Se relacionan tendencias térmicas, lubricación y vigilancia de cojinetes, según el motor. No se diagnostica una avería concreta con una sola lectura ni se adoptan límites de otro motor.",
+          "El detector de niebla de aceite, u OMD, advierte una concentración anormal y permite actuar antes de una explosión. Su conexión a alarmas, reducción de carga o parada depende del sistema aprobado del motor. El respiradero cumple la ventilación prevista por el diseño; no sustituye al detector ni a la protección contra sobrepresión. La válvula de alivio limita la sobrepresión de una explosión y su arrestallamas reduce la salida de llama. Mitiga consecuencias, no elimina la causa del punto caliente. El mantenimiento y las pruebas de estas protecciones se realizan según fabricante.",
+          "Se avisa y se aplica el procedimiento de emergencia del motor y del buque, incluida la reducción de carga o parada indicada. No se ignora la alarma ni se anula el detector para continuar operando. Se mantiene al personal alejado de puertas y válvulas de alivio. No se abre el cárter caliente ni se introduce aire para enfriarlo: aportar aire fresco con niebla y focos calientes puede causar una nueva ignición o una explosión secundaria. La inspección requiere enfriamiento, aislamiento y condiciones de seguridad según el manual. No existe un tiempo de espera universal. Antes de volver a operar se investiga y corrige la causa y se verifican las protecciones."
         ]
       },
       {
@@ -930,7 +953,9 @@
         "F2",
         "L",
         "W",
-        "E"
+        "E",
+        "MC",
+        "WC"
       ],
       "coverage": "Arranque, parada frecuente, potencia, humos, lubricación, refrigeración y escape; cárter, barrido, incendios, consumo y mantenimiento preventivo y predictivo.",
       "questions": [
@@ -3684,8 +3709,8 @@
       "id": "M319",
       "number": 319,
       "unit": 15,
-      "question": "¿Qué es una explosión de cárter y cómo se forma la mezcla peligrosa?",
-      "axes": "Niebla de aceite, aire ya presente y fuente caliente; apertura no es requisito de explosión.",
+      "question": "Explosividad en el cárter: ¿cómo se forma la mezcla peligrosa y qué la enciende?",
+      "axes": "Punto caliente, evaporación del lubricante y condensación en niebla; mezcla con aire en concentración inflamable, ignición y sobrepresión. No requiere abrir el cárter ni entrada de combustible de inyección.",
       "teacher": [
         "C08"
       ]
@@ -3695,7 +3720,7 @@
       "number": 320,
       "unit": 15,
       "question": "¿Qué medidas previenen o mitigan una explosión de cárter y cómo se actúa ante alarma de niebla?",
-      "axes": "Detector, alivio con arrestallamas, mantenimiento y parada según manual; no abrir en caliente.",
+      "axes": "Detección temprana por OMD y vigilancia de cojinetes; respiradero distinto de alivio con arrestallamas. Ante alarma, aviso y actuación según manual, sin anular protecciones. No abrir el cárter caliente ni aportar aire: riesgo de nueva ignición o explosión secundaria. Enfriamiento, aislamiento e inspección según fabricante antes de volver a operar.",
       "teacher": [
         "C09"
       ]

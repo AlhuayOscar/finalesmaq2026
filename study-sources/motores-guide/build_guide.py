@@ -101,7 +101,7 @@ for u in units:
 story +=[PageBreak(),par('Fórmulas básicas para interpretar','h1'),par('Usalas para explicar el significado físico y resolver cuentas sencillas. No hace falta desarrollar la matemática avanzada del diseño de motores.')]
 for title,formula,explain in m['formulas']:story.append(KeepTogether([par(esc(title),'h2'),par(esc(formula),'q'),par(esc(explain))]))
 story +=[PageBreak(),par('Aclaraciones técnicas para estudiar','h1'),par('Se conservan las preguntas del profesor y se explicitan las premisas que deben verificarse o matizarse al preparar una respuesta.')]
-for c in m['clarifications']:story.append(KeepTogether([par(esc(c['title']),'h2'),par(esc(c['refs']),'meta'),par(esc(c['text'])),par('Consultar: '+source_links(c['sources']),'meta')]))
+for c in m['clarifications']:story.extend([par(esc(c['title']),'h2'),par(esc(c['refs']),'meta'),*[par(esc(text)) for text in c.get('paragraphs',[c['text']])],par('Consultar: '+source_links(c['sources']),'meta')])
 story +=[PageBreak(),par('Correspondencia con las guías del profesor','h1'),par('Las 100 consignas aparecen en el orden de cada DOCX. Su texto se conserva; se omiten las respuestas incluidas en la guía de cigüeñal. Los códigos G y C se asignan aquí por orden de aparición. Las flechas vinculan cada consigna con la pregunta revisada correspondiente. Las repeticiones no aumentan el total de 330.')]
 for t in teacher:
  links=', '.join(f'<link href="#{qid}" color="#244d6b">{qid}</link>' for qid in t['maps'])

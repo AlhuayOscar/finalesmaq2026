@@ -138,3 +138,7 @@ El profesor y el repaso usan `dist/speech-voice.js`: selección manual del repas
 ## Desplazamiento estable
 
 El reproductor del repaso mantiene su altura al desplazarse. El profesor conserva los nodos de los mensajes durante actualizaciones de estado y no mueve la página al recibir una respuesta. Si se consulta un mensaje anterior, conserva esa posición; si se está al final de la conversación, sigue los mensajes nuevos. Prueba en Edge con Playwright: `node tests/scroll-browser.cjs` (requiere Playwright y Edge instalados).
+
+## Explosividad en el cárter · Motores
+
+La guía conserva 330 preguntas y los IDs M319/M320, amplía sus ejes y la aclaración técnica con fuentes de Wärtsilä, MAN y WinGD. El tema 8 del repaso incorpora cuatro tarjetas sobre mezcla inflamable, puntos calientes, detección/alivio y actuación ante alarma. Las mismas tarjetas están disponibles en el banco oral y el catálogo, sin desplazar IDs anteriores. La guía web y su PDF se regeneran con `study-sources/motores-guide/build_guide.py`. Verificación: `node tests/motores-carter.cjs`, `node tests/guided.cjs` y `node tests/question-catalog.cjs`.
