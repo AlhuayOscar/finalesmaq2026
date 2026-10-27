@@ -77,6 +77,112 @@ window.studentNotesBySubject={
       ],
       "originalUrl": "https://docs.google.com/document/d/1ayo18kKws-dRLMd4Fj0RoDTIK_v4cW_AkgNa6mgh9Fg/edit?usp=drivesdk",
       "revisedUrl": "https://docs.google.com/document/d/1vlC3_Kh5BboB7SA6NeMQT7vNW3AFhRmGEN3_5kIC5rg/edit?usp=drivesdk"
+    },
+    {
+      "id": "nota-2",
+      "title": "Nota del estudiante 2",
+      "subtitle": "Clasificaciones de los motores",
+      "intro": "Clasificaciones de motores revisadas a partir del dictado del estudiante. Cada clasificación responde a un criterio distinto: un mismo motor puede pertenecer simultáneamente a varias de estas categorías. Los términos dudosos y los temas pendientes de clase quedan señalados.",
+      "date": "27 de octubre de 2026",
+      "subject": "Motores navales",
+      "original": "Bueno, ahora te voy a decir muchos tipos o clasificaciones que tenemos adentro de los motores según clasificaciones que tenemos en general. Tenemos de ciclo de trabajo, tenemos dos: dos tiempos o cuatro tiempos. Según la potencia tenemos grandes, medianos, pequeños. Según la velocidad existen semi-rápidos y lentos y existen también los rápidos, pero nosotros normalmente no lo vamos a ver en la marina mercante. Están los largos, los cuadrados o convencionales y los chatos. Eso según tipos: relación carga y el diámetro del pistón. Después tenemos a volumen constante, a presión constante, son el tipo de combustión. Después, disposición de los cilindros: los tenemos en línea, los tenemos en V, corta, diésel, las horquilladas normalmente tienen la V corta, tenemos en W, horizontales, opuestos, radiales. Después tenemos mono y policilindros. Tenemos de simple o doble efecto. Tenemos sistemas de enfriamiento: abierto, directo, indirecto o por enfriador de quilla o casco. Tenemos lubricación: según el cárter: salpicado, mixto, presión total, cárter seco. Luego tenemos sistema de alimentación: tenemos por acumulación, common rail, por bomba, inyección unitaria y caudal y unidad inyectora. Luego tenemos sistema de arranque: eléctrico o por aire, aire comprimido, que dice válvula o motor neumático de arranque. Después sistema de inyección: tenemos directa e indirecta, indirecta con cámara auxiliar, lo que se llama precámara. Después tenemos el ingreso de aire: tenemos atmosférico, por turbosobrealimentador en el cuatro tiempos, bomba de barrido en el dos tiempos y acá dice que queda pendiente por turbo en el dos tiempos. Sistema de distribución: ese está por verse.",
+      "revisedTitle": "Nota del estudiante 2 Revisada ChatGPT",
+      "sections": [
+        {
+          "title": "Según el ciclo de trabajo",
+          "text": "Dos tiempos: el ciclo completo se realiza en dos carreras del pistón y una vuelta del cigüeñal, 360°. Cuatro tiempos: se completa en cuatro carreras y dos vueltas, 720°. Esta clasificación no determina por sí sola la potencia, la disposición de los cilindros ni el sistema de inyección."
+        },
+        {
+          "title": "Según la potencia",
+          "text": "Pueden agruparse en motores de pequeña, mediana y gran potencia. Son categorías relativas: deben acompañarse del criterio o de los intervalos de potencia utilizados por el curso o la fuente. El dictado no fija esos límites, por lo que no se agregan valores arbitrarios."
+        },
+        {
+          "title": "Según el régimen de giro",
+          "text": "Se distinguen motores lentos, de velocidad media o semirrápidos, y rápidos. Los límites de rpm dependen de la clasificación adoptada. En el estudio de grandes plantas mercantes suele darse especial atención a los lentos y de velocidad media. Los rápidos también tienen aplicaciones comerciales marinas; que no se estudien en esta parte del curso no significa que estén ausentes de la marina mercante."
+        },
+        {
+          "title": "Según la relación entre carrera y diámetro",
+          "text": "El criterio geométrico es la relación S/D: S es la carrera del pistón y D el diámetro interior del cilindro. Si S > D, el motor es de carrera larga o subcuadrado; si S = D, es cuadrado; si S < D, es de carrera corta o supercuadrado, llamado chato en algunos apuntes. Aquí se interpreta «carga» como una probable transcripción de «carrera». «Convencional» no define por sí solo una relación geométrica y debe confirmarse cómo lo usa el profesor."
+        },
+        {
+          "title": "Según el modelo ideal de adición de calor",
+          "text": "A volumen constante: ciclo Otto ideal. A presión constante: ciclo Diésel ideal. También existe el ciclo mixto, con una parte de la adición de calor a volumen constante y otra a presión constante. Se trata de modelos termodinámicos de referencia: la combustión de un motor real no reproduce exactamente esas condiciones. Esta clasificación debe distinguirse del método de encendido por chispa o por compresión."
+        },
+        {
+          "title": "Según la disposición de los cilindros",
+          "text": "En línea: los cilindros se ordenan en una bancada. En V: se reparten en dos bancadas que forman un ángulo. En W: se distribuyen en una configuración de varias bancadas. Horizontales: describe la orientación de los cilindros. De cilindros opuestos: dos bancadas se enfrentan; no debe confundirse con pistones opuestos dentro de un mismo cilindro. Radiales: los cilindros se disponen alrededor del eje. Son criterios que pueden combinarse y no todas las configuraciones son habituales en propulsión mercante. La expresión «V, corta, diésel» queda pendiente de confirmar. Las bielas horquilladas son una solución constructiva usada en algunos motores en V, no una característica obligatoria de toda V ni de un supuesto grupo V corta."
+        },
+        {
+          "title": "Según el número de cilindros",
+          "text": "Monocilíndricos: tienen un cilindro. Policilíndricos: tienen varios. El número de cilindros y su disposición son criterios independientes: un policilíndrico puede tenerlos en línea, en V u otra configuración."
+        },
+        {
+          "title": "Según las caras activas del pistón",
+          "text": "De simple efecto: los gases de trabajo actúan sobre una sola cara del pistón. De doble efecto: el trabajo se obtiene alternativamente sobre ambas caras. El doble efecto forma parte de la clasificación general e histórica y no debe confundirse con el ciclo de dos tiempos ni con un motor de pistones opuestos. En los diésel navales actuales predomina el simple efecto."
+        },
+        {
+          "title": "Según el sistema de enfriamiento",
+          "text": "En la refrigeración directa por agua exterior, el agua de mar o de río circula por las zonas refrigeradas del motor y luego se descarga. En la indirecta, un circuito de refrigerante tratado retira calor del motor y lo cede mediante un intercambiador; el agua exterior no se mezcla con ese refrigerante. En los sistemas de quilla o casco, el circuito interno cede calor al agua exterior a través del enfriador o de una superficie de intercambio del casco. «Abierto», «directo», «indirecto» y «de quilla» no son cuatro opciones necesariamente excluyentes: pueden describir distintas partes o características de una misma instalación."
+        },
+        {
+          "title": "Según la lubricación y el almacenamiento del aceite",
+          "text": "Por el modo de llevar el aceite a las superficies se distinguen lubricación por salpicado, mixta y a presión. En la mixta se combinan suministro a presión y salpicaduras según el componente. La expresión presión total indica el suministro a presión a los puntos previstos por ese diseño; no implica que cada superficie reciba una tubería individual. Por la ubicación de la reserva de aceite, se distingue cárter húmedo y cárter seco. En el seco, la reserva principal está en un tanque separado. Son dos criterios distintos: un motor de cárter seco puede lubricarse a presión."
+        },
+        {
+          "title": "Según la arquitectura de alimentación e inyección de combustible",
+          "text": "Conviene separar la alimentación de baja presión, que lleva combustible desde el tanque, del equipo que genera y controla la alta presión de inyección. Entre las arquitecturas están bomba con tubería e inyector separados; bomba unitaria por cilindro; unidad inyectora o inyector bomba, que integra bombeo e inyección; y acumulación mediante conducto común o common rail, donde una bomba alimenta una reserva de alta presión compartida. «Acumulación» y «common rail» no deben contarse automáticamente como grupos independientes. El fragmento «inyección unitaria y caudal y unidad inyectora» es ambiguo: se conserva en el original y queda pendiente contrastar sus nombres con el apunte de clase."
+        },
+        {
+          "title": "Según el sistema de arranque",
+          "text": "Eléctrico: un motor eléctrico hace girar el cigüeñal mediante el mecanismo de acoplamiento previsto. Por aire comprimido: puede emplearse aire admitido a los cilindros mediante válvulas de arranque y una secuencia de distribución, o un motor neumático que hace girar mecánicamente el motor principal. Arrancar por aire no equivale a sobrealimentar el aire de combustión: son funciones y circuitos diferentes."
+        },
+        {
+          "title": "Según el lugar de inyección y la cámara de combustión",
+          "text": "En el contexto diésel, la inyección directa introduce el combustible directamente en la cámara principal. La indirecta lo introduce en una cámara auxiliar comunicada con la principal. La precámara es una realización de la inyección indirecta; también existen otras cámaras auxiliares, como las de turbulencia. Inyección directa o indirecta no indica por sí sola si el equipo emplea common rail o inyector bomba: la ubicación de la combustión y la arquitectura de alta presión son criterios distintos."
+        },
+        {
+          "title": "Según el suministro de aire y el barrido",
+          "text": "En un cuatro tiempos de aspiración natural, el llenado se produce por la diferencia de presión generada durante la admisión, sin compresor de sobrealimentación. En uno sobrealimentado, un compresor aumenta la presión de admisión; si lo mueve una turbina de gases de escape, se trata de un turbocompresor. En el diésel de dos tiempos, el barrido requiere suministro de aire a presión para desplazar los gases quemados. Puede obtenerse con una soplante o bomba de barrido y también con turbocompresores. En grandes motores de dos tiempos se utilizan turbocompresores y soplantes auxiliares para condiciones en que el turbo no suministra suficiente aire, como bajas cargas. Por lo tanto, el turbo en dos tiempos puede seguir pendiente de clase, pero su existencia y uso están confirmados."
+        },
+        {
+          "title": "Sistema de distribución pendiente de clase",
+          "text": "Se conserva como tema pendiente, tal como indicó el estudiante. Como orientación, la distribución gobierna cuándo se abren y cierran los pasos de admisión y escape mediante válvulas, lumbreras y sus mecanismos de mando, según el motor. No se añade una clasificación definitiva hasta disponer del desarrollo o del esquema utilizado en clase."
+        }
+      ],
+      "corrections": [
+        "Probable error de transcripción: la relación geométrica se refiere a carrera y diámetro, no a carga y diámetro. Se explicita esta interpretación y se conserva el dictado original.",
+        "Expresiones pendientes de cotejar con el apunte: «V, corta, diésel», «convencionales» y «inyección unitaria y caudal y unidad inyectora». No se inventa una equivalencia para ellas.",
+        "Se separan criterios que estaban mezclados: ubicación de la reserva de aceite y método de lubricación; alimentación e inyección; cámara de combustión y arquitectura del equipo inyector; refrigeración del motor y rechazo final de calor.",
+        "Pendientes de clase: desarrollo del turbo en dos tiempos y clasificación del sistema de distribución. La revisión distingue esos pendientes del conocimiento técnico ya establecido."
+      ],
+      "sources": [
+        {
+          "title": "Wärtsilä — Scavenging",
+          "url": "https://www.wartsila.com/encyclopedia/term/scavenging"
+        },
+        {
+          "title": "Wärtsilä — Scavenge Air System",
+          "url": "https://www.wartsila.com/encyclopedia/term/scavenge-air-system"
+        },
+        {
+          "title": "Bosch Mobility — Diesel powertrain y arquitecturas de inyección",
+          "url": "https://www.bosch-mobility.com/en/solutions/powertrain/diesel/"
+        },
+        {
+          "title": "Yanmar — YM Series para aplicaciones comerciales marinas",
+          "url": "https://www.yanmar.com/in/marinecommercial/products/propulsion_engine-high_speed/ymseries/"
+        },
+        {
+          "title": "Wärtsilä — Product Guide W20 y sistemas de aceite",
+          "url": "https://www.wartsila.com/docs/default-source/product-files/engines/ms-engine/product-guide-o-e-w20.pdf"
+        },
+        {
+          "title": "MIT OpenCourseWare — Thermodynamics and Climate Change",
+          "url": "https://ocw.mit.edu/courses/res-2-008-thermodynamics-and-climate-change-summer-2020/mitres-2-008su22_book.pdf"
+        }
+      ],
+      "originalUrl": "https://docs.google.com/document/d/1CrpRcZQbFobmRIaC2eXAWkjljfXeEQ6ts77LUIDXZ70/edit?usp=drivesdk",
+      "revisedUrl": "https://docs.google.com/document/d/1Zsc9LBBK0yEhQmwpjzgeoFkylO0ZRkc9Lgsr2iD2aZ8/edit?usp=drivesdk"
     }
   ]
 };

@@ -1,4 +1,8 @@
 .student-note{max-width:900px;margin:0 auto 3rem;line-height:1.75;overflow-wrap:anywhere}
+.student-note-index{display:flex;flex-wrap:wrap;gap:.75rem;margin:0 0 2rem}
+.student-note-index button{white-space:normal;text-align:left;line-height:1.5}
+.student-note+.student-note{border-top:1px solid var(--line);padding-top:3rem}
+.student-note:focus{outline:none}
 .student-note .student-note-heading{height:auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;padding:0 0 1.5rem;border-bottom:1px solid var(--subject-soft);margin-bottom:2rem;font-size:inherit;letter-spacing:normal;color:var(--ink)}
 .student-note h2{font-size:1.8rem;margin:.3rem 0}
 .student-note h3{font-size:1.45rem;line-height:1.35;margin:1rem 0}
