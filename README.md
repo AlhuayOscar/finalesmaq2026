@@ -134,3 +134,7 @@ Importación reproducible: python scripts/import-frio-slides.py guia.pdf lijo.pd
 ## Voz automática sin cuentas ni API
 
 El profesor y el repaso usan `dist/speech-voice.js`: selección manual del repaso, Google argentino si está disponible, otra voz es-AR, Google en español y finalmente la voz predeterminada del sistema. La lista depende del navegador y dispositivo y se consulta en cada lectura. Los errores de síntesis reintentan una sola vez con la voz del sistema; cancelar, salir o bloquear la reproducción no dispara reintentos. No requiere tarjeta, clave ni plan de facturación. Verificación: `node tests/speech-voice.cjs`, `node tests/guided.cjs` y `node tests/thermal-guide.cjs`.
+
+## Desplazamiento estable
+
+El reproductor del repaso mantiene su altura al desplazarse. El profesor conserva los nodos de los mensajes durante actualizaciones de estado y no mueve la página al recibir una respuesta. Si se consulta un mensaje anterior, conserva esa posición; si se está al final de la conversación, sigue los mensajes nuevos. Prueba en Edge con Playwright: `node tests/scroll-browser.cjs` (requiere Playwright y Edge instalados).
