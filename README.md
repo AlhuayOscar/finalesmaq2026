@@ -142,3 +142,11 @@ El reproductor del repaso mantiene su altura al desplazarse. El profesor conserv
 ## Explosividad en el cárter · Motores
 
 La guía conserva 330 preguntas y los IDs M319/M320, amplía sus ejes y la aclaración técnica con fuentes de Wärtsilä, MAN y WinGD. El tema 8 del repaso incorpora cuatro tarjetas sobre mezcla inflamable, puntos calientes, detección/alivio y actuación ante alarma. Las mismas tarjetas están disponibles en el banco oral y el catálogo, sin desplazar IDs anteriores. La guía web y su PDF se regeneran con `study-sources/motores-guide/build_guide.py`. Verificación: `node tests/motores-carter.cjs`, `node tests/guided.cjs` y `node tests/question-catalog.cjs`.
+
+## Cobertura de exámenes de Motores · revisión del 27/10/2026
+
+La guía anual tiene 364 preguntas (conserva M001–M330 y las seis ampliaciones M331–M336 presentes en la versión de Drive). Se agregan M337–M364 y una correspondencia visible para 63 consignas de siete exámenes únicos fotografiados. El filtro EXAMEN y el anexo permiten recorrer cada origen. La selección del simulador y repaso pasa de 29 a 94 preguntas y de 8 a 14 temas; se conservan los índices de los ocho temas anteriores y los IDs de sus tarjetas.
+
+`study-sources/motores-guide/exam-coverage.json` registra fuentes, alcance y correspondencias; `review-expansion.json` contiene las 65 tarjetas preparadas y sus vínculos con la guía. Los bancos complementarios y las respuestas de compañeros se contrastan por temas; no se afirma lectura exhaustiva de los libros ni validación de sus solucionarios. Se distingue resolución de instrumentos, diseños de distribución, construcción de cojinetes y efectos del reglaje sin convertir datos de un modelo en límites universales.
+
+Verificación: `node tests/motores-coverage.cjs`, `node tests/motores-carter.cjs`, `node tests/guided.cjs`, `node tests/question-catalog.cjs`, `node tests/exam.cjs`, `node tests/hdp-subject-guidance.cjs` y `node tests/deferred-exam.cjs`. QA de navegador: 364 preguntas, filtro EXAMEN, siete correspondencias, enlaces a ampliaciones, seis temas nuevos y PDF enlazado. PDF renderizado y revisado: 57 páginas.

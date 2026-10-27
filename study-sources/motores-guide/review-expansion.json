@@ -1,0 +1,949 @@
+[
+  {
+    "key": "trimetal",
+    "oralUnit": 4,
+    "guideUnit": 2,
+    "guideIds": [
+      "M331"
+    ],
+    "question": "Describí y esquematizá un cojinete trimetálico. ¿Cómo relacionás sus capas con el análisis de aceite?",
+    "answer": "Identificá respaldo de acero, capa portante y recubrimiento antifricción; puede existir una barrera de difusión. La composición depende del cojinete real. Dibujá las capas y relacioná sus metales con tendencias del análisis, horas y otros componentes: un metal aislado no demuestra qué capa se desgastó.",
+    "oralIds": [
+      "motores-u4-q3"
+    ]
+  },
+  {
+    "key": "bearingprops",
+    "oralUnit": 4,
+    "guideUnit": 2,
+    "guideIds": [
+      "M332"
+    ],
+    "question": "¿Qué características debe reunir un cojinete y qué exigencias soporta?",
+    "answer": "Debe soportar cargas cíclicas y permitir el movimiento con baja fricción, evacuando calor. Se equilibran resistencia a fatiga, conformabilidad, incrustabilidad, compatibilidad y resistencia a corrosión. La selección depende de velocidad, carga, lubricante, geometría y alineación; dureza máxima no significa automáticamente mejor cojinete.",
+    "oralIds": [
+      "motores-u4-q4"
+    ]
+  },
+  {
+    "key": "naval",
+    "oralUnit": 8,
+    "guideUnit": 1,
+    "guideIds": [
+      "M333"
+    ],
+    "question": "Compará diésel y naftero y justificá su elección para una aplicación naval.",
+    "answer": "El diésel comprime aire e inyecta combustible que se autoenciende; el Otto emplea encendido por chispa de una mezcla preparada. Compará consumo específico a carga definida, par, régimen, peso, mantenimiento y seguridad de los combustibles. La elección depende de propulsión o servicio auxiliar y de la instalación; no de una superioridad universal.",
+    "oralIds": [
+      "motores-u8-q0"
+    ]
+  },
+  {
+    "key": "lateral",
+    "oralUnit": 0,
+    "guideUnit": 2,
+    "guideIds": [
+      "M334"
+    ],
+    "question": "Esquematizá la lateralización sobre una camisa y distinguí motor de tronco y de cruceta.",
+    "answer": "La inclinación de la biela produce una componente lateral de la fuerza transmitida. En el motor de tronco la falda apoya contra la camisa; en el de cruceta el empuje lateral principal lo reciben patines y guías. Dibujá presión sobre el pistón, fuerza de biela y reacción lateral. El sentido y magnitud cambian durante el ciclo.",
+    "oralIds": [
+      "motores-u0-q3"
+    ]
+  },
+  {
+    "key": "wearcycle",
+    "oralUnit": 0,
+    "guideUnit": 2,
+    "guideIds": [
+      "M335"
+    ],
+    "question": "¿Cómo afectan lateralización, ovalización y desgaste de camisa al ciclo de trabajo?",
+    "answer": "El desgaste puede empeorar el sellado entre aros y camisa, aumentar blow-by y consumo de aceite y reducir la compresión efectiva. Las fugas durante compresión y expansión pueden perjudicar combustión, trabajo indicado y potencia. La relación depende de las mediciones y del estado de aros y superficies: ovalización no significa automáticamente una pérdida determinada de potencia.",
+    "oralIds": [
+      "motores-u0-q4"
+    ]
+  },
+  {
+    "key": "auxhead",
+    "oralUnit": 1,
+    "guideUnit": 2,
+    "guideIds": [
+      "M336"
+    ],
+    "question": "Describí una culata con cámara auxiliar y sus posibles deformaciones.",
+    "answer": "Dibujá cámara principal, cámara auxiliar, conducto de comunicación, inyector y refrigeración según el diseño. El combustible inicia su combustión en el recinto auxiliar y los gases comunican con la cámara principal. Gradientes térmicos, cargas de combustión, refrigeración desigual y apriete pueden producir alabeo, fisuras o daños de asiento; se comprueban según el manual.",
+    "oralIds": [
+      "motores-u1-q3"
+    ]
+  },
+  {
+    "key": "bimetal",
+    "oralUnit": 2,
+    "guideUnit": 2,
+    "guideIds": [
+      "M337"
+    ],
+    "question": "¿Cómo se construye un pistón bimetálico y dónde se utiliza?",
+    "answer": "Combina materiales elegidos para diferentes solicitaciones, por ejemplo corona de acero y falda de otro material según diseño. La corona resiste cargas térmicas y presión; la falda cumple guiado y otras funciones. Dibujá la unión y su refrigeración. No todos los pistones compuestos usan hierro fundido ni tienen la misma fijación o aplicación.",
+    "oralIds": [
+      "motores-u2-q3"
+    ]
+  },
+  {
+    "key": "tubular",
+    "oralUnit": 2,
+    "guideUnit": 2,
+    "guideIds": [
+      "M338"
+    ],
+    "question": "Describí un pistón de tronco o tubular y las terminaciones posibles de su cabeza.",
+    "answer": "Identificá corona, falda, ranuras de aros y alojamiento del perno. La forma de la cabeza depende de cámara, combustión y distribución: puede incorporar cavidad o rebajes. Comparalo con pistón unido a vástago y cruceta. El nombre usado en el apunte debe contrastarse con el corte del motor; no implica siempre una falda postiza.",
+    "oralIds": [
+      "motores-u2-q4"
+    ]
+  },
+  {
+    "key": "ringpressure",
+    "oralUnit": 2,
+    "guideUnit": 2,
+    "guideIds": [
+      "M339"
+    ],
+    "question": "¿Qué presiones y esfuerzos actúan sobre los aros del pistón?",
+    "answer": "Intervienen la elasticidad propia y la presión de los gases que alcanza la cara superior y la zona posterior del aro. El contacto con camisa y garganta, la inercia y la fricción cambian durante el ciclo. Explicá cómo ayudan al sellado y transferencia térmica, sin afirmar que todos los aros reciben igual presión ni fijar valores universales.",
+    "oralIds": [
+      "motores-u2-q5"
+    ]
+  },
+  {
+    "key": "ringcuts",
+    "oralUnit": 2,
+    "guideUnit": 2,
+    "guideIds": [
+      "M340"
+    ],
+    "question": "Compará cortes de aros y explicá su montaje en un dos tiempos con lumbreras.",
+    "answer": "Se encuentran cortes rectos, oblicuos o escalonados según el aro. La elección depende del diseño y no hay un corte universalmente mejor. Verificá luz entre puntas, juego en la ranura, orientación y elementos de posicionamiento cuando existan. En dos tiempos evitá que las puntas enganchen lumbreras y respetá la indicación del fabricante.",
+    "oralIds": [
+      "motores-u2-q6"
+    ]
+  },
+  {
+    "key": "extrod",
+    "oralUnit": 3,
+    "guideUnit": 2,
+    "guideIds": [
+      "M341"
+    ],
+    "question": "¿Qué se denomina biela extensible y qué precauciones exige interpretar ese diseño?",
+    "answer": "En los diseños que lo permiten, elementos o suplementos de ajuste pueden modificar la longitud efectiva o posición del conjunto. Se identifica el mecanismo concreto y se vincula con la altura del pistón y las separaciones prescritas. No se utiliza como corrección improvisada de desgaste ni se cambian suplementos o aprietes sin procedimiento del fabricante.",
+    "oralIds": [
+      "motores-u3-q3"
+    ]
+  },
+  {
+    "key": "spin",
+    "oralUnit": 4,
+    "guideUnit": 2,
+    "guideIds": [
+      "M342"
+    ],
+    "question": "¿Qué sucede si un casquillo de bancada gira con el cigüeñal?",
+    "answer": "Pierde su posición en el alojamiento y puede obstruir o desalinear pasos de aceite, alterar el huelgo y dañar alojamiento y muñón. El calentamiento y la pérdida de película pueden culminar en gripado. Es una avería grave que requiere actuación de protección según procedimiento; no se corrige instalando otro casquillo sin investigar fijación, ajuste y lubricación.",
+    "oralIds": [
+      "motores-u4-q5"
+    ]
+  },
+  {
+    "key": "clearance",
+    "oralUnit": 8,
+    "guideUnit": 3,
+    "guideIds": [
+      "M343"
+    ],
+    "question": "¿Cómo se controla el espacio nocivo y qué efecto tiene modificarlo?",
+    "answer": "Es el volumen que queda sobre el pistón en PMS; no es la cilindrada. Se verifica mediante dimensiones o métodos autorizados, por ejemplo medición de separaciones con elementos de comprobación previstos, y se calcula la relación geométrica (Vd+Vc)/Vc. Si aumenta Vc con igual cilindrada, baja esa relación; sus efectos reales dependen de sellado, carga y diseño.",
+    "oralIds": [
+      "motores-u8-q1"
+    ]
+  },
+  {
+    "key": "maxwear",
+    "oralUnit": 0,
+    "guideUnit": 2,
+    "guideIds": [
+      "M344"
+    ],
+    "question": "¿Dónde suele ser mayor el desgaste de la camisa y cómo se mide?",
+    "answer": "La zona alta de trabajo de los aros suele ser crítica por presión, temperatura y lubricación, pero se confirma con mediciones. Usá alesómetro comparado con patrón o micrómetro y medí a varias alturas y en dos direcciones según manual. Distinguí ovalización, conicidad y desgaste, y registrá condiciones de medida; no se concluye solo por una rebaba.",
+    "oralIds": [
+      "motores-u0-q5"
+    ]
+  },
+  {
+    "key": "seatclean",
+    "oralUnit": 0,
+    "guideUnit": 2,
+    "guideIds": [
+      "M345"
+    ],
+    "question": "¿Por qué se limpian exteriormente los asientos del bloque antes de instalar una camisa?",
+    "answer": "Depósitos o corrosión pueden impedir el apoyo uniforme, deformar la camisa, alterar su protrusión y perjudicar el sellado y la transferencia de calor. Se limpian e inspeccionan apoyos y alojamientos sin remover material fuera del procedimiento. Después se verifican dimensiones, protrusión y juntas especificadas; la limpieza no reemplaza una reparación de superficies dañadas.",
+    "oralIds": [
+      "motores-u0-q6"
+    ]
+  },
+  {
+    "key": "jacket",
+    "oralUnit": 0,
+    "guideUnit": 2,
+    "guideIds": [
+      "M346"
+    ],
+    "question": "¿Qué es una camisa con manguito de agua y qué particularidad puede presentar un dos tiempos grande?",
+    "answer": "El manguito o envolvente forma el espacio de refrigeración alrededor de la camisa, diferenciable de una camisa seca insertada en el bloque. En un dos tiempos pueden existir lumbreras en la zona inferior y uniones y sellos específicos. Dibujá recorrido del refrigerante y separación de aire, gases y agua sin atribuir el mismo arreglo a todos los motores.",
+    "oralIds": [
+      "motores-u0-q7"
+    ]
+  },
+  {
+    "key": "lantern",
+    "oralUnit": 1,
+    "guideUnit": 5,
+    "guideIds": [
+      "M347"
+    ],
+    "question": "¿Qué diferencia una válvula con linterna de una sin linterna al desmontarla?",
+    "answer": "En la terminología del material, la linterna es un alojamiento o jaula desmontable que reúne elementos del conjunto valvular y puede permitir retirarlos sin desmontar toda la culata. Sin ella, los elementos se alojan directamente en la culata. El alcance del desmontaje depende del motor: identificá asiento, guía, vástago y fijación en su plano.",
+    "oralIds": [
+      "motores-u1-q4"
+    ]
+  },
+  {
+    "key": "headvalves",
+    "oralUnit": 1,
+    "guideUnit": 5,
+    "guideIds": [
+      "M348"
+    ],
+    "question": "¿Qué válvulas puede tener una culata y cómo cambia con el sistema de arranque y el ciclo?",
+    "answer": "Pueden existir admisión, escape, inyección, aire de arranque, indicadora o purga y dispositivos de seguridad, según el motor. Un motor neumático que mueve el volante no equivale a distribuir aire de arranque dentro de los cilindros. No todos los dos tiempos tienen válvulas de admisión ni todas las culatas llevan seis válvulas: primero se define el diseño.",
+    "oralIds": [
+      "motores-u1-q5"
+    ]
+  },
+  {
+    "key": "camstart",
+    "oralUnit": 1,
+    "guideUnit": 5,
+    "guideIds": [
+      "M349"
+    ],
+    "question": "Compará una leva de distribución con el mando de aire de arranque y explicá qué sincronizan.",
+    "answer": "La distribución gobierna eventos de intercambio de gases con perfil de apertura y cierre apropiado. El distribuidor de arranque ordena la admisión de aire en cilindros y posiciones que produzcan par en el sentido solicitado, cuando ese sistema existe. Los perfiles y accionamientos dependen del fabricante; el sistema de arranque no se describe como idéntico a la válvula de admisión.",
+    "oralIds": [
+      "motores-u1-q6"
+    ]
+  },
+  {
+    "key": "insertseat",
+    "oralUnit": 1,
+    "guideUnit": 5,
+    "guideIds": [
+      "M350"
+    ],
+    "question": "¿Cómo se monta un asiento postizo de válvula por ajuste térmico?",
+    "answer": "La interferencia y las dimensiones prescritas aseguran el ajuste. Puede enfriarse el inserto o calentarse controladamente la culata según el procedimiento, respetando material y límites. Se comprueban alojamiento, concentricidad, apoyo y acabado del asiento. No se aplica una temperatura universal ni se golpea o calienta sin control para forzar el montaje.",
+    "oralIds": [
+      "motores-u1-q7"
+    ]
+  },
+  {
+    "key": "int_ext",
+    "oralUnit": 5,
+    "guideUnit": 6,
+    "guideIds": [
+      "M351"
+    ],
+    "question": "¿Qué significan distribución interior y exterior de la inyección en el material de clase?",
+    "answer": "En el esquema mecánico del apunte se distinguen procesos en la bomba y procesos hasta la entrega por el inyector. Relacioná llenado, cierre de lumbreras y generación de presión en la bomba con propagación en la tubería, apertura y cierre de aguja y pulverización. Identificá el esquema antes de usar los nombres: no describen igual un common rail.",
+    "oralIds": [
+      "motores-u5-q3"
+    ]
+  },
+  {
+    "key": "diffneedle",
+    "oralUnit": 5,
+    "guideUnit": 6,
+    "guideIds": [
+      "M352"
+    ],
+    "question": "Explicá la acción diferencial de la aguja del inyector.",
+    "answer": "La presión del combustible actúa sobre superficies efectivas de la aguja y genera una fuerza de apertura frente al resorte y otras fuerzas. Cuando se alcanza la condición de apertura la aguja se levanta y permite la entrega; al caer la presión vuelve a asentar según el diseño. Dibujá áreas y fuerzas; no supongas igualdad entre presión de apertura e inyección durante todo el evento.",
+    "oralIds": [
+      "motores-u5-q4"
+    ]
+  },
+  {
+    "key": "octane",
+    "oralUnit": 5,
+    "guideUnit": 7,
+    "guideIds": [
+      "M353"
+    ],
+    "question": "Compará picado diésel, detonación nafta, número de octano e índice de cetano.",
+    "answer": "En Otto la detonación es autoencendido del gas final tras iniciarse la combustión normal; octano caracteriza resistencia a detonación. En diésel un retraso de encendido prolongado puede acumular combustible y causar subida brusca de presión al quemarse; cetano caracteriza aptitud de autoencendido. No son números intercambiables ni equivalen al poder calorífico.",
+    "oralIds": [
+      "motores-u5-q5"
+    ]
+  },
+  {
+    "key": "zinc",
+    "oralUnit": 6,
+    "guideUnit": 8,
+    "guideIds": [
+      "M354"
+    ],
+    "question": "¿Qué son los ánodos de sacrificio o panes de cinc y dónde se emplean?",
+    "answer": "El ánodo de un material adecuado se consume preferentemente para proteger metales conectados en un circuito electroquímico. Puede instalarse en equipos en contacto con agua de mar cuando el fabricante lo prevé. Se verifica material, continuidad eléctrica, consumo y ubicación; no se coloca cinc indiscriminadamente en todos los circuitos ni sustituye el tratamiento del agua.",
+    "oralIds": [
+      "motores-u6-q3"
+    ]
+  },
+  {
+    "key": "oilwater",
+    "oralUnit": 6,
+    "guideUnit": 8,
+    "guideIds": [
+      "M355"
+    ],
+    "question": "¿Cómo influye la diferencia de presión entre aceite y agua en una fuga de un enfriador?",
+    "answer": "La fuga tiende a avanzar desde el lado de mayor presión al de menor presión. En diseños habituales se mantiene el aceite a mayor presión durante servicio, pero se comprueba el esquema real y la condición de marcha o parada. Al detenerse pueden cambiar las presiones y el sentido de contaminación. No se deduce la fuga solo del valor de un manómetro.",
+    "oralIds": [
+      "motores-u6-q4"
+    ]
+  },
+  {
+    "key": "lash",
+    "oralUnit": 1,
+    "guideUnit": 5,
+    "guideIds": [
+      "M356"
+    ],
+    "question": "Marcá en un diagrama qué cambia con luz excesiva o insuficiente en admisión y escape.",
+    "answer": "En un tren mecánico convencional, luz excesiva tiende a retrasar la apertura y adelantar el cierre, reduciendo duración y alzada efectiva. Luz insuficiente tiende al efecto opuesto y puede impedir el cierre en caliente. En admisión afecta llenado; en escape puede afectar evacuación, sellado y refrigeración del asiento. Dibujá ambas situaciones respecto del reglaje nominal sin universalizar ángulos ni diseños hidráulicos.",
+    "oralIds": [
+      "motores-u1-q8"
+    ]
+  },
+  {
+    "key": "pumpwork",
+    "oralUnit": 9,
+    "guideUnit": 4,
+    "guideIds": [
+      "M357"
+    ],
+    "question": "Señalá trabajo indicado y pérdidas de bombeo en un diagrama P-V real.",
+    "answer": "El trabajo indicado es la integral de presión respecto del volumen en el cilindro; se consideran lazos de alta y baja presión con su signo. En cuatro tiempos atmosférico, admisión y escape suelen consumir trabajo de bombeo. En uno sobrealimentado las presiones pueden modificar el signo del lazo; no es obligatorio que toda renovación sea una pérdida. Potencia efectiva al eje descuenta pérdidas mecánicas.",
+    "oralIds": [
+      "motores-u9-q0"
+    ]
+  },
+  {
+    "key": "twovalve",
+    "oralUnit": 9,
+    "guideUnit": 4,
+    "guideIds": [
+      "M358"
+    ],
+    "question": "Dibujá un P-V real de un dos tiempos con lumbreras y explicá qué cambia al incorporar escape en culata.",
+    "answer": "Ubicá compresión, inyección y combustión, expansión, apertura de escape, descarga y barrido alrededor del PMI. Con lumbreras gobierna su geometría y el pistón; una válvula de escape permite un control adicional del cierre y la disposición uniflujo correspondiente. No basta dibujar un ciclo ideal: marcá intercambio y presiones de barrido y escape del diseño.",
+    "oralIds": [
+      "motores-u9-q1"
+    ]
+  },
+  {
+    "key": "fourtwo",
+    "oralUnit": 9,
+    "guideUnit": 4,
+    "guideIds": [
+      "M359"
+    ],
+    "question": "Compará motores de propulsión de dos y cuatro tiempos por peso, potencia y aplicación.",
+    "answer": "Un dos tiempos realiza un ciclo por vuelta y un cuatro tiempos por dos, pero eso no determina por sí solo su potencia específica o rendimiento. Compará igual base de potencia y servicio, masa total instalada, régimen, barrido, mantenimiento y acoplamiento a la hélice. Los dos tiempos lentos grandes y cuatro tiempos semirrápidos tienen aplicaciones distintas; evitá una regla universal de prevalencia.",
+    "oralIds": [
+      "motores-u9-q2"
+    ]
+  },
+  {
+    "key": "realdiagram",
+    "oralUnit": 9,
+    "guideUnit": 4,
+    "guideIds": [
+      "M360"
+    ],
+    "question": "Dibujá un diagrama circular real de cuatro tiempos atmosférico y ubicá el cruce de válvulas.",
+    "answer": "Representá 720 grados y los procesos de admisión, compresión, combustión-expansión y escape. Ubicá aperturas, cierres e inyección respecto de PMS y PMI con datos del motor; el solape es el intervalo en que admisión y escape permanecen abiertas. Diferenciá el diagrama de eventos del P-V y explicá por qué los eventos reales no coinciden todos con puntos muertos.",
+    "oralIds": [
+      "motores-u9-q3"
+    ]
+  },
+  {
+    "key": "pin",
+    "oralUnit": 2,
+    "guideUnit": 2,
+    "guideIds": [
+      "M039",
+      "M071"
+    ],
+    "question": "Describí la fijación del perno flotante y el efecto de un huelgo excesivo.",
+    "answer": "El perno une pistón y pie de biela y puede girar respecto de ambos en el montaje flotante, con retención axial prevista por el diseño. Dibujá seguros y bujes. Huelgo excesivo puede generar golpes, pérdida local de lubricación y desgaste; se mide en posiciones y condiciones del manual. No se afirma que todo huelgo aumente directamente la cámara ni se inventa su valor.",
+    "oralIds": [
+      "motores-u2-q7"
+    ]
+  },
+  {
+    "key": "fork",
+    "oralUnit": 3,
+    "guideUnit": 2,
+    "guideIds": [
+      "M042"
+    ],
+    "question": "Compará una biela horquillada con una articulada mediante un esquema.",
+    "answer": "La solución horquilla y pala permite conectar bielas de dos bancadas a una muñequilla según diseño. En la articulada una biela secundaria se une a la maestra. Dibujá articulaciones y recorridos de fuerzas y distinguí el movimiento resultante. La configuración, materiales y ajustes deben corresponder al motor estudiado.",
+    "oralIds": [
+      "motores-u3-q4"
+    ]
+  },
+  {
+    "key": "bearingtypes",
+    "oralUnit": 4,
+    "guideUnit": 2,
+    "guideIds": [
+      "M060",
+      "M061",
+      "M062",
+      "M063",
+      "M065",
+      "M066",
+      "M069"
+    ],
+    "question": "Clasificá cojinetes por construcción y dirección de carga y compará deslizantes con rodamientos.",
+    "answer": "Los deslizantes trabajan sobre una película lubricante; los rodamientos interponen elementos rodantes. Por dirección existen radiales, axiales y combinados; por servicio las cargas pueden variar durante el ciclo. Compará capacidad, fatiga, fricción de arranque, tamaño y tolerancia a desalineación. El empuje axial no se confunde con una carga radial de bancada.",
+    "oralIds": [
+      "motores-u4-q6"
+    ]
+  },
+  {
+    "key": "flex",
+    "oralUnit": 4,
+    "guideUnit": 2,
+    "guideIds": [
+      "M054",
+      "M056",
+      "M057",
+      "M074"
+    ],
+    "question": "¿Qué miden flexímetro y calibre puente y cómo ayudan a vigilar el cigüeñal?",
+    "answer": "El flexímetro registra variaciones de distancia entre brazos en posiciones angulares prescritas. El calibre puente controla referencias y caída o posición del eje en el apoyo según el equipo. Se comparan condiciones térmicas, posiciones y línea base del fabricante. Las tendencias orientan alineación y reparto de cargas; una lectura no demuestra por sí sola una grieta ni exige cambiar un brazo.",
+    "oralIds": [
+      "motores-u4-q7"
+    ]
+  },
+  {
+    "key": "crank",
+    "oralUnit": 4,
+    "guideUnit": 2,
+    "guideIds": [
+      "M046",
+      "M048",
+      "M049",
+      "M054"
+    ],
+    "question": "Explicá esfuerzos, construcciones y regularidad de giro del cigüeñal.",
+    "answer": "Recibe fuerzas de gases e inercia que generan flexión y torsión cíclicas y fatiga. Puede ser enterizo, ensamblado o semien­samblado según escala y fabricación. Impulsos de los cilindros y volante reducen irregularidad, pero el giro real no tiene velocidad instantánea perfectamente constante. Se evitan concentradores, desalineación y sobrecargas según diseño.",
+    "oralIds": [
+      "motores-u4-q8"
+    ]
+  },
+  {
+    "key": "measure",
+    "oralUnit": 4,
+    "guideUnit": 2,
+    "guideIds": [
+      "M072",
+      "M073"
+    ],
+    "question": "Compará micrómetro, alesómetro y calibre sonda: ¿qué miden y qué precisión puede afirmarse?",
+    "answer": "El micrómetro mide dimensiones según su configuración; el alesómetro compara diámetros internos con una referencia; las galgas o sonda verifican luces. Resolución, exactitud y repetibilidad son diferentes y dependen de instrumento, calibración y uso. No todos los micrómetros garantizan la misma precisión por mostrar iguales decimales.",
+    "oralIds": [
+      "motores-u4-q9"
+    ]
+  },
+  {
+    "key": "geometry",
+    "oralUnit": 8,
+    "guideUnit": 3,
+    "guideIds": [
+      "M076",
+      "M077",
+      "M079",
+      "M081",
+      "M084"
+    ],
+    "question": "Definí carrera, cilindrada, relación carrera-diámetro y relación de compresión.",
+    "answer": "La carrera une PMS y PMI y equivale a dos radios de manivela. Cilindrada unitaria es área del pistón por carrera y la total multiplica por cilindros. S/D clasifica motores largos, cuadrados o supercuadrados. La relación geométrica de compresión es (Vd+Vc)/Vc; no es una presión ni fija por sí sola la presión final.",
+    "oralIds": [
+      "motores-u8-q2"
+    ]
+  },
+  {
+    "key": "sankey",
+    "oralUnit": 8,
+    "guideUnit": 12,
+    "guideIds": [
+      "M270",
+      "M271"
+    ],
+    "question": "Definí balance térmico y representalo con un diagrama de Sankey.",
+    "answer": "Elegí una frontera e intervalo: la energía del combustible se reparte en trabajo útil, escape, refrigeración y otras salidas o pérdidas. Las bandas de Sankey tienen ancho proporcional y deben cerrar el balance. No se suman dos veces pérdidas mecánicas y el calor en que terminan; los porcentajes dependen de carga y motor.",
+    "oralIds": [
+      "motores-u8-q3"
+    ]
+  },
+  {
+    "key": "external",
+    "oralUnit": 8,
+    "guideUnit": 1,
+    "guideIds": [
+      "M002",
+      "M004",
+      "M005"
+    ],
+    "question": "Distinguí combustión externa e interna y ciclos ideales a volumen y presión constante.",
+    "answer": "En combustión externa el aporte térmico llega desde un foco externo al fluido de trabajo, como en una instalación de vapor. En interna la combustión ocurre en el recinto donde actúan los gases. Otto y Diesel ideales representan aportes a volumen y presión constante; el motor real no conserva exactamente esas idealizaciones.",
+    "oralIds": [
+      "motores-u8-q4"
+    ]
+  },
+  {
+    "key": "rings",
+    "oralUnit": 2,
+    "guideUnit": 2,
+    "guideIds": [
+      "M032",
+      "M033",
+      "M035",
+      "M036",
+      "M038"
+    ],
+    "question": "Explicá funciones, holguras y precauciones de montaje de aros.",
+    "answer": "Contribuyen a sellar gases, transferir calor y regular aceite según su posición y diseño. Se verifican luz entre puntas, juego axial y radial en posiciones prescritas y con herramientas adecuadas. La orientación, el juego y la posición de juntas o retenciones dependen del fabricante, en especial frente a lumbreras de dos tiempos.",
+    "oralIds": [
+      "motores-u2-q8"
+    ]
+  },
+  {
+    "key": "rodcargas",
+    "oralUnit": 3,
+    "guideUnit": 2,
+    "guideIds": [
+      "M040",
+      "M041",
+      "M044",
+      "M045"
+    ],
+    "question": "Esquematizá tren alternativo, materiales de biela y recorrido de fuerzas en un motor de cruceta.",
+    "answer": "La presión actúa sobre el pistón y se transmite por perno o vástago, biela y muñequilla. La biela soporta compresión y tracción de gases e inercia y debe resistir fatiga; materiales y construcción dependen del tamaño y diseño. En cruceta los patines transmiten el empuje lateral a las guías y la caja de empaquetadura separa los espacios previstos.",
+    "oralIds": [
+      "motores-u3-q5"
+    ]
+  },
+  {
+    "key": "compression",
+    "oralUnit": 9,
+    "guideUnit": 4,
+    "guideIds": [
+      "M094",
+      "M095",
+      "M097",
+      "M098",
+      "M099"
+    ],
+    "question": "Explicá el ciclo real diésel de dos y cuatro tiempos y la carrera motriz.",
+    "answer": "En cuatro tiempos hay admisión de aire, compresión, combustión-expansión y escape a lo largo de dos vueltas; la expansión es la carrera motriz principal. En dos tiempos el ciclo ocupa una vuelta y la renovación se concentra cerca del PMI con aire de barrido. La inyección e ignición tienen duración y los eventos reales se anticipan o retrasan según diseño.",
+    "oralIds": [
+      "motores-u9-q4"
+    ]
+  },
+  {
+    "key": "injectphase",
+    "oralUnit": 5,
+    "guideUnit": 6,
+    "guideIds": [
+      "M109",
+      "M148",
+      "M149",
+      "M151",
+      "M156"
+    ],
+    "question": "Describí fases de inyección y combustión, hélice de bomba Bosch y ondas de presión.",
+    "answer": "En bomba mecánica el émbolo cierra lumbreras, eleva presión y entrega hasta que la hélice descubre el derrame; la regulación cambia la entrega según diseño. La onda viaja por la tubería y la aguja abre por fuerzas de presión y resorte. Separá retraso hidráulico de inicio de inyección y retraso de encendido: preparación, combustión rápida, controlada por mezcla y terminación no son eventos instantáneos.",
+    "oralIds": [
+      "motores-u5-q6"
+    ]
+  },
+  {
+    "key": "camgear",
+    "oralUnit": 1,
+    "guideUnit": 5,
+    "guideIds": [
+      "M120",
+      "M121",
+      "M123",
+      "M124",
+      "M125",
+      "M130",
+      "M133",
+      "M134"
+    ],
+    "question": "Esquematizá accionamiento directo e indirecto de válvulas y justificá la relación de giro.",
+    "answer": "En un tren directo la leva actúa próxima a la válvula o su botador; el indirecto puede incluir botador, varilla y balancín. En cuatro tiempos convencional el árbol gira a la mitad del cigüeñal y en dos tiempos a igual velocidad, porque el evento se repite cada dos vueltas o una. Leva, resorte y transmisión gobiernan movimiento y cierre según diseño.",
+    "oralIds": [
+      "motores-u1-q9"
+    ]
+  },
+  {
+    "key": "hydrotappet",
+    "oralUnit": 1,
+    "guideUnit": 5,
+    "guideIds": [
+      "M124",
+      "M131",
+      "M132"
+    ],
+    "question": "¿Qué hace un compensador hidráulico y cómo se distingue alzada de luz de válvula?",
+    "answer": "El compensador usa aceite y un mecanismo de retención para compensar el juego dentro de su diseño. No se ajusta como una galga mecánica sin consultar procedimiento. Alzada es el desplazamiento de apertura; luz es la separación de reglaje en la condición especificada. Suciedad, aire y presión inadecuada pueden afectar el compensador.",
+    "oralIds": [
+      "motores-u1-q10"
+    ]
+  },
+  {
+    "key": "scavenge",
+    "oralUnit": 10,
+    "guideUnit": 10,
+    "guideIds": [
+      "M225",
+      "M226",
+      "M227"
+    ],
+    "question": "Definí barrido y sobrealimentación y compará disposiciones de lumbreras y válvulas.",
+    "answer": "Barrido renueva los gases del cilindro; sobrealimentación aumenta masa de aire admitida respecto de la referencia atmosférica. El aire debe vencer la presión del cilindro y pérdidas en la fase de intercambio. Existen arreglos transversal, lazo y uniflujo; se identifica el recorrido real y qué abre o cierra el pistón o la válvula.",
+    "oralIds": [
+      "motores-u10-q0"
+    ]
+  },
+  {
+    "key": "roots",
+    "oralUnit": 10,
+    "guideUnit": 10,
+    "guideIds": [
+      "M228",
+      "M229",
+      "M230"
+    ],
+    "question": "Compará bomba de barrido Roots, turbocompresor y soplante auxiliar.",
+    "answer": "Roots desplaza aire mediante rotores accionados mecánicamente. Un turbo une turbina de escape y compresor mediante un eje y utiliza energía del gas. Un dos tiempos puede necesitar soplante auxiliar al arranque o baja carga cuando no hay energía suficiente en el escape; no se supone que todo sistema se sostiene solo en cualquier régimen.",
+    "oralIds": [
+      "motores-u10-q1"
+    ]
+  },
+  {
+    "key": "chargecooler",
+    "oralUnit": 10,
+    "guideUnit": 10,
+    "guideIds": [
+      "M231",
+      "M232",
+      "M233",
+      "M234"
+    ],
+    "question": "¿Para qué sirve enfriar el aire comprimido y qué fallas reducen el llenado?",
+    "answer": "El enfriamiento aumenta densidad a condiciones comparables y limita temperatura de carga. Suciedad, fugas o condensado perjudican el sistema y deben verificarse según drenajes y manual. Filtro tapado y contrapresión de escape afectan llenado y trabajo de renovación; el surge es una inestabilidad del compresor distinta del bombeo del ciclo.",
+    "oralIds": [
+      "motores-u10-q2"
+    ]
+  },
+  {
+    "key": "fuelcircuit",
+    "oralUnit": 5,
+    "guideUnit": 6,
+    "guideIds": [
+      "M145",
+      "M146",
+      "M147",
+      "M149"
+    ],
+    "question": "Dibujá alimentación e inyección y ubicá las retenciones del sistema Bosch del apunte.",
+    "answer": "Seguí tanque diario, filtración, bomba de alimentación, colector de baja presión, bombas inyectoras, líneas de alta presión, inyectores y retorno. Identificá retenciones según plano, incluida la función de la válvula de impulsión de la bomba. El número de retenciones y su posición no son universales; distinguí suministro de combustible y generación de presión de inyección.",
+    "oralIds": [
+      "motores-u5-q7"
+    ]
+  },
+  {
+    "key": "cooling",
+    "oralUnit": 6,
+    "guideUnit": 8,
+    "guideIds": [
+      "M184",
+      "M185",
+      "M186",
+      "M187",
+      "M188",
+      "M190",
+      "M191"
+    ],
+    "question": "Esquematizá refrigeración directa, indirecta y por quilla, con termostato y tanque de expansión.",
+    "answer": "La directa utiliza agua exterior a través del motor cuando el diseño lo permite. La indirecta separa agua tratada y agua exterior mediante intercambio de calor; por quilla el calor se transfiere al exterior sin el mismo circuito de agua de mar del motor. El termostato regula derivación y enfriamiento según diseño y el tanque admite expansión y compensación.",
+    "oralIds": [
+      "motores-u6-q5"
+    ]
+  },
+  {
+    "key": "oilfilm",
+    "oralUnit": 7,
+    "guideUnit": 9,
+    "guideIds": [
+      "M201",
+      "M202",
+      "M210",
+      "M211",
+      "M212",
+      "M213",
+      "M214",
+      "M217",
+      "M218"
+    ],
+    "question": "¿Qué sostiene la película de aceite y cómo afectan contaminación, grasa y alarmas?",
+    "answer": "La película depende de viscosidad, velocidad, carga, geometría y huelgo. Agua y combustible alteran lubricante y pueden comprometerla aunque no todo contaminante se elimina por centrifugación. En rodamientos el lubricante y cantidad se eligen según fabricante; exceso de grasa también calienta. Baja presión u otra alarma crítica se atiende según procedimiento sin anularla.",
+    "oralIds": [
+      "motores-u7-q7"
+    ]
+  },
+  {
+    "key": "electricstart",
+    "oralUnit": 11,
+    "guideUnit": 11,
+    "guideIds": [
+      "M239",
+      "M240",
+      "M241",
+      "M242"
+    ],
+    "question": "Explicá arranque eléctrico, fallas y límites de los intentos.",
+    "answer": "Batería, conexiones, mando, solenoide, motor, piñón y corona deben producir giro suficiente. Compará caída de tensión, velocidad de giro y enclavamientos antes de repetir. La duración y pausas entre intentos dependen del manual y protegen batería y motor de arranque; no se prescriben tiempos universales.",
+    "oralIds": [
+      "motores-u11-q0"
+    ]
+  },
+  {
+    "key": "airstart",
+    "oralUnit": 11,
+    "guideUnit": 11,
+    "guideIds": [
+      "M243",
+      "M244",
+      "M245",
+      "M246",
+      "M249"
+    ],
+    "question": "Diferenciá distribuidor de aire a cilindros, motor neumático y enclavamiento del virador.",
+    "answer": "El distribuidor habilita aire de arranque en cilindros y posiciones capaces de producir par. El motor neumático produce giro por una transmisión al volante. El virador permite giro lento y su enclavamiento impide arrancar acoplado. Aire comprimido, aceite y retorno de gases exigen purgas y protecciones según el sistema; no se intercambian ambos esquemas.",
+    "oralIds": [
+      "motores-u11-q1"
+    ]
+  },
+  {
+    "key": "reverse",
+    "oralUnit": 11,
+    "guideUnit": 11,
+    "guideIds": [
+      "M250",
+      "M251",
+      "M252",
+      "M253",
+      "M254",
+      "M255"
+    ],
+    "question": "¿Cómo se obtiene marcha atrás con motor reversible o no reversible?",
+    "answer": "En uno reversible se cambia la secuencia de eventos necesaria para el giro inverso según diseño. Con uno no reversible puede usarse caja inversora, propulsión eléctrica o hélice de paso variable. Reductor, embrague y acoplamiento tienen funciones diferentes; la maniobra debe respetar inercia, límites y comunicación con el puente.",
+    "oralIds": [
+      "motores-u11-q2"
+    ]
+  },
+  {
+    "key": "governor",
+    "oralUnit": 12,
+    "guideUnit": 12,
+    "guideIds": [
+      "M258",
+      "M259",
+      "M260",
+      "M261",
+      "M262"
+    ],
+    "question": "Explicá la reacción del regulador ante aumento o retirada de carga.",
+    "answer": "Al aumentar par resistente cae inicialmente el régimen y el regulador aumenta entrega dentro de límites. Al retirar carga sucede lo contrario y se reduce combustible para limitar aceleración. Un regulador mecánico compara fuerzas de masas y resorte; uno hidráulico amplifica el mando con servomecanismo. Se describe el modelo real, sin confundir regulación y parada independiente.",
+    "oralIds": [
+      "motores-u12-q0"
+    ]
+  },
+  {
+    "key": "droop",
+    "oralUnit": 12,
+    "guideUnit": 12,
+    "guideIds": [
+      "M263",
+      "M264",
+      "M265"
+    ],
+    "question": "Compará regulación isócrona, estatismo, hunting y protección de sobrevelocidad.",
+    "answer": "La regulación isócrona busca recuperar la consigna sin caída permanente; con estatismo el régimen de equilibrio varía con la carga y facilita reparto según sistema. Hunting es oscilación de control que requiere diagnóstico. La protección independiente de sobrevelocidad actúa ante peligro y no sustituye al regulador ni se corrige anulándola.",
+    "oralIds": [
+      "motores-u12-q1"
+    ]
+  },
+  {
+    "key": "power",
+    "oralUnit": 12,
+    "guideUnit": 12,
+    "guideIds": [
+      "M266",
+      "M267",
+      "M268",
+      "M269",
+      "M274",
+      "M275"
+    ],
+    "question": "Relacioná torque, trabajo indicado, potencia efectiva, rendimientos y consumo específico.",
+    "answer": "El área P-V representa trabajo indicado por ciclo; la potencia indicada considera ciclos por tiempo. La efectiva se mide al eje y difiere por pérdidas mecánicas. Potencia de eje es torque por velocidad angular; consumo específico es caudal de combustible dividido por potencia en una base definida. Rendimientos y comparaciones requieren la misma carga y frontera.",
+    "oralIds": [
+      "motores-u12-q2"
+    ]
+  },
+  {
+    "key": "vibration",
+    "oralUnit": 13,
+    "guideUnit": 13,
+    "guideIds": [
+      "M279",
+      "M280",
+      "M281",
+      "M282"
+    ],
+    "question": "Distinguí vibraciones, desequilibrio, desalineación y resonancia del motor.",
+    "answer": "Registrá amplitud, frecuencia, fase cuando corresponda, dirección y condición de carga. Fuerzas de inercia y pulsos de combustión excitan el conjunto; resonancia ocurre cuando una excitación se aproxima a un modo propio. Desalineación y desequilibrio son causas diferentes y no se diagnostican solo por sentir vibración.",
+    "oralIds": [
+      "motores-u13-q0"
+    ]
+  },
+  {
+    "key": "damper",
+    "oralUnit": 13,
+    "guideUnit": 13,
+    "guideIds": [
+      "M283",
+      "M284",
+      "M285",
+      "M286"
+    ],
+    "question": "Compará volante, contrapeso y dámper y explicá la torsión durante marcha estable.",
+    "answer": "El volante almacena y devuelve energía para reducir variación de velocidad; el contrapeso compensa masas; el dámper atenúa vibración torsional. Los impulsos de par producen torsión alternante también con régimen medio constante, no solo al arrancar. Las bandas restringidas se respetan según estudio y manual; el dámper no es un freno de sobrevelocidad.",
+    "oralIds": [
+      "motores-u13-q1"
+    ]
+  },
+  {
+    "key": "condition",
+    "oralUnit": 13,
+    "guideUnit": 13,
+    "guideIds": [
+      "M287",
+      "M288",
+      "M289",
+      "M290"
+    ],
+    "question": "¿Cómo se evalúa una vibración nueva sin confundir síntoma y causa?",
+    "answer": "Compará registros en iguales puntos, carga y rpm con la condición de referencia. Relacioná cambios con fijaciones, acoplamientos, combustión desigual, temperaturas y ruidos. La magnitud y evolución determinan la respuesta de reducción o parada prevista; no se modifica alineación ni un ajuste de regulador solo por una observación.",
+    "oralIds": [
+      "motores-u13-q2"
+    ]
+  },
+  {
+    "key": "cavitation",
+    "oralUnit": 0,
+    "guideUnit": 2,
+    "guideIds": [
+      "M024",
+      "M194"
+    ],
+    "oralIds": [
+      "motores-u0-q8"
+    ],
+    "question": "¿Qué es la cavitación de una camisa húmeda y cómo se distingue de desgaste interior?",
+    "answer": "La formación y colapso de burbujas cerca de la pared mojada puede producir picaduras en la cara del refrigerante. Se diferencia de abrasión y ovalización internas por ubicación y aspecto, y se revisan vibración, refrigerante, presión y tratamiento según manual. No se diagnostica cavitación solo por cualquier pérdida de agua."
+  },
+  {
+    "key": "pimeter",
+    "oralUnit": 12,
+    "guideUnit": 12,
+    "guideIds": [
+      "M361"
+    ],
+    "oralIds": [
+      "motores-u12-q3"
+    ],
+    "question": "¿Qué instrumento llama el apunte pímetro y qué diferencia hay entre presión máxima y presión media indicada?",
+    "answer": "Identificá el instrumento y su manual: un medidor de presión máxima registra el pico de presión y no equivale a un indicador que obtiene el diagrama del ciclo. La presión media indicada corresponde al trabajo indicado dividido por cilindrada. No se calcula solo con la presión máxima ni se interpreta un nombre del apunte como especificación universal."
+  },
+  {
+    "key": "volumetric",
+    "oralUnit": 10,
+    "guideUnit": 10,
+    "guideIds": [
+      "M362"
+    ],
+    "oralIds": [
+      "motores-u10-q3"
+    ],
+    "question": "¿Qué es el rendimiento volumétrico y cómo se compara en motores atmosféricos y sobrealimentados?",
+    "answer": "Relaciona la masa realmente admitida con una masa de referencia definida a partir del volumen desplazado y condiciones especificadas. Se deben declarar presión y temperatura de referencia y si se considera aire atrapado o suministrado. En sobrealimentación la comparación puede superar la unidad con una referencia atmosférica; no es sinónimo de rendimiento térmico."
+  },
+  {
+    "key": "intertime",
+    "oralUnit": 5,
+    "guideUnit": 6,
+    "guideIds": [
+      "M363"
+    ],
+    "oralIds": [
+      "motores-u5-q8"
+    ],
+    "question": "Distinguí intertiempo, retraso hidráulico y retraso de encendido en inyección diésel.",
+    "answer": "Ubicá inicio de acción de bomba, inicio real de inyección e inicio de combustión en tiempo o grados. La propagación y respuesta hidráulica no coinciden con la preparación físico-química hasta ignición. El término intertiempo se interpreta con el diagrama y convención del docente; no se usa para sumar o confundir intervalos distintos sin definir sus extremos."
+  },
+  {
+    "key": "purifier",
+    "oralUnit": 5,
+    "guideUnit": 6,
+    "guideIds": [
+      "M364"
+    ],
+    "oralIds": [
+      "motores-u5-q9"
+    ],
+    "question": "¿Qué hace un purificador centrífugo de combustible y cuáles son sus límites?",
+    "answer": "Separa fases y partículas por diferencias de densidad bajo fuerza centrífuga, con configuración y condiciones de caudal y temperatura previstas. Se distinguen purificación con separación de agua y clarificación según equipo. No elimina cualquier contaminante disuelto ni sustituye filtros, análisis y corrección del origen de contaminación; se sigue el manual del separador."
+  }
+]

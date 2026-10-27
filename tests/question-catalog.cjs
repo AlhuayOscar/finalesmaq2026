@@ -4,10 +4,10 @@ const pdf=require('../dist/server-data/thermal-pdf-bank.cjs');
 const {createCatalogue,auditCatalogue}=require('../dist/server-data/question-catalog.cjs');
 const {hdpQuestion}=require('../dist/server-data/question-wording.cjs');
 const catalogue=createCatalogue(),audit=auditCatalogue(catalogue);
-assert.equal(catalogue.cards.length,401);
+assert.equal(catalogue.cards.length,466);
 assert.equal(catalogue.cards.filter(c=>c.subject==='termicas').length,208);
 assert.equal(catalogue.cards.filter(c=>c.bank==='frio-slides').length,76);
-assert.equal(new Set(catalogue.cards.map(c=>c.id)).size,401);
+assert.equal(new Set(catalogue.cards.map(c=>c.id)).size,466);
 assert.deepEqual(audit.exactDuplicates,[]);
 assert.equal(audit.pdfRedundantPairs.length,45);
 for(const c of catalogue.cards){

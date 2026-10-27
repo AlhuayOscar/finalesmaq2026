@@ -2,8 +2,8 @@
   "meta": {
     "title": "Guía integral de preguntas de Motores Navales",
     "date": "27 de octubre de 2026",
-    "intro": "330 preguntas para preparar el examen y explicar el motor como un conjunto de piezas y sistemas. La organización sigue las 15 unidades del programa de Motores Navales suministrado. Las 100 consignas de las dos guías del profesor están vinculadas con preguntas de esta guía; sus repeticiones se reúnen sin perder el texto original.",
-    "method": "Las preguntas marcadas Prioridad docente reformulan o integran consignas de las guías, conservando su alcance. Las restantes son ampliaciones de ChatGPT a partir del programa, materiales de clase revisados e investigación técnica. Los ejes orientan qué debe abarcar la respuesta; no constituyen un solucionario ni una garantía de las preguntas que aparecerán en el examen.",
+    "intro": "364 preguntas para preparar el examen anual, organizadas en las 15 unidades del programa. Se conservan los códigos M001–M330 y se incorporan M331–M364. La revisión contrasta siete exámenes únicos fotografiados (63 consignas), los dos cuestionarios docentes y los bancos complementarios identificados en las fuentes.",
+    "method": "Las preguntas marcadas Prioridad docente reformulan o integran consignas de las guías, conservando su alcance. Las restantes son ampliaciones de ChatGPT a partir del programa, materiales de clase revisados e investigación técnica. Los ejes orientan qué debe abarcar la respuesta; no constituyen un solucionario ni una garantía de las preguntas que aparecerán en el examen. Las marcas EXAMEN enlazan cada consigna revisada con su pregunta de estudio. Una correspondencia puede requerir varias preguntas; no significa que una pregunta aislada cubra todos los puntos del examen.",
     "use": "Respondé primero sin mirar los ejes. Para cada pieza explicá qué es, dónde está, qué hace, con qué se conecta y cómo puede fallar. Para cada sistema seguí el recorrido del fluido o de la energía. En los casos, separá síntoma, causas posibles, comprobación y decisión. Marcá Repasar o Dominada sólo después de explicarla en voz alta.",
     "limits": "Los valores de presión, temperatura, huelgo, apriete y actuación de protecciones corresponden al motor, su régimen y su manual. La guía pide interpretar y consultar esos datos; no convierte cifras de un ejemplo de clase en límites de todos los motores.",
     "sources": [
@@ -160,12 +160,43 @@
         "url": "https://my.wingd.com/media/g5bd21zh/om_wingd-x62-b.pdf",
         "locator": "Manual de operación: alarma de niebla de aceite y precauciones antes de abrir el cárter.",
         "note": "Ejemplo de fabricante; no se generalizan sus tiempos de espera a otros motores."
+      },
+      {
+        "id": "EXAMS",
+        "title": "Fotografías de siete exámenes y material complementario de Motores",
+        "url": "https://drive.google.com/drive/folders/1lXHTvSVKGZznhm5gzctIcxFfPZiUzVTw",
+        "locator": "Generalidades 09/04/2026; partes A 11/06/2026 y B 02/06/2026; cigüeñal B 14/07/2026; diagramas 25/08/2026; escrito 26/05/2021; cigüeñal sin fecha.",
+        "note": "Lectura visual de siete fotografías únicas; dos copias con nombres alternativos no se cuentan otra vez. Las consignas se normalizan y se enlazan sin publicar datos personales ni respuestas manuscritas."
+      },
+      {
+        "id": "B132",
+        "title": "Banco de preguntas y respuestas para final · 22 páginas",
+        "url": "https://drive.google.com/file/d/1bm2C0sffJOaUXfEQ_-rSVm07ZRrG8F2W/view",
+        "locator": "132 consignas numeradas; comparación temática y lectura de las secciones relevantes.",
+        "note": "Se utilizan consignas y terminología. Las respuestas de estudio no se adoptan como solucionario técnico validado."
+      },
+      {
+        "id": "D21",
+        "title": "Distribución, componentes, refrigeración e inyección · 21 páginas",
+        "url": "https://drive.google.com/file/d/1yKtgC79wgZgLzyrrDqeJ-A8UMqwX9wwb/view",
+        "locator": "Consignas sobre distribución y huelgos, pistones, inyección, refrigeración y diagramas.",
+        "note": "Hay premisas de diseño que requieren aclaración, por ejemplo válvula de admisión en un diésel de dos tiempos; se conserva el tema y se exige identificar el motor."
+      },
+      {
+        "id": "KS",
+        "title": "Motorservice · Engine bearings: basic information",
+        "url": "https://www.ms-motorservice.com/MediaAssets/1809301_ks_50003982_web.pdf",
+        "locator": "Estructura y materiales de cojinetes.",
+        "note": "Apoyo técnico para distinguir capas y materiales de construcciones específicas."
       }
     ],
     "unitSources": {
       "1": [
         "P",
-        "G"
+        "G",
+        "EXAMS",
+        "B132",
+        "D21"
       ],
       "2": [
         "P",
@@ -174,72 +205,111 @@
         "R",
         "S",
         "SG",
-        "W"
+        "W",
+        "EXAMS",
+        "B132",
+        "D21"
       ],
       "3": [
         "P",
         "G",
-        "C"
+        "C",
+        "EXAMS",
+        "B132",
+        "D21"
       ],
       "4": [
         "P",
         "G",
         "O",
-        "T"
+        "T",
+        "EXAMS",
+        "B132",
+        "D21"
       ],
       "5": [
         "P",
-        "W"
+        "W",
+        "EXAMS",
+        "B132",
+        "D21"
       ],
       "6": [
         "P",
         "I",
         "B",
-        "W"
+        "W",
+        "EXAMS",
+        "B132",
+        "D21"
       ],
       "7": [
         "P",
         "N",
-        "O"
+        "O",
+        "EXAMS",
+        "B132",
+        "D21"
       ],
       "8": [
         "P",
         "W",
-        "F2"
+        "F2",
+        "EXAMS",
+        "B132",
+        "D21"
       ],
       "9": [
         "P",
         "C",
         "L",
         "S",
-        "W"
+        "W",
+        "EXAMS",
+        "B132",
+        "D21"
       ],
       "10": [
         "P",
         "T",
-        "W"
+        "W",
+        "EXAMS",
+        "B132",
+        "D21"
       ],
       "11": [
         "P",
         "W",
-        "F3"
+        "F3",
+        "EXAMS",
+        "B132",
+        "D21"
       ],
       "12": [
         "P",
         "G",
         "V",
-        "W"
+        "W",
+        "EXAMS",
+        "B132",
+        "D21"
       ],
       "13": [
         "P",
         "C",
         "D",
-        "W"
+        "W",
+        "EXAMS",
+        "B132",
+        "D21"
       ],
       "14": [
         "P",
         "W",
-        "F3"
+        "F3",
+        "EXAMS",
+        "B132",
+        "D21"
       ],
       "15": [
         "P",
@@ -250,7 +320,10 @@
         "W",
         "E",
         "MC",
-        "WC"
+        "WC",
+        "EXAMS",
+        "B132",
+        "D21"
       ]
     },
     "coverage": [
@@ -386,6 +459,15 @@
           "W",
           "P"
         ]
+      },
+      {
+        "title": "Premisas de diagramas y reglaje de válvulas",
+        "refs": "D26, TP Diagramas y banco de 21 páginas",
+        "text": "Algunos enunciados mencionan válvula de admisión en un dos tiempos o cuatro tiempos con lumbreras. Antes de dibujar se debe identificar el diseño; no se sustituyen automáticamente admisión y escape. En trenes mecánicos convencionales una luz excesiva tiende a reducir duración y alzada efectiva; una luz insuficiente puede impedir el cierre en caliente. Las respuestas de compañeros no convierten en universales ángulos, emisiones, tiempos de espera ni materiales.",
+        "sources": [
+          "D21",
+          "W"
+        ]
       }
     ],
     "formulas": [
@@ -467,7 +549,10 @@
       "title": "Generalidades",
       "sources": [
         "P",
-        "G"
+        "G",
+        "EXAMS",
+        "B132",
+        "D21"
       ],
       "coverage": "Definiciones, clasificación general, encendido, ciclo y utilización a bordo.",
       "questions": [
@@ -482,7 +567,8 @@
         "M009",
         "M010",
         "M011",
-        "M012"
+        "M012",
+        "M333"
       ]
     },
     {
@@ -495,7 +581,10 @@
         "R",
         "S",
         "SG",
-        "W"
+        "W",
+        "EXAMS",
+        "B132",
+        "D21"
       ],
       "coverage": "Materiales y órganos fijos; camisas y estanqueidad; culatas; pistones, aros, pernos y bielas; cruceta; cigüeñal, lubricación interna, cojinetes, huelgos, tiraje y volante.",
       "questions": [
@@ -561,7 +650,21 @@
         "M072",
         "M073",
         "M074",
-        "M075"
+        "M075",
+        "M331",
+        "M332",
+        "M334",
+        "M335",
+        "M336",
+        "M337",
+        "M338",
+        "M339",
+        "M340",
+        "M341",
+        "M342",
+        "M344",
+        "M345",
+        "M346"
       ]
     },
     {
@@ -570,7 +673,10 @@
       "sources": [
         "P",
         "G",
-        "C"
+        "C",
+        "EXAMS",
+        "B132",
+        "D21"
       ],
       "coverage": "PMS y PMI, carrera, manivela, longitud de biela, S/D, superficie, cilindrada, cámaras, compresión, numeración, giro y torque.",
       "questions": [
@@ -589,7 +695,8 @@
         "M088",
         "M089",
         "M090",
-        "M091"
+        "M091",
+        "M343"
       ]
     },
     {
@@ -599,7 +706,10 @@
         "P",
         "G",
         "O",
-        "T"
+        "T",
+        "EXAMS",
+        "B132",
+        "D21"
       ],
       "coverage": "Diésel y Otto de dos y cuatro tiempos; Carnot, ideal y real; diagramas presión volumen y circulares; adelantos, retrasos, lumbreras, trabajo y comparación.",
       "questions": [
@@ -630,7 +740,11 @@
         "M116",
         "M117",
         "M118",
-        "M119"
+        "M119",
+        "M357",
+        "M358",
+        "M359",
+        "M360"
       ]
     },
     {
@@ -638,7 +752,10 @@
       "title": "Sistema de distribución",
       "sources": [
         "P",
-        "W"
+        "W",
+        "EXAMS",
+        "B132",
+        "D21"
       ],
       "coverage": "Levas y árboles, válvulas, asientos, guías, resortes, balancines, varillas y botadores; accionamientos, relaciones de velocidad y puesta a punto.",
       "questions": [
@@ -660,7 +777,12 @@
         "M135",
         "M136",
         "M137",
-        "M138"
+        "M138",
+        "M347",
+        "M348",
+        "M349",
+        "M350",
+        "M356"
       ]
     },
     {
@@ -670,7 +792,10 @@
         "P",
         "I",
         "B",
-        "W"
+        "W",
+        "EXAMS",
+        "B132",
+        "D21"
       ],
       "coverage": "Propiedades del combustible, combustión, atomización y penetración; circuito completo, bombas Bosch, sistemas de inyección, toberas, apertura, estanqueidad y mantenimiento.",
       "questions": [
@@ -701,7 +826,11 @@
         "M163",
         "M164",
         "M165",
-        "M166"
+        "M166",
+        "M351",
+        "M352",
+        "M363",
+        "M364"
       ]
     },
     {
@@ -710,7 +839,10 @@
       "sources": [
         "P",
         "N",
-        "O"
+        "O",
+        "EXAMS",
+        "B132",
+        "D21"
       ],
       "coverage": "Mezcla, carburador elemental y variantes, inyección de nafta, sensores y actuadores; bobina, distribuidor, condensador, bujías y encendido electrónico.",
       "questions": [
@@ -729,7 +861,8 @@
         "M179",
         "M180",
         "M181",
-        "M182"
+        "M182",
+        "M353"
       ]
     },
     {
@@ -738,7 +871,10 @@
       "sources": [
         "P",
         "W",
-        "F2"
+        "F2",
+        "EXAMS",
+        "B132",
+        "D21"
       ],
       "coverage": "Objeto, circuitos abiertos y cerrados, aire, agua directa e indirecta, quilla y casco; tanque de compenso, termostato, corrosión, incrustación y mantenimiento.",
       "questions": [
@@ -759,7 +895,9 @@
         "M197",
         "M198",
         "M199",
-        "M200"
+        "M200",
+        "M354",
+        "M355"
       ]
     },
     {
@@ -770,7 +908,10 @@
         "C",
         "L",
         "S",
-        "W"
+        "W",
+        "EXAMS",
+        "B132",
+        "D21"
       ],
       "coverage": "Funciones, propiedades, clasificaciones, bases y aditivos; sistemas, circuitos y puntos a lubricar; filtración, controles, contaminación y seguridad.",
       "questions": [
@@ -804,7 +945,10 @@
       "sources": [
         "P",
         "T",
-        "W"
+        "W",
+        "EXAMS",
+        "B132",
+        "D21"
       ],
       "coverage": "Filtros, silenciadores, múltiples y tuberías; barrido, bombas, turbo, enfriadores de aire y escape.",
       "questions": [
@@ -823,7 +967,8 @@
         "M235",
         "M236",
         "M237",
-        "M238"
+        "M238",
+        "M362"
       ]
     },
     {
@@ -832,7 +977,10 @@
       "sources": [
         "P",
         "W",
-        "F3"
+        "F3",
+        "EXAMS",
+        "B132",
+        "D21"
       ],
       "coverage": "Arranque eléctrico y neumático, frío, virador; reversibilidad, inversión, acoplamientos, embragues, reducción y velocidad.",
       "questions": [
@@ -863,7 +1011,10 @@
         "P",
         "G",
         "V",
-        "W"
+        "W",
+        "EXAMS",
+        "B132",
+        "D21"
       ],
       "coverage": "Cargas, reguladores, Woodward, limitadores y estatismo; presión media, potencias, rendimientos, velocidad de pistón, consumo y balance térmico.",
       "questions": [
@@ -888,7 +1039,8 @@
         "M275",
         "M276",
         "M277",
-        "M278"
+        "M278",
+        "M361"
       ]
     },
     {
@@ -898,7 +1050,10 @@
         "P",
         "C",
         "D",
-        "W"
+        "W",
+        "EXAMS",
+        "B132",
+        "D21"
       ],
       "coverage": "Características de ondas, sacudimiento, balanceo, cabeceo, guiñada y torsión; fuerzas, compensación, resonancia y dámper.",
       "questions": [
@@ -922,7 +1077,10 @@
       "sources": [
         "P",
         "W",
-        "F3"
+        "F3",
+        "EXAMS",
+        "B132",
+        "D21"
       ],
       "coverage": "Preparación, puesta en marcha, aumento de carga, vigilancia de parámetros, parada normal y de emergencia y verificaciones posteriores.",
       "questions": [
@@ -955,7 +1113,10 @@
         "W",
         "E",
         "MC",
-        "WC"
+        "WC",
+        "EXAMS",
+        "B132",
+        "D21"
       ],
       "coverage": "Arranque, parada frecuente, potencia, humos, lubricación, refrigeración y escape; cárter, barrido, incendios, consumo y mantenimiento preventivo y predictivo.",
       "questions": [
@@ -997,7 +1158,8 @@
       "teacher": [
         "G01",
         "G20"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M002",
@@ -1009,6 +1171,10 @@
         "G10",
         "G22",
         "G23"
+      ],
+      "exams": [
+        "GA26-02",
+        "GA26-03"
       ]
     },
     {
@@ -1020,7 +1186,8 @@
       "teacher": [
         "G21",
         "G24"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M004",
@@ -1030,6 +1197,10 @@
       "axes": "Preparación de mezcla, bujía y diferencia entre motor real y ciclo ideal.",
       "teacher": [
         "G25"
+      ],
+      "exams": [
+        "GA26-02",
+        "GA26-03"
       ]
     },
     {
@@ -1041,6 +1212,10 @@
       "teacher": [
         "G26",
         "G29"
+      ],
+      "exams": [
+        "GA26-02",
+        "GA26-03"
       ]
     },
     {
@@ -1051,7 +1226,8 @@
       "axes": "Propulsión, generación eléctrica, auxiliares y emergencia.",
       "teacher": [
         "G31"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M007",
@@ -1059,7 +1235,8 @@
       "unit": 1,
       "question": "¿Cómo distinguirías un motor de dos tiempos de uno de cuatro tiempos observando su funcionamiento?",
       "axes": "Renovación de carga, vueltas y carreras por ciclo.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M008",
@@ -1067,7 +1244,8 @@
       "unit": 1,
       "question": "¿Qué criterios se usan para hablar de motores lentos, semirrápidos y rápidos?",
       "axes": "Régimen, diseño y aplicación; evitar límites universales.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M009",
@@ -1075,7 +1253,8 @@
       "unit": 1,
       "question": "¿Qué ventajas y limitaciones tienen las disposiciones en línea, V, W, horizontales opuestos y radiales?",
       "axes": "Espacio, accesibilidad y complejidad; aplicación naval habitual o excepcional.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M010",
@@ -1083,7 +1262,8 @@
       "unit": 1,
       "question": "¿Qué significan monocilíndrico, policilíndrico, simple efecto y doble efecto?",
       "axes": "Cantidad de cilindros y caras del pistón sobre las que actúa el gas; distinguir pistones opuestos.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M011",
@@ -1091,7 +1271,8 @@
       "unit": 1,
       "question": "¿Cómo se relacionan potencia, régimen y servicio al elegir un motor propulsor o un grupo electrógeno?",
       "axes": "Curvas del motor, carga accionada y régimen continuo admisible.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M012",
@@ -1099,7 +1280,8 @@
       "unit": 1,
       "question": "¿Qué datos de la placa y del manual necesitás antes de estudiar u operar un motor concreto?",
       "axes": "Modelo, serie, potencia, rpm, combustible, límites y esquema de sistemas.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M013",
@@ -1109,7 +1291,8 @@
       "axes": "Identificarlos en un corte y justificar su clasificación.",
       "teacher": [
         "G05"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M014",
@@ -1119,7 +1302,8 @@
       "axes": "Sostén, rigidez, alineación y transmisión de cargas al casco.",
       "teacher": [
         "G18"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M015",
@@ -1127,7 +1311,8 @@
       "unit": 2,
       "question": "¿Cómo llegan las fuerzas de combustión desde la culata y el pistón hasta la bancada?",
       "axes": "Trayectoria de esfuerzos por tirantes, estructura, biela y cojinetes.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M016",
@@ -1135,7 +1320,8 @@
       "unit": 2,
       "question": "¿Qué es el cárter y cómo cambian sus funciones en un motor de tronco y uno de cruceta?",
       "axes": "Encerramiento, lubricante, separación de espacios y ventilación prevista.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M017",
@@ -1143,7 +1329,8 @@
       "unit": 2,
       "question": "¿Qué materiales y características se requieren en bloque, bastidor y bancada?",
       "axes": "Resistencia, rigidez, amortiguación, peso y reparación.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M018",
@@ -1151,7 +1338,8 @@
       "unit": 2,
       "question": "¿En qué se diferencian un cilindro enterizo, una camisa seca y una camisa húmeda?",
       "axes": "Contacto con refrigerante, apoyo y transferencia de calor.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M019",
@@ -1159,7 +1347,10 @@
       "unit": 2,
       "question": "¿Qué ventajas y dificultades presenta una camisa húmeda frente a una seca?",
       "axes": "Sustitución, refrigeración, estanqueidad y cavitación.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "PB26-08"
+      ]
     },
     {
       "id": "M020",
@@ -1167,7 +1358,8 @@
       "unit": 2,
       "question": "¿Qué sellos separan gases, agua y aceite alrededor de una camisa húmeda?",
       "axes": "Apoyo superior, juntas inferiores y vías de fuga.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M021",
@@ -1175,7 +1367,8 @@
       "unit": 2,
       "question": "¿Por qué importan el asiento y la protrusión de la camisa en el bloque?",
       "axes": "Apriete de la junta, apoyo uniforme y medida prescrita.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M022",
@@ -1183,7 +1376,8 @@
       "unit": 2,
       "question": "¿Qué función cumplen el material, el acabado y el bruñido de una camisa?",
       "axes": "Resistencia al desgaste, retención de aceite y asentamiento de aros.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M023",
@@ -1191,7 +1385,8 @@
       "unit": 2,
       "question": "¿Cómo se miden conicidad, ovalización y desgaste de una camisa?",
       "axes": "Alturas, direcciones, alesómetro y comparación con límites.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M024",
@@ -1199,7 +1394,10 @@
       "unit": 2,
       "question": "¿Cómo distinguirías desgaste abrasivo, corrosión y cavitación en una camisa?",
       "axes": "Aspecto, cara afectada y causas probables.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "PB26-08"
+      ]
     },
     {
       "id": "M025",
@@ -1207,7 +1405,8 @@
       "unit": 2,
       "question": "¿Qué función cumplen culata, culatín y tapa de cilindro y cómo se emplean esos nombres?",
       "axes": "Cierre, cámara, alojamientos y terminología del fabricante.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M026",
@@ -1215,7 +1414,8 @@
       "unit": 2,
       "question": "¿Qué diferencias constructivas esperarías entre una culata Otto, una diésel de cuatro tiempos y una diésel uniflujo de dos tiempos?",
       "axes": "Bujía o inyector, válvulas y refrigeración.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M027",
@@ -1223,7 +1423,8 @@
       "unit": 2,
       "question": "¿Qué señales hacen sospechar una junta de culata dañada, una fisura o una deformación?",
       "axes": "Fugas de gases, mezclas de fluidos y comprobaciones diferenciales.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M028",
@@ -1231,7 +1432,8 @@
       "unit": 2,
       "question": "¿Por qué deben respetarse orden, método y condiciones de apriete de la culata?",
       "axes": "Carga de sujeción, deformación, tornillos y especificación del manual.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M029",
@@ -1239,7 +1441,8 @@
       "unit": 2,
       "question": "¿Qué partes tiene un pistón y qué función cumple cada una?",
       "axes": "Corona, falda, gargantas y alojamientos del perno o vástago.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M030",
@@ -1247,7 +1450,8 @@
       "unit": 2,
       "question": "¿Cómo se seleccionan materiales y refrigeración del pistón según las cargas térmicas y mecánicas?",
       "axes": "Aleaciones, acero, pistón compuesto y circulación de refrigerante.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M031",
@@ -1255,7 +1459,8 @@
       "unit": 2,
       "question": "¿Por qué el juego pistón camisa y la dilatación térmica condicionan el funcionamiento?",
       "axes": "Medición en puntos definidos, gripado y golpeteo.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M032",
@@ -1263,7 +1468,10 @@
       "unit": 2,
       "question": "¿Cuáles son las funciones de los aros de compresión, intermedios y de control de aceite?",
       "axes": "Sellado, transferencia térmica y regulación de película; diferencias por diseño.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "PA26-05"
+      ]
     },
     {
       "id": "M033",
@@ -1271,7 +1479,10 @@
       "unit": 2,
       "question": "¿Cómo intervienen la elasticidad del aro y los gases detrás de él en el sellado?",
       "axes": "Presión radial, garganta y contacto con la camisa.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "PA26-05"
+      ]
     },
     {
       "id": "M034",
@@ -1279,7 +1490,8 @@
       "unit": 2,
       "question": "¿Qué propiedades necesitan los materiales y revestimientos de los aros?",
       "axes": "Desgaste, elasticidad, temperatura y compatibilidad con la camisa.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M035",
@@ -1287,7 +1499,10 @@
       "unit": 2,
       "question": "¿Cómo se verifican la luz entre puntas, el juego axial y el juego radial de los aros?",
       "axes": "Instrumentos, escuadrado, posición de medida y límites del fabricante.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "PA26-05"
+      ]
     },
     {
       "id": "M036",
@@ -1295,7 +1510,10 @@
       "unit": 2,
       "question": "¿Qué errores de montaje de aros pueden producir consumo de aceite o rayado?",
       "axes": "Orientación, expansor, herramienta y posiciones de juntas según diseño.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "PA26-05"
+      ]
     },
     {
       "id": "M037",
@@ -1303,7 +1521,8 @@
       "unit": 2,
       "question": "¿Qué es el blow-by y cómo se relaciona con aros, camisa, compresión y aceite?",
       "axes": "Paso de gases, indicios y diagnóstico sin atribuir toda fuga a una sola pieza.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M038",
@@ -1311,7 +1530,10 @@
       "unit": 2,
       "question": "¿Por qué las lumbreras exigen cuidados particulares en aros y camisas de motores de dos tiempos?",
       "axes": "Bordes, orientación, retenciones cuando existan y riesgo de enganche.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "PA26-05"
+      ]
     },
     {
       "id": "M039",
@@ -1319,7 +1541,12 @@
       "unit": 2,
       "question": "¿Qué función cumple el perno del pistón y qué tipos de montaje puede tener?",
       "axes": "Fijo, semiflotante o flotante, seguros, bujes y lubricación.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "PA26-03",
+        "PA26-04",
+        "CB26-06"
+      ]
     },
     {
       "id": "M040",
@@ -1330,6 +1557,11 @@
       "teacher": [
         "G06",
         "G38"
+      ],
+      "exams": [
+        "GA26-09",
+        "PA26-01",
+        "PB26-03"
       ]
     },
     {
@@ -1338,7 +1570,12 @@
       "unit": 2,
       "question": "¿Qué partes, materiales y esfuerzos caracterizan a una biela?",
       "axes": "Pie, cuerpo, cabeza; compresión, tracción, flexión y fatiga.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "GA26-09",
+        "PA26-01",
+        "PB26-03"
+      ]
     },
     {
       "id": "M042",
@@ -1346,7 +1583,11 @@
       "unit": 2,
       "question": "¿Qué diferencias presentan una biela convencional, una articulada y una de horquilla?",
       "axes": "Uniones al cigüeñal, disposición de cilindros y geometría.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "PA26-09",
+        "G21-02"
+      ]
     },
     {
       "id": "M043",
@@ -1354,7 +1595,8 @@
       "unit": 2,
       "question": "¿Por qué los tornillos de biela y las superficies de unión son críticos?",
       "axes": "Precarga, método de apriete, reutilización permitida y consecuencias del aflojamiento.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M044",
@@ -1362,7 +1604,12 @@
       "unit": 2,
       "question": "¿Qué son vástago, cruceta, patines y guías, y qué elemento recibe el empuje lateral?",
       "axes": "Cadena de movimiento y diferencia entre patines móviles y guías fijas.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "GA26-09",
+        "PA26-01",
+        "PB26-03"
+      ]
     },
     {
       "id": "M045",
@@ -1370,7 +1617,12 @@
       "unit": 2,
       "question": "¿Qué función cumple la caja de empaquetadura del vástago en un motor de cruceta?",
       "axes": "Separación entre espacios, rascado, drenajes y control de fugas.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "GA26-09",
+        "PA26-01",
+        "PB26-03"
+      ]
     },
     {
       "id": "M046",
@@ -1381,6 +1633,12 @@
       "teacher": [
         "C01",
         "C35"
+      ],
+      "exams": [
+        "CB26-01",
+        "CB26-02",
+        "CSF-01",
+        "CSF-02"
       ]
     },
     {
@@ -1389,7 +1647,8 @@
       "unit": 2,
       "question": "¿Cómo identificás muñones de bancada, muñequillas de biela, brazos, radios de unión y contrapesos?",
       "axes": "Nomenclatura y función de cada parte en un croquis.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M048",
@@ -1399,6 +1658,12 @@
       "axes": "Resistencia a fatiga, flexión y torsión; acero forjado o fundición según diseño.",
       "teacher": [
         "C02"
+      ],
+      "exams": [
+        "CB26-01",
+        "CB26-02",
+        "CSF-01",
+        "CSF-02"
       ]
     },
     {
@@ -1410,6 +1675,12 @@
       "teacher": [
         "C03",
         "C36"
+      ],
+      "exams": [
+        "CB26-01",
+        "CB26-02",
+        "CSF-01",
+        "CSF-02"
       ]
     },
     {
@@ -1420,7 +1691,8 @@
       "axes": "Límites industriales de fabricación y transporte; evitar una prohibición metalúrgica absoluta.",
       "teacher": [
         "C37"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M051",
@@ -1430,7 +1702,8 @@
       "axes": "Brazos, muñequilla y montaje por interferencia según construcción.",
       "teacher": [
         "C38"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M052",
@@ -1440,7 +1713,8 @@
       "axes": "Menor concentración de tensiones que el grafito laminar y propiedades resultantes.",
       "teacher": [
         "C39"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M053",
@@ -1450,7 +1724,8 @@
       "axes": "Temple por inducción, nitruración u otros según material; no todos reciben el mismo proceso.",
       "teacher": [
         "C40"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M054",
@@ -1461,6 +1736,16 @@
       "teacher": [
         "C04",
         "C43"
+      ],
+      "exams": [
+        "CB26-01",
+        "CB26-02",
+        "CB26-04",
+        "CB26-05",
+        "CB26-10",
+        "CSF-01",
+        "CSF-02",
+        "CSF-03"
       ]
     },
     {
@@ -1471,7 +1756,8 @@
       "axes": "Redistribución de cargas, desalineación, flexión y fatiga.",
       "teacher": [
         "C41"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M056",
@@ -1481,6 +1767,13 @@
       "axes": "Posiciones angulares, referencias, condición térmica y procedimiento del motor.",
       "teacher": [
         "C06"
+      ],
+      "exams": [
+        "CB26-04",
+        "CB26-05",
+        "CB26-10",
+        "CSF-02",
+        "CSF-03"
       ]
     },
     {
@@ -1492,6 +1785,13 @@
       "teacher": [
         "C30",
         "C42"
+      ],
+      "exams": [
+        "CB26-04",
+        "CB26-05",
+        "CB26-10",
+        "CSF-02",
+        "CSF-03"
       ]
     },
     {
@@ -1500,7 +1800,8 @@
       "unit": 2,
       "question": "¿Qué función tienen las cánulas y los taladros de lubricación del cigüeñal?",
       "axes": "Recorrido del aceite, limpieza y efecto de una obstrucción.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M059",
@@ -1510,7 +1811,8 @@
       "axes": "Soportar cargas, guiar el eje, permitir película lubricante y evacuar calor.",
       "teacher": [
         "C07"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M060",
@@ -1521,6 +1823,15 @@
       "teacher": [
         "C10",
         "C12"
+      ],
+      "exams": [
+        "CB26-07",
+        "CB26-08",
+        "CB26-09",
+        "CB26-10",
+        "CSF-04",
+        "CSF-07",
+        "CSF-08"
       ]
     },
     {
@@ -1532,6 +1843,15 @@
       "teacher": [
         "C11",
         "C21"
+      ],
+      "exams": [
+        "CB26-07",
+        "CB26-08",
+        "CB26-09",
+        "CB26-10",
+        "CSF-04",
+        "CSF-07",
+        "CSF-08"
       ]
     },
     {
@@ -1542,6 +1862,15 @@
       "axes": "Fuerzas alternativas y rotativas, magnitud y dirección variable.",
       "teacher": [
         "C13"
+      ],
+      "exams": [
+        "CB26-07",
+        "CB26-08",
+        "CB26-09",
+        "CB26-10",
+        "CSF-04",
+        "CSF-07",
+        "CSF-08"
       ]
     },
     {
@@ -1552,6 +1881,15 @@
       "axes": "Semicasquillos, alojamiento, ajuste y construcciones mono o multicapa.",
       "teacher": [
         "C16"
+      ],
+      "exams": [
+        "CB26-07",
+        "CB26-08",
+        "CB26-09",
+        "CB26-10",
+        "CSF-04",
+        "CSF-07",
+        "CSF-08"
       ]
     },
     {
@@ -1562,7 +1900,8 @@
       "axes": "Conformabilidad, incrustabilidad, fatiga y selección según diseño, sin regla exclusiva por combustible.",
       "teacher": [
         "C33"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M065",
@@ -1572,6 +1911,15 @@
       "axes": "Fricción de arranque, precisión y condiciones de montaje y lubricación.",
       "teacher": [
         "C17"
+      ],
+      "exams": [
+        "CB26-07",
+        "CB26-08",
+        "CB26-09",
+        "CB26-10",
+        "CSF-04",
+        "CSF-07",
+        "CSF-08"
       ]
     },
     {
@@ -1582,6 +1930,15 @@
       "axes": "Vida a fatiga, montaje, ruido y límites del tipo seleccionado.",
       "teacher": [
         "C18"
+      ],
+      "exams": [
+        "CB26-07",
+        "CB26-08",
+        "CB26-09",
+        "CB26-10",
+        "CSF-04",
+        "CSF-07",
+        "CSF-08"
       ]
     },
     {
@@ -1592,7 +1949,8 @@
       "axes": "Reducción de fricción y desgaste, protección anticorrosiva y eventual extracción de calor.",
       "teacher": [
         "C19"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M068",
@@ -1602,7 +1960,8 @@
       "axes": "Volumen libre, velocidad y recomendación específica; batido y calentamiento.",
       "teacher": [
         "C20"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M069",
@@ -1612,6 +1971,15 @@
       "axes": "Collar plano, rodante o patines basculantes; transmisión del empuje al casco.",
       "teacher": [
         "C22"
+      ],
+      "exams": [
+        "CB26-07",
+        "CB26-08",
+        "CB26-09",
+        "CB26-10",
+        "CSF-04",
+        "CSF-07",
+        "CSF-08"
       ]
     },
     {
@@ -1620,7 +1988,8 @@
       "unit": 2,
       "question": "¿Cómo se comprueban el juego axial o tiraje del cigüeñal y sus efectos sobre el motor?",
       "axes": "Referencia del fabricante, instrumento, desplazamiento y desgaste del apoyo axial.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M071",
@@ -1630,6 +1999,11 @@
       "axes": "Diferencia de diámetros, caudal, película, impactos y límites; no confundir con luz radial.",
       "teacher": [
         "C26"
+      ],
+      "exams": [
+        "PA26-03",
+        "PA26-04",
+        "CB26-06"
       ]
     },
     {
@@ -1640,7 +2014,8 @@
       "axes": "Selección del instrumento, calibración, temperatura y técnica de lectura.",
       "teacher": [
         "C27"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M073",
@@ -1650,7 +2025,8 @@
       "axes": "Espesor marcado, limpieza y ajuste sin forzar.",
       "teacher": [
         "C28"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M074",
@@ -1660,6 +2036,13 @@
       "axes": "Tendencia de desgaste; no equiparar automáticamente con huelgo directo.",
       "teacher": [
         "C29"
+      ],
+      "exams": [
+        "CB26-04",
+        "CB26-05",
+        "CB26-10",
+        "CSF-02",
+        "CSF-03"
       ]
     },
     {
@@ -1670,7 +2053,8 @@
       "axes": "Energía cinética, fluctuaciones de velocidad e inspección.",
       "teacher": [
         "G15"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M076",
@@ -1682,6 +2066,11 @@
         "G02",
         "G32",
         "G37"
+      ],
+      "exams": [
+        "GA26-08",
+        "GA26-09",
+        "PA26-10"
       ]
     },
     {
@@ -1692,6 +2081,11 @@
       "axes": "S = 2r; distinguir radio de manivela de longitud de biela.",
       "teacher": [
         "C34"
+      ],
+      "exams": [
+        "GA26-08",
+        "GA26-09",
+        "PA26-10"
       ]
     },
     {
@@ -1702,7 +2096,8 @@
       "axes": "Eje de bancada, muñequilla excéntrica, brazos y radio.",
       "teacher": [
         "G36"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M079",
@@ -1710,7 +2105,12 @@
       "unit": 3,
       "question": "¿Qué expresa la relación carrera diámetro y cómo distingue motores largos, cuadrados y supercuadrados?",
       "axes": "S/D mayor, igual o menor que uno; no determina por sí sola el ciclo.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "GA26-08",
+        "GA26-09",
+        "PA26-10"
+      ]
     },
     {
       "id": "M080",
@@ -1718,7 +2118,8 @@
       "unit": 3,
       "question": "¿Cómo influye la longitud de biela respecto del radio de manivela en el movimiento del pistón?",
       "axes": "Oblicuidad, velocidad variable y empuje lateral; explicación con croquis sin desarrollar ecuaciones.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M081",
@@ -1728,6 +2129,11 @@
       "axes": "A = pi D²/4; Vd = A S; Vtotal desplazado = z Vd, con unidades consistentes.",
       "teacher": [
         "G34"
+      ],
+      "exams": [
+        "GA26-08",
+        "GA26-09",
+        "PA26-10"
       ]
     },
     {
@@ -1738,7 +2144,8 @@
       "axes": "Volumen remanente en PMS y volumen barrido.",
       "teacher": [
         "G35"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M083",
@@ -1748,7 +2155,8 @@
       "axes": "Espacio ocupado por el gas y zonas donde se inicia y desarrolla la combustión.",
       "teacher": [
         "G33"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M084",
@@ -1756,7 +2164,12 @@
       "unit": 3,
       "question": "¿Qué es la relación de compresión geométrica y cómo se obtiene?",
       "axes": "epsilon = (Vd + Vc)/Vc; no es una presión en bar.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "GA26-08",
+        "GA26-09",
+        "PA26-10"
+      ]
     },
     {
       "id": "M085",
@@ -1766,7 +2179,8 @@
       "axes": "Presión y temperatura inicial, fugas, cierre de admisión, velocidad y transferencia de calor.",
       "teacher": [
         "G47"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M086",
@@ -1774,7 +2188,8 @@
       "unit": 3,
       "question": "¿Cómo se numeran los cilindros y se define el sentido de giro de un motor?",
       "axes": "Punto de observación y convención del fabricante.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M087",
@@ -1782,7 +2197,8 @@
       "unit": 3,
       "question": "¿Qué diferencias hay entre régimen del cigüeñal y velocidad media del pistón?",
       "axes": "rpm frente a m/s; cm = 2 S n/60.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M088",
@@ -1790,7 +2206,8 @@
       "unit": 3,
       "question": "¿Qué es el torque y qué relación tiene con fuerza y brazo perpendicular?",
       "axes": "M = F r; unidad N m y dependencia de la posición de la manivela.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M089",
@@ -1798,7 +2215,8 @@
       "unit": 3,
       "question": "¿Cómo se relacionan potencia y torque con las rpm?",
       "axes": "P en kW = M n/9550; interpretar antes de reemplazar datos.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M090",
@@ -1806,7 +2224,8 @@
       "unit": 3,
       "question": "Un motor tiene cuatro cilindros, diámetro de 100 mm y carrera de 120 mm. ¿Cuál es su cilindrada total y su relación S/D?",
       "axes": "Convertir unidades, calcular y explicar el resultado físico.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M091",
@@ -1814,7 +2233,8 @@
       "unit": 3,
       "question": "Si el motor anterior gira a 1500 rpm y entrega 400 N m, ¿cuáles son su velocidad media de pistón y su potencia?",
       "axes": "Aplicar dos fórmulas básicas y distinguir ambas magnitudes.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M092",
@@ -1825,7 +2245,8 @@
       "teacher": [
         "G27",
         "G28"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M093",
@@ -1836,7 +2257,8 @@
       "teacher": [
         "G39",
         "G40"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M094",
@@ -1846,6 +2268,14 @@
       "axes": "Admisión, compresión, combustión expansión y escape con posición de válvulas.",
       "teacher": [
         "G30"
+      ],
+      "exams": [
+        "GA26-01",
+        "GA26-03",
+        "GA26-06",
+        "GA26-07",
+        "G21-06",
+        "G21-07"
       ]
     },
     {
@@ -1856,6 +2286,14 @@
       "axes": "Trabajo de compresión, calentamiento y estanqueidad.",
       "teacher": [
         "G11"
+      ],
+      "exams": [
+        "GA26-01",
+        "GA26-03",
+        "GA26-06",
+        "GA26-07",
+        "G21-06",
+        "G21-07"
       ]
     },
     {
@@ -1864,7 +2302,8 @@
       "unit": 4,
       "question": "¿Cómo se desarrolla el ciclo Otto de cuatro tiempos y dónde se prepara la mezcla?",
       "axes": "Variantes carburadas, inyección indirecta y directa.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M097",
@@ -1874,6 +2313,14 @@
       "axes": "Compresión, combustión, expansión, escape y barrido.",
       "teacher": [
         "G57"
+      ],
+      "exams": [
+        "GA26-01",
+        "GA26-03",
+        "GA26-06",
+        "GA26-07",
+        "G21-06",
+        "G21-07"
       ]
     },
     {
@@ -1884,6 +2331,14 @@
       "axes": "Expansión, apertura de escape y comienzo de barrido según diseño.",
       "teacher": [
         "G53"
+      ],
+      "exams": [
+        "GA26-01",
+        "GA26-03",
+        "GA26-06",
+        "GA26-07",
+        "G21-06",
+        "G21-07"
       ]
     },
     {
@@ -1894,6 +2349,14 @@
       "axes": "Final del barrido, cierre de comunicaciones, compresión e inyección.",
       "teacher": [
         "G54"
+      ],
+      "exams": [
+        "GA26-01",
+        "GA26-03",
+        "GA26-06",
+        "GA26-07",
+        "G21-06",
+        "G21-07"
       ]
     },
     {
@@ -1902,7 +2365,8 @@
       "unit": 4,
       "question": "¿Cómo trabaja un Otto de dos tiempos que comprime la mezcla en el cárter?",
       "axes": "Aspiración al cárter, transferencia, escape y encendido; diferencia con diésel de cruceta.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M101",
@@ -1912,7 +2376,8 @@
       "axes": "Pistón para lumbreras y mecanismo de válvula de escape en uniflujo cuando existe.",
       "teacher": [
         "G16"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M102",
@@ -1920,7 +2385,8 @@
       "unit": 4,
       "question": "¿Qué representa el ciclo de Carnot y por qué sirve como límite conceptual?",
       "axes": "Dos isotermas, dos adiabáticas reversibles y temperaturas absolutas.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M103",
@@ -1928,7 +2394,8 @@
       "unit": 4,
       "question": "¿Qué diferencias hay entre los ciclos ideales Otto, Diesel y mixto?",
       "axes": "Forma idealizada de aportación de calor y diagrama presión volumen.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M104",
@@ -1936,7 +2403,8 @@
       "unit": 4,
       "question": "¿Qué diferencias separan el ciclo ideal del ciclo real?",
       "axes": "Combustión finita, transferencia de calor, renovación de carga y pérdidas.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M105",
@@ -1944,7 +2412,8 @@
       "unit": 4,
       "question": "¿Qué representa el área encerrada en un diagrama presión volumen?",
       "axes": "Trabajo neto por ciclo y unidades; identificar el lazo de bombeo.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M106",
@@ -1952,7 +2421,8 @@
       "unit": 4,
       "question": "¿Cómo dibujarías un diagrama circular de cuatro tiempos?",
       "axes": "PMS, PMI, 720 grados y eventos de admisión, escape e inyección.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M107",
@@ -1960,7 +2430,8 @@
       "unit": 4,
       "question": "¿Cómo dibujarías un diagrama circular de dos tiempos?",
       "axes": "360 grados, aperturas y cierres y fase de barrido.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M108",
@@ -1970,7 +2441,8 @@
       "axes": "Tiempo de apertura, movimiento del gas y duración de combustión.",
       "teacher": [
         "G41"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M109",
@@ -1981,6 +2453,9 @@
       "teacher": [
         "G12",
         "G43"
+      ],
+      "exams": [
+        "D26-05"
       ]
     },
     {
@@ -1991,7 +2466,8 @@
       "axes": "Descarga inicial, pérdida de expansión y menor trabajo de expulsión.",
       "teacher": [
         "G44"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M111",
@@ -2001,7 +2477,8 @@
       "axes": "Renovación de carga, solape y condiciones de presión.",
       "teacher": [
         "G45"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M112",
@@ -2012,7 +2489,8 @@
       "teacher": [
         "G13",
         "G46"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M113",
@@ -2023,7 +2501,8 @@
       "teacher": [
         "G19",
         "G42"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M114",
@@ -2034,7 +2513,8 @@
       "teacher": [
         "G48",
         "G49"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M115",
@@ -2046,7 +2526,8 @@
         "G14",
         "G50",
         "G51"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M116",
@@ -2056,7 +2537,8 @@
       "axes": "Descarga, pulsos, turbina y lugar de medición; no usar un único valor.",
       "teacher": [
         "G52"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M117",
@@ -2064,7 +2546,8 @@
       "unit": 4,
       "question": "¿Qué ventajas y desventajas presentan diésel y Otto para distintas tareas navales?",
       "axes": "Consumo, masa, costo, seguridad del combustible y mantenimiento.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M118",
@@ -2074,7 +2557,8 @@
       "axes": "Fricción, auxiliares de barrido, potencia y condiciones de comparación.",
       "teacher": [
         "G17"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M119",
@@ -2082,7 +2566,8 @@
       "unit": 4,
       "question": "¿Cómo distinguirías en un diagrama indicado una baja compresión de una combustión atrasada?",
       "axes": "Forma de las curvas, sincronización y contraste con otros cilindros.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M120",
@@ -2090,7 +2575,10 @@
       "unit": 5,
       "question": "¿Qué función tiene la distribución y qué procesos sincroniza con el cigüeñal?",
       "axes": "Entrada y salida de gases y relación con inyección o encendido.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "GA26-10"
+      ]
     },
     {
       "id": "M121",
@@ -2098,7 +2586,10 @@
       "unit": 5,
       "question": "¿Qué es un camón o leva y cómo su perfil determina alzada, duración y aceleración?",
       "axes": "Círculo base, rampas, flancos y nariz.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "GA26-10"
+      ]
     },
     {
       "id": "M122",
@@ -2106,7 +2597,8 @@
       "unit": 5,
       "question": "¿Qué materiales, apoyos y lubricación requiere un árbol de levas?",
       "axes": "Desgaste de contactos, rigidez, engrase y fijación axial.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M123",
@@ -2114,7 +2606,10 @@
       "unit": 5,
       "question": "¿Cómo se transmite el movimiento desde una leva hasta una válvula?",
       "axes": "Botador, varilla, balancín y variantes de accionamiento directo.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "GA26-10"
+      ]
     },
     {
       "id": "M124",
@@ -2122,7 +2617,10 @@
       "unit": 5,
       "question": "¿Qué diferencias hay entre botadores mecánicos, de rodillo e hidráulicos?",
       "axes": "Contacto, ajuste de holgura, alimentación de aceite y fallas.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "GA26-10"
+      ]
     },
     {
       "id": "M125",
@@ -2130,7 +2628,10 @@
       "unit": 5,
       "question": "¿Qué funciones cumplen varillas y balancines y qué defectos alteran su trabajo?",
       "axes": "Transmisión, relación de palanca, desgaste y deformación.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "GA26-10"
+      ]
     },
     {
       "id": "M126",
@@ -2138,7 +2639,8 @@
       "unit": 5,
       "question": "¿Qué partes y materiales caracterizan a una válvula de admisión y a una de escape?",
       "axes": "Cabeza, vástago, asiento y distintas exigencias térmicas.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M127",
@@ -2146,7 +2648,8 @@
       "unit": 5,
       "question": "¿Cómo cambian la distribución y la cámara al disponer válvulas laterales, en culata o varias por cilindro?",
       "axes": "Recorrido de gases, espacio disponible y mecanismos de accionamiento.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M128",
@@ -2154,7 +2657,8 @@
       "unit": 5,
       "question": "¿Qué funciones cumplen asiento y guía de válvula?",
       "axes": "Estanqueidad, centrado, disipación de calor y juego de vástago.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M129",
@@ -2162,7 +2666,8 @@
       "unit": 5,
       "question": "¿Cómo se distinguen asientos integrales, insertados y denominados flotantes en el material de clase?",
       "axes": "Identificar la construcción del dibujo y confirmar la nomenclatura específica.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M130",
@@ -2170,7 +2675,10 @@
       "unit": 5,
       "question": "¿Para qué sirven los resortes de válvula y qué ocurre si pierden fuerza o se rompen?",
       "axes": "Cierre, seguimiento de leva y riesgo de contacto con el pistón.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "GA26-10"
+      ]
     },
     {
       "id": "M131",
@@ -2178,7 +2686,8 @@
       "unit": 5,
       "question": "¿Qué es la luz de válvulas y por qué se ajusta en una condición definida?",
       "axes": "Dilatación, leva en círculo base y valor en frío o caliente según manual.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M132",
@@ -2186,7 +2695,8 @@
       "unit": 5,
       "question": "¿Qué síntomas provoca una luz de válvula demasiado pequeña o demasiado grande?",
       "axes": "Pérdida de cierre, quemado, ruido y alteración de eventos.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M133",
@@ -2194,7 +2704,10 @@
       "unit": 5,
       "question": "¿Qué ventajas y fallas presentan cadenas, correas y trenes de engranajes de distribución?",
       "axes": "Sincronismo, tensión, juego, lubricación y mantenimiento.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "GA26-10"
+      ]
     },
     {
       "id": "M134",
@@ -2202,7 +2715,10 @@
       "unit": 5,
       "question": "¿Qué relación de velocidades corresponde al árbol de levas de un cuatro tiempos y al de un dos tiempos convencional?",
       "axes": "Mitad de rpm o mismas rpm cuando el árbol acciona eventos de cada ciclo.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "GA26-10"
+      ]
     },
     {
       "id": "M135",
@@ -2210,7 +2726,8 @@
       "unit": 5,
       "question": "¿Cómo se verifica la puesta a punto de distribución?",
       "axes": "Marcas, PMS de referencia, sentido de giro y comprobación de eventos.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M136",
@@ -2218,7 +2735,8 @@
       "unit": 5,
       "question": "¿Qué diferencias hay entre distribución mecánica y accionamiento electrohidráulico en motores grandes?",
       "axes": "Orden electrónica, actuador, fluido de mando y ausencia posible de árbol convencional.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M137",
@@ -2226,7 +2744,8 @@
       "unit": 5,
       "question": "¿Cómo distinguirías una válvula que no sella de un inyector que no aporta combustible?",
       "axes": "Compresión, temperatura de escape y pruebas autorizadas.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M138",
@@ -2234,7 +2753,8 @@
       "unit": 5,
       "question": "Después de intervenir distribución, ¿qué comprobaciones preceden al primer arranque?",
       "axes": "Sincronismo, holguras, giro controlado, herramientas retiradas y protecciones.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M139",
@@ -2242,7 +2762,8 @@
       "unit": 6,
       "question": "¿Qué propiedades del combustible condicionan el funcionamiento de un diésel naval?",
       "axes": "Densidad, viscosidad, poder calorífico, cetano, inflamación, derrame, azufre y contaminantes.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M140",
@@ -2250,7 +2771,8 @@
       "unit": 6,
       "question": "¿Cómo distinguís poder calorífico del combustible y potencia térmica suministrada al motor?",
       "axes": "Energía por masa frente a energía por tiempo; PCI y caudal másico.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M141",
@@ -2258,7 +2780,8 @@
       "unit": 6,
       "question": "¿Qué expresa el número de cetano y cómo influye en el retraso de encendido?",
       "axes": "Aptitud de autoencendido, arranque y brusquedad de combustión.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M142",
@@ -2266,7 +2789,8 @@
       "unit": 6,
       "question": "¿Qué diferencias hay entre punto de inflamación, autoignición y punto de derrame?",
       "axes": "Fenómenos y ensayos distintos; consecuencias operativas.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M143",
@@ -2274,7 +2798,8 @@
       "unit": 6,
       "question": "¿Por qué importan viscosidad y temperatura a la entrada del sistema de inyección?",
       "axes": "Bombeabilidad, atomización y lubricación de componentes.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M144",
@@ -2282,7 +2807,8 @@
       "unit": 6,
       "question": "¿Cómo afecta el azufre del combustible a depósitos, corrosión y selección del aceite?",
       "axes": "Formación de compuestos ácidos, temperatura y reserva alcalina apropiada.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M145",
@@ -2290,7 +2816,8 @@
       "unit": 6,
       "question": "Dibujá el recorrido completo del combustible desde almacenamiento hasta retorno. ¿Qué hace cada equipo?",
       "axes": "Trasiego, decantación cuando existe, tratamiento, servicio, alimentación, filtros e inyección.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M146",
@@ -2298,7 +2825,8 @@
       "unit": 6,
       "question": "¿Qué diferencias funcionales hay entre alimentación de baja presión e inyección de alta presión?",
       "axes": "Caudal, filtrado, dosificación, presión y momento de entrega.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M147",
@@ -2306,7 +2834,8 @@
       "unit": 6,
       "question": "¿Cómo compararías bomba línea inyector, bomba unitaria, inyector bomba y common rail?",
       "axes": "Lugar donde se genera presión, acumulación y control de entrega.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M148",
@@ -2314,7 +2843,10 @@
       "unit": 6,
       "question": "¿Cómo funciona una bomba inyectora tipo Bosch de émbolo y hélice?",
       "axes": "Llenado, carrera efectiva, derrame, cremallera y corte de suministro.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "D26-05"
+      ]
     },
     {
       "id": "M149",
@@ -2322,7 +2854,10 @@
       "unit": 6,
       "question": "¿Qué función tiene la válvula de impulsión y qué efectos producen las ondas de presión en las tuberías?",
       "axes": "Fin de inyección, presión residual y geometría de líneas según diseño.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "D26-05"
+      ]
     },
     {
       "id": "M150",
@@ -2330,7 +2865,8 @@
       "unit": 6,
       "question": "¿Qué hace el acumulador common rail y cómo se relacionan bomba, sensor, regulador e inyectores?",
       "axes": "Presión almacenada y control del instante y cantidad inyectada.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M151",
@@ -2338,7 +2874,10 @@
       "unit": 6,
       "question": "¿Cuáles son las partes de un inyector mecánico y cómo abre y cierra su aguja?",
       "axes": "Cuerpo, tobera, aguja, resorte y fuerzas hidráulicas.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "D26-05"
+      ]
     },
     {
       "id": "M152",
@@ -2346,7 +2885,8 @@
       "unit": 6,
       "question": "¿Qué significa presión de apertura o de ruptura del inyector?",
       "axes": "Apertura de aguja; distinguir de presión máxima de inyección y de combustión.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M153",
@@ -2354,7 +2894,8 @@
       "unit": 6,
       "question": "¿Por qué la presión de inyección debe superar la del cilindro durante la entrega?",
       "axes": "Diferencia de presión, flujo y formación del chorro.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M154",
@@ -2362,7 +2903,8 @@
       "unit": 6,
       "question": "¿Qué significan pulverización, atomización y penetración del combustible?",
       "axes": "Gotas, distribución espacial, evaporación y uso de términos del curso.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M155",
@@ -2370,7 +2912,8 @@
       "unit": 6,
       "question": "¿Qué sucede si el chorro penetra demasiado o demasiado poco?",
       "axes": "Mezcla deficiente, contacto con paredes, humo y cargas térmicas.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M156",
@@ -2378,7 +2921,10 @@
       "unit": 6,
       "question": "¿Qué fases reconocés en la combustión diésel real?",
       "axes": "Retraso de encendido, combustión premezclada y controlada por mezcla.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "D26-05"
+      ]
     },
     {
       "id": "M157",
@@ -2386,7 +2932,8 @@
       "unit": 6,
       "question": "¿Qué diferencia hay entre inyección directa e indirecta con cámara auxiliar?",
       "axes": "Cámara principal, precámara o torbellino, pérdidas y arranque.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M158",
@@ -2394,7 +2941,8 @@
       "unit": 6,
       "question": "¿Cómo funcionan las cámaras de precombustión, turbulencia y célula de energía descritas en los apuntes?",
       "axes": "Pasajes, movimiento de gases y finalidad; distinguir diseños históricos.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M159",
@@ -2402,7 +2950,8 @@
       "unit": 6,
       "question": "¿Qué diferencias presentan la inyección neumática histórica y la inyección mecánica?",
       "axes": "Fuente de energía para introducir combustible, equipos y limitaciones.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M160",
@@ -2410,7 +2959,8 @@
       "unit": 6,
       "question": "¿Cómo se comprueban estanqueidad, apertura y patrón de pulverización de un inyector?",
       "axes": "Banco adecuado, procedimiento, protección y comparación con datos del modelo.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M161",
@@ -2418,7 +2968,8 @@
       "unit": 6,
       "question": "¿Qué mantenimiento requieren tobera, aguja, filtros y retorno del sistema?",
       "axes": "Limpieza controlada, inspección, sustitución y prueba final.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M162",
@@ -2426,7 +2977,8 @@
       "unit": 6,
       "question": "¿Qué síntomas esperarías de una tobera que gotea o un inyector trabado?",
       "axes": "Humo, temperatura de escape, golpeteo, dilución y cilindro afectado.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M163",
@@ -2434,7 +2986,8 @@
       "unit": 6,
       "question": "¿Cómo distinguís aire en alimentación, filtro obstruido y bomba de inyección defectuosa?",
       "axes": "Presiones, continuidad del suministro, diferencial del filtro y pruebas ordenadas.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M164",
@@ -2442,7 +2995,8 @@
       "unit": 6,
       "question": "¿Qué consecuencias tienen inyección demasiado adelantada, atrasada o desigual entre cilindros?",
       "axes": "Picos de presión, trabajo, temperatura de escape y reparto de carga.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M165",
@@ -2450,7 +3004,8 @@
       "unit": 6,
       "question": "¿Qué riesgos presenta intervenir un sistema de alta presión y cómo se verifica la ausencia de presión residual?",
       "axes": "Aislamiento y descarga según manual; nunca buscar fugas con la mano.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M166",
@@ -2458,7 +3013,8 @@
       "unit": 6,
       "question": "¿Por qué no alcanza con aumentar combustible para recuperar potencia?",
       "axes": "Aire disponible, límites térmicos, humo y sobrecarga.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M167",
@@ -2466,7 +3022,8 @@
       "unit": 7,
       "question": "¿Qué significa relación aire combustible y qué distingue mezcla rica, pobre y estequiométrica?",
       "axes": "Relación másica, lambda y dependencia de composición del combustible.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M168",
@@ -2474,7 +3031,8 @@
       "unit": 7,
       "question": "¿Cómo funciona un carburador elemental?",
       "axes": "Cuba, flotante, surtidor, venturi y mariposa.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M169",
@@ -2482,7 +3040,8 @@
       "unit": 7,
       "question": "¿Qué circuitos permiten al carburador trabajar en arranque, ralentí, aceleración y carga?",
       "axes": "Enriquecimiento, transición y dosificación.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M170",
@@ -2490,7 +3049,8 @@
       "unit": 7,
       "question": "¿Qué diferencias hay entre carburadores de flujo ascendente, descendente y horizontal?",
       "axes": "Dirección del aire y disposición física; reconocer un esquema.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M171",
@@ -2498,7 +3058,8 @@
       "unit": 7,
       "question": "¿Cómo se comparan carburación e inyección de nafta en control de mezcla y consumo?",
       "axes": "Dosificación, transitorios y compensación de condiciones.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M172",
@@ -2506,7 +3067,8 @@
       "unit": 7,
       "question": "¿Qué diferencias hay entre inyección monopunto, multipunto y directa de nafta?",
       "axes": "Número y ubicación de inyectores; distinguir ubicación de estrategia temporal.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M173",
@@ -2514,7 +3076,8 @@
       "unit": 7,
       "question": "¿Qué significan inyección continua, intermitente, simultánea y secuencial?",
       "axes": "Momento de accionamiento; no suponer que toda secuencial ocurre con válvula abierta.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M174",
@@ -2522,7 +3085,8 @@
       "unit": 7,
       "question": "¿Cómo relaciona una ECU las señales de MAP o MAF, TPS y temperaturas con el combustible inyectado?",
       "axes": "Carga, masa de aire, arranque y actuadores.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M175",
@@ -2530,7 +3094,8 @@
       "unit": 7,
       "question": "¿Qué informa la sonda lambda y cuándo puede regularse la mezcla en lazo cerrado?",
       "axes": "Oxígeno en escape, condiciones de funcionamiento y límites del diagnóstico.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M176",
@@ -2538,7 +3103,8 @@
       "unit": 7,
       "question": "¿Cómo funciona un encendido convencional con bobina, ruptor, condensador y distribuidor?",
       "axes": "Circuitos primario y secundario y sincronización de la chispa.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M177",
@@ -2546,7 +3112,8 @@
       "unit": 7,
       "question": "¿Qué cambia en un encendido electrónico y qué señales necesita?",
       "axes": "Captación de posición, módulo o ECU y bobinas.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M178",
@@ -2554,7 +3121,8 @@
       "unit": 7,
       "question": "¿Qué función cumplen la bujía, su grado térmico y la luz entre electrodos?",
       "axes": "Chispa, disipación de calor y diagnóstico visual.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M179",
@@ -2562,7 +3130,8 @@
       "unit": 7,
       "question": "¿Por qué se adelanta la chispa y cómo se verifica la puesta a punto?",
       "axes": "Tiempo de combustión, régimen, carga y referencia del fabricante.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M180",
@@ -2570,7 +3139,8 @@
       "unit": 7,
       "question": "¿Qué diferencia hay entre detonación y preencendido en un Otto?",
       "axes": "Autoencendido del gas final frente a ignición antes de la chispa; daños.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M181",
@@ -2578,7 +3148,8 @@
       "unit": 7,
       "question": "¿Cómo investigarías un motor Otto que gira pero no enciende?",
       "axes": "Alimentación, chispa, compresión y sincronismo sin cambiar piezas al azar.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M182",
@@ -2586,7 +3157,8 @@
       "unit": 7,
       "question": "¿Qué precauciones particulares requieren nafta, vapores y equipos eléctricos en una instalación naval?",
       "axes": "Ventilación prevista, fugas y prevención de fuentes de ignición.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M183",
@@ -2594,7 +3166,8 @@
       "unit": 8,
       "question": "¿Por qué es necesario refrigerar un motor y por qué enfriarlo demasiado también perjudica?",
       "axes": "Temperatura de materiales, película lubricante, condensación y eficiencia.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M184",
@@ -2602,7 +3175,8 @@
       "unit": 8,
       "question": "¿Cómo se transfiere calor desde gases y piezas al refrigerante y al ambiente?",
       "axes": "Conducción, convección y resistencia térmica de depósitos.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M185",
@@ -2610,7 +3184,8 @@
       "unit": 8,
       "question": "¿Cómo se diferencian refrigeración por aire, agua directa e indirecta?",
       "axes": "Recorrido y fluido que toca el motor.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M186",
@@ -2618,7 +3193,8 @@
       "unit": 8,
       "question": "¿Qué significan circuito abierto y cerrado y cómo se combinan en una instalación naval?",
       "axes": "Agua externa y circuito interno recirculado.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M187",
@@ -2626,7 +3202,8 @@
       "unit": 8,
       "question": "Dibujá un circuito de agua dulce y otro de agua de mar. ¿Dónde intercambian calor?",
       "axes": "Tomas, filtros, bombas, motor, termostato, enfriador y descarga.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M188",
@@ -2634,7 +3211,8 @@
       "unit": 8,
       "question": "¿Cómo funcionan enfriadores de quilla y de casco y qué mantenimiento requieren?",
       "axes": "Transferencia al agua exterior, incrustación y protección de superficies.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M189",
@@ -2642,7 +3220,8 @@
       "unit": 8,
       "question": "¿Qué son los circuitos de alta y baja temperatura cuando el motor los incorpora?",
       "axes": "Camisas, aire de carga y aceite; temperaturas según diseño.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M190",
@@ -2650,7 +3229,8 @@
       "unit": 8,
       "question": "¿Qué función cumple el tanque de expansión o compenso y por qué importa su ubicación?",
       "axes": "Dilatación, reserva, desaireación y presión estática.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M191",
@@ -2658,7 +3238,8 @@
       "unit": 8,
       "question": "¿Cómo trabaja un termostato con derivación y qué ocurre si queda abierto o cerrado?",
       "axes": "Reparto de caudal, calentamiento y sobretemperatura.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M192",
@@ -2666,7 +3247,8 @@
       "unit": 8,
       "question": "¿Qué diferencias hay entre bombas centrífugas y de impulsor flexible en refrigeración?",
       "axes": "Principio, cebado, desgaste y funcionamiento sin líquido.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M193",
@@ -2674,7 +3256,8 @@
       "unit": 8,
       "question": "¿Por qué se controla la calidad del agua y la concentración de aditivos?",
       "axes": "Corrosión, depósitos, cavitación y compatibilidad con materiales.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M194",
@@ -2682,7 +3265,10 @@
       "unit": 8,
       "question": "¿Cómo se originan corrosión, incrustaciones y cavitación y qué señales permiten distinguirlas?",
       "axes": "Ataque químico, depósito térmico y colapso de burbujas.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "PB26-08"
+      ]
     },
     {
       "id": "M195",
@@ -2690,7 +3276,8 @@
       "unit": 8,
       "question": "¿Qué comprobaciones harías ante aumento de temperatura con poco caudal de agua de mar?",
       "axes": "Toma, filtro, impulsor, aire y obstrucciones.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M196",
@@ -2698,7 +3285,8 @@
       "unit": 8,
       "question": "¿Cómo detectarías una fuga interna en un intercambiador?",
       "axes": "Diferencia de presiones, contaminación y prueba aislada.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M197",
@@ -2706,7 +3294,8 @@
       "unit": 8,
       "question": "¿Qué precauciones cambian al operar en zonas muy frías o cálidas?",
       "axes": "Congelación, viscosidad, capacidad del enfriador y límites de carga.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M198",
@@ -2714,7 +3303,8 @@
       "unit": 8,
       "question": "¿Cómo interpretarías temperaturas de entrada y salida junto con caudal y carga?",
       "axes": "Balance de calor; un salto térmico aislado no basta para diagnosticar.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M199",
@@ -2722,7 +3312,8 @@
       "unit": 8,
       "question": "¿Qué permite estimar Q por unidad de tiempo = caudal másico por calor específico por salto de temperatura?",
       "axes": "Potencia evacuada y unidades; ejemplo de agua.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M200",
@@ -2730,7 +3321,8 @@
       "unit": 8,
       "question": "¿Qué mantenimiento preventivo corresponde a bombas, filtros, enfriadores, termostatos y mangueras?",
       "axes": "Inspección, limpieza, pruebas y registro de tendencias.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M201",
@@ -2738,7 +3330,10 @@
       "unit": 9,
       "question": "¿Qué funciones cumple el aceite además de reducir fricción?",
       "axes": "Refrigerar, limpiar, sellar, proteger y transmitir fuerza donde corresponda.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "CB26-03"
+      ]
     },
     {
       "id": "M202",
@@ -2746,7 +3341,10 @@
       "unit": 9,
       "question": "¿Qué propiedades debe conservar un lubricante diésel u Otto durante el servicio?",
       "axes": "Viscosidad, estabilidad, detergencia, dispersancia, protección y compatibilidad.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "CB26-03"
+      ]
     },
     {
       "id": "M203",
@@ -2754,7 +3352,8 @@
       "unit": 9,
       "question": "¿Qué diferencia hay entre viscosidad, índice de viscosidad y grado SAE?",
       "axes": "Propiedad medida, variación con temperatura y clasificación.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M204",
@@ -2762,7 +3361,8 @@
       "unit": 9,
       "question": "¿Qué indican una clasificación de servicio y una aprobación del fabricante?",
       "axes": "Desempeño requerido; viscosidad por sí sola no asegura aptitud.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M205",
@@ -2770,7 +3370,8 @@
       "unit": 9,
       "question": "¿Qué aportan bases minerales o sintéticas y aditivos detergentes, dispersantes, antioxidantes y antidesgaste?",
       "axes": "Funciones, agotamiento y compatibilidad al mezclar.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M206",
@@ -2778,7 +3379,8 @@
       "unit": 9,
       "question": "¿Cómo compararías salpicadura, presión total y sistemas mixtos?",
       "axes": "Forma de llevar lubricante a cada superficie y sus limitaciones.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M207",
@@ -2786,7 +3388,8 @@
       "unit": 9,
       "question": "¿Qué diferencia hay entre cárter húmedo y seco?",
       "axes": "Depósito, bombas de presión y recuperación y control del nivel.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M208",
@@ -2794,7 +3397,8 @@
       "unit": 9,
       "question": "¿Por qué un motor de cruceta puede tener lubricación de cilindros separada de la del sistema?",
       "axes": "Consumo de aceite, contacto con productos de combustión y reserva alcalina.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M209",
@@ -2802,7 +3406,8 @@
       "unit": 9,
       "question": "Trazá el recorrido del aceite desde el depósito hasta un cojinete. ¿Qué hace cada componente?",
       "axes": "Aspiración, bomba, alivio, filtro, enfriador, galería y retorno según circuito.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M210",
@@ -2812,6 +3417,9 @@
       "axes": "Viscosidad, velocidad relativa, carga, geometría y huelgo.",
       "teacher": [
         "C23"
+      ],
+      "exams": [
+        "CB26-03"
       ]
     },
     {
@@ -2822,6 +3430,9 @@
       "axes": "Separación de superficies, espesor relativo a rugosidad y condiciones transitorias.",
       "teacher": [
         "C24"
+      ],
+      "exams": [
+        "CB26-03"
       ]
     },
     {
@@ -2832,6 +3443,9 @@
       "axes": "Calentamiento, adhesión, arrastre y posible gripado.",
       "teacher": [
         "C25"
+      ],
+      "exams": [
+        "CB26-03"
       ]
     },
     {
@@ -2843,6 +3457,9 @@
       "teacher": [
         "C14",
         "C15"
+      ],
+      "exams": [
+        "CB26-03"
       ]
     },
     {
@@ -2851,7 +3468,10 @@
       "unit": 9,
       "question": "¿Qué diferencias hay entre filtro de paso total, derivación, bypass y separación centrífuga?",
       "axes": "Qué retienen, continuidad de caudal y limitaciones de separación.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "CB26-03"
+      ]
     },
     {
       "id": "M215",
@@ -2859,7 +3479,8 @@
       "unit": 9,
       "question": "¿Qué revela el diferencial de presión de un filtro y cómo se interpreta con aceite frío?",
       "axes": "Restricción, viscosidad y apertura posible de bypass.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M216",
@@ -2867,7 +3488,8 @@
       "unit": 9,
       "question": "¿Qué controles de lubricación se realizan antes de arrancar y en los primeros instantes de marcha?",
       "axes": "Nivel, prelubricación cuando corresponde, presión, temperatura y fugas.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M217",
@@ -2877,6 +3499,9 @@
       "axes": "Emulsión, dilución, corrosión y análisis; ventilación no limpia aceite ni elimina todo riesgo.",
       "teacher": [
         "C31"
+      ],
+      "exams": [
+        "CB26-03"
       ]
     },
     {
@@ -2887,6 +3512,9 @@
       "axes": "Pérdida de película, confirmación segura y respuesta prevista de alarma, reducción o parada.",
       "teacher": [
         "C32"
+      ],
+      "exams": [
+        "CB26-03"
       ]
     },
     {
@@ -2895,7 +3523,8 @@
       "unit": 9,
       "question": "¿Cómo se toma una muestra representativa de aceite usado y qué tendencias se comparan?",
       "axes": "Punto, condición de máquina, limpieza, horas y reposiciones.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M220",
@@ -2903,7 +3532,8 @@
       "unit": 9,
       "question": "¿Qué pueden sugerir agua, combustible, hollín y metales de desgaste en el análisis?",
       "axes": "Asociar causas posibles con otras pruebas, sin diagnóstico por un único elemento.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M221",
@@ -2911,7 +3541,8 @@
       "unit": 9,
       "question": "¿Cómo diferenciarías bajo nivel, aireación, bomba desgastada y huelgos excesivos ante baja presión?",
       "axes": "Temperatura, ruido, presión, retorno y pruebas de circuito.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M222",
@@ -2919,7 +3550,8 @@
       "unit": 9,
       "question": "¿Qué señales justifican revisar el aceite antes del intervalo habitual y qué registros conservarías?",
       "axes": "Contaminación, variación de viscosidad, consumo, alarmas y criterio del fabricante.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M223",
@@ -2927,7 +3559,8 @@
       "unit": 10,
       "question": "¿Qué elementos componen la admisión y el escape y qué función cumple cada uno?",
       "axes": "Filtros, silenciadores, colectores, enfriadores, turbina y tuberías.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M224",
@@ -2935,7 +3568,8 @@
       "unit": 10,
       "question": "¿Qué distingue un motor atmosférico de uno sobrealimentado?",
       "axes": "Masa de aire admitida, presión de carga y límites de diseño.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M225",
@@ -2943,7 +3577,11 @@
       "unit": 10,
       "question": "¿Qué diferencia hay entre barrido y sobrealimentación?",
       "axes": "Renovar gases frente a aumentar masa de carga; pueden coexistir.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "D26-02",
+        "D26-03"
+      ]
     },
     {
       "id": "M226",
@@ -2953,6 +3591,10 @@
       "axes": "Transversal, lazo o uniflujo; soplantes y turbo según disposición.",
       "teacher": [
         "G55"
+      ],
+      "exams": [
+        "D26-02",
+        "D26-03"
       ]
     },
     {
@@ -2963,6 +3605,10 @@
       "axes": "Gradiente de presión y pérdidas; valor específico de régimen y diseño.",
       "teacher": [
         "G56"
+      ],
+      "exams": [
+        "D26-02",
+        "D26-03"
       ]
     },
     {
@@ -2971,7 +3617,8 @@
       "unit": 10,
       "question": "¿Cómo funciona una bomba de barrido tipo Roots y qué energía consume?",
       "axes": "Desplazamiento, accionamiento y diferencia respecto de turbocompresor.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M229",
@@ -2979,7 +3626,8 @@
       "unit": 10,
       "question": "¿Cómo se relacionan turbina de escape, eje y compresor de un turbo?",
       "axes": "Recuperación de energía del gas y compresión del aire.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M230",
@@ -2987,7 +3635,8 @@
       "unit": 10,
       "question": "¿Por qué puede necesitar una soplante auxiliar un diésel de dos tiempos con turbo?",
       "axes": "Energía insuficiente de escape al arranque o baja carga.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M231",
@@ -2995,7 +3644,8 @@
       "unit": 10,
       "question": "¿Para qué se enfría el aire después de comprimirlo?",
       "axes": "Densidad, masa admitida, temperatura de carga y condensación.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M232",
@@ -3003,7 +3653,8 @@
       "unit": 10,
       "question": "¿Qué consecuencias tiene una fuga o suciedad en el enfriador de aire?",
       "axes": "Menor carga, mayor temperatura y posible ingreso de agua.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M233",
@@ -3011,7 +3662,8 @@
       "unit": 10,
       "question": "¿Qué efectos producen un filtro de aire tapado o una contrapresión excesiva de escape?",
       "axes": "Llenado, pérdidas de bombeo, humo y temperatura.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M234",
@@ -3019,7 +3671,8 @@
       "unit": 10,
       "question": "¿Qué es el bombeo o surge del compresor y qué condiciones pueden favorecerlo?",
       "axes": "Inestabilidad de flujo, ruido, restricciones y respuesta según fabricante.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M235",
@@ -3027,7 +3680,8 @@
       "unit": 10,
       "question": "¿Qué inspecciones corresponden a lubricación, apoyos y limpieza del turbocompresor?",
       "axes": "Suministro y drenaje, vibración y procedimiento específico de limpieza.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M236",
@@ -3035,7 +3689,8 @@
       "unit": 10,
       "question": "¿Para qué sirven drenajes y registros del espacio de barrido?",
       "axes": "Retiro de líquidos, inspección de depósitos y detección de fugas.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M237",
@@ -3043,7 +3698,8 @@
       "unit": 10,
       "question": "¿Qué función cumplen aislamiento y compensadores de dilatación del escape?",
       "axes": "Protección térmica, esfuerzos sobre equipos y prevención de fugas.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M238",
@@ -3051,7 +3707,8 @@
       "unit": 10,
       "question": "¿Cómo se distinguen riesgos de un escape seco y uno húmedo?",
       "axes": "Superficies calientes, contrapresión y retorno de agua según instalación.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M239",
@@ -3059,7 +3716,8 @@
       "unit": 11,
       "question": "¿Qué condiciones necesita un diésel para arrancar?",
       "axes": "Giro suficiente, compresión, aire, combustible y sincronismo.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M240",
@@ -3067,7 +3725,8 @@
       "unit": 11,
       "question": "¿Qué componentes integran el arranque eléctrico y cuál es su secuencia funcional?",
       "axes": "Batería, mando, solenoide, motor, piñón y corona.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M241",
@@ -3075,7 +3734,8 @@
       "unit": 11,
       "question": "¿Cómo distinguirías batería descargada, mala conexión y motor de arranque defectuoso?",
       "axes": "Caída de tensión, velocidad de giro y pruebas seguras.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M242",
@@ -3083,7 +3743,8 @@
       "unit": 11,
       "question": "¿Por qué se limita la duración y repetición de los intentos de arranque eléctrico?",
       "axes": "Calentamiento y recuperación según manual.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M243",
@@ -3091,7 +3752,8 @@
       "unit": 11,
       "question": "¿Qué equipos integran un sistema de arranque por aire comprimido?",
       "axes": "Compresores, botellas, purgas, válvula principal, distribuidor y válvulas de cilindro.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M244",
@@ -3099,7 +3761,8 @@
       "unit": 11,
       "question": "¿Qué diferencia hay entre introducir aire en los cilindros y usar un motor neumático de arranque?",
       "axes": "Aplicación del par y circuito de mando.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M245",
@@ -3107,7 +3770,8 @@
       "unit": 11,
       "question": "¿Cómo se sincroniza la distribución de aire de arranque con el cigüeñal?",
       "axes": "Orden, posiciones efectivas y sentido de giro.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M246",
@@ -3115,7 +3779,8 @@
       "unit": 11,
       "question": "¿Qué riesgos producen aceite, agua y retorno de gases en el sistema de aire de arranque?",
       "axes": "Contaminación, corrosión, ignición y elementos antirretorno o protección.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M247",
@@ -3123,7 +3788,8 @@
       "unit": 11,
       "question": "¿Qué verificaciones requieren botellas, compresores, purgas y válvulas de arranque?",
       "axes": "Disponibilidad de aire, fugas, condensados y pruebas programadas.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M248",
@@ -3131,7 +3797,8 @@
       "unit": 11,
       "question": "¿Qué ayudas de arranque pueden emplearse en frío?",
       "axes": "Precalentamiento de aire, agua o bujías incandescentes según diseño.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M249",
@@ -3139,7 +3806,8 @@
       "unit": 11,
       "question": "¿Qué es un virador y para qué sirve su enclavamiento con el arranque?",
       "axes": "Giro lento de inspección y prevención de arranque acoplado.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M250",
@@ -3147,7 +3815,8 @@
       "unit": 11,
       "question": "¿Qué es un motor reversible y qué debe cambiar para invertir su giro?",
       "axes": "Distribución de aire, combustible y gases según diseño de dos o cuatro tiempos.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M251",
@@ -3155,7 +3824,8 @@
       "unit": 11,
       "question": "¿Cómo se obtiene marcha atrás con un motor no reversible?",
       "axes": "Caja inversora, transmisión eléctrica o cambio de paso de hélice según instalación.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M252",
@@ -3163,7 +3833,8 @@
       "unit": 11,
       "question": "¿Qué diferencias hay entre acoplamiento directo, reductor y embrague?",
       "axes": "Régimen, par, transmisión e independencia de ejes.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M253",
@@ -3171,7 +3842,8 @@
       "unit": 11,
       "question": "¿Qué tipos de embrague se emplean y qué cuidados exige su operación?",
       "axes": "Fricción, accionamiento mecánico o hidráulico y límites de acoplamiento.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M254",
@@ -3179,7 +3851,8 @@
       "unit": 11,
       "question": "¿Qué expresa la relación de reducción y cómo se relacionan rpm de motor y hélice?",
       "axes": "i = n motor/n hélice; no confundir con rendimiento propulsivo.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M255",
@@ -3187,7 +3860,8 @@
       "unit": 11,
       "question": "¿Por qué no debe ordenarse una inversión brusca fuera de la secuencia permitida?",
       "axes": "Inercia, esfuerzos, presión de mando y coordinación con el puente.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M256",
@@ -3195,7 +3869,8 @@
       "unit": 11,
       "question": "¿Cómo procederías si el motor no obedece una orden de arranque o inversión?",
       "axes": "Confirmar mando, enclavamientos, energía disponible e informar antes de nuevos intentos.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M257",
@@ -3203,7 +3878,8 @@
       "unit": 12,
       "question": "¿Qué diferencias hay entre carga interna y externa del motor?",
       "axes": "Pérdidas y auxiliares frente al equipo accionado.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M258",
@@ -3211,7 +3887,8 @@
       "unit": 12,
       "question": "¿Qué función cumple el regulador de velocidad cuando cambia la carga?",
       "axes": "Equilibrio de par, velocidad medida y combustible entregado.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M259",
@@ -3219,7 +3896,8 @@
       "unit": 12,
       "question": "¿Cómo actúan masas centrífugas y resorte en un regulador mecánico?",
       "axes": "Equilibrio de fuerzas y desplazamiento de mando.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M260",
@@ -3227,7 +3905,8 @@
       "unit": 12,
       "question": "¿Cómo se amplifica la señal en un regulador mecánico hidráulico Woodward?",
       "axes": "Captación, válvula piloto, servopistón y realimentación; identificar modelo.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M261",
@@ -3235,7 +3914,8 @@
       "unit": 12,
       "question": "¿Qué secuencia funcional ocurre al aumentar la carga de un motor regulado?",
       "axes": "Caída inicial de rpm, mayor combustible y estabilización.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M262",
@@ -3243,7 +3923,8 @@
       "unit": 12,
       "question": "¿Qué secuencia ocurre al retirar bruscamente la carga?",
       "axes": "Aceleración inicial, reducción de combustible y riesgo de sobrevelocidad.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M263",
@@ -3251,7 +3932,8 @@
       "unit": 12,
       "question": "¿Qué diferencias hay entre regulación de velocidad constante, variable, isócrona y con estatismo?",
       "axes": "Consigna, caída permanente y uso en reparto de carga.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M264",
@@ -3259,7 +3941,8 @@
       "unit": 12,
       "question": "¿Qué es el hunting y cómo distinguirías inestabilidad del regulador de fallas del motor?",
       "axes": "Oscilación, combustible, aire, varillaje y ajuste autorizado.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M265",
@@ -3267,7 +3950,8 @@
       "unit": 12,
       "question": "¿Qué diferencias hay entre regulador, limitador de carga y protección independiente de sobrevelocidad?",
       "axes": "Control normal, restricción y actuación de seguridad.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M266",
@@ -3275,7 +3959,10 @@
       "unit": 12,
       "question": "¿Qué son presión media indicada y presión media efectiva al freno?",
       "axes": "Trabajo por cilindrada; no son la presión máxima del cilindro.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "PA26-10"
+      ]
     },
     {
       "id": "M267",
@@ -3283,7 +3970,10 @@
       "unit": 12,
       "question": "¿Qué diferencia hay entre potencia indicada y efectiva y cómo se obtienen?",
       "axes": "Diagrama indicado frente a par medido en el eje.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "PA26-10"
+      ]
     },
     {
       "id": "M268",
@@ -3291,7 +3981,10 @@
       "unit": 12,
       "question": "¿Cómo se calcula y se interpreta el rendimiento mecánico?",
       "axes": "eta mecánica = potencia efectiva/potencia indicada.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "PA26-10"
+      ]
     },
     {
       "id": "M269",
@@ -3299,7 +3992,10 @@
       "unit": 12,
       "question": "¿Qué es el rendimiento térmico y cuándo puede multiplicarse por el mecánico?",
       "axes": "Base indicada o efectiva y balance de energía consistente.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "PA26-10"
+      ]
     },
     {
       "id": "M270",
@@ -3309,6 +4005,9 @@
       "axes": "Energía del combustible y destinos en eje, gases, refrigeración y otras pérdidas.",
       "teacher": [
         "G03"
+      ],
+      "exams": [
+        "GA26-01"
       ]
     },
     {
@@ -3319,6 +4018,9 @@
       "axes": "Anchos proporcionales, frontera y suma de entradas y salidas.",
       "teacher": [
         "G04"
+      ],
+      "exams": [
+        "GA26-01"
       ]
     },
     {
@@ -3329,7 +4031,8 @@
       "axes": "Definición del docente, condición de referencia y distinción de pérdidas adicionales; término pendiente de precisar.",
       "teacher": [
         "G07"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M273",
@@ -3339,7 +4042,8 @@
       "axes": "Comparación con condición sana; ensuciamiento, fugas, fricción y combustión deficiente.",
       "teacher": [
         "G08"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M274",
@@ -3349,6 +4053,9 @@
       "axes": "Frontera del balance: la fricción termina en calor; distinguir balance energético de pérdidas de potencia.",
       "teacher": [
         "G09"
+      ],
+      "exams": [
+        "PA26-10"
       ]
     },
     {
@@ -3357,7 +4064,10 @@
       "unit": 12,
       "question": "¿Qué es el consumo específico de combustible y por qué se compara a carga definida?",
       "axes": "g/kWh, potencia efectiva y caudal de combustible.",
-      "teacher": []
+      "teacher": [],
+      "exams": [
+        "PA26-10"
+      ]
     },
     {
       "id": "M276",
@@ -3365,7 +4075,8 @@
       "unit": 12,
       "question": "¿Qué representan potencia específica por litro y velocidad media del pistón al comparar motores?",
       "axes": "Densidad de potencia y solicitación; no sustituyen límites de servicio.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M277",
@@ -3373,7 +4084,8 @@
       "unit": 12,
       "question": "¿Qué sensores e instrumentos usarías para seguir presiones, temperaturas, rpm y carga?",
       "axes": "Ubicación, unidades, calibración y verificación cruzada.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M278",
@@ -3381,7 +4093,8 @@
       "unit": 12,
       "question": "¿Cómo distinguís alarma, reducción automática de carga y parada automática?",
       "axes": "Lógica causa efecto específica, severidad y ausencia de umbrales universales.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M279",
@@ -3389,7 +4102,8 @@
       "unit": 13,
       "question": "¿Qué son amplitud, frecuencia y fase de una vibración?",
       "axes": "Magnitudes físicas y comparación entre registros.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M280",
@@ -3397,7 +4111,8 @@
       "unit": 13,
       "question": "¿Cómo distinguís sacudimiento, balanceo, cabeceo, guiñada y vibración torsional?",
       "axes": "Direcciones de traslación y ejes de rotación.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M281",
@@ -3405,7 +4120,8 @@
       "unit": 13,
       "question": "¿Qué fuerzas de inercia y de combustión generan vibraciones en un motor?",
       "axes": "Masas alternativas, rotativas y pulsos de par.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M282",
@@ -3413,7 +4129,8 @@
       "unit": 13,
       "question": "¿Qué diferencia hay entre desequilibrio, desalineación y resonancia?",
       "axes": "Causa de excitación frente a respuesta del sistema.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M283",
@@ -3421,7 +4138,8 @@
       "unit": 13,
       "question": "¿Por qué la torsión alternante existe también durante la marcha estable?",
       "axes": "Impulsos de combustión y par resistente variables, además de transitorios.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M284",
@@ -3431,7 +4149,8 @@
       "axes": "Reducir amplitud y tensiones de vibración; no es el freno de sobrevelocidad.",
       "teacher": [
         "C05"
-      ]
+      ],
+      "exams": []
     },
     {
       "id": "M285",
@@ -3439,7 +4158,8 @@
       "unit": 13,
       "question": "¿Qué diferencia hay entre volante, contrapeso y dámper?",
       "axes": "Regularidad energética, compensación de masas y amortiguación.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M286",
@@ -3447,7 +4167,8 @@
       "unit": 13,
       "question": "¿Qué es una banda de velocidad restringida y por qué debe respetarse?",
       "axes": "Resonancias identificadas y procedimiento del equipo.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M287",
@@ -3455,7 +4176,8 @@
       "unit": 13,
       "question": "¿Cómo influyen soportes, fundación, casco y acoplamientos sobre las vibraciones?",
       "axes": "Rigidez, transmisión y aislamiento; revisión de fijaciones.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M288",
@@ -3463,7 +4185,8 @@
       "unit": 13,
       "question": "¿Qué mediciones registrarías para comparar una vibración con la condición normal?",
       "axes": "Punto, dirección, carga, rpm, amplitud y frecuencia.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M289",
@@ -3471,7 +4194,8 @@
       "unit": 13,
       "question": "¿Qué síntomas acompañan a una vibración causada por combustión desigual?",
       "axes": "Diferencias de escape, potencia por cilindro y regularidad del giro.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M290",
@@ -3479,7 +4203,8 @@
       "unit": 13,
       "question": "¿Cuándo una vibración nueva obliga a reducir carga o detener según procedimiento?",
       "axes": "Magnitud, evolución, ruido, temperatura y riesgo mecánico.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M291",
@@ -3487,7 +4212,8 @@
       "unit": 14,
       "question": "¿Qué preparativos realizás antes de una puesta en marcha normal?",
       "axes": "Niveles, válvulas, energías auxiliares, inspección y autorización operativa.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M292",
@@ -3495,7 +4221,8 @@
       "unit": 14,
       "question": "¿Cómo verificás prelubricación, precalentamiento y disponibilidad de refrigeración?",
       "axes": "Condiciones exigidas para ese motor y confirmación de circulación.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M293",
@@ -3503,7 +4230,8 @@
       "unit": 14,
       "question": "¿Qué comprobaciones evitan un arranque con personas, herramientas o virador en zona peligrosa?",
       "axes": "Aislamientos, comunicación, recuento y enclavamientos.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M294",
@@ -3511,7 +4239,8 @@
       "unit": 14,
       "question": "¿Por qué se comprueba la ausencia de líquido en cilindros cuando el procedimiento lo exige?",
       "axes": "Incompresibilidad, bloqueo hidráulico y giro controlado autorizado.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M295",
@@ -3519,7 +4248,8 @@
       "unit": 14,
       "question": "¿Qué parámetros observás inmediatamente después del arranque?",
       "axes": "Presión de aceite, giro, refrigeración, fugas, ruido y alarmas.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M296",
@@ -3527,7 +4257,8 @@
       "unit": 14,
       "question": "¿Cómo se aumenta la carga sin exceder los límites térmicos y mecánicos?",
       "axes": "Calentamiento, rampa del fabricante, aire disponible y respuesta de temperaturas.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M297",
@@ -3535,7 +4266,8 @@
       "unit": 14,
       "question": "¿Qué anotás en una ronda de guardia para detectar deterioro progresivo?",
       "axes": "Carga, rpm, presiones, temperaturas, consumos y observaciones comparables.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M298",
@@ -3543,7 +4275,8 @@
       "unit": 14,
       "question": "¿Cómo se comparan temperaturas de escape entre cilindros de un mismo motor?",
       "axes": "Carga estable, ubicación de sensores y diferencia respecto de tendencia propia.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M299",
@@ -3551,7 +4284,8 @@
       "unit": 14,
       "question": "¿Cómo relacionás presiones y temperaturas de aceite, combustible, barrido y refrigeración?",
       "axes": "Buscar causas comunes y distinguir síntoma primario de efectos secundarios.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M300",
@@ -3559,7 +4293,8 @@
       "unit": 14,
       "question": "¿Qué implica pasar del mando remoto al local ante una falla?",
       "axes": "Prioridad de mando, comunicación con puente y comprobación del procedimiento.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M301",
@@ -3567,7 +4302,8 @@
       "unit": 14,
       "question": "¿Qué diferencia hay entre parada normal y parada de emergencia?",
       "axes": "Descarga y enfriamiento planificados frente a respuesta inmediata al peligro.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M302",
@@ -3575,7 +4311,8 @@
       "unit": 14,
       "question": "¿Qué controles y servicios pueden mantenerse después de parar?",
       "axes": "Postlubricación, enfriamiento, fugas y bloqueo según instrucciones.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M303",
@@ -3583,7 +4320,8 @@
       "unit": 14,
       "question": "¿Qué cambia al operar prolongadamente a baja carga o cerca de la máxima continua?",
       "axes": "Combustión, depósitos, margen térmico y recomendaciones del fabricante.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M304",
@@ -3591,7 +4329,8 @@
       "unit": 14,
       "question": "¿Cómo prepararías el motor para una parada prolongada y posterior retorno al servicio?",
       "axes": "Conservación, corrosión, baterías, fluidos y verificaciones de reactivación.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M305",
@@ -3599,7 +4338,8 @@
       "unit": 14,
       "question": "¿Qué datos entregarías al relevo después de una anomalía o intervención?",
       "axes": "Secuencia del evento, medidas adoptadas, límites y trabajos pendientes.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M306",
@@ -3607,7 +4347,8 @@
       "unit": 15,
       "question": "El motor no gira al ordenar arranque. ¿Cómo organizarías el diagnóstico?",
       "axes": "Energía, mando, enclavamientos y resistencia mecánica antes de repetir.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M307",
@@ -3615,7 +4356,8 @@
       "unit": 15,
       "question": "El motor gira pero no enciende. ¿Qué causas separarías y cómo las comprobarías?",
       "axes": "Velocidad, compresión, combustible, sincronismo y temperatura.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M308",
@@ -3623,7 +4365,8 @@
       "unit": 15,
       "question": "El motor arranca y se detiene al poco tiempo. ¿Qué revisarías primero?",
       "axes": "Suministro, aire en combustible, protecciones y registros.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M309",
@@ -3631,7 +4374,8 @@
       "unit": 15,
       "question": "El motor pierde potencia. ¿Cómo distinguirías falta de aire, falta de combustible, baja compresión y carga externa excesiva?",
       "axes": "Comparación de parámetros y pruebas ordenadas.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M310",
@@ -3639,7 +4383,8 @@
       "unit": 15,
       "question": "Aparece humo negro al aumentar carga. ¿Qué causas considerarías?",
       "axes": "Aire insuficiente, exceso de combustible, inyección y sobrecarga.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M311",
@@ -3647,7 +4392,8 @@
       "unit": 15,
       "question": "Hay humo azulado y aumenta el consumo de aceite. ¿Qué piezas y sistemas investigarías?",
       "axes": "Aros, guías, turbo, nivel y ventilación según diseño.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M312",
@@ -3655,7 +4401,8 @@
       "unit": 15,
       "question": "Hay humo blanco persistente. ¿Cómo distinguirías combustible sin quemar de ingreso de agua?",
       "axes": "Condición térmica, olor observado a distancia, niveles, compresión y pruebas.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M313",
@@ -3663,7 +4410,8 @@
       "unit": 15,
       "question": "Un cilindro tiene escape mucho más caliente. ¿Qué hipótesis y comprobaciones proponés?",
       "axes": "Sobrecarga, inyección, válvula de escape, aire y error de sensor.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M314",
@@ -3671,7 +4419,8 @@
       "unit": 15,
       "question": "Un cilindro tiene escape muy frío. ¿Cómo investigás falta de combustión?",
       "axes": "Inyección, compresión y medición antes de concluir.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M315",
@@ -3679,7 +4428,8 @@
       "unit": 15,
       "question": "La presión de aceite cae y la temperatura sube. ¿Qué decisiones y verificaciones corresponden?",
       "axes": "Protección del motor, aviso, nivel, contaminación, bomba y enfriamiento.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M316",
@@ -3687,7 +4437,8 @@
       "unit": 15,
       "question": "Sube el nivel del cárter y el aceite huele a combustible. ¿Qué sospechás y qué evitás hacer?",
       "axes": "Dilución, origen de fuga, análisis y no seguir operando por normalidad aparente de nivel.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M317",
@@ -3695,7 +4446,8 @@
       "unit": 15,
       "question": "Se pierde refrigerante y aparece agua en el aceite. ¿Qué vías de comunicación revisarías?",
       "axes": "Enfriador, camisa, juntas, culata y otras según diseño.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M318",
@@ -3703,7 +4455,8 @@
       "unit": 15,
       "question": "El motor se recalienta. ¿Cómo investigarías refrigeración, carga, combustión y lubricación?",
       "axes": "Prioridad de protección y diagnóstico; evitar apertura en caliente o enfriamiento brusco.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M319",
@@ -3713,6 +4466,9 @@
       "axes": "Punto caliente, evaporación del lubricante y condensación en niebla; mezcla con aire en concentración inflamable, ignición y sobrepresión. No requiere abrir el cárter ni entrada de combustible de inyección.",
       "teacher": [
         "C08"
+      ],
+      "exams": [
+        "PB26-10"
       ]
     },
     {
@@ -3723,6 +4479,9 @@
       "axes": "Detección temprana por OMD y vigilancia de cojinetes; respiradero distinto de alivio con arrestallamas. Ante alarma, aviso y actuación según manual, sin anular protecciones. No abrir el cárter caliente ni aportar aire: riesgo de nueva ignición o explosión secundaria. Enfriamiento, aislamiento e inspección según fabricante antes de volver a operar.",
       "teacher": [
         "C09"
+      ],
+      "exams": [
+        "PB26-10"
       ]
     },
     {
@@ -3731,7 +4490,8 @@
       "unit": 15,
       "question": "¿Cómo se origina un incendio de barrido y qué indicios pueden advertirlo?",
       "axes": "Depósitos combustibles, paso de gases calientes y cambios de temperatura.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M322",
@@ -3739,7 +4499,8 @@
       "unit": 15,
       "question": "¿Qué diferencias de actuación existen ante incendio de barrido, de escape y fuga externa de combustible?",
       "axes": "Identificación, comunicación, aislamiento y extinción según sistema instalado.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M323",
@@ -3747,7 +4508,8 @@
       "unit": 15,
       "question": "Aparece golpeteo metálico. ¿Cómo separarías combustión anormal de un problema mecánico?",
       "axes": "Relación con carga, cilindro, vibración, aceite y necesidad de detener.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M324",
@@ -3755,7 +4517,8 @@
       "unit": 15,
       "question": "El motor se acelera sin responder al mando. ¿Qué riesgos y protecciones considerarías?",
       "axes": "Sobrevelocidad, posible combustible alternativo por admisión y parada prevista.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M325",
@@ -3763,7 +4526,8 @@
       "unit": 15,
       "question": "Aumenta el consumo específico manteniendo igual potencia. ¿Qué revisás?",
       "axes": "Medición, combustible, aire, ensuciamiento, fugas y ajuste.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M326",
@@ -3771,7 +4535,8 @@
       "unit": 15,
       "question": "¿Qué diferencias hay entre mantenimiento correctivo, preventivo y predictivo?",
       "axes": "Objetivo, disparadores y ejemplos concretos del motor.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M327",
@@ -3779,7 +4544,8 @@
       "unit": 15,
       "question": "¿Cómo elaborarías un plan de mantenimiento con horas de servicio y condición?",
       "axes": "Manual, criticidad, tendencias, recursos, repuestos y ventanas operativas.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M328",
@@ -3787,7 +4553,8 @@
       "unit": 15,
       "question": "¿Qué aislaciones y verificaciones se necesitan antes de desmontar componentes?",
       "axes": "Energía eléctrica, neumática, hidráulica, combustible, temperatura y giro accidental.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M329",
@@ -3795,7 +4562,8 @@
       "unit": 15,
       "question": "¿Qué mediciones y evidencias conservarías durante una inspección de pistón, camisa y cojinetes?",
       "axes": "Identificación, dimensiones, fotos, límites, patrón de desgaste y decisión justificada.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
     },
     {
       "id": "M330",
@@ -3803,7 +4571,367 @@
       "unit": 15,
       "question": "¿Cómo verificarías la reparación y cerrarías un informe de falla?",
       "axes": "Causa raíz, montaje, pruebas, comparación de parámetros y seguimiento.",
-      "teacher": []
+      "teacher": [],
+      "exams": []
+    },
+    {
+      "id": "M331",
+      "number": 331,
+      "unit": 2,
+      "question": "Describí y esquematizá un cojinete trimetálico. ¿Cómo relacionás sus capas con el análisis de aceite?",
+      "axes": "Identificá respaldo de acero, capa portante y recubrimiento antifricción; puede existir una barrera de difusión. La composición depende del cojinete real. Dibujá las capas y relacioná sus metales con tendencias del análisis, horas y otros componentes: un metal aislado no demuestra qué capa se desgastó.",
+      "teacher": [],
+      "exams": [
+        "CSF-05"
+      ]
+    },
+    {
+      "id": "M332",
+      "number": 332,
+      "unit": 2,
+      "question": "¿Qué características debe reunir un cojinete y qué exigencias soporta?",
+      "axes": "Debe soportar cargas cíclicas y permitir el movimiento con baja fricción, evacuando calor. Se equilibran resistencia a fatiga, conformabilidad, incrustabilidad, compatibilidad y resistencia a corrosión. La selección depende de velocidad, carga, lubricante, geometría y alineación; dureza máxima no significa automáticamente mejor cojinete.",
+      "teacher": [],
+      "exams": [
+        "CSF-06"
+      ]
+    },
+    {
+      "id": "M333",
+      "number": 333,
+      "unit": 1,
+      "question": "Compará diésel y naftero y justificá su elección para una aplicación naval.",
+      "axes": "El diésel comprime aire e inyecta combustible que se autoenciende; el Otto emplea encendido por chispa de una mezcla preparada. Compará consumo específico a carga definida, par, régimen, peso, mantenimiento y seguridad de los combustibles. La elección depende de propulsión o servicio auxiliar y de la instalación; no de una superioridad universal.",
+      "teacher": [],
+      "exams": [
+        "G21-01"
+      ]
+    },
+    {
+      "id": "M334",
+      "number": 334,
+      "unit": 2,
+      "question": "Esquematizá la lateralización sobre una camisa y distinguí motor de tronco y de cruceta.",
+      "axes": "La inclinación de la biela produce una componente lateral de la fuerza transmitida. En el motor de tronco la falda apoya contra la camisa; en el de cruceta el empuje lateral principal lo reciben patines y guías. Dibujá presión sobre el pistón, fuerza de biela y reacción lateral. El sentido y magnitud cambian durante el ciclo.",
+      "teacher": [],
+      "exams": [
+        "G21-03"
+      ]
+    },
+    {
+      "id": "M335",
+      "number": 335,
+      "unit": 2,
+      "question": "¿Cómo afectan lateralización, ovalización y desgaste de camisa al ciclo de trabajo?",
+      "axes": "El desgaste puede empeorar el sellado entre aros y camisa, aumentar blow-by y consumo de aceite y reducir la compresión efectiva. Las fugas durante compresión y expansión pueden perjudicar combustión, trabajo indicado y potencia. La relación depende de las mediciones y del estado de aros y superficies: ovalización no significa automáticamente una pérdida determinada de potencia.",
+      "teacher": [],
+      "exams": [
+        "PB26-07",
+        "G21-05"
+      ]
+    },
+    {
+      "id": "M336",
+      "number": 336,
+      "unit": 2,
+      "question": "Describí una culata con cámara auxiliar y sus posibles deformaciones.",
+      "axes": "Dibujá cámara principal, cámara auxiliar, conducto de comunicación, inyector y refrigeración según el diseño. El combustible inicia su combustión en el recinto auxiliar y los gases comunican con la cámara principal. Gradientes térmicos, cargas de combustión, refrigeración desigual y apriete pueden producir alabeo, fisuras o daños de asiento; se comprueban según el manual.",
+      "teacher": [],
+      "exams": [
+        "PA26-07",
+        "PB26-04",
+        "G21-08"
+      ]
+    },
+    {
+      "id": "M337",
+      "number": 337,
+      "unit": 2,
+      "question": "¿Cómo se construye un pistón bimetálico y dónde se utiliza?",
+      "axes": "Combina materiales elegidos para diferentes solicitaciones, por ejemplo corona de acero y falda de otro material según diseño. La corona resiste cargas térmicas y presión; la falda cumple guiado y otras funciones. Dibujá la unión y su refrigeración. No todos los pistones compuestos usan hierro fundido ni tienen la misma fijación o aplicación.",
+      "teacher": [],
+      "exams": [
+        "PA26-02"
+      ]
+    },
+    {
+      "id": "M338",
+      "number": 338,
+      "unit": 2,
+      "question": "Describí un pistón de tronco o tubular y las terminaciones posibles de su cabeza.",
+      "axes": "Identificá corona, falda, ranuras de aros y alojamiento del perno. La forma de la cabeza depende de cámara, combustión y distribución: puede incorporar cavidad o rebajes. Comparalo con pistón unido a vástago y cruceta. El nombre usado en el apunte debe contrastarse con el corte del motor; no implica siempre una falda postiza.",
+      "teacher": [],
+      "exams": [
+        "PA26-01"
+      ]
+    },
+    {
+      "id": "M339",
+      "number": 339,
+      "unit": 2,
+      "question": "¿Qué presiones y esfuerzos actúan sobre los aros del pistón?",
+      "axes": "Intervienen la elasticidad propia y la presión de los gases que alcanza la cara superior y la zona posterior del aro. El contacto con camisa y garganta, la inercia y la fricción cambian durante el ciclo. Explicá cómo ayudan al sellado y transferencia térmica, sin afirmar que todos los aros reciben igual presión ni fijar valores universales.",
+      "teacher": [],
+      "exams": [
+        "PA26-06"
+      ]
+    },
+    {
+      "id": "M340",
+      "number": 340,
+      "unit": 2,
+      "question": "Compará cortes de aros y explicá su montaje en un dos tiempos con lumbreras.",
+      "axes": "Se encuentran cortes rectos, oblicuos o escalonados según el aro. La elección depende del diseño y no hay un corte universalmente mejor. Verificá luz entre puntas, juego en la ranura, orientación y elementos de posicionamiento cuando existan. En dos tiempos evitá que las puntas enganchen lumbreras y respetá la indicación del fabricante.",
+      "teacher": [],
+      "exams": [
+        "PA26-08"
+      ]
+    },
+    {
+      "id": "M341",
+      "number": 341,
+      "unit": 2,
+      "question": "¿Qué se denomina biela extensible y qué precauciones exige interpretar ese diseño?",
+      "axes": "En los diseños que lo permiten, elementos o suplementos de ajuste pueden modificar la longitud efectiva o posición del conjunto. Se identifica el mecanismo concreto y se vincula con la altura del pistón y las separaciones prescritas. No se utiliza como corrección improvisada de desgaste ni se cambian suplementos o aprietes sin procedimiento del fabricante.",
+      "teacher": [],
+      "exams": []
+    },
+    {
+      "id": "M342",
+      "number": 342,
+      "unit": 2,
+      "question": "¿Qué sucede si un casquillo de bancada gira con el cigüeñal?",
+      "axes": "Pierde su posición en el alojamiento y puede obstruir o desalinear pasos de aceite, alterar el huelgo y dañar alojamiento y muñón. El calentamiento y la pérdida de película pueden culminar en gripado. Es una avería grave que requiere actuación de protección según procedimiento; no se corrige instalando otro casquillo sin investigar fijación, ajuste y lubricación.",
+      "teacher": [],
+      "exams": [
+        "CSF-04"
+      ]
+    },
+    {
+      "id": "M343",
+      "number": 343,
+      "unit": 3,
+      "question": "¿Cómo se controla el espacio nocivo y qué efecto tiene modificarlo?",
+      "axes": "Es el volumen que queda sobre el pistón en PMS; no es la cilindrada. Se verifica mediante dimensiones o métodos autorizados, por ejemplo medición de separaciones con elementos de comprobación previstos, y se calcula la relación geométrica (Vd+Vc)/Vc. Si aumenta Vc con igual cilindrada, baja esa relación; sus efectos reales dependen de sellado, carga y diseño.",
+      "teacher": [],
+      "exams": [
+        "GA26-04",
+        "GA26-05",
+        "PB26-05"
+      ]
+    },
+    {
+      "id": "M344",
+      "number": 344,
+      "unit": 2,
+      "question": "¿Dónde suele ser mayor el desgaste de la camisa y cómo se mide?",
+      "axes": "La zona alta de trabajo de los aros suele ser crítica por presión, temperatura y lubricación, pero se confirma con mediciones. Usá alesómetro comparado con patrón o micrómetro y medí a varias alturas y en dos direcciones según manual. Distinguí ovalización, conicidad y desgaste, y registrá condiciones de medida; no se concluye solo por una rebaba.",
+      "teacher": [],
+      "exams": [
+        "PB26-02",
+        "PB26-07",
+        "G21-04"
+      ]
+    },
+    {
+      "id": "M345",
+      "number": 345,
+      "unit": 2,
+      "question": "¿Por qué se limpian exteriormente los asientos del bloque antes de instalar una camisa?",
+      "axes": "Depósitos o corrosión pueden impedir el apoyo uniforme, deformar la camisa, alterar su protrusión y perjudicar el sellado y la transferencia de calor. Se limpian e inspeccionan apoyos y alojamientos sin remover material fuera del procedimiento. Después se verifican dimensiones, protrusión y juntas especificadas; la limpieza no reemplaza una reparación de superficies dañadas.",
+      "teacher": [],
+      "exams": [
+        "PB26-09"
+      ]
+    },
+    {
+      "id": "M346",
+      "number": 346,
+      "unit": 2,
+      "question": "¿Qué es una camisa con manguito de agua y qué particularidad puede presentar un dos tiempos grande?",
+      "axes": "El manguito o envolvente forma el espacio de refrigeración alrededor de la camisa, diferenciable de una camisa seca insertada en el bloque. En un dos tiempos pueden existir lumbreras en la zona inferior y uniones y sellos específicos. Dibujá recorrido del refrigerante y separación de aire, gases y agua sin atribuir el mismo arreglo a todos los motores.",
+      "teacher": [],
+      "exams": [
+        "PB26-01"
+      ]
+    },
+    {
+      "id": "M347",
+      "number": 347,
+      "unit": 5,
+      "question": "¿Qué diferencia una válvula con linterna de una sin linterna al desmontarla?",
+      "axes": "En la terminología del material, la linterna es un alojamiento o jaula desmontable que reúne elementos del conjunto valvular y puede permitir retirarlos sin desmontar toda la culata. Sin ella, los elementos se alojan directamente en la culata. El alcance del desmontaje depende del motor: identificá asiento, guía, vástago y fijación en su plano.",
+      "teacher": [],
+      "exams": []
+    },
+    {
+      "id": "M348",
+      "number": 348,
+      "unit": 5,
+      "question": "¿Qué válvulas puede tener una culata y cómo cambia con el sistema de arranque y el ciclo?",
+      "axes": "Pueden existir admisión, escape, inyección, aire de arranque, indicadora o purga y dispositivos de seguridad, según el motor. Un motor neumático que mueve el volante no equivale a distribuir aire de arranque dentro de los cilindros. No todos los dos tiempos tienen válvulas de admisión ni todas las culatas llevan seis válvulas: primero se define el diseño.",
+      "teacher": [],
+      "exams": [
+        "PB26-04"
+      ]
+    },
+    {
+      "id": "M349",
+      "number": 349,
+      "unit": 5,
+      "question": "Compará una leva de distribución con el mando de aire de arranque y explicá qué sincronizan.",
+      "axes": "La distribución gobierna eventos de intercambio de gases con perfil de apertura y cierre apropiado. El distribuidor de arranque ordena la admisión de aire en cilindros y posiciones que produzcan par en el sentido solicitado, cuando ese sistema existe. Los perfiles y accionamientos dependen del fabricante; el sistema de arranque no se describe como idéntico a la válvula de admisión.",
+      "teacher": [],
+      "exams": []
+    },
+    {
+      "id": "M350",
+      "number": 350,
+      "unit": 5,
+      "question": "¿Cómo se monta un asiento postizo de válvula por ajuste térmico?",
+      "axes": "La interferencia y las dimensiones prescritas aseguran el ajuste. Puede enfriarse el inserto o calentarse controladamente la culata según el procedimiento, respetando material y límites. Se comprueban alojamiento, concentricidad, apoyo y acabado del asiento. No se aplica una temperatura universal ni se golpea o calienta sin control para forzar el montaje.",
+      "teacher": [],
+      "exams": []
+    },
+    {
+      "id": "M351",
+      "number": 351,
+      "unit": 6,
+      "question": "¿Qué significan distribución interior y exterior de la inyección en el material de clase?",
+      "axes": "En el esquema mecánico del apunte se distinguen procesos en la bomba y procesos hasta la entrega por el inyector. Relacioná llenado, cierre de lumbreras y generación de presión en la bomba con propagación en la tubería, apertura y cierre de aguja y pulverización. Identificá el esquema antes de usar los nombres: no describen igual un common rail.",
+      "teacher": [],
+      "exams": []
+    },
+    {
+      "id": "M352",
+      "number": 352,
+      "unit": 6,
+      "question": "Explicá la acción diferencial de la aguja del inyector.",
+      "axes": "La presión del combustible actúa sobre superficies efectivas de la aguja y genera una fuerza de apertura frente al resorte y otras fuerzas. Cuando se alcanza la condición de apertura la aguja se levanta y permite la entrega; al caer la presión vuelve a asentar según el diseño. Dibujá áreas y fuerzas; no supongas igualdad entre presión de apertura e inyección durante todo el evento.",
+      "teacher": [],
+      "exams": []
+    },
+    {
+      "id": "M353",
+      "number": 353,
+      "unit": 7,
+      "question": "Compará picado diésel, detonación nafta, número de octano e índice de cetano.",
+      "axes": "En Otto la detonación es autoencendido del gas final tras iniciarse la combustión normal; octano caracteriza resistencia a detonación. En diésel un retraso de encendido prolongado puede acumular combustible y causar subida brusca de presión al quemarse; cetano caracteriza aptitud de autoencendido. No son números intercambiables ni equivalen al poder calorífico.",
+      "teacher": [],
+      "exams": [
+        "GA26-08",
+        "PB26-06"
+      ]
+    },
+    {
+      "id": "M354",
+      "number": 354,
+      "unit": 8,
+      "question": "¿Qué son los ánodos de sacrificio o panes de cinc y dónde se emplean?",
+      "axes": "El ánodo de un material adecuado se consume preferentemente para proteger metales conectados en un circuito electroquímico. Puede instalarse en equipos en contacto con agua de mar cuando el fabricante lo prevé. Se verifica material, continuidad eléctrica, consumo y ubicación; no se coloca cinc indiscriminadamente en todos los circuitos ni sustituye el tratamiento del agua.",
+      "teacher": [],
+      "exams": []
+    },
+    {
+      "id": "M355",
+      "number": 355,
+      "unit": 8,
+      "question": "¿Cómo influye la diferencia de presión entre aceite y agua en una fuga de un enfriador?",
+      "axes": "La fuga tiende a avanzar desde el lado de mayor presión al de menor presión. En diseños habituales se mantiene el aceite a mayor presión durante servicio, pero se comprueba el esquema real y la condición de marcha o parada. Al detenerse pueden cambiar las presiones y el sentido de contaminación. No se deduce la fuga solo del valor de un manómetro.",
+      "teacher": [],
+      "exams": []
+    },
+    {
+      "id": "M356",
+      "number": 356,
+      "unit": 5,
+      "question": "Marcá en un diagrama qué cambia con luz excesiva o insuficiente en admisión y escape.",
+      "axes": "En un tren mecánico convencional, luz excesiva tiende a retrasar la apertura y adelantar el cierre, reduciendo duración y alzada efectiva. Luz insuficiente tiende al efecto opuesto y puede impedir el cierre en caliente. En admisión afecta llenado; en escape puede afectar evacuación, sellado y refrigeración del asiento. Dibujá ambas situaciones respecto del reglaje nominal sin universalizar ángulos ni diseños hidráulicos.",
+      "teacher": [],
+      "exams": []
+    },
+    {
+      "id": "M357",
+      "number": 357,
+      "unit": 4,
+      "question": "Señalá trabajo indicado y pérdidas de bombeo en un diagrama P-V real.",
+      "axes": "El trabajo indicado es la integral de presión respecto del volumen en el cilindro; se consideran lazos de alta y baja presión con su signo. En cuatro tiempos atmosférico, admisión y escape suelen consumir trabajo de bombeo. En uno sobrealimentado las presiones pueden modificar el signo del lazo; no es obligatorio que toda renovación sea una pérdida. Potencia efectiva al eje descuenta pérdidas mecánicas.",
+      "teacher": [],
+      "exams": [
+        "D26-04",
+        "D26-07"
+      ]
+    },
+    {
+      "id": "M358",
+      "number": 358,
+      "unit": 4,
+      "question": "Dibujá un P-V real de un dos tiempos con lumbreras y explicá qué cambia al incorporar escape en culata.",
+      "axes": "Ubicá compresión, inyección y combustión, expansión, apertura de escape, descarga y barrido alrededor del PMI. Con lumbreras gobierna su geometría y el pistón; una válvula de escape permite un control adicional del cierre y la disposición uniflujo correspondiente. No basta dibujar un ciclo ideal: marcá intercambio y presiones de barrido y escape del diseño.",
+      "teacher": [],
+      "exams": [
+        "GA26-07",
+        "D26-02",
+        "D26-04"
+      ]
+    },
+    {
+      "id": "M359",
+      "number": 359,
+      "unit": 4,
+      "question": "Compará motores de propulsión de dos y cuatro tiempos por peso, potencia y aplicación.",
+      "axes": "Un dos tiempos realiza un ciclo por vuelta y un cuatro tiempos por dos, pero eso no determina por sí solo su potencia específica o rendimiento. Compará igual base de potencia y servicio, masa total instalada, régimen, barrido, mantenimiento y acoplamiento a la hélice. Los dos tiempos lentos grandes y cuatro tiempos semirrápidos tienen aplicaciones distintas; evitá una regla universal de prevalencia.",
+      "teacher": [],
+      "exams": [
+        "D26-06"
+      ]
+    },
+    {
+      "id": "M360",
+      "number": 360,
+      "unit": 4,
+      "question": "Dibujá un diagrama circular real de cuatro tiempos atmosférico y ubicá el cruce de válvulas.",
+      "axes": "Representá 720 grados y los procesos de admisión, compresión, combustión-expansión y escape. Ubicá aperturas, cierres e inyección respecto de PMS y PMI con datos del motor; el solape es el intervalo en que admisión y escape permanecen abiertas. Diferenciá el diagrama de eventos del P-V y explicá por qué los eventos reales no coinciden todos con puntos muertos.",
+      "teacher": [],
+      "exams": [
+        "D26-01"
+      ]
+    },
+    {
+      "id": "M361",
+      "number": 361,
+      "unit": 12,
+      "question": "¿Qué instrumento llama el apunte pímetro y qué diferencia hay entre presión máxima y presión media indicada?",
+      "axes": "Identificá el instrumento y su manual: un medidor de presión máxima registra el pico de presión y no equivale a un indicador que obtiene el diagrama del ciclo. La presión media indicada corresponde al trabajo indicado dividido por cilindrada. No se calcula solo con la presión máxima ni se interpreta un nombre del apunte como especificación universal.",
+      "teacher": [],
+      "exams": []
+    },
+    {
+      "id": "M362",
+      "number": 362,
+      "unit": 10,
+      "question": "¿Qué es el rendimiento volumétrico y cómo se compara en motores atmosféricos y sobrealimentados?",
+      "axes": "Relaciona la masa realmente admitida con una masa de referencia definida a partir del volumen desplazado y condiciones especificadas. Se deben declarar presión y temperatura de referencia y si se considera aire atrapado o suministrado. En sobrealimentación la comparación puede superar la unidad con una referencia atmosférica; no es sinónimo de rendimiento térmico.",
+      "teacher": [],
+      "exams": []
+    },
+    {
+      "id": "M363",
+      "number": 363,
+      "unit": 6,
+      "question": "Distinguí intertiempo, retraso hidráulico y retraso de encendido en inyección diésel.",
+      "axes": "Ubicá inicio de acción de bomba, inicio real de inyección e inicio de combustión en tiempo o grados. La propagación y respuesta hidráulica no coinciden con la preparación físico-química hasta ignición. El término intertiempo se interpreta con el diagrama y convención del docente; no se usa para sumar o confundir intervalos distintos sin definir sus extremos.",
+      "teacher": [],
+      "exams": []
+    },
+    {
+      "id": "M364",
+      "number": 364,
+      "unit": 6,
+      "question": "¿Qué hace un purificador centrífugo de combustible y cuáles son sus límites?",
+      "axes": "Separa fases y partículas por diferencias de densidad bajo fuerza centrífuga, con configuración y condiciones de caudal y temperatura previstas. Se distinguen purificación con separación de agua y clarificación según equipo. No elimina cualquier contaminante disuelto ni sustituye filtros, análisis y corrección del origen de contaminación; se sigue el manual del separador.",
+      "teacher": [],
+      "exams": []
     }
   ],
   "teacher": [
@@ -4607,5 +5735,944 @@
         "M054"
       ]
     }
-  ]
+  ],
+  "exams": [
+    {
+      "id": "GA26",
+      "title": "Generalidades · Tema A · 09/04/2026",
+      "url": "https://drive.google.com/file/d/1zyNYL2JhohhbV0TOEFKpVPvyFTizXVrm/view",
+      "reading": "Lectura visual de la fotografía; consignas normalizadas sin datos personales ni respuestas manuscritas.",
+      "questions": [
+        {
+          "id": "GA26-01",
+          "number": 1,
+          "text": "Balance térmico y ciclo de trabajo.",
+          "guideIds": [
+            "M270",
+            "M271",
+            "M094",
+            "M095",
+            "M097",
+            "M098",
+            "M099"
+          ],
+          "oralIds": [
+            "motores-u8-q3",
+            "motores-u9-q4"
+          ]
+        },
+        {
+          "id": "GA26-02",
+          "number": 2,
+          "text": "Combustión externa y aplicación a bordo.",
+          "guideIds": [
+            "M002",
+            "M004",
+            "M005"
+          ],
+          "oralIds": [
+            "motores-u8-q4"
+          ]
+        },
+        {
+          "id": "GA26-03",
+          "number": 3,
+          "text": "Motores a presión constante y carrera motriz.",
+          "guideIds": [
+            "M002",
+            "M004",
+            "M005",
+            "M094",
+            "M095",
+            "M097",
+            "M098",
+            "M099"
+          ],
+          "oralIds": [
+            "motores-u8-q4",
+            "motores-u9-q4"
+          ]
+        },
+        {
+          "id": "GA26-04",
+          "number": 4,
+          "text": "Espacio nocivo y efectos de modificarlo.",
+          "guideIds": [
+            "M343"
+          ],
+          "oralIds": [
+            "motores-u8-q1"
+          ]
+        },
+        {
+          "id": "GA26-05",
+          "number": 5,
+          "text": "Volumen de cámara, espacio nocivo y funcionamiento.",
+          "guideIds": [
+            "M343"
+          ],
+          "oralIds": [
+            "motores-u8-q1"
+          ]
+        },
+        {
+          "id": "GA26-06",
+          "number": 6,
+          "text": "Fases de cuatro tiempos y carrera motriz.",
+          "guideIds": [
+            "M094",
+            "M095",
+            "M097",
+            "M098",
+            "M099"
+          ],
+          "oralIds": [
+            "motores-u9-q4"
+          ]
+        },
+        {
+          "id": "GA26-07",
+          "number": 7,
+          "text": "Corrección del ciclo de dos tiempos.",
+          "guideIds": [
+            "M094",
+            "M095",
+            "M097",
+            "M098",
+            "M099",
+            "M358"
+          ],
+          "oralIds": [
+            "motores-u9-q4",
+            "motores-u9-q1"
+          ]
+        },
+        {
+          "id": "GA26-08",
+          "number": 8,
+          "text": "Límite de relación de compresión de un naftero.",
+          "guideIds": [
+            "M353",
+            "M076",
+            "M077",
+            "M079",
+            "M081",
+            "M084"
+          ],
+          "oralIds": [
+            "motores-u5-q5",
+            "motores-u8-q2"
+          ]
+        },
+        {
+          "id": "GA26-09",
+          "number": 9,
+          "text": "Motores largos y componentes del tren alternativo.",
+          "guideIds": [
+            "M076",
+            "M077",
+            "M079",
+            "M081",
+            "M084",
+            "M040",
+            "M041",
+            "M044",
+            "M045"
+          ],
+          "oralIds": [
+            "motores-u8-q2",
+            "motores-u3-q5"
+          ]
+        },
+        {
+          "id": "GA26-10",
+          "number": 10,
+          "text": "Mecanismo de distribución.",
+          "guideIds": [
+            "M120",
+            "M121",
+            "M123",
+            "M124",
+            "M125",
+            "M130",
+            "M133",
+            "M134"
+          ],
+          "oralIds": [
+            "motores-u1-q9"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PA26",
+      "title": "Partes constitutivas · Tema A · 11/06/2026",
+      "url": "https://drive.google.com/file/d/1qSOUuY9j90hnq16NSvBH-xebMWzMSJAE/view",
+      "reading": "Lectura visual de la fotografía; consignas normalizadas sin datos personales ni respuestas manuscritas.",
+      "questions": [
+        {
+          "id": "PA26-01",
+          "number": 1,
+          "text": "Misión y dos tipos de pistón.",
+          "guideIds": [
+            "M338",
+            "M040",
+            "M041",
+            "M044",
+            "M045"
+          ],
+          "oralIds": [
+            "motores-u2-q4",
+            "motores-u3-q5"
+          ]
+        },
+        {
+          "id": "PA26-02",
+          "number": 2,
+          "text": "Pistón bimetálico y aplicaciones.",
+          "guideIds": [
+            "M337"
+          ],
+          "oralIds": [
+            "motores-u2-q3"
+          ]
+        },
+        {
+          "id": "PA26-03",
+          "number": 3,
+          "text": "Huelgo perno-cojinete y efecto en el ciclo; quién lo determina.",
+          "guideIds": [
+            "M039",
+            "M071"
+          ],
+          "oralIds": [
+            "motores-u2-q7"
+          ]
+        },
+        {
+          "id": "PA26-04",
+          "number": 4,
+          "text": "Fijación de perno flotante con esquema.",
+          "guideIds": [
+            "M039",
+            "M071"
+          ],
+          "oralIds": [
+            "motores-u2-q7"
+          ]
+        },
+        {
+          "id": "PA26-05",
+          "number": 5,
+          "text": "Ubicación y finalidad de aros.",
+          "guideIds": [
+            "M032",
+            "M033",
+            "M035",
+            "M036",
+            "M038"
+          ],
+          "oralIds": [
+            "motores-u2-q8"
+          ]
+        },
+        {
+          "id": "PA26-06",
+          "number": 6,
+          "text": "Presiones que soportan los aros.",
+          "guideIds": [
+            "M339"
+          ],
+          "oralIds": [
+            "motores-u2-q5"
+          ]
+        },
+        {
+          "id": "PA26-07",
+          "number": 7,
+          "text": "Culata no convencional.",
+          "guideIds": [
+            "M336"
+          ],
+          "oralIds": [
+            "motores-u1-q3"
+          ]
+        },
+        {
+          "id": "PA26-08",
+          "number": 8,
+          "text": "Cortes de aros y montaje en dos tiempos.",
+          "guideIds": [
+            "M340"
+          ],
+          "oralIds": [
+            "motores-u2-q6"
+          ]
+        },
+        {
+          "id": "PA26-09",
+          "number": 9,
+          "text": "Biela horquillada.",
+          "guideIds": [
+            "M042"
+          ],
+          "oralIds": [
+            "motores-u3-q4"
+          ]
+        },
+        {
+          "id": "PA26-10",
+          "number": 10,
+          "text": "Par motor o torque en tren alternativo.",
+          "guideIds": [
+            "M266",
+            "M267",
+            "M268",
+            "M269",
+            "M274",
+            "M275",
+            "M076",
+            "M077",
+            "M079",
+            "M081",
+            "M084"
+          ],
+          "oralIds": [
+            "motores-u12-q2",
+            "motores-u8-q2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PB26",
+      "title": "Partes constitutivas · Tema B · 02/06/2026",
+      "url": "https://drive.google.com/file/d/15QH1oBYLcV0arbs2ng71PbC6-cYV-ItG/view",
+      "reading": "Lectura visual de la fotografía; consignas normalizadas sin datos personales ni respuestas manuscritas.",
+      "questions": [
+        {
+          "id": "PB26-01",
+          "number": 1,
+          "text": "Camisa seca y con manguito de agua; particularidad inferior de dos tiempos grande.",
+          "guideIds": [
+            "M346"
+          ],
+          "oralIds": [
+            "motores-u0-q7"
+          ]
+        },
+        {
+          "id": "PB26-02",
+          "number": 2,
+          "text": "Zona de mayor desgaste y herramienta y proceso de medición.",
+          "guideIds": [
+            "M344"
+          ],
+          "oralIds": [
+            "motores-u0-q5"
+          ]
+        },
+        {
+          "id": "PB26-03",
+          "number": 3,
+          "text": "Tren alternativo de motor largo con giro antihorario y componentes.",
+          "guideIds": [
+            "M040",
+            "M041",
+            "M044",
+            "M045"
+          ],
+          "oralIds": [
+            "motores-u3-q5"
+          ]
+        },
+        {
+          "id": "PB26-04",
+          "number": 4,
+          "text": "Culata cuatro tiempos con inyección indirecta y distribuidor de arranque; válvulas.",
+          "guideIds": [
+            "M336",
+            "M348"
+          ],
+          "oralIds": [
+            "motores-u1-q3",
+            "motores-u1-q5"
+          ]
+        },
+        {
+          "id": "PB26-05",
+          "number": 5,
+          "text": "Espacio nocivo, control y volumen de cámara.",
+          "guideIds": [
+            "M343"
+          ],
+          "oralIds": [
+            "motores-u8-q1"
+          ]
+        },
+        {
+          "id": "PB26-06",
+          "number": 6,
+          "text": "Picado nafta y daños.",
+          "guideIds": [
+            "M353"
+          ],
+          "oralIds": [
+            "motores-u5-q5"
+          ]
+        },
+        {
+          "id": "PB26-07",
+          "number": 7,
+          "text": "Ovalización y efectos en el ciclo.",
+          "guideIds": [
+            "M344",
+            "M335"
+          ],
+          "oralIds": [
+            "motores-u0-q5",
+            "motores-u0-q4"
+          ]
+        },
+        {
+          "id": "PB26-08",
+          "number": 8,
+          "text": "Cavitación en camisa húmeda.",
+          "guideIds": [
+            "M019",
+            "M024",
+            "M194"
+          ],
+          "oralIds": [
+            "motores-u0-q8"
+          ]
+        },
+        {
+          "id": "PB26-09",
+          "number": 9,
+          "text": "Limpieza de asientos exteriores antes de colocar camisa.",
+          "guideIds": [
+            "M345"
+          ],
+          "oralIds": [
+            "motores-u0-q6"
+          ]
+        },
+        {
+          "id": "PB26-10",
+          "number": 10,
+          "text": "Explosión en cárter y consecuencias.",
+          "guideIds": [
+            "M319",
+            "M320"
+          ],
+          "oralIds": [
+            "motores-u7-q3",
+            "motores-u7-q4",
+            "motores-u7-q5",
+            "motores-u7-q6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CB26",
+      "title": "Cigüeñal y cojinetes · Tema B · 14/07/2026",
+      "url": "https://drive.google.com/file/d/1j0TZmDud6qst4YIye5X9Evl9Yt1WkJvN/view",
+      "reading": "Lectura visual de la fotografía; consignas normalizadas sin datos personales ni respuestas manuscritas.",
+      "questions": [
+        {
+          "id": "CB26-01",
+          "number": 1,
+          "text": "Esfuerzos y deformaciones del cigüeñal.",
+          "guideIds": [
+            "M046",
+            "M048",
+            "M049",
+            "M054"
+          ],
+          "oralIds": [
+            "motores-u4-q8"
+          ]
+        },
+        {
+          "id": "CB26-02",
+          "number": 2,
+          "text": "Cigüeñales enterizos y en secciones; qué evitar.",
+          "guideIds": [
+            "M046",
+            "M048",
+            "M049",
+            "M054"
+          ],
+          "oralIds": [
+            "motores-u4-q8"
+          ]
+        },
+        {
+          "id": "CB26-03",
+          "number": 3,
+          "text": "Alarma crítica de lubricación y riesgo de dilución.",
+          "guideIds": [
+            "M201",
+            "M202",
+            "M210",
+            "M211",
+            "M212",
+            "M213",
+            "M214",
+            "M217",
+            "M218"
+          ],
+          "oralIds": [
+            "motores-u7-q7"
+          ]
+        },
+        {
+          "id": "CB26-04",
+          "number": 4,
+          "text": "Flexímetro y prevención de rotura.",
+          "guideIds": [
+            "M054",
+            "M056",
+            "M057",
+            "M074"
+          ],
+          "oralIds": [
+            "motores-u4-q7"
+          ]
+        },
+        {
+          "id": "CB26-05",
+          "number": 5,
+          "text": "Calibre puente y utilidad.",
+          "guideIds": [
+            "M054",
+            "M056",
+            "M057",
+            "M074"
+          ],
+          "oralIds": [
+            "motores-u4-q7"
+          ]
+        },
+        {
+          "id": "CB26-06",
+          "number": 6,
+          "text": "Huelgo perno-cojinete y efectos en ciclo.",
+          "guideIds": [
+            "M039",
+            "M071"
+          ],
+          "oralIds": [
+            "motores-u2-q7"
+          ]
+        },
+        {
+          "id": "CB26-07",
+          "number": 7,
+          "text": "Desventajas de rodamiento frente a deslizante.",
+          "guideIds": [
+            "M060",
+            "M061",
+            "M062",
+            "M063",
+            "M065",
+            "M066",
+            "M069"
+          ],
+          "oralIds": [
+            "motores-u4-q6"
+          ]
+        },
+        {
+          "id": "CB26-08",
+          "number": 8,
+          "text": "Construcción y materiales de cojinetes de contacto.",
+          "guideIds": [
+            "M060",
+            "M061",
+            "M062",
+            "M063",
+            "M065",
+            "M066",
+            "M069"
+          ],
+          "oralIds": [
+            "motores-u4-q6"
+          ]
+        },
+        {
+          "id": "CB26-09",
+          "number": 9,
+          "text": "Clasificación por carga de bancada y biela.",
+          "guideIds": [
+            "M060",
+            "M061",
+            "M062",
+            "M063",
+            "M065",
+            "M066",
+            "M069"
+          ],
+          "oralIds": [
+            "motores-u4-q6"
+          ]
+        },
+        {
+          "id": "CB26-10",
+          "number": 10,
+          "text": "Función de bancada y flexímetro.",
+          "guideIds": [
+            "M060",
+            "M061",
+            "M062",
+            "M063",
+            "M065",
+            "M066",
+            "M069",
+            "M054",
+            "M056",
+            "M057",
+            "M074"
+          ],
+          "oralIds": [
+            "motores-u4-q6",
+            "motores-u4-q7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D26",
+      "title": "Diagramas · Tema 2 · 25/08/2026",
+      "url": "https://drive.google.com/file/d/1z0BPA2FQfBWjZxkrt2v7cHbqC_Ok6RQN/view",
+      "reading": "Lectura visual de la fotografía; consignas normalizadas sin datos personales ni respuestas manuscritas.",
+      "questions": [
+        {
+          "id": "D26-01",
+          "number": 1,
+          "text": "Diagrama circular real cuatro tiempos atmosférico, ciclo y cruce.",
+          "guideIds": [
+            "M360"
+          ],
+          "oralIds": [
+            "motores-u9-q3"
+          ]
+        },
+        {
+          "id": "D26-02",
+          "number": 2,
+          "text": "P-V real dos tiempos con lumbreras y bomba de barrido; incorporación de escape en culata.",
+          "guideIds": [
+            "M358",
+            "M225",
+            "M226",
+            "M227"
+          ],
+          "oralIds": [
+            "motores-u9-q1",
+            "motores-u10-q0"
+          ]
+        },
+        {
+          "id": "D26-03",
+          "number": 3,
+          "text": "Sobrealimentación en dos tiempos con válvula de escape.",
+          "guideIds": [
+            "M225",
+            "M226",
+            "M227"
+          ],
+          "oralIds": [
+            "motores-u10-q0"
+          ]
+        },
+        {
+          "id": "D26-04",
+          "number": 4,
+          "text": "Pérdidas por ciclo y zona en el diagrama del punto 2.",
+          "guideIds": [
+            "M357",
+            "M358"
+          ],
+          "oralIds": [
+            "motores-u9-q0",
+            "motores-u9-q1"
+          ]
+        },
+        {
+          "id": "D26-05",
+          "number": 5,
+          "text": "Proceso de inyección-combustión del motor del punto 2.",
+          "guideIds": [
+            "M109",
+            "M148",
+            "M149",
+            "M151",
+            "M156"
+          ],
+          "oralIds": [
+            "motores-u5-q6"
+          ]
+        },
+        {
+          "id": "D26-06",
+          "number": 6,
+          "text": "Comparación de propulsión dos y cuatro tiempos por peso y potencia.",
+          "guideIds": [
+            "M359"
+          ],
+          "oralIds": [
+            "motores-u9-q2"
+          ]
+        },
+        {
+          "id": "D26-07",
+          "number": 7,
+          "text": "Trabajo efectivo en ciclo y premisa del enunciado.",
+          "guideIds": [
+            "M357"
+          ],
+          "oralIds": [
+            "motores-u9-q0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "G21",
+      "title": "Examen escrito · 26/05/2021",
+      "url": "https://drive.google.com/file/d/1JYqNNnN1sNiu_AnmG3elxZjCSvNd_1Yk/view",
+      "reading": "Lectura visual de la fotografía; consignas normalizadas sin datos personales ni respuestas manuscritas.",
+      "questions": [
+        {
+          "id": "G21-01",
+          "number": 1,
+          "text": "Diésel frente a naftero en aplicación naval.",
+          "guideIds": [
+            "M333"
+          ],
+          "oralIds": [
+            "motores-u8-q0"
+          ]
+        },
+        {
+          "id": "G21-02",
+          "number": 2,
+          "text": "Biela horquillada frente a articulada.",
+          "guideIds": [
+            "M042"
+          ],
+          "oralIds": [
+            "motores-u3-q4"
+          ]
+        },
+        {
+          "id": "G21-03",
+          "number": 3,
+          "text": "Lateralización de camisa con esquema.",
+          "guideIds": [
+            "M334"
+          ],
+          "oralIds": [
+            "motores-u0-q3"
+          ]
+        },
+        {
+          "id": "G21-04",
+          "number": 4,
+          "text": "Ovalización y dónde medir.",
+          "guideIds": [
+            "M344"
+          ],
+          "oralIds": [
+            "motores-u0-q5"
+          ]
+        },
+        {
+          "id": "G21-05",
+          "number": 5,
+          "text": "Efectos de desgastes sobre ciclo.",
+          "guideIds": [
+            "M335"
+          ],
+          "oralIds": [
+            "motores-u0-q4"
+          ]
+        },
+        {
+          "id": "G21-06",
+          "number": 6,
+          "text": "Ciclo real diésel dos tiempos.",
+          "guideIds": [
+            "M094",
+            "M095",
+            "M097",
+            "M098",
+            "M099"
+          ],
+          "oralIds": [
+            "motores-u9-q4"
+          ]
+        },
+        {
+          "id": "G21-07",
+          "number": 7,
+          "text": "Ciclo real diésel cuatro tiempos.",
+          "guideIds": [
+            "M094",
+            "M095",
+            "M097",
+            "M098",
+            "M099"
+          ],
+          "oralIds": [
+            "motores-u9-q4"
+          ]
+        },
+        {
+          "id": "G21-08",
+          "number": 8,
+          "text": "Culata con cámara auxiliar y deformaciones.",
+          "guideIds": [
+            "M336"
+          ],
+          "oralIds": [
+            "motores-u1-q3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CSF",
+      "title": "Cigüeñal y cojinetes · sin fecha visible",
+      "url": "https://drive.google.com/file/d/1C0_i7CftQ4tNPNt3ncWkMVlQbLuUHPXa/view",
+      "reading": "Lectura visual de la fotografía; consignas normalizadas sin datos personales ni respuestas manuscritas.",
+      "questions": [
+        {
+          "id": "CSF-01",
+          "number": 1,
+          "text": "Movimiento circular continuo y uniforme: justificar y matizar.",
+          "guideIds": [
+            "M046",
+            "M048",
+            "M049",
+            "M054"
+          ],
+          "oralIds": [
+            "motores-u4-q8"
+          ]
+        },
+        {
+          "id": "CSF-02",
+          "number": 2,
+          "text": "Esfuerzos y toma de deflexiones.",
+          "guideIds": [
+            "M046",
+            "M048",
+            "M049",
+            "M054",
+            "M056",
+            "M057",
+            "M074"
+          ],
+          "oralIds": [
+            "motores-u4-q8",
+            "motores-u4-q7"
+          ]
+        },
+        {
+          "id": "CSF-03",
+          "number": 3,
+          "text": "Calibre puente y flexímetro: ubicación e interpretación.",
+          "guideIds": [
+            "M054",
+            "M056",
+            "M057",
+            "M074"
+          ],
+          "oralIds": [
+            "motores-u4-q7"
+          ]
+        },
+        {
+          "id": "CSF-04",
+          "number": 4,
+          "text": "Esfuerzos de bancada y casquillo girado.",
+          "guideIds": [
+            "M060",
+            "M061",
+            "M062",
+            "M063",
+            "M065",
+            "M066",
+            "M069",
+            "M342"
+          ],
+          "oralIds": [
+            "motores-u4-q6",
+            "motores-u4-q5"
+          ]
+        },
+        {
+          "id": "CSF-05",
+          "number": 5,
+          "text": "Cojinete trimetálico, esquema y análisis de aceite.",
+          "guideIds": [
+            "M331"
+          ],
+          "oralIds": [
+            "motores-u4-q3"
+          ]
+        },
+        {
+          "id": "CSF-06",
+          "number": 6,
+          "text": "Características y exigencias de cojinete.",
+          "guideIds": [
+            "M332"
+          ],
+          "oralIds": [
+            "motores-u4-q4"
+          ]
+        },
+        {
+          "id": "CSF-07",
+          "number": 7,
+          "text": "Clasificación constructiva de cojinetes.",
+          "guideIds": [
+            "M060",
+            "M061",
+            "M062",
+            "M063",
+            "M065",
+            "M066",
+            "M069"
+          ],
+          "oralIds": [
+            "motores-u4-q6"
+          ]
+        },
+        {
+          "id": "CSF-08",
+          "number": 8,
+          "text": "Fabricación y material de cojinetes deslizantes.",
+          "guideIds": [
+            "M060",
+            "M061",
+            "M062",
+            "M063",
+            "M065",
+            "M066",
+            "M069"
+          ],
+          "oralIds": [
+            "motores-u4-q6"
+          ]
+        }
+      ]
+    }
+  ],
+  "reviewScope": "Siete exámenes únicos en fotografías. Los dos duplicados con otro nombre y el DOCX de cigüeñal de 2021 coinciden con consignas ya vinculadas. TP y bancos se usan como material complementario; no se afirma cobertura exhaustiva de todos los archivos de Drive."
 }

@@ -1,8 +1,8 @@
 {
   "title": "Guía integral de preguntas de Motores Navales",
   "date": "27 de octubre de 2026",
-  "intro": "330 preguntas para preparar el examen y explicar el motor como un conjunto de piezas y sistemas. La organización sigue las 15 unidades del programa de Motores Navales suministrado. Las 100 consignas de las dos guías del profesor están vinculadas con preguntas de esta guía; sus repeticiones se reúnen sin perder el texto original.",
-  "method": "Las preguntas marcadas Prioridad docente reformulan o integran consignas de las guías, conservando su alcance. Las restantes son ampliaciones de ChatGPT a partir del programa, materiales de clase revisados e investigación técnica. Los ejes orientan qué debe abarcar la respuesta; no constituyen un solucionario ni una garantía de las preguntas que aparecerán en el examen.",
+  "intro": "364 preguntas para preparar el examen anual, organizadas en las 15 unidades del programa. Se conservan los códigos M001–M330 y se incorporan M331–M364. La revisión contrasta siete exámenes únicos fotografiados (63 consignas), los dos cuestionarios docentes y los bancos complementarios identificados en las fuentes.",
+  "method": "Las preguntas marcadas Prioridad docente reformulan o integran consignas de las guías, conservando su alcance. Las restantes son ampliaciones de ChatGPT a partir del programa, materiales de clase revisados e investigación técnica. Los ejes orientan qué debe abarcar la respuesta; no constituyen un solucionario ni una garantía de las preguntas que aparecerán en el examen. Las marcas EXAMEN enlazan cada consigna revisada con su pregunta de estudio. Una correspondencia puede requerir varias preguntas; no significa que una pregunta aislada cubra todos los puntos del examen.",
   "use": "Respondé primero sin mirar los ejes. Para cada pieza explicá qué es, dónde está, qué hace, con qué se conecta y cómo puede fallar. Para cada sistema seguí el recorrido del fluido o de la energía. En los casos, separá síntoma, causas posibles, comprobación y decisión. Marcá Repasar o Dominada sólo después de explicarla en voz alta.",
   "limits": "Los valores de presión, temperatura, huelgo, apriete y actuación de protecciones corresponden al motor, su régimen y su manual. La guía pide interpretar y consultar esos datos; no convierte cifras de un ejemplo de clase en límites de todos los motores.",
   "sources": [
@@ -159,12 +159,43 @@
       "url": "https://my.wingd.com/media/g5bd21zh/om_wingd-x62-b.pdf",
       "locator": "Manual de operación: alarma de niebla de aceite y precauciones antes de abrir el cárter.",
       "note": "Ejemplo de fabricante; no se generalizan sus tiempos de espera a otros motores."
+    },
+    {
+      "id": "EXAMS",
+      "title": "Fotografías de siete exámenes y material complementario de Motores",
+      "url": "https://drive.google.com/drive/folders/1lXHTvSVKGZznhm5gzctIcxFfPZiUzVTw",
+      "locator": "Generalidades 09/04/2026; partes A 11/06/2026 y B 02/06/2026; cigüeñal B 14/07/2026; diagramas 25/08/2026; escrito 26/05/2021; cigüeñal sin fecha.",
+      "note": "Lectura visual de siete fotografías únicas; dos copias con nombres alternativos no se cuentan otra vez. Las consignas se normalizan y se enlazan sin publicar datos personales ni respuestas manuscritas."
+    },
+    {
+      "id": "B132",
+      "title": "Banco de preguntas y respuestas para final · 22 páginas",
+      "url": "https://drive.google.com/file/d/1bm2C0sffJOaUXfEQ_-rSVm07ZRrG8F2W/view",
+      "locator": "132 consignas numeradas; comparación temática y lectura de las secciones relevantes.",
+      "note": "Se utilizan consignas y terminología. Las respuestas de estudio no se adoptan como solucionario técnico validado."
+    },
+    {
+      "id": "D21",
+      "title": "Distribución, componentes, refrigeración e inyección · 21 páginas",
+      "url": "https://drive.google.com/file/d/1yKtgC79wgZgLzyrrDqeJ-A8UMqwX9wwb/view",
+      "locator": "Consignas sobre distribución y huelgos, pistones, inyección, refrigeración y diagramas.",
+      "note": "Hay premisas de diseño que requieren aclaración, por ejemplo válvula de admisión en un diésel de dos tiempos; se conserva el tema y se exige identificar el motor."
+    },
+    {
+      "id": "KS",
+      "title": "Motorservice · Engine bearings: basic information",
+      "url": "https://www.ms-motorservice.com/MediaAssets/1809301_ks_50003982_web.pdf",
+      "locator": "Estructura y materiales de cojinetes.",
+      "note": "Apoyo técnico para distinguir capas y materiales de construcciones específicas."
     }
   ],
   "unitSources": {
     "1": [
       "P",
-      "G"
+      "G",
+      "EXAMS",
+      "B132",
+      "D21"
     ],
     "2": [
       "P",
@@ -173,72 +204,111 @@
       "R",
       "S",
       "SG",
-      "W"
+      "W",
+      "EXAMS",
+      "B132",
+      "D21"
     ],
     "3": [
       "P",
       "G",
-      "C"
+      "C",
+      "EXAMS",
+      "B132",
+      "D21"
     ],
     "4": [
       "P",
       "G",
       "O",
-      "T"
+      "T",
+      "EXAMS",
+      "B132",
+      "D21"
     ],
     "5": [
       "P",
-      "W"
+      "W",
+      "EXAMS",
+      "B132",
+      "D21"
     ],
     "6": [
       "P",
       "I",
       "B",
-      "W"
+      "W",
+      "EXAMS",
+      "B132",
+      "D21"
     ],
     "7": [
       "P",
       "N",
-      "O"
+      "O",
+      "EXAMS",
+      "B132",
+      "D21"
     ],
     "8": [
       "P",
       "W",
-      "F2"
+      "F2",
+      "EXAMS",
+      "B132",
+      "D21"
     ],
     "9": [
       "P",
       "C",
       "L",
       "S",
-      "W"
+      "W",
+      "EXAMS",
+      "B132",
+      "D21"
     ],
     "10": [
       "P",
       "T",
-      "W"
+      "W",
+      "EXAMS",
+      "B132",
+      "D21"
     ],
     "11": [
       "P",
       "W",
-      "F3"
+      "F3",
+      "EXAMS",
+      "B132",
+      "D21"
     ],
     "12": [
       "P",
       "G",
       "V",
-      "W"
+      "W",
+      "EXAMS",
+      "B132",
+      "D21"
     ],
     "13": [
       "P",
       "C",
       "D",
-      "W"
+      "W",
+      "EXAMS",
+      "B132",
+      "D21"
     ],
     "14": [
       "P",
       "W",
-      "F3"
+      "F3",
+      "EXAMS",
+      "B132",
+      "D21"
     ],
     "15": [
       "P",
@@ -249,7 +319,10 @@
       "W",
       "E",
       "MC",
-      "WC"
+      "WC",
+      "EXAMS",
+      "B132",
+      "D21"
     ]
   },
   "coverage": [
@@ -384,6 +457,15 @@
       "sources": [
         "W",
         "P"
+      ]
+    },
+    {
+      "title": "Premisas de diagramas y reglaje de válvulas",
+      "refs": "D26, TP Diagramas y banco de 21 páginas",
+      "text": "Algunos enunciados mencionan válvula de admisión en un dos tiempos o cuatro tiempos con lumbreras. Antes de dibujar se debe identificar el diseño; no se sustituyen automáticamente admisión y escape. En trenes mecánicos convencionales una luz excesiva tiende a reducir duración y alzada efectiva; una luz insuficiente puede impedir el cierre en caliente. Las respuestas de compañeros no convierten en universales ángulos, emisiones, tiempos de espera ni materiales.",
+      "sources": [
+        "D21",
+        "W"
       ]
     }
   ],

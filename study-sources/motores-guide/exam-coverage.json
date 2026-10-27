@@ -1,0 +1,974 @@
+{
+  "version": 1,
+  "scope": "Siete exámenes únicos en fotografías. Los dos duplicados con otro nombre y el DOCX de cigüeñal de 2021 coinciden con consignas ya vinculadas. TP y bancos se usan como material complementario; no se afirma cobertura exhaustiva de todos los archivos de Drive.",
+  "exams": [
+    {
+      "id": "GA26",
+      "title": "Generalidades · Tema A · 09/04/2026",
+      "url": "https://drive.google.com/file/d/1zyNYL2JhohhbV0TOEFKpVPvyFTizXVrm/view",
+      "reading": "Lectura visual de la fotografía; consignas normalizadas sin datos personales ni respuestas manuscritas.",
+      "questions": [
+        {
+          "id": "GA26-01",
+          "number": 1,
+          "text": "Balance térmico y ciclo de trabajo.",
+          "guideIds": [
+            "M270",
+            "M271",
+            "M094",
+            "M095",
+            "M097",
+            "M098",
+            "M099"
+          ],
+          "oralIds": [
+            "motores-u8-q3",
+            "motores-u9-q4"
+          ]
+        },
+        {
+          "id": "GA26-02",
+          "number": 2,
+          "text": "Combustión externa y aplicación a bordo.",
+          "guideIds": [
+            "M002",
+            "M004",
+            "M005"
+          ],
+          "oralIds": [
+            "motores-u8-q4"
+          ]
+        },
+        {
+          "id": "GA26-03",
+          "number": 3,
+          "text": "Motores a presión constante y carrera motriz.",
+          "guideIds": [
+            "M002",
+            "M004",
+            "M005",
+            "M094",
+            "M095",
+            "M097",
+            "M098",
+            "M099"
+          ],
+          "oralIds": [
+            "motores-u8-q4",
+            "motores-u9-q4"
+          ]
+        },
+        {
+          "id": "GA26-04",
+          "number": 4,
+          "text": "Espacio nocivo y efectos de modificarlo.",
+          "guideIds": [
+            "M343"
+          ],
+          "oralIds": [
+            "motores-u8-q1"
+          ]
+        },
+        {
+          "id": "GA26-05",
+          "number": 5,
+          "text": "Volumen de cámara, espacio nocivo y funcionamiento.",
+          "guideIds": [
+            "M343"
+          ],
+          "oralIds": [
+            "motores-u8-q1"
+          ]
+        },
+        {
+          "id": "GA26-06",
+          "number": 6,
+          "text": "Fases de cuatro tiempos y carrera motriz.",
+          "guideIds": [
+            "M094",
+            "M095",
+            "M097",
+            "M098",
+            "M099"
+          ],
+          "oralIds": [
+            "motores-u9-q4"
+          ]
+        },
+        {
+          "id": "GA26-07",
+          "number": 7,
+          "text": "Corrección del ciclo de dos tiempos.",
+          "guideIds": [
+            "M094",
+            "M095",
+            "M097",
+            "M098",
+            "M099",
+            "M358"
+          ],
+          "oralIds": [
+            "motores-u9-q4",
+            "motores-u9-q1"
+          ]
+        },
+        {
+          "id": "GA26-08",
+          "number": 8,
+          "text": "Límite de relación de compresión de un naftero.",
+          "guideIds": [
+            "M353",
+            "M076",
+            "M077",
+            "M079",
+            "M081",
+            "M084"
+          ],
+          "oralIds": [
+            "motores-u5-q5",
+            "motores-u8-q2"
+          ]
+        },
+        {
+          "id": "GA26-09",
+          "number": 9,
+          "text": "Motores largos y componentes del tren alternativo.",
+          "guideIds": [
+            "M076",
+            "M077",
+            "M079",
+            "M081",
+            "M084",
+            "M040",
+            "M041",
+            "M044",
+            "M045"
+          ],
+          "oralIds": [
+            "motores-u8-q2",
+            "motores-u3-q5"
+          ]
+        },
+        {
+          "id": "GA26-10",
+          "number": 10,
+          "text": "Mecanismo de distribución.",
+          "guideIds": [
+            "M120",
+            "M121",
+            "M123",
+            "M124",
+            "M125",
+            "M130",
+            "M133",
+            "M134"
+          ],
+          "oralIds": [
+            "motores-u1-q9"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PA26",
+      "title": "Partes constitutivas · Tema A · 11/06/2026",
+      "url": "https://drive.google.com/file/d/1qSOUuY9j90hnq16NSvBH-xebMWzMSJAE/view",
+      "reading": "Lectura visual de la fotografía; consignas normalizadas sin datos personales ni respuestas manuscritas.",
+      "questions": [
+        {
+          "id": "PA26-01",
+          "number": 1,
+          "text": "Misión y dos tipos de pistón.",
+          "guideIds": [
+            "M338",
+            "M040",
+            "M041",
+            "M044",
+            "M045"
+          ],
+          "oralIds": [
+            "motores-u2-q4",
+            "motores-u3-q5"
+          ]
+        },
+        {
+          "id": "PA26-02",
+          "number": 2,
+          "text": "Pistón bimetálico y aplicaciones.",
+          "guideIds": [
+            "M337"
+          ],
+          "oralIds": [
+            "motores-u2-q3"
+          ]
+        },
+        {
+          "id": "PA26-03",
+          "number": 3,
+          "text": "Huelgo perno-cojinete y efecto en el ciclo; quién lo determina.",
+          "guideIds": [
+            "M039",
+            "M071"
+          ],
+          "oralIds": [
+            "motores-u2-q7"
+          ]
+        },
+        {
+          "id": "PA26-04",
+          "number": 4,
+          "text": "Fijación de perno flotante con esquema.",
+          "guideIds": [
+            "M039",
+            "M071"
+          ],
+          "oralIds": [
+            "motores-u2-q7"
+          ]
+        },
+        {
+          "id": "PA26-05",
+          "number": 5,
+          "text": "Ubicación y finalidad de aros.",
+          "guideIds": [
+            "M032",
+            "M033",
+            "M035",
+            "M036",
+            "M038"
+          ],
+          "oralIds": [
+            "motores-u2-q8"
+          ]
+        },
+        {
+          "id": "PA26-06",
+          "number": 6,
+          "text": "Presiones que soportan los aros.",
+          "guideIds": [
+            "M339"
+          ],
+          "oralIds": [
+            "motores-u2-q5"
+          ]
+        },
+        {
+          "id": "PA26-07",
+          "number": 7,
+          "text": "Culata no convencional.",
+          "guideIds": [
+            "M336"
+          ],
+          "oralIds": [
+            "motores-u1-q3"
+          ]
+        },
+        {
+          "id": "PA26-08",
+          "number": 8,
+          "text": "Cortes de aros y montaje en dos tiempos.",
+          "guideIds": [
+            "M340"
+          ],
+          "oralIds": [
+            "motores-u2-q6"
+          ]
+        },
+        {
+          "id": "PA26-09",
+          "number": 9,
+          "text": "Biela horquillada.",
+          "guideIds": [
+            "M042"
+          ],
+          "oralIds": [
+            "motores-u3-q4"
+          ]
+        },
+        {
+          "id": "PA26-10",
+          "number": 10,
+          "text": "Par motor o torque en tren alternativo.",
+          "guideIds": [
+            "M266",
+            "M267",
+            "M268",
+            "M269",
+            "M274",
+            "M275",
+            "M076",
+            "M077",
+            "M079",
+            "M081",
+            "M084"
+          ],
+          "oralIds": [
+            "motores-u12-q2",
+            "motores-u8-q2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PB26",
+      "title": "Partes constitutivas · Tema B · 02/06/2026",
+      "url": "https://drive.google.com/file/d/15QH1oBYLcV0arbs2ng71PbC6-cYV-ItG/view",
+      "reading": "Lectura visual de la fotografía; consignas normalizadas sin datos personales ni respuestas manuscritas.",
+      "questions": [
+        {
+          "id": "PB26-01",
+          "number": 1,
+          "text": "Camisa seca y con manguito de agua; particularidad inferior de dos tiempos grande.",
+          "guideIds": [
+            "M346"
+          ],
+          "oralIds": [
+            "motores-u0-q7"
+          ]
+        },
+        {
+          "id": "PB26-02",
+          "number": 2,
+          "text": "Zona de mayor desgaste y herramienta y proceso de medición.",
+          "guideIds": [
+            "M344"
+          ],
+          "oralIds": [
+            "motores-u0-q5"
+          ]
+        },
+        {
+          "id": "PB26-03",
+          "number": 3,
+          "text": "Tren alternativo de motor largo con giro antihorario y componentes.",
+          "guideIds": [
+            "M040",
+            "M041",
+            "M044",
+            "M045"
+          ],
+          "oralIds": [
+            "motores-u3-q5"
+          ]
+        },
+        {
+          "id": "PB26-04",
+          "number": 4,
+          "text": "Culata cuatro tiempos con inyección indirecta y distribuidor de arranque; válvulas.",
+          "guideIds": [
+            "M336",
+            "M348"
+          ],
+          "oralIds": [
+            "motores-u1-q3",
+            "motores-u1-q5"
+          ]
+        },
+        {
+          "id": "PB26-05",
+          "number": 5,
+          "text": "Espacio nocivo, control y volumen de cámara.",
+          "guideIds": [
+            "M343"
+          ],
+          "oralIds": [
+            "motores-u8-q1"
+          ]
+        },
+        {
+          "id": "PB26-06",
+          "number": 6,
+          "text": "Picado nafta y daños.",
+          "guideIds": [
+            "M353"
+          ],
+          "oralIds": [
+            "motores-u5-q5"
+          ]
+        },
+        {
+          "id": "PB26-07",
+          "number": 7,
+          "text": "Ovalización y efectos en el ciclo.",
+          "guideIds": [
+            "M344",
+            "M335"
+          ],
+          "oralIds": [
+            "motores-u0-q5",
+            "motores-u0-q4"
+          ]
+        },
+        {
+          "id": "PB26-08",
+          "number": 8,
+          "text": "Cavitación en camisa húmeda.",
+          "guideIds": [
+            "M019",
+            "M024",
+            "M194"
+          ],
+          "oralIds": [
+            "motores-u0-q8"
+          ]
+        },
+        {
+          "id": "PB26-09",
+          "number": 9,
+          "text": "Limpieza de asientos exteriores antes de colocar camisa.",
+          "guideIds": [
+            "M345"
+          ],
+          "oralIds": [
+            "motores-u0-q6"
+          ]
+        },
+        {
+          "id": "PB26-10",
+          "number": 10,
+          "text": "Explosión en cárter y consecuencias.",
+          "guideIds": [
+            "M319",
+            "M320"
+          ],
+          "oralIds": [
+            "motores-u7-q3",
+            "motores-u7-q4",
+            "motores-u7-q5",
+            "motores-u7-q6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CB26",
+      "title": "Cigüeñal y cojinetes · Tema B · 14/07/2026",
+      "url": "https://drive.google.com/file/d/1j0TZmDud6qst4YIye5X9Evl9Yt1WkJvN/view",
+      "reading": "Lectura visual de la fotografía; consignas normalizadas sin datos personales ni respuestas manuscritas.",
+      "questions": [
+        {
+          "id": "CB26-01",
+          "number": 1,
+          "text": "Esfuerzos y deformaciones del cigüeñal.",
+          "guideIds": [
+            "M046",
+            "M048",
+            "M049",
+            "M054"
+          ],
+          "oralIds": [
+            "motores-u4-q8"
+          ]
+        },
+        {
+          "id": "CB26-02",
+          "number": 2,
+          "text": "Cigüeñales enterizos y en secciones; qué evitar.",
+          "guideIds": [
+            "M046",
+            "M048",
+            "M049",
+            "M054"
+          ],
+          "oralIds": [
+            "motores-u4-q8"
+          ]
+        },
+        {
+          "id": "CB26-03",
+          "number": 3,
+          "text": "Alarma crítica de lubricación y riesgo de dilución.",
+          "guideIds": [
+            "M201",
+            "M202",
+            "M210",
+            "M211",
+            "M212",
+            "M213",
+            "M214",
+            "M217",
+            "M218"
+          ],
+          "oralIds": [
+            "motores-u7-q7"
+          ]
+        },
+        {
+          "id": "CB26-04",
+          "number": 4,
+          "text": "Flexímetro y prevención de rotura.",
+          "guideIds": [
+            "M054",
+            "M056",
+            "M057",
+            "M074"
+          ],
+          "oralIds": [
+            "motores-u4-q7"
+          ]
+        },
+        {
+          "id": "CB26-05",
+          "number": 5,
+          "text": "Calibre puente y utilidad.",
+          "guideIds": [
+            "M054",
+            "M056",
+            "M057",
+            "M074"
+          ],
+          "oralIds": [
+            "motores-u4-q7"
+          ]
+        },
+        {
+          "id": "CB26-06",
+          "number": 6,
+          "text": "Huelgo perno-cojinete y efectos en ciclo.",
+          "guideIds": [
+            "M039",
+            "M071"
+          ],
+          "oralIds": [
+            "motores-u2-q7"
+          ]
+        },
+        {
+          "id": "CB26-07",
+          "number": 7,
+          "text": "Desventajas de rodamiento frente a deslizante.",
+          "guideIds": [
+            "M060",
+            "M061",
+            "M062",
+            "M063",
+            "M065",
+            "M066",
+            "M069"
+          ],
+          "oralIds": [
+            "motores-u4-q6"
+          ]
+        },
+        {
+          "id": "CB26-08",
+          "number": 8,
+          "text": "Construcción y materiales de cojinetes de contacto.",
+          "guideIds": [
+            "M060",
+            "M061",
+            "M062",
+            "M063",
+            "M065",
+            "M066",
+            "M069"
+          ],
+          "oralIds": [
+            "motores-u4-q6"
+          ]
+        },
+        {
+          "id": "CB26-09",
+          "number": 9,
+          "text": "Clasificación por carga de bancada y biela.",
+          "guideIds": [
+            "M060",
+            "M061",
+            "M062",
+            "M063",
+            "M065",
+            "M066",
+            "M069"
+          ],
+          "oralIds": [
+            "motores-u4-q6"
+          ]
+        },
+        {
+          "id": "CB26-10",
+          "number": 10,
+          "text": "Función de bancada y flexímetro.",
+          "guideIds": [
+            "M060",
+            "M061",
+            "M062",
+            "M063",
+            "M065",
+            "M066",
+            "M069",
+            "M054",
+            "M056",
+            "M057",
+            "M074"
+          ],
+          "oralIds": [
+            "motores-u4-q6",
+            "motores-u4-q7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D26",
+      "title": "Diagramas · Tema 2 · 25/08/2026",
+      "url": "https://drive.google.com/file/d/1z0BPA2FQfBWjZxkrt2v7cHbqC_Ok6RQN/view",
+      "reading": "Lectura visual de la fotografía; consignas normalizadas sin datos personales ni respuestas manuscritas.",
+      "questions": [
+        {
+          "id": "D26-01",
+          "number": 1,
+          "text": "Diagrama circular real cuatro tiempos atmosférico, ciclo y cruce.",
+          "guideIds": [
+            "M360"
+          ],
+          "oralIds": [
+            "motores-u9-q3"
+          ]
+        },
+        {
+          "id": "D26-02",
+          "number": 2,
+          "text": "P-V real dos tiempos con lumbreras y bomba de barrido; incorporación de escape en culata.",
+          "guideIds": [
+            "M358",
+            "M225",
+            "M226",
+            "M227"
+          ],
+          "oralIds": [
+            "motores-u9-q1",
+            "motores-u10-q0"
+          ]
+        },
+        {
+          "id": "D26-03",
+          "number": 3,
+          "text": "Sobrealimentación en dos tiempos con válvula de escape.",
+          "guideIds": [
+            "M225",
+            "M226",
+            "M227"
+          ],
+          "oralIds": [
+            "motores-u10-q0"
+          ]
+        },
+        {
+          "id": "D26-04",
+          "number": 4,
+          "text": "Pérdidas por ciclo y zona en el diagrama del punto 2.",
+          "guideIds": [
+            "M357",
+            "M358"
+          ],
+          "oralIds": [
+            "motores-u9-q0",
+            "motores-u9-q1"
+          ]
+        },
+        {
+          "id": "D26-05",
+          "number": 5,
+          "text": "Proceso de inyección-combustión del motor del punto 2.",
+          "guideIds": [
+            "M109",
+            "M148",
+            "M149",
+            "M151",
+            "M156"
+          ],
+          "oralIds": [
+            "motores-u5-q6"
+          ]
+        },
+        {
+          "id": "D26-06",
+          "number": 6,
+          "text": "Comparación de propulsión dos y cuatro tiempos por peso y potencia.",
+          "guideIds": [
+            "M359"
+          ],
+          "oralIds": [
+            "motores-u9-q2"
+          ]
+        },
+        {
+          "id": "D26-07",
+          "number": 7,
+          "text": "Trabajo efectivo en ciclo y premisa del enunciado.",
+          "guideIds": [
+            "M357"
+          ],
+          "oralIds": [
+            "motores-u9-q0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "G21",
+      "title": "Examen escrito · 26/05/2021",
+      "url": "https://drive.google.com/file/d/1JYqNNnN1sNiu_AnmG3elxZjCSvNd_1Yk/view",
+      "reading": "Lectura visual de la fotografía; consignas normalizadas sin datos personales ni respuestas manuscritas.",
+      "questions": [
+        {
+          "id": "G21-01",
+          "number": 1,
+          "text": "Diésel frente a naftero en aplicación naval.",
+          "guideIds": [
+            "M333"
+          ],
+          "oralIds": [
+            "motores-u8-q0"
+          ]
+        },
+        {
+          "id": "G21-02",
+          "number": 2,
+          "text": "Biela horquillada frente a articulada.",
+          "guideIds": [
+            "M042"
+          ],
+          "oralIds": [
+            "motores-u3-q4"
+          ]
+        },
+        {
+          "id": "G21-03",
+          "number": 3,
+          "text": "Lateralización de camisa con esquema.",
+          "guideIds": [
+            "M334"
+          ],
+          "oralIds": [
+            "motores-u0-q3"
+          ]
+        },
+        {
+          "id": "G21-04",
+          "number": 4,
+          "text": "Ovalización y dónde medir.",
+          "guideIds": [
+            "M344"
+          ],
+          "oralIds": [
+            "motores-u0-q5"
+          ]
+        },
+        {
+          "id": "G21-05",
+          "number": 5,
+          "text": "Efectos de desgastes sobre ciclo.",
+          "guideIds": [
+            "M335"
+          ],
+          "oralIds": [
+            "motores-u0-q4"
+          ]
+        },
+        {
+          "id": "G21-06",
+          "number": 6,
+          "text": "Ciclo real diésel dos tiempos.",
+          "guideIds": [
+            "M094",
+            "M095",
+            "M097",
+            "M098",
+            "M099"
+          ],
+          "oralIds": [
+            "motores-u9-q4"
+          ]
+        },
+        {
+          "id": "G21-07",
+          "number": 7,
+          "text": "Ciclo real diésel cuatro tiempos.",
+          "guideIds": [
+            "M094",
+            "M095",
+            "M097",
+            "M098",
+            "M099"
+          ],
+          "oralIds": [
+            "motores-u9-q4"
+          ]
+        },
+        {
+          "id": "G21-08",
+          "number": 8,
+          "text": "Culata con cámara auxiliar y deformaciones.",
+          "guideIds": [
+            "M336"
+          ],
+          "oralIds": [
+            "motores-u1-q3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CSF",
+      "title": "Cigüeñal y cojinetes · sin fecha visible",
+      "url": "https://drive.google.com/file/d/1C0_i7CftQ4tNPNt3ncWkMVlQbLuUHPXa/view",
+      "reading": "Lectura visual de la fotografía; consignas normalizadas sin datos personales ni respuestas manuscritas.",
+      "questions": [
+        {
+          "id": "CSF-01",
+          "number": 1,
+          "text": "Movimiento circular continuo y uniforme: justificar y matizar.",
+          "guideIds": [
+            "M046",
+            "M048",
+            "M049",
+            "M054"
+          ],
+          "oralIds": [
+            "motores-u4-q8"
+          ]
+        },
+        {
+          "id": "CSF-02",
+          "number": 2,
+          "text": "Esfuerzos y toma de deflexiones.",
+          "guideIds": [
+            "M046",
+            "M048",
+            "M049",
+            "M054",
+            "M056",
+            "M057",
+            "M074"
+          ],
+          "oralIds": [
+            "motores-u4-q8",
+            "motores-u4-q7"
+          ]
+        },
+        {
+          "id": "CSF-03",
+          "number": 3,
+          "text": "Calibre puente y flexímetro: ubicación e interpretación.",
+          "guideIds": [
+            "M054",
+            "M056",
+            "M057",
+            "M074"
+          ],
+          "oralIds": [
+            "motores-u4-q7"
+          ]
+        },
+        {
+          "id": "CSF-04",
+          "number": 4,
+          "text": "Esfuerzos de bancada y casquillo girado.",
+          "guideIds": [
+            "M060",
+            "M061",
+            "M062",
+            "M063",
+            "M065",
+            "M066",
+            "M069",
+            "M342"
+          ],
+          "oralIds": [
+            "motores-u4-q6",
+            "motores-u4-q5"
+          ]
+        },
+        {
+          "id": "CSF-05",
+          "number": 5,
+          "text": "Cojinete trimetálico, esquema y análisis de aceite.",
+          "guideIds": [
+            "M331"
+          ],
+          "oralIds": [
+            "motores-u4-q3"
+          ]
+        },
+        {
+          "id": "CSF-06",
+          "number": 6,
+          "text": "Características y exigencias de cojinete.",
+          "guideIds": [
+            "M332"
+          ],
+          "oralIds": [
+            "motores-u4-q4"
+          ]
+        },
+        {
+          "id": "CSF-07",
+          "number": 7,
+          "text": "Clasificación constructiva de cojinetes.",
+          "guideIds": [
+            "M060",
+            "M061",
+            "M062",
+            "M063",
+            "M065",
+            "M066",
+            "M069"
+          ],
+          "oralIds": [
+            "motores-u4-q6"
+          ]
+        },
+        {
+          "id": "CSF-08",
+          "number": 8,
+          "text": "Fabricación y material de cojinetes deslizantes.",
+          "guideIds": [
+            "M060",
+            "M061",
+            "M062",
+            "M063",
+            "M065",
+            "M066",
+            "M069"
+          ],
+          "oralIds": [
+            "motores-u4-q6"
+          ]
+        }
+      ]
+    }
+  ],
+  "complementarySources": [
+    {
+      "id": "B132",
+      "title": "Banco de preguntas y respuestas para final · 22 páginas",
+      "url": "https://drive.google.com/file/d/1bm2C0sffJOaUXfEQ_-rSVm07ZRrG8F2W/view",
+      "reading": "132 bloques numerados extraídos. Comparación temática y revisión de terminología y secciones para ampliar preguntas; no se valida el solucionario."
+    },
+    {
+      "id": "D21",
+      "title": "Distribución, componentes, refrigeración e inyección · 21 páginas",
+      "url": "https://drive.google.com/file/d/1yKtgC79wgZgLzyrrDqeJ-A8UMqwX9wwb/view",
+      "reading": "Texto completo extraído y consignas contrastadas; no se adoptan respuestas de compañeros como especificación de fabricante."
+    },
+    {
+      "id": "P21",
+      "title": "Examen de pistón, pernos, aros y bielas · 27/09/2021",
+      "url": "https://docs.google.com/document/d/11u1PI1A4myAmozVZvp29auivG7fdJYHg/edit",
+      "reading": "Ocho consignas y respuestas leídas; se amplían pistón tubular, bimetálico, fijación y holguras, aros y bielas."
+    },
+    {
+      "id": "C21",
+      "title": "Examen de cigüeñal y cojinetes · 24/09/2021",
+      "url": "https://docs.google.com/document/d/12Ps_szCSOtDtpBKfawcFtQ-pI7uPmP7T/edit",
+      "reading": "Ocho consignas coincidentes con fotografía sin fecha, más respuestas; no se cuenta como examen único adicional."
+    },
+    {
+      "id": "TPD",
+      "title": "TP Diagramas · 10/08/2021",
+      "url": "https://docs.google.com/document/d/1rYhyocE40YWPUgAYYv2d2cbMyiYZbnOM/edit",
+      "reading": "Cuatro consignas leídas; se cubren diagrama circular y P-V, cruce y efectos de luz de válvulas."
+    }
+  ]
+}
