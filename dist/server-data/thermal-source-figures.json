@@ -1,0 +1,722 @@
+{
+  "ciclo": {
+    "image": "/assets/termicas-fuentes/ciclo.webp",
+    "title": "Circuito propulsor de vapor y balance de energía",
+    "alt": "Circuito propulsor de vapor y balance de energía. Seguí bomba, caldera, turbina y condensador. Ejemplo de una planta naval; las conexiones auxiliares dependen del buque.",
+    "caption": "Seguí bomba, caldera, turbina y condensador. Ejemplo de una planta naval; las conexiones auxiliares dependen del buque.",
+    "source": "US Navy · Principles of Naval Engineering · NAVPERS 10788-B",
+    "page": 197,
+    "url": "https://drive.google.com/file/d/116wm89ieenaesS1AyA2GgPdq6kKURLmc/view#page=197",
+    "crop": [
+      0.015,
+      0.07,
+      0.98,
+      0.66
+    ],
+    "sourceId": "116wm89ieenaesS1AyA2GgPdq6kKURLmc",
+    "width": 1601,
+    "height": 1332
+  },
+  "estados": {
+    "image": "/assets/termicas-fuentes/estados.webp",
+    "title": "Calor sensible, vaporización y sobrecalentamiento",
+    "alt": "Calor sensible, vaporización y sobrecalentamiento. El gráfico original usa unidades inglesas y presión atmosférica. La temperatura de saturación cambia con la presión.",
+    "caption": "El gráfico original usa unidades inglesas y presión atmosférica. La temperatura de saturación cambia con la presión.",
+    "source": "US Navy · Principles of Naval Engineering · NAVPERS 10788-B",
+    "page": 178,
+    "url": "https://drive.google.com/file/d/116wm89ieenaesS1AyA2GgPdq6kKURLmc/view#page=178",
+    "crop": [
+      0.04,
+      0.07,
+      0.96,
+      0.55
+    ],
+    "sourceId": "116wm89ieenaesS1AyA2GgPdq6kKURLmc",
+    "width": 1601,
+    "height": 1137
+  },
+  "transferencia": {
+    "image": "/assets/termicas-fuentes/transferencia.webp",
+    "title": "Resistencias térmicas del metal y de las películas de fluido",
+    "alt": "Resistencias térmicas del metal y de las películas de fluido. Seguí el perfil de temperatura a través de las películas y la pared. El dibujo representa resistencias en serie.",
+    "caption": "Seguí el perfil de temperatura a través de las películas y la pared. El dibujo representa resistencias en serie.",
+    "source": "US Navy · Principles of Naval Engineering · NAVPERS 10788-B",
+    "page": 179,
+    "url": "https://drive.google.com/file/d/116wm89ieenaesS1AyA2GgPdq6kKURLmc/view#page=179",
+    "crop": [
+      0.04,
+      0.08,
+      0.5,
+      0.59
+    ],
+    "sourceId": "116wm89ieenaesS1AyA2GgPdq6kKURLmc",
+    "width": 1601,
+    "height": 2415
+  },
+  "pirotubular": {
+    "image": "/assets/termicas-fuentes/pirotubular.webp",
+    "title": "Caldera pirotubular en corte",
+    "alt": "Caldera pirotubular en corte. Ubicá hogar, pasos de gases y agua alrededor de los tubos. No la confundas con una acuotubular.",
+    "caption": "Ubicá hogar, pasos de gases y agua alrededor de los tubos. No la confundas con una acuotubular.",
+    "source": "Spirax Sarco · Calderas y accesorios",
+    "page": 13,
+    "url": "https://drive.google.com/file/d/1VEwIPSX_h-5_csl9wEKH3n1IU7gSkPDE/view#page=13",
+    "crop": [
+      0.08,
+      0.1,
+      0.91,
+      0.59
+    ],
+    "sourceId": "1VEwIPSX_h-5_csl9wEKH3n1IU7gSkPDE",
+    "width": 1601,
+    "height": 1338
+  },
+  "circulacion": {
+    "image": "/assets/termicas-fuentes/circulacion.webp",
+    "title": "Circulación en una caldera acuotubular",
+    "alt": "Circulación en una caldera acuotubular. Identificá calderín superior, descendente, calderín inferior y tubos calentados.",
+    "caption": "Identificá calderín superior, descendente, calderín inferior y tubos calentados.",
+    "source": "Spirax Sarco · Calderas y accesorios",
+    "page": 17,
+    "url": "https://drive.google.com/file/d/1VEwIPSX_h-5_csl9wEKH3n1IU7gSkPDE/view#page=17",
+    "crop": [
+      0.1,
+      0.63,
+      0.91,
+      0.94
+    ],
+    "sourceId": "1VEwIPSX_h-5_csl9wEKH3n1IU7gSkPDE",
+    "width": 1601,
+    "height": 867
+  },
+  "tipo-a": {
+    "image": "/assets/termicas-fuentes/tipo-a.webp",
+    "title": "Caldera de tres colectores tipo A",
+    "alt": "Caldera de tres colectores tipo A. Identificá el domo superior y los dos inferiores; contrastá los números con la leyenda de la lámina.",
+    "caption": "Identificá el domo superior y los dos inferiores; contrastá los números con la leyenda de la lámina.",
+    "source": "Fernández Hanna · Máquinas Térmicas",
+    "page": 8,
+    "url": "https://drive.google.com/file/d/1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY/view#page=8",
+    "crop": [
+      0.075,
+      0.375,
+      0.94,
+      0.88
+    ],
+    "sourceId": "1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY",
+    "width": 1601,
+    "height": 1322
+  },
+  "tipo-d": {
+    "image": "/assets/termicas-fuentes/tipo-d.webp",
+    "title": "Caldera tipo D y sus componentes",
+    "alt": "Caldera tipo D y sus componentes. Ubicá los dos colectores, tubos generadores y hogar lateral. Esta es la disposición del apunte.",
+    "caption": "Ubicá los dos colectores, tubos generadores y hogar lateral. Esta es la disposición del apunte.",
+    "source": "Fernández Hanna · Máquinas Térmicas",
+    "page": 12,
+    "url": "https://drive.google.com/file/d/1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY/view#page=12",
+    "crop": [
+      0.075,
+      0.1,
+      0.94,
+      0.39
+    ],
+    "sourceId": "1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY",
+    "width": 1601,
+    "height": 760
+  },
+  "tipo-m": {
+    "image": "/assets/termicas-fuentes/tipo-m.webp",
+    "title": "Caldera tipo M de horno doble",
+    "alt": "Caldera tipo M de horno doble. Distinguí el horno de saturado del de sobrecalentado. La forma y los circuitos pertenecen a esta variante.",
+    "caption": "Distinguí el horno de saturado del de sobrecalentado. La forma y los circuitos pertenecen a esta variante.",
+    "source": "Fernández Hanna · Máquinas Térmicas",
+    "page": 10,
+    "url": "https://drive.google.com/file/d/1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY/view#page=10",
+    "crop": [
+      0.075,
+      0.405,
+      0.94,
+      0.71
+    ],
+    "sourceId": "1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY",
+    "width": 1601,
+    "height": 799
+  },
+  "paredes": {
+    "image": "/assets/termicas-fuentes/paredes.webp",
+    "title": "Paredes de tubos y aislamiento del hogar",
+    "alt": "Paredes de tubos y aislamiento del hogar. Separá pared refrigerada, unión de tubos y aislamiento. Las solicitaciones no se deducen de la forma exterior.",
+    "caption": "Separá pared refrigerada, unión de tubos y aislamiento. Las solicitaciones no se deducen de la forma exterior.",
+    "source": "Escuela Nacional de Náutica · Atlas de Calderas Marinas",
+    "page": 32,
+    "url": "https://drive.google.com/file/d/1tuuIXuUovjyi7wyeZOap1ULpYCOIF46s/view#page=32",
+    "crop": [
+      0.07,
+      0.1,
+      0.95,
+      0.9
+    ],
+    "sourceId": "1tuuIXuUovjyi7wyeZOap1ULpYCOIF46s",
+    "width": 1601,
+    "height": 2058
+  },
+  "domo": {
+    "image": "/assets/termicas-fuentes/domo.webp",
+    "title": "Accesorios internos del colector superior",
+    "alt": "Accesorios internos del colector superior. Ubicá los tubos internos de toma de vapor, alimentación y extracción de superficie.",
+    "caption": "Ubicá los tubos internos de toma de vapor, alimentación y extracción de superficie.",
+    "source": "Fernández Hanna · Máquinas Térmicas",
+    "page": 15,
+    "url": "https://drive.google.com/file/d/1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY/view#page=15",
+    "crop": [
+      0.4,
+      0.1,
+      0.92,
+      0.295
+    ],
+    "sourceId": "1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY",
+    "width": 1601,
+    "height": 849
+  },
+  "separador": {
+    "image": "/assets/termicas-fuentes/separador.webp",
+    "title": "Separador ciclónico de humedad",
+    "alt": "Separador ciclónico de humedad. Reconocé la separación de gotas dentro del domo. Separar humedad no equivale a sobrecalentar vapor.",
+    "caption": "Reconocé la separación de gotas dentro del domo. Separar humedad no equivale a sobrecalentar vapor.",
+    "source": "Fernández Hanna · Máquinas Térmicas",
+    "page": 16,
+    "url": "https://drive.google.com/file/d/1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY/view#page=16",
+    "crop": [
+      0.69,
+      0.37,
+      0.92,
+      0.59
+    ],
+    "sourceId": "1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY",
+    "width": 1600,
+    "height": 2165
+  },
+  "sobrecalentador": {
+    "image": "/assets/termicas-fuentes/sobrecalentador.webp",
+    "title": "Disposición de tubos del sobrecalentador",
+    "alt": "Disposición de tubos del sobrecalentador. Seguí el vapor por los tubos expuestos a gases. Es una superficie diferente de los tubos evaporadores.",
+    "caption": "Seguí el vapor por los tubos expuestos a gases. Es una superficie diferente de los tubos evaporadores.",
+    "source": "Fernández Hanna · Máquinas Térmicas",
+    "page": 16,
+    "url": "https://drive.google.com/file/d/1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY/view#page=16",
+    "crop": [
+      0.11,
+      0.755,
+      0.89,
+      0.915
+    ],
+    "sourceId": "1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY",
+    "width": 1601,
+    "height": 465
+  },
+  "atemperador": {
+    "image": "/assets/termicas-fuentes/atemperador.webp",
+    "title": "Atemperador y regulación de temperatura del vapor",
+    "alt": "Atemperador y regulación de temperatura del vapor. Compará sobrecalentar, recalentar y desobrecalentar: son funciones distintas.",
+    "caption": "Compará sobrecalentar, recalentar y desobrecalentar: son funciones distintas.",
+    "source": "Fernández Hanna · Máquinas Térmicas",
+    "page": 17,
+    "url": "https://drive.google.com/file/d/1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY/view#page=17",
+    "crop": [
+      0.11,
+      0.575,
+      0.89,
+      0.895
+    ],
+    "sourceId": "1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY",
+    "width": 1601,
+    "height": 929
+  },
+  "hollin": {
+    "image": "/assets/termicas-fuentes/hollin.webp",
+    "title": "Sopladores de hollín",
+    "alt": "Sopladores de hollín. Identificá el tubo y las toberas de limpieza de las superficies del lado de gases.",
+    "caption": "Identificá el tubo y las toberas de limpieza de las superficies del lado de gases.",
+    "source": "Fernández Hanna · Máquinas Térmicas",
+    "page": 18,
+    "url": "https://drive.google.com/file/d/1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY/view#page=18",
+    "crop": [
+      0.18,
+      0.55,
+      0.82,
+      0.925
+    ],
+    "sourceId": "1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY",
+    "width": 1600,
+    "height": 1327
+  },
+  "economizador": {
+    "image": "/assets/termicas-fuentes/economizador.webp",
+    "title": "Economizador de agua de alimentación",
+    "alt": "Economizador de agua de alimentación. Seguí el agua de alimentación que recibe calor de los gases; no presupongas evaporación en un economizador convencional.",
+    "caption": "Seguí el agua de alimentación que recibe calor de los gases; no presupongas evaporación en un economizador convencional.",
+    "source": "Fernández Hanna · Máquinas Térmicas",
+    "page": 24,
+    "url": "https://drive.google.com/file/d/1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY/view#page=24",
+    "crop": [
+      0.53,
+      0.06,
+      0.94,
+      0.24
+    ],
+    "sourceId": "1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY",
+    "width": 1601,
+    "height": 994
+  },
+  "retencion": {
+    "image": "/assets/termicas-fuentes/retencion.webp",
+    "title": "Válvula de retención de alimentación",
+    "alt": "Válvula de retención de alimentación. El obturador permite el flujo en un sentido y evita el retorno. No sustituye una válvula de seguridad.",
+    "caption": "El obturador permite el flujo en un sentido y evita el retorno. No sustituye una válvula de seguridad.",
+    "source": "Spirax Sarco · Calderas y accesorios",
+    "page": 31,
+    "url": "https://drive.google.com/file/d/1VEwIPSX_h-5_csl9wEKH3n1IU7gSkPDE/view#page=31",
+    "crop": [
+      0.35,
+      0.45,
+      0.9,
+      0.805
+    ],
+    "sourceId": "1VEwIPSX_h-5_csl9wEKH3n1IU7gSkPDE",
+    "width": 1601,
+    "height": 1462
+  },
+  "seguridad": {
+    "image": "/assets/termicas-fuentes/seguridad.webp",
+    "title": "Válvula de seguridad en corte",
+    "alt": "Válvula de seguridad en corte. Identificá asiento, disco, resorte y descarga. El ajuste y las pruebas corresponden al procedimiento y normativa aplicables.",
+    "caption": "Identificá asiento, disco, resorte y descarga. El ajuste y las pruebas corresponden al procedimiento y normativa aplicables.",
+    "source": "Spirax Sarco · Calderas y accesorios",
+    "page": 29,
+    "url": "https://drive.google.com/file/d/1VEwIPSX_h-5_csl9wEKH3n1IU7gSkPDE/view#page=29",
+    "crop": [
+      0.3,
+      0.5,
+      0.94,
+      0.91
+    ],
+    "sourceId": "1VEwIPSX_h-5_csl9wEKH3n1IU7gSkPDE",
+    "width": 1600,
+    "height": 1452
+  },
+  "manometro": {
+    "image": "/assets/termicas-fuentes/manometro.webp",
+    "title": "Manómetro con sifón",
+    "alt": "Manómetro con sifón. El sifón protege el instrumento; el manómetro mide presión, no la limita.",
+    "caption": "El sifón protege el instrumento; el manómetro mide presión, no la limita.",
+    "source": "Spirax Sarco · Calderas y accesorios",
+    "page": 34,
+    "url": "https://drive.google.com/file/d/1VEwIPSX_h-5_csl9wEKH3n1IU7gSkPDE/view#page=34",
+    "crop": [
+      0.3,
+      0.35,
+      0.94,
+      0.93
+    ],
+    "sourceId": "1VEwIPSX_h-5_csl9wEKH3n1IU7gSkPDE",
+    "width": 1600,
+    "height": 2053
+  },
+  "purga": {
+    "image": "/assets/termicas-fuentes/purga.webp",
+    "title": "Purga de fondo",
+    "alt": "Purga de fondo. Seguí la extracción desde el fondo. Su función difiere de la purga superficial y del drenaje de una línea de vapor.",
+    "caption": "Seguí la extracción desde el fondo. Su función difiere de la purga superficial y del drenaje de una línea de vapor.",
+    "source": "Spirax Sarco · Calderas y accesorios",
+    "page": 32,
+    "url": "https://drive.google.com/file/d/1VEwIPSX_h-5_csl9wEKH3n1IU7gSkPDE/view#page=32",
+    "crop": [
+      0.09,
+      0.73,
+      0.9,
+      0.925
+    ],
+    "sourceId": "1VEwIPSX_h-5_csl9wEKH3n1IU7gSkPDE",
+    "width": 1601,
+    "height": 546
+  },
+  "nivel": {
+    "image": "/assets/termicas-fuentes/nivel.webp",
+    "title": "Indicadores de nivel de agua",
+    "alt": "Indicadores de nivel de agua. Compará las conexiones de agua y vapor y la zona visible; una indicación no reemplaza la verificación de sus conexiones.",
+    "caption": "Compará las conexiones de agua y vapor y la zona visible; una indicación no reemplaza la verificación de sus conexiones.",
+    "source": "Fernández Hanna · Máquinas Térmicas",
+    "page": 21,
+    "url": "https://drive.google.com/file/d/1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY/view#page=21",
+    "crop": [
+      0.08,
+      0.53,
+      0.89,
+      0.93
+    ],
+    "sourceId": "1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY",
+    "width": 1601,
+    "height": 1118
+  },
+  "control-nivel": {
+    "image": "/assets/termicas-fuentes/control-nivel.webp",
+    "title": "Sonda de nivel y alimentación de caldera",
+    "alt": "Sonda de nivel y alimentación de caldera. La figura muestra ubicación del sensor y entrada de agua. Los esquemas de uno, dos y tres elementos se explican en el diagrama didáctico.",
+    "caption": "La figura muestra ubicación del sensor y entrada de agua. Los esquemas de uno, dos y tres elementos se explican en el diagrama didáctico.",
+    "source": "Spirax Sarco · Calderas y accesorios",
+    "page": 39,
+    "url": "https://drive.google.com/file/d/1VEwIPSX_h-5_csl9wEKH3n1IU7gSkPDE/view#page=39",
+    "crop": [
+      0.1,
+      0.32,
+      0.91,
+      0.83
+    ],
+    "sourceId": "1VEwIPSX_h-5_csl9wEKH3n1IU7gSkPDE",
+    "width": 1601,
+    "height": 1427
+  },
+  "venteo": {
+    "image": "/assets/termicas-fuentes/venteo.webp",
+    "title": "Eliminadores de aire y rompedor de vacío",
+    "alt": "Eliminadores de aire y rompedor de vacío. Distinguí la salida de aire del drenaje de condensado y la protección contra vacío.",
+    "caption": "Distinguí la salida de aire del drenaje de condensado y la protección contra vacío.",
+    "source": "Spirax Sarco · Calderas y accesorios",
+    "page": 40,
+    "url": "https://drive.google.com/file/d/1VEwIPSX_h-5_csl9wEKH3n1IU7gSkPDE/view#page=40",
+    "crop": [
+      0.1,
+      0.4,
+      0.93,
+      0.83
+    ],
+    "sourceId": "1VEwIPSX_h-5_csl9wEKH3n1IU7gSkPDE",
+    "width": 1601,
+    "height": 1174
+  },
+  "comunicacion": {
+    "image": "/assets/termicas-fuentes/comunicacion.webp",
+    "title": "Control de la salida de vapor durante el calentamiento",
+    "alt": "Control de la salida de vapor durante el calentamiento. Seguí la válvula y la derivación; la comunicación y el calentamiento dependen del procedimiento del equipo.",
+    "caption": "Seguí la válvula y la derivación; la comunicación y el calentamiento dependen del procedimiento del equipo.",
+    "source": "Spirax Sarco · Calderas y accesorios",
+    "page": 45,
+    "url": "https://drive.google.com/file/d/1VEwIPSX_h-5_csl9wEKH3n1IU7gSkPDE/view#page=45",
+    "crop": [
+      0.11,
+      0.54,
+      0.91,
+      0.84
+    ],
+    "sourceId": "1VEwIPSX_h-5_csl9wEKH3n1IU7gSkPDE",
+    "width": 1600,
+    "height": 850
+  },
+  "combustible": {
+    "image": "/assets/termicas-fuentes/combustible.webp",
+    "title": "Circuito de petróleo a quemadores",
+    "alt": "Circuito de petróleo a quemadores. Seguí almacenamiento, servicio, impulsión, calentamiento, filtrado y llegada al quemador.",
+    "caption": "Seguí almacenamiento, servicio, impulsión, calentamiento, filtrado y llegada al quemador.",
+    "source": "Fernández Hanna · Máquinas Térmicas",
+    "page": 29,
+    "url": "https://drive.google.com/file/d/1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY/view#page=29",
+    "crop": [
+      0.08,
+      0.075,
+      0.96,
+      0.855
+    ],
+    "sourceId": "1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY",
+    "width": 1601,
+    "height": 2007
+  },
+  "quemador": {
+    "image": "/assets/termicas-fuentes/quemador.webp",
+    "title": "Pulverizador de combustible",
+    "alt": "Pulverizador de combustible. Reconocé los componentes que forman el rocío de combustible. La atomización y la combustión son fenómenos diferentes.",
+    "caption": "Reconocé los componentes que forman el rocío de combustible. La atomización y la combustión son fenómenos diferentes.",
+    "source": "Fernández Hanna · Máquinas Térmicas",
+    "page": 26,
+    "url": "https://drive.google.com/file/d/1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY/view#page=26",
+    "crop": [
+      0.2,
+      0.58,
+      0.8,
+      0.8
+    ],
+    "sourceId": "1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY",
+    "width": 1601,
+    "height": 830
+  },
+  "aire": {
+    "image": "/assets/termicas-fuentes/aire.webp",
+    "title": "Registro de aire del quemador",
+    "alt": "Registro de aire del quemador. Relacioná la entrada de aire y el combustible pulverizado en la zona de formación de la llama.",
+    "caption": "Relacioná la entrada de aire y el combustible pulverizado en la zona de formación de la llama.",
+    "source": "Fernández Hanna · Máquinas Térmicas",
+    "page": 25,
+    "url": "https://drive.google.com/file/d/1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY/view#page=25",
+    "crop": [
+      0.56,
+      0.67,
+      0.92,
+      0.91
+    ],
+    "sourceId": "1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY",
+    "width": 1601,
+    "height": 1509
+  },
+  "tobera": {
+    "image": "/assets/termicas-fuentes/tobera.webp",
+    "title": "Toberas y variación de presión y velocidad",
+    "alt": "Toberas y variación de presión y velocidad. Identificá cómo la parte fija acelera y orienta el vapor antes de los álabes móviles.",
+    "caption": "Identificá cómo la parte fija acelera y orienta el vapor antes de los álabes móviles.",
+    "source": "Fernández Hanna · Máquinas Térmicas",
+    "page": 33,
+    "url": "https://drive.google.com/file/d/1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY/view#page=33",
+    "crop": [
+      0.08,
+      0.565,
+      0.92,
+      0.88
+    ],
+    "sourceId": "1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY",
+    "width": 1601,
+    "height": 850
+  },
+  "etapas": {
+    "image": "/assets/termicas-fuentes/etapas.webp",
+    "title": "Etapas de turbina y perfiles de presión y velocidad",
+    "alt": "Etapas de turbina y perfiles de presión y velocidad. Recorré las coronas fijas y móviles y compará sus efectos sobre el vapor.",
+    "caption": "Recorré las coronas fijas y móviles y compará sus efectos sobre el vapor.",
+    "source": "Fernández Hanna · Máquinas Térmicas",
+    "page": 36,
+    "url": "https://drive.google.com/file/d/1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY/view#page=36",
+    "crop": [
+      0.14,
+      0.405,
+      0.92,
+      0.91
+    ],
+    "sourceId": "1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY",
+    "width": 1601,
+    "height": 1466
+  },
+  "velocidades": {
+    "image": "/assets/termicas-fuentes/velocidades.webp",
+    "title": "Triángulos de velocidades de entrada y salida",
+    "alt": "Triángulos de velocidades de entrada y salida. El apunte usa su propia notación. Compará velocidad absoluta, relativa y periférica con las letras del esquema didáctico.",
+    "caption": "El apunte usa su propia notación. Compará velocidad absoluta, relativa y periférica con las letras del esquema didáctico.",
+    "source": "Fernández Hanna · Máquinas Térmicas",
+    "page": 41,
+    "url": "https://drive.google.com/file/d/1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY/view#page=41",
+    "crop": [
+      0.15,
+      0.585,
+      0.85,
+      0.91
+    ],
+    "sourceId": "1jQPExdrC_D9CDQJkb0_-Oskt7DrSO9EY",
+    "width": 1601,
+    "height": 1052
+  },
+  "sellos": {
+    "image": "/assets/termicas-fuentes/sellos.webp",
+    "title": "Sello laberíntico de turbina",
+    "alt": "Sello laberíntico de turbina. Seguí el paso entre dientes y las conexiones de vapor y extracción; el sello limita fugas sin cerrar por rozamiento continuo.",
+    "caption": "Seguí el paso entre dientes y las conexiones de vapor y extracción; el sello limita fugas sin cerrar por rozamiento continuo.",
+    "source": "US Navy · Principles of Naval Engineering · NAVPERS 10788-B",
+    "page": 346,
+    "url": "https://drive.google.com/file/d/116wm89ieenaesS1AyA2GgPdq6kKURLmc/view#page=346",
+    "crop": [
+      0.06,
+      0.11,
+      0.96,
+      0.48
+    ],
+    "sourceId": "116wm89ieenaesS1AyA2GgPdq6kKURLmc",
+    "width": 1601,
+    "height": 896
+  },
+  "aceite": {
+    "image": "/assets/termicas-fuentes/aceite.webp",
+    "title": "Circuito de aceite de lubricación de turbinas",
+    "alt": "Circuito de aceite de lubricación de turbinas. Seguí bombas, enfriadores, filtros, cojinetes y retorno. El plano pertenece a DLG 14/15, no a todas las turbinas.",
+    "caption": "Seguí bombas, enfriadores, filtros, cojinetes y retorno. El plano pertenece a DLG 14/15, no a todas las turbinas.",
+    "source": "US Navy · Principles of Naval Engineering · NAVPERS 10788-B",
+    "page": 237,
+    "url": "https://drive.google.com/file/d/116wm89ieenaesS1AyA2GgPdq6kKURLmc/view#page=237",
+    "crop": [
+      0.06,
+      0.08,
+      0.95,
+      0.91
+    ],
+    "sourceId": "116wm89ieenaesS1AyA2GgPdq6kKURLmc",
+    "width": 1601,
+    "height": 2032
+  },
+  "condensador": {
+    "image": "/assets/termicas-fuentes/condensador.webp",
+    "title": "Condensador principal en corte",
+    "alt": "Condensador principal en corte. El vapor y el agua refrigerante recorren lados distintos de los tubos; identificá extracción de aire y condensado.",
+    "caption": "El vapor y el agua refrigerante recorren lados distintos de los tubos; identificá extracción de aire y condensado.",
+    "source": "US Navy · Principles of Naval Engineering · NAVPERS 10788-B",
+    "page": 362,
+    "url": "https://drive.google.com/file/d/116wm89ieenaesS1AyA2GgPdq6kKURLmc/view#page=362",
+    "crop": [
+      0.025,
+      0.08,
+      0.98,
+      0.62
+    ],
+    "sourceId": "116wm89ieenaesS1AyA2GgPdq6kKURLmc",
+    "width": 1601,
+    "height": 1232
+  },
+  "desaireador": {
+    "image": "/assets/termicas-fuentes/desaireador.webp",
+    "title": "Tanque desaireador de alimentación",
+    "alt": "Tanque desaireador de alimentación. Ubicá contacto agua-vapor, eliminación de gases y almacenamiento. La leyenda original identifica las corrientes por colores.",
+    "caption": "Ubicá contacto agua-vapor, eliminación de gases y almacenamiento. La leyenda original identifica las corrientes por colores.",
+    "source": "US Navy · Principles of Naval Engineering · NAVPERS 10788-B",
+    "page": 367,
+    "url": "https://drive.google.com/file/d/116wm89ieenaesS1AyA2GgPdq6kKURLmc/view#page=367",
+    "crop": [
+      0.04,
+      0.1,
+      0.95,
+      0.91
+    ],
+    "sourceId": "116wm89ieenaesS1AyA2GgPdq6kKURLmc",
+    "width": 1601,
+    "height": 1939
+  },
+  "sellado-vacio": {
+    "image": "/assets/termicas-fuentes/sellado-vacio.webp",
+    "title": "Vapor de sellos y extracción de las glándulas",
+    "alt": "Vapor de sellos y extracción de las glándulas. Relacioná sellos, condensador de glándulas y extracción. No confundas este circuito con el del aceite.",
+    "caption": "Relacioná sellos, condensador de glándulas y extracción. No confundas este circuito con el del aceite.",
+    "source": "US Navy · Principles of Naval Engineering · NAVPERS 10788-B",
+    "page": 228,
+    "url": "https://drive.google.com/file/d/116wm89ieenaesS1AyA2GgPdq6kKURLmc/view#page=228",
+    "crop": [
+      0.15,
+      0.09,
+      0.92,
+      0.64
+    ],
+    "sourceId": "116wm89ieenaesS1AyA2GgPdq6kKURLmc",
+    "width": 1601,
+    "height": 1556
+  },
+  "regulador": {
+    "image": "/assets/termicas-fuentes/regulador.webp",
+    "title": "Regulador limitador de velocidad",
+    "alt": "Regulador limitador de velocidad. Reconocé masas, resorte y mando de vapor. Ejemplo de turbina auxiliar; no representa todos los sistemas de disparo.",
+    "caption": "Reconocé masas, resorte y mando de vapor. Ejemplo de turbina auxiliar; no representa todos los sistemas de disparo.",
+    "source": "US Navy · Principles of Naval Engineering · NAVPERS 10788-B",
+    "page": 446,
+    "url": "https://drive.google.com/file/d/116wm89ieenaesS1AyA2GgPdq6kKURLmc/view#page=446",
+    "crop": [
+      0.11,
+      0.48,
+      0.92,
+      0.95
+    ],
+    "sourceId": "116wm89ieenaesS1AyA2GgPdq6kKURLmc",
+    "width": 1601,
+    "height": 1264
+  },
+  "disparo": {
+    "image": "/assets/termicas-fuentes/disparo.webp",
+    "title": "Dispositivo de parada automática de una bomba de alimentación",
+    "alt": "Dispositivo de parada automática de una bomba de alimentación. Ejemplo de corte automático en una turbina auxiliar. Compará detección y cierre; no lo interpretes como plano universal de sobrevelocidad.",
+    "caption": "Ejemplo de corte automático en una turbina auxiliar. Compará detección y cierre; no lo interpretes como plano universal de sobrevelocidad.",
+    "source": "US Navy · Principles of Naval Engineering · NAVPERS 10788-B",
+    "page": 445,
+    "url": "https://drive.google.com/file/d/116wm89ieenaesS1AyA2GgPdq6kKURLmc/view#page=445",
+    "crop": [
+      0.11,
+      0.54,
+      0.91,
+      0.93
+    ],
+    "sourceId": "116wm89ieenaesS1AyA2GgPdq6kKURLmc",
+    "width": 1600,
+    "height": 1062
+  },
+  "ciar": {
+    "image": "/assets/termicas-fuentes/ciar.webp",
+    "title": "Recorrido de vapor en marcha atrás",
+    "alt": "Recorrido de vapor en marcha atrás. Seguí la admisión al elemento de ciar en esta unidad propulsora tipo IV. No se invierte el flujo del elemento de avante.",
+    "caption": "Seguí la admisión al elemento de ciar en esta unidad propulsora tipo IV. No se invierte el flujo del elemento de avante.",
+    "source": "US Navy · Principles of Naval Engineering · NAVPERS 10788-B",
+    "page": 351,
+    "url": "https://drive.google.com/file/d/116wm89ieenaesS1AyA2GgPdq6kKURLmc/view#page=351",
+    "crop": [
+      0.04,
+      0.08,
+      0.96,
+      0.87
+    ],
+    "sourceId": "116wm89ieenaesS1AyA2GgPdq6kKURLmc",
+    "width": 1601,
+    "height": 1870
+  },
+  "fluido": {
+    "image": "/assets/termicas-fuentes/fluido.webp",
+    "title": "Circuito de fluido térmico",
+    "alt": "Circuito de fluido térmico. Ubicá calentador, bomba, consumidor, expansión, drenajes y válvulas de este esquema.",
+    "caption": "Ubicá calentador, bomba, consumidor, expansión, drenajes y válvulas de este esquema.",
+    "source": "Fluidos térmicos · presentación del Drive",
+    "page": 9,
+    "url": "https://drive.google.com/file/d/1gfwSmvzfwCMwo6VavYLbqyH2BOPiRMU8/view#page=9",
+    "crop": [
+      0.06,
+      0.02,
+      0.95,
+      0.97
+    ],
+    "sourceId": "1gfwSmvzfwCMwo6VavYLbqyH2BOPiRMU8",
+    "width": 1601,
+    "height": 1282
+  },
+  "expansion": {
+    "image": "/assets/termicas-fuentes/expansion.webp",
+    "title": "Bucle de aceite térmico y tanque de expansión",
+    "alt": "Bucle de aceite térmico y tanque de expansión. Seguí el retorno al calentador y la conexión al tanque de expansión.",
+    "caption": "Seguí el retorno al calentador y la conexión al tanque de expansión.",
+    "source": "Fluidos térmicos · presentación del Drive",
+    "page": 10,
+    "url": "https://drive.google.com/file/d/1gfwSmvzfwCMwo6VavYLbqyH2BOPiRMU8/view#page=10",
+    "crop": [
+      0.03,
+      0.02,
+      0.98,
+      0.98
+    ],
+    "sourceId": "1gfwSmvzfwCMwo6VavYLbqyH2BOPiRMU8",
+    "width": 1601,
+    "height": 1213
+  },
+  "consumidor": {
+    "image": "/assets/termicas-fuentes/consumidor.webp",
+    "title": "Consumidor e intercambiador del circuito térmico",
+    "alt": "Consumidor e intercambiador del circuito térmico. El fluido del calentador cede calor al proceso a través de un intercambiador; observá la separación de circuitos.",
+    "caption": "El fluido del calentador cede calor al proceso a través de un intercambiador; observá la separación de circuitos.",
+    "source": "Fluidos térmicos · presentación del Drive",
+    "page": 11,
+    "url": "https://drive.google.com/file/d/1gfwSmvzfwCMwo6VavYLbqyH2BOPiRMU8/view#page=11",
+    "crop": [
+      0.03,
+      0.02,
+      0.98,
+      0.98
+    ],
+    "sourceId": "1gfwSmvzfwCMwo6VavYLbqyH2BOPiRMU8",
+    "width": 1601,
+    "height": 1213
+  }
+}
