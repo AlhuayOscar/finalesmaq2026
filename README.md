@@ -212,3 +212,5 @@ Estudiar examen aparece antes de Práctica acompañada. El profesor plantea y re
 Verificación: `node tests/rhdp-study.cjs` y pruebas existentes del oral. Gemini simulado.
 
 Las láminas de Estudiar examen muestran cada elemento y su función por escrito, antes de la figura. Las diapositivas con resolución generada exigen una respuesta por cada punto y una lista de funciones y conexiones; se intenta reparar una salida incompleta y se conserva la pregunta si no se logra. La voz y la exportación incluyen el desarrollo completo. Verificación: node tests/study-functions.cjs (Gemini simulado).
+
+Al comenzar Estudiar examen, el botón permanece habilitado como Detener inicio y reintenta sin límite hasta recibir una explicación válida o cancelar. Conserva la solicitud inicial, usa pausas progresivas y respeta Retry-After. Salir o cambiar de cuenta cancela los intentos; las respuestas tardías se ignoran. Las siguientes preguntas conservan su comportamiento de consulta manual. Verificación: node tests/study-start-retry.cjs.
