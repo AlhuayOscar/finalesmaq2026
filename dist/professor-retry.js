@@ -14,7 +14,7 @@ function createProfessorRetry({isCurrent,onState=()=>{},repeat=false}){
    }catch(e){
     if(job.cancelled||!isCurrent())return null;
     job.error=e.name==='AbortError'||e.name==='TimeoutError'?'El profesor tardó demasiado.':e.message||'No se pudo conectar con el profesor.';
-    if(!repeat){onState(job);return null}
+    if(!repeat||e.nonRetryable){onState(job);return null}
     job.waiting=true;onState(job);clearTimeout(timeout);
     const wait=Math.max(delay,Math.min(120000,Number(e.retryAfter)||0));
     await new Promise(resolve=>{job.wake=resolve;job.timer=setTimeout(resolve,wait)});
@@ -28,6 +28,6 @@ function createProfessorRetry({isCurrent,onState=()=>{},repeat=false}){
 async function professorRetryJSON(url,body,signal){
  const response=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},credentials:'same-origin',body:JSON.stringify(body),signal});
  let data;try{data=await response.json()}catch{throw Error('El servidor no devolvió una respuesta válida.')}
- if(!response.ok){const error=Error(data.error||'No se pudo consultar al profesor.');const retryAfter=response.headers?.get('Retry-After');error.retryAfter=/^\d+$/.test(retryAfter||'')?Number(retryAfter)*1000:Math.max(0,Date.parse(retryAfter)-Date.now())||0;throw error}
+ if(!response.ok){const error=Error(data.error||'No se pudo consultar al profesor.');error.nonRetryable=data.code==='invalid_hdp_coverage';const retryAfter=response.headers?.get('Retry-After');error.retryAfter=/^\d+$/.test(retryAfter||'')?Number(retryAfter)*1000:Math.max(0,Date.parse(retryAfter)-Date.now())||0;throw error}
  return data;
 }
