@@ -4,3 +4,5 @@
 #leaders{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
 
 #systems{grid-template-columns:repeat(4,minmax(0,1fr))}#unit-source{margin:18px 0}#unit-source[hidden]{display:none}#unit-source figcaption{font-size:10px;color:#827061}@media(max-width:760px){#systems{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+#systems{grid-template-columns:repeat(4,minmax(0,1fr))}@media(max-width:1000px){#systems{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:760px){#systems{grid-template-columns:repeat(2,minmax(0,1fr))}}

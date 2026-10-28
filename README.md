@@ -184,3 +184,13 @@ Validación: `tests/inyeccion-browser.cjs` recorre los cuatro modelos y verifica
 ## Audio y alcance de evaluación de láminas de Frío
 
 La corrección de una lámina recibe únicamente la respuesta actual, su imagen fuente y su contrato; el historial y las omisiones de otros turnos no amplían lo exigible. Las láminas elegidas siguen pendientes hasta mostrarse por separado. La cobertura de Frío usa un objeto con claves obligatorias por punto, acepta puntos missing y notas cero, y repara una vez el formato inválido sin repetir la grabación. Si también falla la reparación, no se guarda una nota inventada ni se reenvía indefinidamente desde el cliente. Se mantiene la exigencia de Simulacro/HDP. Validación con inferencia simulada: `node tests/frio-audio-coverage.cjs`, `node tests/frio-slides.cjs`, `node tests/professor-retry.cjs` y `node tests/hdp-coverage-api.cjs`.
+
+## Siete configuraciones principales de inyección
+
+Se incorporan tres modelos: `#monobomba` (radial CAV, N9 diapositiva 35 y N6 10–11), `#colector` (conducto común con limitadora, N9 20–22) y `#acumulador` (presión regulada, N9 23–24). Las diapositivas se revisaron visualmente y están accesibles junto a cada modelo. Todos conservan nombres, funciones, giro, vista interior, despiece, aislamiento y animación por fases.
+
+La CAV separa carcasa, transferencia, dosificación, anillo fijo, rotor, émbolos opuestos, cabeza de salida y regulación. Su movimiento es una explicación por fases, no una simulación del perfil real de levas. El colector y sus ramas conservan representación de presión entre inyecciones. La limitadora muestra una apertura ilustrativa, explícitamente no periódica en servicio. El acumulador dispone de válvulas individuales antes de los pulverizadores y no representa una vejiga de gas. Depósito, filtrado y retornos auxiliares se identifican como contexto simplificado.
+
+Estado actual: **7 configuraciones principales disponibles**, incluidos los cinco sistemas de la lista original. El inventario anterior describe el estado previo. Variantes no modeladas: elemento axial Bosch (36), inyector-bomba Cummins (62) y mecanismos específicos de regulación/despieces de componentes; no se consideran sistemas principales adicionales en este conteo.
+
+Verificación ampliada: `tests/inyeccion-browser.cjs` recorre los siete modelos, comprueba émbolos opuestos CAV, ausencia de distribuidor separado, ramas presurizadas entre entregas, válvulas selectivas, despiece sin tuberías ni pulverización, pausa, aislamiento, fuentes, recursos WebGL, geometrías y ancho móvil. Las pruebas del modelo son didácticas y de interfaz, no validan un diseño de fabricación.
