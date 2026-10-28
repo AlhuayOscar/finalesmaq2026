@@ -1,1 +1,131 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" role="img"><title>upper</title><rect width="1000" height="620" rx="16" fill="#f6f7ef"/><text x="32" y="50" font-family="Arial,sans-serif" font-size="25" fill="#193f3e">Reconocer la M sin inventar una geometría simétrica</text><text x="32" y="82" font-family="Arial,sans-serif" font-size="17" fill="#5a7167">Paso 1 de 4 · Tomar el plano como referencia</text><text x="32" y="587" font-family="Arial,sans-serif" font-size="15" fill="#5a7167">Esquema didáctico · sin escala · ocre: parte o relación que explica este paso</text><text x="32" y="608" font-family="Arial,sans-serif" font-size="13" fill="#5a7167">Las posiciones no sustituyen el plano del equipo. Flechas según leyenda de cada figura.</text><rect x="400" y="130" width="200" height="68" rx="12" fill="#ffedbd" stroke="#ab7625" stroke-width="4"/><text x="412" y="170.0" font-family="Arial,sans-serif" font-size="17" fill="#193f3e">Domo: agua / vapor</text><rect x="435" y="430" width="130" height="54" rx="12" fill="#cbe4ec" stroke="#729084" stroke-width="2"/><text x="447" y="463.0" font-family="Arial,sans-serif" font-size="17" fill="#193f3e">Colector</text><rect x="675" y="430" width="130" height="54" rx="12" fill="#cbe4ec" stroke="#729084" stroke-width="2"/><text x="687" y="463.0" font-family="Arial,sans-serif" font-size="17" fill="#193f3e">Colector</text><polyline points="415,170 405,170 405,450 435,450" fill="none" stroke="#287eb1" stroke-width="5" stroke-linejoin="round"/><polygon points="435,450 422.39374056706254,456.08951747755725 422.39374056706254,443.91048252244275" fill="#287eb1"/><polyline points="476,430 476,198" fill="none" stroke="#cb6c32" stroke-width="4" stroke-linejoin="round"/><polyline points="500,430 500,198" fill="none" stroke="#cb6c32" stroke-width="4" stroke-linejoin="round"/><polyline points="524,430 524,198" fill="none" stroke="#cb6c32" stroke-width="4" stroke-linejoin="round"/><polyline points="545,410 545,220" fill="none" stroke="#cb6c32" stroke-width="3" stroke-linejoin="round"/><polygon points="545,220 551.0895174775573,232.60625943293746 538.9104825224427,232.60625943293746" fill="#cb6c32"/><polyline points="415,170 645,170 645,450 675,450" fill="none" stroke="#287eb1" stroke-width="5" stroke-linejoin="round"/><polygon points="675,450 662.3937405670625,456.08951747755725 662.3937405670625,443.91048252244275" fill="#287eb1"/><polyline points="716,430 476,198" fill="none" stroke="#cb6c32" stroke-width="4" stroke-linejoin="round"/><polyline points="740,430 500,198" fill="none" stroke="#cb6c32" stroke-width="4" stroke-linejoin="round"/><polyline points="764,430 524,198" fill="none" stroke="#cb6c32" stroke-width="4" stroke-linejoin="round"/><polyline points="785,410 545,220" fill="none" stroke="#cb6c32" stroke-width="3" stroke-linejoin="round"/><polygon points="545,220 558.6636664985616,223.05028159619476 551.104103642391,232.5992030987261" fill="#cb6c32"/><rect x="100" y="280" width="175" height="95" rx="12" fill="#f4d5ba" stroke="#729084" stroke-width="2"/><text x="112" y="322.5" font-family="Arial,sans-serif" font-size="17" fill="#193f3e">Hogar</text><text x="112" y="344.5" font-family="Arial,sans-serif" font-size="17" fill="#193f3e">calor hacia tubos</text><polyline points="275,325 390,325" fill="none" stroke="#cb6c32" stroke-width="5" stroke-linejoin="round"/><polygon points="390,325 377.39374056706254,331.08951747755725 377.39374056706254,318.91048252244275" fill="#cb6c32"/><polyline points="600,150 855,150" fill="none" stroke="#bb5271" stroke-width="5" stroke-linejoin="round"/><polygon points="855,150 842.3937405670625,156.08951747755722 842.3937405670625,143.91048252244278" fill="#bb5271"/><text x="745" y="133" font-family="Arial,sans-serif" font-size="16" fill="#bb5271">Salida vapor</text><polyline points="800,235 570,235 570,190" fill="none" stroke="#287eb1" stroke-width="5" stroke-linejoin="round"/><polygon points="570,190 576.0895174775573,202.60625943293746 563.9104825224427,202.60625943293746" fill="#287eb1"/><text x="755" y="261" font-family="Arial,sans-serif" font-size="16" fill="#287eb1">Alimentación</text><rect x="805" y="315" width="125" height="90" rx="12" fill="#e4ece7" stroke="#729084" stroke-width="2"/><text x="817" y="355.0" font-family="Arial,sans-serif" font-size="17" fill="#193f3e">Indicador</text><text x="817" y="377.0" font-family="Arial,sans-serif" font-size="17" fill="#193f3e">de nivel</text><polyline points="600,155 930,155 930,333" fill="none" stroke="#287eb1" stroke-width="2" stroke-linejoin="round"/><polyline points="600,185 960,185 960,390 930,390" fill="none" stroke="#287eb1" stroke-width="2" stroke-linejoin="round"/><text x="75" y="537" font-family="Arial,sans-serif" font-size="17" fill="#193f3e">Azul: agua / descendentes      Ocre: mezcla ascendente      Rosa: vapor</text><text x="300" y="515" font-family="Arial,sans-serif" font-size="15" fill="#193f3e">M: inferior central + lateral; hogares diferenciados en el apunte.</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="1000" height="620">
+  <defs>
+    <filter id="activeGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#d97706" flood-opacity="0.6"/>
+    </filter>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f2922" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="drumGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f0f9ff"/>
+      <stop offset="48%" stop-color="#e0f2fe"/>
+      <stop offset="52%" stop-color="#bae6fd"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <linearGradient id="mudGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <linearGradient id="furnaceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff7ed"/>
+      <stop offset="100%" stop-color="#ffedd5"/>
+    </linearGradient>
+    <linearGradient id="steelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="activeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="100%" stop-color="#fef3c7"/>
+    </linearGradient>
+
+    <!-- Arrow markers -->
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#0284c7"/>
+    </marker>
+    <marker id="arrowOrange" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#ea580c"/>
+    </marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#e11d48"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#059669"/>
+    </marker>
+    <marker id="arrowGray" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#475569"/>
+    </marker>
+    <marker id="arrowActive" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#d97706"/>
+    </marker>
+  </defs>
+
+  <!-- Background canvas -->
+  <rect width="1000" height="620" rx="16" fill="#f8faf7" stroke="#e2e8e0" stroke-width="1.5"/>
+
+  <!---->
+  <g transform="translate(36, 32)">
+    <text font-family="'DM Sans', system-ui, sans-serif" font-size="21" font-weight="700" fill="#133e36">Reconocer la M sin inventar una geometría simétrica</text>
+    <text y="24" font-family="'DM Sans', system-ui, sans-serif" font-size="14" font-weight="500" fill="#52796f">Paso 1 de 4 · Tomar el plano como referencia</text>
+  </g>
+
+  <!-- Active Step Pill Badge -->
+  <g transform="translate(670, 24)">
+    <rect width="294" height="32" rx="16" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+    <circle cx="16" cy="16" r="5" fill="#d97706"/>
+    <text x="30" y="21" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="700" fill="#92400e">FOCO: TOMAR EL PLANO COMO REFERENCIA</text>
+  </g>
+
+  <!-- Content area -->
+  
+  <!-- Domo superior (derecha) -->
+  <g id="domo-m" filter="url(#activeGlow)">
+    <rect x="520" y="95" width="240" height="70" rx="20" fill="url(#activeGrad)" stroke="#d97706" stroke-width="4"/>
+    <text x="640" y="126" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="14" font-weight="700" fill="#0c4a6e">DOMO SUPERIOR</text>
+    <text x="640" y="142" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="11" fill="#0369a1">Separación de vapor / agua</text>
+  </g>
+
+  <!-- Colector inferior central -->
+  <g id="colector-m-central" filter="url(#activeGlow)">
+    <rect x="420" y="440" width="160" height="60" rx="18" fill="url(#activeGrad)" stroke="#d97706" stroke-width="4"/>
+    <text x="500" y="468" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="12" font-weight="700" fill="#0c4a6e">COLECTOR CENTRAL</text>
+    <text x="500" y="484" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="10" fill="#0369a1">Base división</text>
+  </g>
+
+  <!-- Colector inferior lateral (derecha) -->
+  <g id="colector-m-lateral" filter="url(#activeGlow)">
+    <rect x="720" y="440" width="160" height="60" rx="18" fill="url(#activeGrad)" stroke="#d97706" stroke-width="4"/>
+    <text x="800" y="468" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="12" font-weight="700" fill="#0c4a6e">COLECTOR LATERAL</text>
+    <text x="800" y="484" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="10" fill="#0369a1">Haz derecho</text>
+  </g>
+
+  <!-- Hogar de Sobrecalentado (Izquierda) -->
+  <g id="furnace-m-left" >
+    <rect x="120" y="220" width="240" height="200" rx="14" fill="url(#furnaceGrad)" stroke="#fdba74" stroke-width="2"/>
+    <text x="240" y="248" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="13" font-weight="700" fill="#9a3412">HOGAR DE SOBRECALENTADO</text>
+    <text x="240" y="264" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="10" fill="#c2410c">Control de temperatura de vapor</text>
+    <!-- Llama izq -->
+    <path d="M 240 370 C 215 370 205 345 220 320 C 230 305 240 300 240 290 C 245 305 255 315 260 330 C 265 350 260 370 240 370 Z" fill="#f97316"/>
+  </g>
+
+  <!-- Hogar Saturado (Derecha) -->
+  <g id="furnace-m-right" >
+    <rect x="440" y="220" width="240" height="200" rx="14" fill="url(#furnaceGrad)" stroke="#fdba74" stroke-width="2"/>
+    <text x="560" y="248" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="13" font-weight="700" fill="#9a3412">HOGAR SATURADO</text>
+    <text x="560" y="264" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="10" fill="#c2410c">Generación principal de vapor</text>
+    <!-- Llama der -->
+    <path d="M 560 370 C 535 370 525 345 540 320 C 550 305 560 300 560 290 C 565 305 575 315 580 330 C 585 350 580 370 560 370 Z" fill="#f97316"/>
+  </g>
+
+  <!-- Pared intermedia y Sobrecalentador -->
+  <g id="tubes-m" >
+    <line x1="410" y1="165" x2="410" y2="440" stroke="#ea580c" stroke-width="4"/>
+    <line x1="390" y1="230" x2="390" y2="410" stroke="#e11d48" stroke-width="3"/>
+    <text x="320" y="430" font-family="'DM Sans', system-ui, sans-serif" font-size="10" font-weight="700" fill="#e11d48">SOBRECALENTADOR</text>
+  </g>
+  
+
+  <!-- Bottom Legend -->
+  <g transform="translate(40, 574)">
+    <rect x="0" y="0" width="920" height="34" rx="8" fill="#ffffff" stroke="#e2e8e0" stroke-width="1"/>
+    
+    <circle cx="20" cy="17" r="5" fill="#0284c7"/>
+    <text x="32" y="21" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">1 domo sup. + 2 colectores inf.</text>
+    <circle cx="250" cy="17" r="5" fill="#f97316"/>
+    <text x="262" y="21" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">Doble hogar (sobrecalentado y saturado)</text>
+    <circle cx="560" cy="17" r="5" fill="#d97706"/>
+    <text x="572" y="21" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="700" fill="#b45309">Componente activo del paso</text>
+  
+    <text x="760" y="21" font-family="'DM Sans', system-ui, sans-serif" font-size="10" font-style="italic" fill="#64748b">Esquema didáctico naval</text>
+  </g>
+</svg>

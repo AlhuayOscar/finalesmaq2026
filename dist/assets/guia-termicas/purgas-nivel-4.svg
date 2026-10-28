@@ -1,1 +1,210 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" role="img"><title>level</title><rect width="1000" height="620" rx="16" fill="#f6f7ef"/><text x="32" y="50" font-family="Arial,sans-serif" font-size="25" fill="#193f3e">Distinguir purgas, venteos, drenajes y nivel</text><text x="32" y="82" font-family="Arial,sans-serif" font-size="17" fill="#5a7167">Paso 4 de 4 · Comprobar el indicador</text><text x="32" y="587" font-family="Arial,sans-serif" font-size="15" fill="#5a7167">Esquema didáctico · sin escala · ocre: parte o relación que explica este paso</text><text x="32" y="608" font-family="Arial,sans-serif" font-size="13" fill="#5a7167">Las posiciones no sustituyen el plano del equipo. Flechas según leyenda de cada figura.</text><rect x="400" y="130" width="200" height="68" rx="12" fill="#cbe4ec" stroke="#729084" stroke-width="2"/><text x="412" y="170.0" font-family="Arial,sans-serif" font-size="17" fill="#193f3e">Domo: agua / vapor</text><rect x="455" y="430" width="130" height="54" rx="12" fill="#cbe4ec" stroke="#729084" stroke-width="2"/><text x="467" y="463.0" font-family="Arial,sans-serif" font-size="17" fill="#193f3e">Colector</text><polyline points="415,170 425,170 425,450 455,450" fill="none" stroke="#287eb1" stroke-width="5" stroke-linejoin="round"/><polygon points="455,450 442.39374056706254,456.08951747755725 442.39374056706254,443.91048252244275" fill="#287eb1"/><polyline points="496,430 476,198" fill="none" stroke="#cb6c32" stroke-width="4" stroke-linejoin="round"/><polyline points="520,430 500,198" fill="none" stroke="#cb6c32" stroke-width="4" stroke-linejoin="round"/><polyline points="544,430 524,198" fill="none" stroke="#cb6c32" stroke-width="4" stroke-linejoin="round"/><polyline points="565,410 545,220" fill="none" stroke="#cb6c32" stroke-width="3" stroke-linejoin="round"/><polygon points="545,220 552.3757418894064,231.8995139220413 540.2636252152247,233.17447357195516" fill="#cb6c32"/><rect x="100" y="280" width="175" height="95" rx="12" fill="#f4d5ba" stroke="#729084" stroke-width="2"/><text x="112" y="322.5" font-family="Arial,sans-serif" font-size="17" fill="#193f3e">Hogar</text><text x="112" y="344.5" font-family="Arial,sans-serif" font-size="17" fill="#193f3e">calor hacia tubos</text><polyline points="275,325 390,325" fill="none" stroke="#cb6c32" stroke-width="5" stroke-linejoin="round"/><polygon points="390,325 377.39374056706254,331.08951747755725 377.39374056706254,318.91048252244275" fill="#cb6c32"/><polyline points="600,150 855,150" fill="none" stroke="#bb5271" stroke-width="5" stroke-linejoin="round"/><polygon points="855,150 842.3937405670625,156.08951747755722 842.3937405670625,143.91048252244278" fill="#bb5271"/><text x="745" y="133" font-family="Arial,sans-serif" font-size="16" fill="#bb5271">Salida vapor</text><polyline points="800,235 570,235 570,190" fill="none" stroke="#287eb1" stroke-width="5" stroke-linejoin="round"/><polygon points="570,190 576.0895174775573,202.60625943293746 563.9104825224427,202.60625943293746" fill="#287eb1"/><text x="755" y="261" font-family="Arial,sans-serif" font-size="16" fill="#287eb1">Alimentación</text><rect x="805" y="315" width="125" height="90" rx="12" fill="#ffedbd" stroke="#ab7625" stroke-width="4"/><text x="817" y="355.0" font-family="Arial,sans-serif" font-size="17" fill="#193f3e">Indicador</text><text x="817" y="377.0" font-family="Arial,sans-serif" font-size="17" fill="#193f3e">de nivel</text><polyline points="600,155 930,155 930,333" fill="none" stroke="#ab7625" stroke-width="5" stroke-linejoin="round"/><polyline points="600,185 960,185 960,390 930,390" fill="none" stroke="#ab7625" stroke-width="5" stroke-linejoin="round"/><polyline points="520,484 520,505 925,505" fill="none" stroke="#287eb1" stroke-width="4" stroke-linejoin="round"/><polygon points="925,505 912.3937405670625,511.08951747755725 912.3937405670625,498.91048252244275" fill="#287eb1"/><text x="700" y="490" font-family="Arial,sans-serif" font-size="15" fill="#193f3e">Extracción de fondo</text><polyline points="590,180 750,180 750,435 925,435" fill="none" stroke="#287eb1" stroke-width="3" stroke-linejoin="round"/><polygon points="925,435 912.3937405670625,441.08951747755725 912.3937405670625,428.91048252244275" fill="#287eb1"/><text x="700" y="460" font-family="Arial,sans-serif" font-size="15" fill="#193f3e">Extracción superficial</text><text x="75" y="537" font-family="Arial,sans-serif" font-size="17" fill="#193f3e">Azul: agua / descendentes      Ocre: mezcla ascendente      Rosa: vapor</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="1000" height="620">
+  <defs>
+    <filter id="activeGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#d97706" flood-opacity="0.6"/>
+    </filter>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f2922" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="drumGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f0f9ff"/>
+      <stop offset="48%" stop-color="#e0f2fe"/>
+      <stop offset="52%" stop-color="#bae6fd"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <linearGradient id="mudGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <linearGradient id="furnaceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff7ed"/>
+      <stop offset="100%" stop-color="#ffedd5"/>
+    </linearGradient>
+    <linearGradient id="steelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="activeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="100%" stop-color="#fef3c7"/>
+    </linearGradient>
+
+    <!-- Arrow markers -->
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#0284c7"/>
+    </marker>
+    <marker id="arrowOrange" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#ea580c"/>
+    </marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#e11d48"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#059669"/>
+    </marker>
+    <marker id="arrowGray" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#475569"/>
+    </marker>
+    <marker id="arrowActive" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#d97706"/>
+    </marker>
+  </defs>
+
+  <!-- Background canvas -->
+  <rect width="1000" height="620" rx="16" fill="#f8faf7" stroke="#e2e8e0" stroke-width="1.5"/>
+
+  <!---->
+  <g transform="translate(36, 32)">
+    <text font-family="'DM Sans', system-ui, sans-serif" font-size="21" font-weight="700" fill="#133e36">Distinguir purgas, venteos, drenajes y nivel</text>
+    <text y="24" font-family="'DM Sans', system-ui, sans-serif" font-size="14" font-weight="500" fill="#52796f">Paso 4 de 4 · Comprobar el indicador</text>
+  </g>
+
+  <!-- Active Step Pill Badge -->
+  <g transform="translate(670, 24)">
+    <rect width="294" height="32" rx="16" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+    <circle cx="16" cy="16" r="5" fill="#d97706"/>
+    <text x="30" y="21" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="700" fill="#92400e">FOCO: COMPROBAR EL INDICADOR</text>
+  </g>
+
+  <!-- Content area -->
+  
+  <!-- Hogar de combustión -->
+  <g id="furnace-group" >
+    <rect x="50" y="200" width="220" height="180" rx="14" fill="url(#furnaceGrad)" stroke="#fdba74" stroke-width="2"/>
+    <text x="70" y="232" font-family="'DM Sans', system-ui, sans-serif" font-size="14" font-weight="700" fill="#9a3412">HOGAR (COMBUSTIÓN)</text>
+    <text x="70" y="250" font-family="'DM Sans', system-ui, sans-serif" font-size="12" fill="#c2410c">Calor radiante hacia tubos</text>
+    <!-- Llama -->
+    <path d="M 160 340 C 130 340 115 310 135 280 C 145 265 160 260 160 250 C 165 265 180 280 185 295 C 195 320 185 340 160 340 Z" fill="#f97316"/>
+    <path d="M 160 340 C 145 340 135 325 145 305 C 150 295 160 290 160 280 C 165 290 170 300 175 310 C 180 325 175 340 160 340 Z" fill="#facc15"/>
+    <!-- Flechas de calor radiante -->
+    <g stroke="#ea580c" stroke-width="2.5" fill="none">
+      <path d="M 240 260 Q 280 250 330 255" marker-end="url(#arrowOrange)"/>
+      <path d="M 250 295 L 330 295" marker-end="url(#arrowOrange)"/>
+      <path d="M 240 330 Q 280 340 330 335" marker-end="url(#arrowOrange)"/>
+    </g>
+    <text x="250" y="285" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="600" fill="#ea580c">Gases calientes</text>
+  </g>
+
+  <!-- Tubos descendentes (Downcomers) -->
+  <g id="downcomers-group" >
+    <path d="M 390 175 L 350 175 L 350 445 L 430 445" fill="none" stroke="#0284c7" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M 350 280 L 350 320" fill="none" stroke="#0284c7" stroke-width="6" marker-end="url(#arrowBlue)"/>
+    <rect x="275" y="340" width="145" height="34" rx="6" fill="#f0f9ff" stroke="#bae6fd" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <text x="283" y="354" font-family="'DM Sans', system-ui, sans-serif" font-size="10" font-weight="700" fill="#0369a1">TUBOS DESCENDENTES</text>
+    <text x="283" y="367" font-family="'DM Sans', system-ui, sans-serif" font-size="9" fill="#0284c7">Agua más densa (no calentada)</text>
+  </g>
+
+  <!-- Haces generadores / Hervidores (Risers) -->
+  <g id="risers-group" >
+    
+      <line x1="470" y1="410" x2="470" y2="175" stroke="#ea580c" stroke-width="3.5" stroke-linecap="round"/>
+      
+    
+      <line x1="495" y1="410" x2="495" y2="175" stroke="#ea580c" stroke-width="3.5" stroke-linecap="round"/>
+      
+    
+      <line x1="520" y1="410" x2="520" y2="175" stroke="#ea580c" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M 520 330 L 520 250" fill="none" stroke="#ea580c" stroke-width="3" marker-end="url(#arrowOrange)"/>
+    
+      <line x1="545" y1="410" x2="545" y2="175" stroke="#ea580c" stroke-width="3.5" stroke-linecap="round"/>
+      
+    
+      <line x1="570" y1="410" x2="570" y2="175" stroke="#ea580c" stroke-width="3.5" stroke-linecap="round"/>
+      
+    
+    <!-- Burbujas de vapor -->
+    <circle cx="470" cy="350" r="3.5" fill="#ffffff" stroke="#ea580c" stroke-width="1.5"/>
+    <circle cx="470" cy="270" r="4" fill="#ffffff" stroke="#ea580c" stroke-width="1.5"/>
+    <circle cx="520" cy="320" r="3.5" fill="#ffffff" stroke="#ea580c" stroke-width="1.5"/>
+    <circle cx="545" cy="240" r="4" fill="#ffffff" stroke="#ea580c" stroke-width="1.5"/>
+    <circle cx="570" cy="290" r="3.5" fill="#ffffff" stroke="#ea580c" stroke-width="1.5"/>
+    <rect x="585" y="270" width="145" height="44" rx="6" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <text x="593" y="286" font-family="'DM Sans', system-ui, sans-serif" font-size="10" font-weight="700" fill="#9a3412">HACES GENERADORES</text>
+    <text x="593" y="299" font-family="'DM Sans', system-ui, sans-serif" font-size="9" fill="#c2410c">Mezcla agua-vapor ascendente</text>
+    <text x="593" y="309" font-family="'DM Sans', system-ui, sans-serif" font-size="9" font-weight="600" fill="#ea580c">Menor densidad térmica</text>
+  </g>
+
+  <!-- Colector inferior (Mud drum) -->
+  <g id="lower-drum-group" >
+    <rect x="430" y="410" width="180" height="70" rx="20" fill="url(#mudGrad)" stroke="#0284c7" stroke-width="2.5"/>
+    <text x="520" y="442" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="14" font-weight="700" fill="#0c4a6e">COLECTOR INFERIOR</text>
+    <text x="520" y="459" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="11" fill="#0369a1">Distribución a tubos / Fango</text>
+    <!-- Purga de fondo -->
+    <path d="M 520 480 L 520 540 L 610 540" fill="none" stroke="#0284c7" stroke-width="3" marker-end="url(#arrowBlue)"/>
+    <polygon points="513,502 527,502 520,510" fill="#0284c7"/>
+    <polygon points="513,518 527,518 520,510" fill="#0284c7"/>
+    <text x="620" y="544" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="600" fill="#0369a1">Extracción de fondo (purga de lodos)</text>
+  </g>
+
+  <!-- Domo superior (Steam drum) -->
+  <g id="upper-drum-group" >
+    <rect x="380" y="95" width="280" height="80" rx="24" fill="url(#drumGrad)" stroke="#0284c7" stroke-width="2.5"/>
+    <!-- Línea divisoria de agua/vapor -->
+    <path d="M 382 138 Q 440 136 500 138 T 618 138 L 658 138" stroke="#0284c7" stroke-width="1.5" stroke-dasharray="4 3" fill="none"/>
+    <text x="520" y="118" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="1" fill="#be123c">ESPACIO DE VAPOR</text>
+    <text x="520" y="133" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="14" font-weight="700" fill="#0c4a6e">DOMO SUPERIOR</text>
+    <text x="520" y="157" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="11" fill="#0369a1">Nivel de agua / Separación de gotas</text>
+    <!-- Separadores internos / secadores -->
+    <path d="M 490 102 L 500 108 L 510 102 L 520 108 L 530 102" stroke="#e11d48" stroke-width="2" fill="none"/>
+    <!-- Purga de superficie / continua -->
+    <path d="M 440 142 L 440 162 L 405 162" fill="none" stroke="#0284c7" stroke-width="2"/>
+    <text x="310" y="155" font-family="'DM Sans', system-ui, sans-serif" font-size="10" font-weight="600" fill="#0369a1">Purga continua →</text>
+  </g>
+
+  <!-- Salida de vapor saturado -->
+  <g id="outlet-group" >
+    <path d="M 590 95 L 590 75 L 820 75" fill="none" stroke="#e11d48" stroke-width="3.5" marker-end="url(#arrowRed)"/>
+    <polygon points="685,68 685,82 693,75" fill="#e11d48"/>
+    <polygon points="701,68 701,82 693,75" fill="#e11d48"/>
+    <rect x="715" y="55" width="165" height="36" rx="6" fill="#fff1f2" stroke="#fecdd3" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <text x="725" y="70" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="700" fill="#9f1239">SALIDA VAPOR SATURADO</text>
+    <text x="725" y="83" font-family="'DM Sans', system-ui, sans-serif" font-size="9" fill="#be123c">Hacia sobrecalentador / consumo</text>
+  </g>
+
+  <!-- Entrada de agua de alimentación -->
+  <g id="feed-group" >
+    <path d="M 870 160 L 660 160" fill="none" stroke="#0284c7" stroke-width="3.5" marker-end="url(#arrowBlue)"/>
+    <polygon points="785,153 785,167 775,160" fill="#0284c7"/>
+    <line x1="775" y1="153" x2="775" y2="167" stroke="#0284c7" stroke-width="2"/>
+    <rect x="735" y="172" width="160" height="34" rx="6" fill="#f0f9ff" stroke="#bae6fd" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <text x="745" y="186" font-family="'DM Sans', system-ui, sans-serif" font-size="10" font-weight="700" fill="#0369a1">AGUA DE ALIMENTACIÓN</text>
+    <text x="745" y="198" font-family="'DM Sans', system-ui, sans-serif" font-size="9" fill="#0284c7">Ingreso al seno del agua</text>
+  </g>
+
+  <!-- Indicador de nivel (Visor reflex) -->
+  <g id="level-group" filter="url(#activeGlow)">
+    <!-- Tomas superior (vapor) e inferior (agua) con ángulo limpio -->
+    <path d="M 640 115 L 755 115 L 755 240" fill="none" stroke="#d97706" stroke-width="2"/>
+    <path d="M 640 162 L 725 162 L 725 320 L 755 320" fill="none" stroke="#d97706" stroke-width="2"/>
+    <circle cx="755" cy="235" r="4" fill="#0f2922"/>
+    <circle cx="755" cy="325" r="4" fill="#0f2922"/>
+
+    <!-- Columna de vidrio reflex -->
+    <rect x="745" y="240" width="20" height="80" rx="4" fill="#f8fafc" stroke="#d97706" stroke-width="2"/>
+    <rect x="747" y="275" width="16" height="43" fill="#bae6fd"/>
+    <line x1="743" y1="275" x2="767" y2="275" stroke="#0284c7" stroke-width="2"/>
+    <text x="771" y="278" font-family="'DM Sans', system-ui, sans-serif" font-size="9" font-weight="700" fill="#0369a1">NWL (Nivel Normal)</text>
+
+    <!-- Tarjeta de etiqueta -->
+    <rect x="775" y="295" width="155" height="42" rx="6" fill="#f1f5f9" stroke="#d97706" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <text x="785" y="312" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="700" fill="#334155">INDICADOR DE NIVEL</text>
+    <text x="785" y="325" font-family="'DM Sans', system-ui, sans-serif" font-size="9" fill="#64748b">Columnas de vapor y agua</text>
+  </g>
+  
+
+  <!-- Bottom Legend -->
+  <g transform="translate(40, 574)">
+    <rect x="0" y="0" width="920" height="34" rx="8" fill="#ffffff" stroke="#e2e8e0" stroke-width="1"/>
+    
+    <circle cx="20" cy="17" r="5" fill="#0284c7"/>
+    <text x="32" y="21" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">Agua líquida / Descendentes</text>
+    <circle cx="215" cy="17" r="5" fill="#ea580c"/>
+    <text x="227" y="21" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">Mezcla ascendente (Hervidores)</text>
+    <circle cx="430" cy="17" r="5" fill="#e11d48"/>
+    <text x="442" y="21" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">Vapor saturado</text>
+    <circle cx="560" cy="17" r="5" fill="#d97706"/>
+    <text x="572" y="21" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="700" fill="#b45309">Componente activo del paso</text>
+  
+    <text x="760" y="21" font-family="'DM Sans', system-ui, sans-serif" font-size="10" font-style="italic" fill="#64748b">Esquema didáctico naval</text>
+  </g>
+</svg>

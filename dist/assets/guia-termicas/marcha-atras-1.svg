@@ -1,1 +1,181 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" role="img"><title>ahead</title><rect width="1000" height="620" rx="16" fill="#f6f7ef"/><text x="32" y="50" font-family="Arial,sans-serif" font-size="25" fill="#193f3e">Explicar marcha atrás con el recorrido correcto</text><text x="32" y="82" font-family="Arial,sans-serif" font-size="17" fill="#5a7167">Paso 1 de 4 · Identificar la solución propulsora</text><text x="32" y="587" font-family="Arial,sans-serif" font-size="15" fill="#5a7167">Esquema didáctico · sin escala · ocre: parte o relación que explica este paso</text><text x="32" y="608" font-family="Arial,sans-serif" font-size="13" fill="#5a7167">Las posiciones no sustituyen el plano del equipo. Flechas según leyenda de cada figura.</text><rect x="60" y="240" width="170" height="100" rx="12" fill="#ffedbd" stroke="#ab7625" stroke-width="4"/><text x="72" y="296.0" font-family="Arial,sans-serif" font-size="17" fill="#193f3e">Vapor principal</text><rect x="350" y="140" width="230" height="100" rx="12" fill="#ffedbd" stroke="#ab7625" stroke-width="4"/><text x="362" y="185.0" font-family="Arial,sans-serif" font-size="17" fill="#193f3e">Sección</text><text x="362" y="207.0" font-family="Arial,sans-serif" font-size="17" fill="#193f3e">marcha adelante</text><rect x="350" y="370" width="230" height="100" rx="12" fill="#e4ece7" stroke="#729084" stroke-width="2"/><text x="362" y="415.0" font-family="Arial,sans-serif" font-size="17" fill="#193f3e">Sección de ciar</text><text x="362" y="437.0" font-family="Arial,sans-serif" font-size="17" fill="#193f3e">marcha atrás</text><rect x="690" y="250" width="150" height="100" rx="12" fill="#e4ece7" stroke="#729084" stroke-width="2"/><text x="702" y="295.0" font-family="Arial,sans-serif" font-size="17" fill="#193f3e">Transmisión</text><text x="702" y="317.0" font-family="Arial,sans-serif" font-size="17" fill="#193f3e">según diseño</text><rect x="870" y="250" width="110" height="100" rx="12" fill="#e4ece7" stroke="#729084" stroke-width="2"/><text x="882" y="306.0" font-family="Arial,sans-serif" font-size="17" fill="#193f3e">Hélice</text><polyline points="230,280 280,280 280,190 350,190" fill="none" stroke="#ab7625" stroke-width="8" stroke-linejoin="round"/><polygon points="350,190 337.39374056706254,196.08951747755722 337.39374056706254,183.91048252244278" fill="#ab7625"/><polyline points="230,300 280,300 280,420 350,420" fill="none" stroke="#bb5271" stroke-width="5" stroke-linejoin="round"/><polygon points="350,420 337.39374056706254,426.08951747755725 337.39374056706254,413.91048252244275" fill="#bb5271"/><polyline points="580,190 650,190 650,275 690,275" fill="none" stroke="#193f3e" stroke-width="5" stroke-linejoin="round"/><polygon points="690,275 677.3937405670625,281.08951747755725 677.3937405670625,268.91048252244275" fill="#193f3e"/><polyline points="580,420 650,420 650,325 690,325" fill="none" stroke="#193f3e" stroke-width="5" stroke-linejoin="round"/><polygon points="690,325 677.3937405670625,331.08951747755725 677.3937405670625,318.91048252244275" fill="#193f3e"/><polyline points="840,300 870,300" fill="none" stroke="#193f3e" stroke-width="5" stroke-linejoin="round"/><polygon points="870,300 857.3937405670625,306.08951747755725 857.3937405670625,293.91048252244275" fill="#193f3e"/><polyline points="500,240 500,275 615,275 615,510 900,510" fill="none" stroke="#ab7625" stroke-width="6" stroke-linejoin="round"/><polygon points="900,510 887.3937405670625,516.0895174775573 887.3937405670625,503.91048252244275" fill="#ab7625"/><polyline points="500,470 500,510 615,510" fill="none" stroke="#bb5271" stroke-width="3" stroke-linejoin="round"/><text x="645" y="540" font-family="Arial,sans-serif" font-size="15" fill="#193f3e">Escape → condensador según diseño</text><text x="70" y="127" font-family="Arial,sans-serif" font-size="17" fill="#193f3e">Rosa: vapor     Oscuro: transmisión de par (no tubería)</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="1000" height="620">
+  <defs>
+    <filter id="activeGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#d97706" flood-opacity="0.6"/>
+    </filter>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f2922" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="drumGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f0f9ff"/>
+      <stop offset="48%" stop-color="#e0f2fe"/>
+      <stop offset="52%" stop-color="#bae6fd"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <linearGradient id="mudGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <linearGradient id="furnaceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff7ed"/>
+      <stop offset="100%" stop-color="#ffedd5"/>
+    </linearGradient>
+    <linearGradient id="steelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="activeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="100%" stop-color="#fef3c7"/>
+    </linearGradient>
+
+    <!-- Arrow markers -->
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#0284c7"/>
+    </marker>
+    <marker id="arrowOrange" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#ea580c"/>
+    </marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#e11d48"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#059669"/>
+    </marker>
+    <marker id="arrowGray" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#475569"/>
+    </marker>
+    <marker id="arrowActive" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#d97706"/>
+    </marker>
+  </defs>
+
+  <!-- Background canvas -->
+  <rect width="1000" height="620" rx="16" fill="#f8faf7" stroke="#e2e8e0" stroke-width="1.5"/>
+
+  <!---->
+  <g transform="translate(36, 32)">
+    <text font-family="'DM Sans', system-ui, sans-serif" font-size="21" font-weight="700" fill="#133e36">Explicar marcha atrás con el recorrido correcto</text>
+    <text y="24" font-family="'DM Sans', system-ui, sans-serif" font-size="14" font-weight="500" fill="#52796f">Paso 1 de 4 · Identificar la solución propulsora</text>
+  </g>
+
+  <!-- Active Step Pill Badge -->
+  <g transform="translate(670, 24)">
+    <rect width="294" height="32" rx="16" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+    <circle cx="16" cy="16" r="5" fill="#d97706"/>
+    <text x="30" y="21" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="700" fill="#92400e">FOCO: IDENTIFICAR LA SOLUCIÓN PROPULSORA</text>
+  </g>
+
+  <!-- Content area -->
+  
+    <!-- Main Steam Manifold and Valves (Top) -->
+    <g id="astern-gear" >
+      <rect x="220" y="90" width="560" height="40" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+      <text x="500" y="115" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="700" fill="#1e293b">LÍNEA DE VAPOR PRINCIPAL DESDE CALDERA (VAPOR VIVO)</text>
+      
+      <!-- Ahead Valve -->
+      <g transform="translate(320, 120)">
+        <path d="M 0 10 L 0 50" stroke="#0284c7" stroke-width="4" marker-end="url(#arrowBlue)"/>
+        <rect x="-35" y="15" width="70" height="24" rx="4" fill="#0284c7"/>
+        <text x="0" y="31" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="9.5" font-weight="700" fill="#ffffff">VÁLV. AVANTE</text>
+      </g>
+
+      <!-- Astern Valve -->
+      <g transform="translate(680, 120)">
+        <path d="M 0 10 L 0 50" stroke="#ea580c" stroke-width="4" marker-end="url(#arrowOrange)"/>
+        <rect x="-35" y="15" width="70" height="24" rx="4" fill="#ea580c"/>
+        <text x="0" y="31" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="9.5" font-weight="700" fill="#ffffff">VÁLV. CIAR</text>
+      </g>
+
+      <!-- Interlock note -->
+      <path d="M 360 132 L 640 132" stroke="#e11d48" stroke-width="2" stroke-dasharray="4 2"/>
+      <rect x="440" y="122" width="120" height="20" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="1"/>
+      <text x="500" y="136" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="8.5" font-weight="700" fill="#b91c1c">ENCLAVAMIENTO DE SEGURIDAD</text>
+    </g>
+
+    <!-- Combined LP Turbine Casing -->
+    <rect x="180" y="170" width="640" height="220" rx="16" fill="#f8fafc" stroke="#334155" stroke-width="3"/>
+    
+    <!-- Shaft running horizontally through -->
+    <rect x="120" y="265" width="760" height="30" rx="4" fill="url(#steelGrad)" stroke="#334155" stroke-width="2"/>
+
+    <!-- 1. Ahead Turbine Stages (Left side) -->
+    <g id="astern-ahead" filter="url(#activeGlow)">
+      <rect x="220" y="185" width="280" height="190" rx="8" fill="#e0f2fe" opacity="0.3" stroke="#d97706" stroke-width="4"/>
+      <text x="360" y="210" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="800" fill="#0369a1">CORONAS DE MARCHA AVANTE (LP)</text>
+      
+        <rect x="250" y="225" width="12" height="40" rx="2" fill="#0284c7"/>
+        <rect x="250" y="295" width="12" height="40" rx="2" fill="#0284c7"/>
+      
+        <rect x="290" y="225" width="12" height="40" rx="2" fill="#0284c7"/>
+        <rect x="290" y="295" width="12" height="40" rx="2" fill="#0284c7"/>
+      
+        <rect x="330" y="225" width="12" height="40" rx="2" fill="#0284c7"/>
+        <rect x="330" y="295" width="12" height="40" rx="2" fill="#0284c7"/>
+      
+        <rect x="370" y="225" width="12" height="40" rx="2" fill="#0284c7"/>
+        <rect x="370" y="295" width="12" height="40" rx="2" fill="#0284c7"/>
+      
+        <rect x="410" y="225" width="12" height="40" rx="2" fill="#0284c7"/>
+        <rect x="410" y="295" width="12" height="40" rx="2" fill="#0284c7"/>
+      
+        <rect x="450" y="225" width="12" height="40" rx="2" fill="#0284c7"/>
+        <rect x="450" y="295" width="12" height="40" rx="2" fill="#0284c7"/>
+      
+      <!-- Ahead Steam Flow arrow -->
+      <path d="M 230 240 L 480 240" stroke="#0284c7" stroke-width="3" stroke-dasharray="6 3" marker-end="url(#arrowBlue)"/>
+      <text x="240" y="235" font-family="'DM Sans', system-ui, sans-serif" font-size="9" font-weight="700" fill="#0369a1">Flujo Avante</text>
+    </g>
+
+    <!-- Central Exhaust Space to Condenser -->
+    <path d="M 490 265 L 490 390 L 610 390 L 610 265" fill="#f1f5f9" stroke="#94a3b8" stroke-dasharray="4 2"/>
+    <path d="M 550 350 L 550 410" stroke="#64748b" stroke-width="4" marker-end="url(#arrowGray)"/>
+    <text x="550" y="425" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="10" font-weight="700" fill="#475569">Escape común a condensador</text>
+
+    <!-- Deflector Plate preventing back-impingement -->
+    <path d="M 515 200 Q 525 280 515 360" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+    <text x="515" y="195" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="8.5" font-weight="700" fill="#475569">DEFLECTOR</text>
+
+    <!-- 2. Astern Curtis Stage (Right side) -->
+    <g id="astern-element" >
+      <rect x="620" y="185" width="170" height="190" rx="8" fill="#ffedd5" opacity="0.3" stroke="#ea580c" stroke-width="2"/>
+      <text x="705" y="210" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="800" fill="#c2410c">RUEDA CURTIS CIAR</text>
+      <!-- Curtis blading (two velocity stages) with reversed profile -->
+      
+        <rect x="655" y="225" width="14" height="40" rx="2" fill="#ea580c"/>
+        <rect x="655" y="295" width="14" height="40" rx="2" fill="#ea580c"/>
+      
+        <rect x="685" y="225" width="14" height="40" rx="2" fill="#ea580c"/>
+        <rect x="685" y="295" width="14" height="40" rx="2" fill="#ea580c"/>
+      
+        <rect x="730" y="225" width="14" height="40" rx="2" fill="#ea580c"/>
+        <rect x="730" y="295" width="14" height="40" rx="2" fill="#ea580c"/>
+      
+      <!-- Astern Steam Flow arrow (in reverse direction) -->
+      <path d="M 760 240 L 630 240" stroke="#ea580c" stroke-width="3" stroke-dasharray="6 3" marker-end="url(#arrowOrange)"/>
+      <text x="760" y="235" text-anchor="end" font-family="'DM Sans', system-ui, sans-serif" font-size="9" font-weight="700" fill="#c2410c">Vapor de Ciar</text>
+    </g>
+
+    <!-- 4. Controllable Pitch Propeller (CPP) Comparison Box -->
+    <g id="astern-propeller"  transform="translate(60, 450)">
+      <rect width="880" height="90" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#cardShadow)"/>
+      <text x="24" y="25" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="700" fill="#1e293b">SOLUCIÓN PROPULSORA ALTERNATIVA: HÉLICE DE PASO CONTROLABLE (CPP)</text>
+      <text x="24" y="46" font-family="'DM Sans', system-ui, sans-serif" font-size="10.5" fill="#475569">• Con hélice de paso fijo (FPP): Es imprescindible la rueda de marcha atrás (Curtis) para invertir el sentido de giro del eje.</text>
+      <text x="24" y="64" font-family="'DM Sans', system-ui, sans-serif" font-size="10.5" fill="#475569">• Con hélice CPP: La turbina y el eje giran siempre en sentido constante avante; la maniobra de ciar se efectúa variando hidráulicamente el ángulo de las palas en el cubo de popa.</text>
+      <text x="24" y="80" font-family="'DM Sans', system-ui, sans-serif" font-size="10.5" fill="#475569">• Ventajas de CPP en buque de turbina: Evita el choque térmico y sobreconsumo en caldera al invertir bruscamente la maniobra.</text>
+    </g>
+  
+
+  <!-- Bottom Legend -->
+  <g transform="translate(40, 574)">
+    <rect x="0" y="0" width="920" height="34" rx="8" fill="#ffffff" stroke="#e2e8e0" stroke-width="1"/>
+    
+    <circle cx="20" cy="17" r="5" fill="#0284c7"/><text x="32" y="21" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">Turbina Avante (Ahead)</text>
+    <circle cx="200" cy="17" r="5" fill="#ea580c"/><text x="212" y="21" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">Elemento Ciar (Astern Curtis)</text>
+    <circle cx="440" cy="17" r="5" fill="#e11d48"/><text x="452" y="21" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">Válvulas de maniobra / Caldera</text>
+    <circle cx="680" cy="17" r="5" fill="#10b981"/><text x="692" y="21" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">Hélice de paso controlable (CPP)</text>
+    <circle cx="870" cy="17" r="5" fill="#d97706"/><text x="882" y="21" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="700" fill="#b45309">Foco</text>
+  
+    <text x="760" y="21" font-family="'DM Sans', system-ui, sans-serif" font-size="10" font-style="italic" fill="#64748b">Esquema didáctico naval</text>
+  </g>
+</svg>

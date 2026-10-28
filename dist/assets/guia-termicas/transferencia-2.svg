@@ -1,1 +1,143 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" role="img"><title>soot</title><rect width="1000" height="620" rx="16" fill="#f6f7ef"/><text x="32" y="50" font-family="Arial,sans-serif" font-size="25" fill="#193f3e">Seguir el calor desde la llama hasta el agua</text><text x="32" y="82" font-family="Arial,sans-serif" font-size="17" fill="#5a7167">Paso 2 de 4 · Convección del lado de gases</text><text x="32" y="587" font-family="Arial,sans-serif" font-size="15" fill="#5a7167">Esquema didáctico · sin escala · ocre: parte o relación que explica este paso</text><text x="32" y="608" font-family="Arial,sans-serif" font-size="13" fill="#5a7167">Las posiciones no sustituyen el plano del equipo. Flechas según leyenda de cada figura.</text><rect x="90" y="170" width="170" height="210" rx="12" fill="#cb6c32" stroke="#729084" stroke-width="2"/><text x="102" y="281.0" font-family="Arial,sans-serif" font-size="17" fill="#193f3e"></text><text x="90" y="415" font-family="Arial,sans-serif" font-size="15" fill="#193f3e">Llama / gases</text><rect x="280" y="170" width="70" height="210" rx="12" fill="#ffedbd" stroke="#ab7625" stroke-width="4"/><text x="292" y="281.0" font-family="Arial,sans-serif" font-size="17" fill="#193f3e"></text><text x="280" y="415" font-family="Arial,sans-serif" font-size="15" fill="#193f3e">Hollín</text><rect x="370" y="170" width="110" height="210" rx="12" fill="#b8c7ca" stroke="#729084" stroke-width="2"/><text x="382" y="281.0" font-family="Arial,sans-serif" font-size="17" fill="#193f3e"></text><text x="370" y="415" font-family="Arial,sans-serif" font-size="15" fill="#193f3e">Metal</text><rect x="500" y="170" width="90" height="210" rx="12" fill="#ddc995" stroke="#729084" stroke-width="2"/><text x="512" y="281.0" font-family="Arial,sans-serif" font-size="17" fill="#193f3e"></text><text x="500" y="415" font-family="Arial,sans-serif" font-size="15" fill="#193f3e">Incrustación</text><rect x="610" y="170" width="240" height="210" rx="12" fill="#d1e6ee" stroke="#729084" stroke-width="2"/><text x="622" y="281.0" font-family="Arial,sans-serif" font-size="17" fill="#193f3e"></text><text x="610" y="415" font-family="Arial,sans-serif" font-size="15" fill="#193f3e">Agua</text><polyline points="100,280 830,280" fill="none" stroke="#ab7625" stroke-width="8" stroke-linejoin="round"/><polygon points="830,280 817.3937405670625,286.08951747755725 817.3937405670625,273.91048252244275" fill="#ab7625"/><rect x="150" y="455" width="700" height="70" rx="12" fill="#e4ece7" stroke="#729084" stroke-width="2"/><text x="162" y="496.0" font-family="Arial,sans-serif" font-size="17" fill="#193f3e">Depósitos → más resistencia térmica → peor refrigeración del metal</text><text x="90" y="143" font-family="Arial,sans-serif" font-size="18" fill="#193f3e">Capas del intercambio: gases → depósito → pared → depósito → agua</text><text x="90" y="555" font-family="Arial,sans-serif" font-size="15" fill="#193f3e">Corte conceptual de una pared: gases y agua permanecen separados.</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="1000" height="620">
+  <defs>
+    <filter id="activeGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#d97706" flood-opacity="0.6"/>
+    </filter>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f2922" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="drumGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f0f9ff"/>
+      <stop offset="48%" stop-color="#e0f2fe"/>
+      <stop offset="52%" stop-color="#bae6fd"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <linearGradient id="mudGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <linearGradient id="furnaceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff7ed"/>
+      <stop offset="100%" stop-color="#ffedd5"/>
+    </linearGradient>
+    <linearGradient id="steelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="activeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="100%" stop-color="#fef3c7"/>
+    </linearGradient>
+
+    <!-- Arrow markers -->
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#0284c7"/>
+    </marker>
+    <marker id="arrowOrange" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#ea580c"/>
+    </marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#e11d48"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#059669"/>
+    </marker>
+    <marker id="arrowGray" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#475569"/>
+    </marker>
+    <marker id="arrowActive" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#d97706"/>
+    </marker>
+  </defs>
+
+  <!-- Background canvas -->
+  <rect width="1000" height="620" rx="16" fill="#f8faf7" stroke="#e2e8e0" stroke-width="1.5"/>
+
+  <!---->
+  <g transform="translate(36, 32)">
+    <text font-family="'DM Sans', system-ui, sans-serif" font-size="21" font-weight="700" fill="#133e36">Seguir el calor desde la llama hasta el agua</text>
+    <text y="24" font-family="'DM Sans', system-ui, sans-serif" font-size="14" font-weight="500" fill="#52796f">Paso 2 de 4 · Convección del lado de gases</text>
+  </g>
+
+  <!-- Active Step Pill Badge -->
+  <g transform="translate(670, 24)">
+    <rect width="294" height="32" rx="16" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+    <circle cx="16" cy="16" r="5" fill="#d97706"/>
+    <text x="30" y="21" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="700" fill="#92400e">FOCO: CONVECCIÓN DEL LADO DE GASES</text>
+  </g>
+
+  <!-- Content area -->
+  
+    <g transform="translate(40, 110)">
+      
+        <g id="layer-fire" >
+          <rect x="80" y="0" width="160" height="280" fill="#fdba74" stroke="#64748b" stroke-width="1.5"/>
+          <text x="160" y="30" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="700" fill="#9a3412">GASES / LLAMA</text>
+          <text x="160" y="250" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="10" font-weight="600" fill="#9a3412">Radiación y convección</text>
+          <text x="160" y="265" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="9" fill="#9a3412">T ≈ 1200°C</text>
+        </g>
+      
+        <g id="layer-soot" filter="url(#activeGlow)">
+          <rect x="240" y="0" width="80" height="280" fill="#475569" stroke="#d97706" stroke-width="4"/>
+          <text x="280" y="30" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="700" fill="#ffffff">HOLLÍN</text>
+          <text x="280" y="250" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="10" font-weight="600" fill="#ffffff">Aislante térmico exterior</text>
+          <text x="280" y="265" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="9" fill="#ffffff">Caída brusca de T</text>
+        </g>
+      
+        <g id="layer-metal" >
+          <rect x="320" y="0" width="180" height="280" fill="#cbd5e1" stroke="#64748b" stroke-width="1.5"/>
+          <text x="410" y="30" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="700" fill="#1e293b">PARED DE ACERO</text>
+          <text x="410" y="250" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="10" font-weight="600" fill="#1e293b">Conducción en metal</text>
+          <text x="410" y="265" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="9" fill="#1e293b">Resistencia mecánica</text>
+        </g>
+      
+        <g id="layer-scale" >
+          <rect x="500" y="0" width="90" height="280" fill="#fde047" stroke="#64748b" stroke-width="1.5"/>
+          <text x="545" y="30" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="700" fill="#713f12">INCRUSTACIÓN</text>
+          <text x="545" y="250" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="10" font-weight="600" fill="#713f12">Sales de Ca y Mg</text>
+          <text x="545" y="265" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="9" fill="#713f12">Riesgo de ampolla</text>
+        </g>
+      
+        <g id="layer-water" >
+          <rect x="590" y="0" width="230" height="280" fill="#bae6fd" stroke="#64748b" stroke-width="1.5"/>
+          <text x="705" y="30" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="700" fill="#0369a1">AGUA / VAPOR</text>
+          <text x="705" y="250" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="10" font-weight="600" fill="#0369a1">Ebullición y refrigeración</text>
+          <text x="705" y="265" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="9" fill="#0369a1">Tsat ≈ 260°C</text>
+        </g>
+      
+
+      <path d="M 90 60 Q 230 75 240 85 L 320 160 L 500 175 L 590 230 L 810 235" fill="none" stroke="#e11d48" stroke-width="4.5" stroke-linecap="round"/>
+      <circle cx="240" cy="85" r="5" fill="#e11d48"/>
+      <circle cx="320" cy="160" r="5" fill="#e11d48"/>
+      <circle cx="500" cy="175" r="5" fill="#e11d48"/>
+      <circle cx="590" cy="230" r="5" fill="#e11d48"/>
+      <text x="100" y="52" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="700" fill="#e11d48">Tgas (1200°C)</text>
+      <text x="700" y="225" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="700" fill="#0284c7">Tagua (260°C)</text>
+
+      <line x1="120" y1="130" x2="760" y2="130" stroke="#ea580c" stroke-width="4" stroke-dasharray="8 4" marker-end="url(#arrowOrange)"/>
+      <rect x="360" y="116" width="160" height="26" rx="4" fill="#ffffff" stroke="#ea580c" stroke-width="1"/>
+      <text x="440" y="133" text-anchor="middle" font-family="'DM Sans', system-ui, sans-serif" font-size="10" font-weight="700" fill="#ea580c">FLUJO TÉRMICO Q [kW/m²]</text>
+    </g>
+
+    <g transform="translate(100, 430)">
+      <rect width="800" height="105" rx="12" fill="#fffbeb" stroke="#f59e0b" stroke-width="2" filter="url(#cardShadow)"/>
+      <text x="30" y="32" font-family="'DM Sans', system-ui, sans-serif" font-size="12" font-weight="700" fill="#b45309">EFECTO DE LOS DEPÓSITOS EN LA INTEGRIDAD DEL METAL</text>
+      <text x="30" y="54" font-family="'DM Sans', system-ui, sans-serif" font-size="11" fill="#78350f">• El hollín exterior reduce la transferencia y aumenta el consumo de combustible.</text>
+      <text x="30" y="74" font-family="'DM Sans', system-ui, sans-serif" font-size="11" fill="#78350f">• La incrustación interna (aislante) impide que el agua refrigere el tubo: el metal se sobrecalienta, pierde resistencia mecánica y se produce ampolla o rotura por rotura plástica.</text>
+    </g>
+  
+
+  <!-- Bottom Legend -->
+  <g transform="translate(40, 574)">
+    <rect x="0" y="0" width="920" height="34" rx="8" fill="#ffffff" stroke="#e2e8e0" stroke-width="1"/>
+    
+    <circle cx="20" cy="17" r="5" fill="#f97316"/><text x="32" y="21" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">Llama / Gases</text>
+    <circle cx="160" cy="17" r="5" fill="#475569"/><text x="172" y="21" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">Hollín</text>
+    <circle cx="260" cy="17" r="5" fill="#94a3b8"/><text x="272" y="21" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">Pared metálica</text>
+    <circle cx="390" cy="17" r="5" fill="#d97706"/><text x="402" y="21" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">Incrustación</text>
+    <circle cx="510" cy="17" r="5" fill="#0284c7"/><text x="522" y="21" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">Agua líquida</text>
+    <circle cx="680" cy="17" r="5" fill="#d97706"/><text x="692" y="21" font-family="'DM Sans', system-ui, sans-serif" font-size="11" font-weight="700" fill="#b45309">Foco activo</text>
+  
+    <text x="760" y="21" font-family="'DM Sans', system-ui, sans-serif" font-size="10" font-style="italic" fill="#64748b">Esquema didáctico naval</text>
+  </g>
+</svg>
