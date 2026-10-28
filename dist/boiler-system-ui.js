@@ -15,7 +15,7 @@ function boilerSystemsPanel(){
  <p class="system-note">Las fichas sirven para reconocer y explicar mecanismos. Las maniobras, límites, ajustes y tratamiento químico corresponden al manual específico de la instalación.</p></section>`;
 }
 function selectBoilerFault(id){
- activeBoilerFault=id;const f=currentBoilerFault();if(f){f.layers.forEach(k=>activeBoilerLayers.add(k));mode='explore';focusPart=false;explode=0;const ids=boilerFaultParts(f,model);selected=ids[0]||'upper';cutaway=ids.some(k=>internalParts.has(k));flowKind=f.group==='Combustión'?'fuel':'water';flow=true;}
+ activeBoilerFault=id;const f=currentBoilerFault();if(f){f.layers.forEach(k=>activeBoilerLayers.add(k));mode='explore';focusPart=false;explode=0;const ids=boilerFaultParts(f,model);selected=ids[0]||'upper';cutaway=ids.some(k=>internalParts.has(k));flowKind=f.group==='Combustión'?'fuel':'water';flow=false;}
  geometryKey='';renderWorkshop();
 }
 function bindBoilerSystems(){

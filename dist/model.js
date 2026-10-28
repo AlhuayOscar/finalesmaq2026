@@ -15,7 +15,7 @@ const internalParts=new Set(['takeoff','separator','feed','desuperheater']);
 function partIds(){return [...boilerIds(model),...boilerLayerIds(activeBoilerLayers)]}
 function part(id){return boilerPart(id,model)}
 function renderWorkshop(){
-  window.stopModel?.();if(window.startBoilerPractice&&boilerPractice.active){renderBoilerPractice();return}const t=types[model];
+  window.stopModel?.();flow=false;if(window.startBoilerPractice&&boilerPractice.active){renderBoilerPractice();return}const t=types[model];
   if(model!=='catalog'&&!partIds().includes(selected))selected='upper';
   if(model==='simple'&&flowKind==='gas')flowKind='water';
   app.innerHTML=`<div class="workshop-head"><div><div class="eyebrow">LABORATORIO INTERACTIVO · CALDERAS ACUOTUBULARES</div><h1>Reconocé cada parte.<br><em>Seguí el recorrido.</em></h1></div><span class="lab-badge">3D · EXPLORACIÓN + MONTAJE</span></div><div class="model-tabs" aria-label="Tipos de caldera">${Object.entries(types).map(([id,t])=>`<button data-model="${id}" class="${model===id?'active':''}">${t.name}</button>`).join('')}</div>${model==='catalog'?catalog():workshopBody(t)}`;
@@ -31,10 +31,10 @@ function renderWorkshop(){
   document.querySelector('#zoom-in').onclick=()=>zoom=Math.min(1.7,zoom+.15);
   document.querySelector('#zoom-out').onclick=()=>zoom=Math.max(.55,zoom-.15);
   for(const [id,get,set] of [['labels-toggle',()=>showLabels,v=>showLabels=v],['focus-toggle',()=>focusPart,v=>focusPart=v],['cut-toggle',()=>cutaway,v=>cutaway=v]])document.querySelector('#'+id).onclick=e=>{set(!get());e.currentTarget.setAttribute('aria-pressed',String(get()))};
-  document.querySelector('#flow-select').onchange=e=>{flowKind=e.target.value;flow=flowKind!=='off'};
+  document.querySelector('#flow-select').onchange=e=>{flowKind=e.target.value;flow=false;document.querySelector('#flow-play').textContent='▶ Animar'};
   document.querySelector('#restart')?.addEventListener('click',()=>{placed.clear();updateParts();document.querySelector('#feedback').textContent='Montaje reiniciado.'});
   document.querySelector("#boiler-practice-open")?.addEventListener("click",()=>window.startBoilerPractice(model));
-  updateParts();bindCanvas();bindBoilerSystems();raf=requestAnimationFrame(draw);
+  document.querySelector('#flow-play').onclick=e=>{if(flowKind==='off'){flowKind='water';document.querySelector('#flow-select').value='water'}flow=!flow;e.currentTarget.textContent=flow?'Ⅱ Pausar':'▶ Animar';e.currentTarget.setAttribute('aria-pressed',String(flow))};updateParts();bindCanvas();bindBoilerSystems();raf=requestAnimationFrame(draw);
 }
 function workshopBody(t){
   const ref=boilerReference[model];
@@ -44,7 +44,7 @@ function workshopBody(t){
   <div class="canvas-help">Arrastrá para girar · Tocá una pieza o su número · Rueda para zoom</div>
   <div class="viewport-tools"><button id="reset-view" class="secondary">↺ Vista inicial</button><button id="front-view" class="secondary">Vista frontal</button><button id="zoom-out" class="secondary" aria-label="Alejar">−</button><button id="zoom-in" class="secondary" aria-label="Acercar">+</button></div>
   <div class="viewport-tools"><button id="labels-toggle" class="secondary" aria-pressed="${showLabels}">Números</button><button id="focus-toggle" class="secondary" aria-pressed="${focusPart}">Aislar selección</button><button id="cut-toggle" class="secondary" aria-pressed="${cutaway}">Ver interior del domo</button></div>
-  <div class="flow-control"><label for="flow-select">Recorrido</label><select id="flow-select">${[['water','Agua y mezcla'],['steam','Vapor'],...(model==='simple'?[]:[['gas','Gases calientes']]),...(activeBoilerLayers.has('fuel')?[['fuel','Combustible']]:[]),...(activeBoilerLayers.has('water')?[['blow','Extracciones / purgas']]:[]),...(activeBoilerLayers.has('controls')?[['control','Señales de control (sin fluido)']]:[]),['off','Sin animación']].map(([v,l])=>`<option value="${v}" ${flowKind===v?'selected':''}>${l}</option>`).join('')}</select><small id="flow-note">${explode?'Despiece: conexiones separadas; circulación pausada.':'Las flechas indican el sentido. Recorrido esquemático.'}</small></div>
+  <div class="flow-control"><button id="flow-play" type="button" aria-pressed="false">▶ Animar</button><label for="flow-select">Recorrido</label><select id="flow-select">${[['water','Agua y mezcla'],['steam','Vapor'],...(model==='simple'?[]:[['gas','Gases calientes']]),...(activeBoilerLayers.has('fuel')?[['fuel','Combustible']]:[]),...(activeBoilerLayers.has('water')?[['blow','Extracciones / purgas']]:[]),...(activeBoilerLayers.has('controls')?[['control','Señales de control (sin fluido)']]:[]),['off','Sin animación']].map(([v,l])=>`<option value="${v}" ${flowKind===v?'selected':''}>${l}</option>`).join('')}</select><small id="flow-note">${explode?'Despiece: conexiones separadas; circulación pausada.':'Las flechas indican el sentido. Recorrido esquemático.'}</small></div>
   <div class="explode-control"><label for="explode">Despiece</label><input id="explode" type="range" min="0" max="100" value="${explode*100}" aria-label="Separación de las piezas"><span>Montada ↔ Separada</span></div>
   <div class="legend"><span><i style="background:#367fc1"></i>Agua</span><span><i style="background:#ca8946"></i>Mezcla</span><span><i style="background:#ba5f7b"></i>Vapor</span><span><i style="background:#e57745"></i>Gases</span></div></section>
   <section class="parts-panel"><div class="eyebrow">${mode==='assemble'?'BANCO DE PIEZAS':'INSPECTOR DE COMPONENTES'}</div><p class="panel-help">${mode==='assemble'?'Elegí una pieza y tocá su ubicación. Los contornos muestran lo que falta.':'Cada número identifica una pieza del modelo. Seleccionala para ver su función, conexiones y referencia en el apunte.'}</p><div id="parts-list"></div><div id="part-detail" aria-live="polite"></div><div class="feedback" id="feedback" role="status"></div>${mode==='assemble'?'<button id="restart" class="secondary">Reiniciar montaje</button>':''}</section></div>
