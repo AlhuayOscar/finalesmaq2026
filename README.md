@@ -210,3 +210,5 @@ RHDP usa el banco completo y la cobertura de HDP en todas las materias. Cada asp
 Estudiar examen aparece antes de Práctica acompañada. El profesor plantea y responde sin registrar intentos, notas ni progreso. Usa respuestas desarrolladas del banco y genera una resolución contextual para láminas que sólo tienen material de referencia. Muestra recortes originales con correspondencia verificada o la diapositiva seleccionada; si no hay figura original verificada, lo informa y enlaza el material, sin sustituirlo por un dibujo generado. Permite escuchar, avanzar, finalizar y exportar.
 
 Verificación: `node tests/rhdp-study.cjs` y pruebas existentes del oral. Gemini simulado.
+
+Las láminas de Estudiar examen muestran cada elemento y su función por escrito, antes de la figura. Las diapositivas con resolución generada exigen una respuesta por cada punto y una lista de funciones y conexiones; se intenta reparar una salida incompleta y se conserva la pregunta si no se logra. La voz y la exportación incluyen el desarrollo completo. Verificación: node tests/study-functions.cjs (Gemini simulado).
