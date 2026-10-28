@@ -2,16 +2,16 @@ const S=require('./subjects.cjs');
 const P=require('./question-plan.cjs');
 const pdf=require('./thermal-pdf-bank.cjs');
 const {hdpQuestion}=require('./question-wording.cjs');
-const speeds=['rapida','normal','sobrepensada'],levels=['acompanado','examen','hdp'];
+const speeds=['rapida','normal','sobrepensada'],levels=['estudiar','acompanado','examen','hdp','rhdp'];
 function createCatalogue(){
  const banks=['question-bank','course-bank','visual-bank','course-visual-bank'];
  const raw=banks.flatMap(bank=>require('./'+bank+'.json').cards.map(c=>({...c,bank}))).concat(pdf.cards.map(c=>({...c,bank:'thermal-pdf-bank'})),require('./frio-slides.cjs').cards.map(c=>({...c,bank:'frio-slides'})));
  const cards=raw.map(c=>{
-  const subject=c.subject||'termicas',modes=c.pdfTopic?['examen','hdp']:levels;
+  const subject=c.subject||'termicas',modes=c.pdfTopic?['estudiar','examen','hdp','rhdp']:levels;
   const questions=Object.fromEntries(modes.map(level=>[level,Object.fromEntries(speeds.map(speed=>{
    const current=P.current({ids:[c.id],index:0,level,speed});
    const text=current.bookPrompt||current.question;
-   return [speed,level==='hdp'?hdpQuestion(text,current):text];
+   return [speed,['hdp','rhdp'].includes(level)?hdpQuestion(text,current):text];
   }))]));
   return {id:c.id,subject,subjectName:S.get(subject).name,unit:c.unit,unitName:S.get(subject).topics[c.unit],bank:c.bank,modes,extended:!!c.extended,visual:c.visual?{title:c.visual.title,url:c.visual.url}:null,topicKey:c.topicKey||c.id,title:c.title||'',variant:c.variant,questions,sources:(c.sources||[]).map(s=>({title:s.title}))};
  });

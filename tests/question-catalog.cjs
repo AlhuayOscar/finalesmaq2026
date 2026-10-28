@@ -16,7 +16,7 @@ for(const c of catalogue.cards){
  for(const level of c.modes)for(const speed of ['rapida','normal','sobrepensada']){
   const actual=P.current({ids:[c.id],index:0,level,speed});
   const question=actual.bookPrompt||actual.question;
-  assert.equal(c.questions[level][speed],level==='hdp'?hdpQuestion(question,actual):question);
+  assert.equal(c.questions[level][speed],['hdp','rhdp'].includes(level)?hdpQuestion(question,actual):question);
  }
 }
 for(const c of pdf.cards.filter(c=>c.variant===0)){

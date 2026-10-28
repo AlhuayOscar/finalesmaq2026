@@ -24,7 +24,7 @@ window.acceptDeferredResult=(action,data,sent)=>{
  // The caller applies the result first; snapshot after its synchronous updates.
  Promise.resolve().then(()=>persistDeferredExam()).catch(e=>{exam.resolutionError=e.message;renderDeferredExam()});
 };
-function queuedMessage(q){const question=exam.level==='hdp'&&!q.question.startsWith('Hablame sobre: ')?'Hablame sobre: '+q.question:q.question;return {role:'model',data:{question,speech:question,visual:q.visual,feedback:'',feedbackSpeech:'',strengths:[],improvements:[],sources:q.sources,omissions:[],criteria:[],evaluated:false,finished:false}}}
+function queuedMessage(q){const question=['hdp','rhdp'].includes(exam.level)&&!q.question.startsWith('Hablame sobre: ')?'Hablame sobre: '+q.question:q.question;return {role:'model',data:{question,speech:question,visual:q.visual,feedback:'',feedbackSpeech:'',strengths:[],improvements:[],sources:q.sources,omissions:[],criteria:[],evaluated:false,finished:false}}}
 async function retainCurrentAnswer(){
  const active=exam,key=deferredKey(),q=currentQueuedQuestion();if(!q)throw Error('No se cargaron las preguntas para continuar. Reintentá comenzar el examen.');
  const text=examElement('exam-text')?.value.trim()||exam.draft||'',blob=exam.blob,file=exam.image,token=exam.planToken;
@@ -80,6 +80,7 @@ async function restoreDeferredExam(key){const epoch=deferredEpoch;
  catch(e){if(epoch===deferredEpoch&&key===deferredKey())exam.resolutionError=e.message}finally{if(deferredLoading===key)deferredLoading=''}
 }
 function renderDeferredExam(){
+ if(exam.level==='estudiar')return;
  const composer=examElement('exam-composer');if(!composer)return;
  const key=deferredKey();if(key&&!maqAccount.loading&&deferredLoaded!==key&&deferredLoading!==key&&!exam.started)restoreDeferredExam(key);
  let controls=examElement('deferred-controls');if(!controls){controls=document.createElement('section');controls.id='deferred-controls';composer.append(controls)}
