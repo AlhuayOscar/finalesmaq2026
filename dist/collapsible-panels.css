@@ -1,0 +1,29 @@
+/* Botones-ícono para colapsar paneles laterales y flotantes (ver collapsible-panels.js) */
+.panel-bar{display:flex;gap:8px;margin:0 0 10px}
+.panel-toggle{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;min-height:0;padding:0;flex:none;color:var(--green);background:#fff;border:1px solid #d4d8cf;border-radius:8px;box-shadow:none;cursor:pointer}
+.panel-toggle:hover,.panel-toggle:focus-visible{background:var(--subject-soft,#e8eddf);border-color:var(--green)}
+.panel-toggle[aria-expanded="false"]{background:var(--green);color:#fff;border-color:var(--green)}
+.panel-toggle svg{display:block}
+.guided-player-heading{align-items:center}
+.guided-player-heading #guided-count{margin-left:auto}
+
+/* Temas de la lección (Repaso guiado) */
+body.panel-collapsed-outline .guided-outline{display:none}
+body.panel-collapsed-outline .guided-layout{grid-template-columns:minmax(0,1fr)}
+
+/* Ajustes del Profesor IA / Oral */
+body.panel-collapsed-exam .exam-settings{display:none!important}
+body.panel-collapsed-exam .exam-shell{grid-template-columns:minmax(0,1fr)!important}
+
+/* Reproductor flotante compacto: una sola fila con los controles esenciales */
+body.panel-collapsed-player .guided-player{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;padding:8px 12px}
+body.panel-collapsed-player .guided-player-heading{order:2;flex:1;margin:0;gap:10px}
+body.panel-collapsed-player .guided-player-heading .eyebrow{display:none}
+body.panel-collapsed-player .guided-player .actions{order:1;margin:0;gap:6px}
+body.panel-collapsed-player .guided-player .actions button{min-height:34px;padding:6px 12px;font-size:12px}
+body.panel-collapsed-player .guided-voice-settings,
+body.panel-collapsed-player .guided-continuous,
+body.panel-collapsed-player .guided-player progress,
+body.panel-collapsed-player .guided-player small,
+body.panel-collapsed-player #guided-audio-status{display:none}
+@media(min-width:1001px){body.panel-collapsed-player .guided-content h2{scroll-margin-top:90px}}
