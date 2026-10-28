@@ -160,3 +160,23 @@ Fuentes revisadas visualmente: N9 Circuitos de combustible y cámara de combusti
 Alcance: modelos didácticos sin escala ni validez constructiva. Cuatro cilindros para legibilidad (figura 442: seis), secuencia ilustrativa 1–2–3–4, desplazamientos ampliados; no se calculan presiones ni leyes de inyección. Auxiliares de contexto y detalles omitidos se declaran en cada ficha. El distribuidor independiente no representa la monobomba rotativa incorporada. Inyector-bomba y demás modelos quedan fuera de esta primera serie.
 
 Validación: `node tests/inyeccion-browser.cjs` (Playwright y Edge): tres sistemas, fase de inyección, reproducción/pausa, despiece, ocultación de conexiones, selección, aislamiento, nombres, imágenes fuente, liberación de geometrías, ancho móvil y enlace desde Motores. `INJECTION_QA_DIR` permite guardar capturas fuera del repositorio.
+
+## Inyector-bomba GM · cuarto modelo
+
+Se agrega `inyeccion.html#unitario`, basado en N9, diapositivas 27–28, 34 y 60–61, revisadas visualmente. Representa una unidad GM, con alimentación/retorno externos a baja presión, generación interna de alta presión, leva perfilada, seguidor, varilla, balancín, émbolo descendente y resorte de recuperación sincronizados. Incluye despiece de camisa/lumbreras, cremallera, engranaje de regulación, filtros, válvulas de asiento plano y esférico, pequeño pistón y boquilla. No mezcla la variante Cummins de la diapositiva 62. Las carreras, canales y válvulas son didácticos; no se calculan presiones ni reglajes. Se conservan los tres modelos existentes y se mejora la distribución de etiquetas para evitar superposiciones al desarmar.
+
+Inventario por configuraciones principales (sin contar dos veces esquemas repetidos ni cada variante de componente):
+
+| Sistema | N9 | Estado |
+| --- | --- | --- |
+| Bomba e inyectores separados / multipistón | 25–26, 33 | Disponible |
+| Distribuidor independiente | 31–32 | Disponible |
+| Distribución por válvulas Poppet | 29–30 | Disponible |
+| Inyector-bomba | 27–28, 34, 60–62 | Disponible tipo GM; Cummins no modelado |
+| Monobomba y distribuidor rotativo incorporado | 35–36 | Pendiente |
+| Conducto común con limitadora de presión | 20–22 | Pendiente |
+| Acumulación con presión regulada | 23–24 | Pendiente |
+
+De los cinco sistemas pedidos inicialmente, cuatro están disponibles y uno pendiente. Con los dos sistemas de conducto común del apunte se agrupan siete configuraciones principales, tres pendientes. «Elementos de inyección y del sistema» reúne componentes y variantes (émbolos, válvulas, alimentación, filtros, inyectores y toberas), no un octavo sistema ni una cantidad cerrada de modelos.
+
+Validación: `tests/inyeccion-browser.cjs` recorre los cuatro modelos y verifica específicamente descenso del émbolo, ascenso de la varilla, inversión del balancín, ausencia de bomba/tubos exteriores de alta presión en GM, visualización del paso interno, despiece, aislamiento, recursos, móvil y regreso entre modelos sin acumulación de geometrías.
