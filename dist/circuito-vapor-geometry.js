@@ -37,7 +37,7 @@ function buildPlantGeometry(){
  }
  // Dashed leader locates the enlarged surface attemperator in the drum's water space.
  const attemperatorLeader=[P('attemperator'),[5.55,3.3,.3]];
- for(const e of plantEdges)pipe(e.points,e.aux?.023:.045,e.from,plantColors[e.kind],.95);
+ for(const e of plantEdges){const start=faces.length;pipe(e.points,e.aux?.023:.045,e.from,plantColors[e.kind],.95);for(let i=start;i<faces.length;i++)faces[i].connection=true;}
  // Water surfaces and saturated-space separation visible through the opened upper drum.
  box([5.55,3.49,0],[.55,.015,2.3],'upper','#237f9a',.65);
  // Furnace heat is a separate energy path, never connected to fluid piping.

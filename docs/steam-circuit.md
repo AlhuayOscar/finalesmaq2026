@@ -11,3 +11,5 @@ El sobrecalentador de dos etapas es una ampliación didáctica, no una reproducc
 El visor proyecta superficies tridimensionales, permite rotación con puntero o teclado, zoom, selección, vista frontal, números e interior del domo. Conserva una imagen base hasta cambiar la cámara o selección y anima flechas por distancia recorrida. Inicia pausado. Los recorridos son esquemáticos y su velocidad no representa caudal, presión ni temperatura.
 
 Validación: `node tests/steam-circuit.cjs`, `node tests/boiler-models.cjs`, `node tests/boiler-practice.cjs`; revisión en navegador de filtros, búsqueda, reproducción/pausa y cierre del recorrido agua-vapor.
+
+Navegación de cámara: doble clic en nombre o pieza centra y encuadra el equipo, excluyendo tuberías de conexión. Shift + arrastre, botón central/derecho o modo Desplazar mueven la vista; también Shift + flechas. La rueda acerca hacia el cursor. Enter enfoca la selección; Escape y Ver circuito completo restablecen la cámara. Se conserva la rotación al enfocar. Las etiquetas fuera de pantalla se ocultan. Validación adicional: node tests/steam-camera.cjs y pruebas de doble clic en lista y turbina en navegador.
