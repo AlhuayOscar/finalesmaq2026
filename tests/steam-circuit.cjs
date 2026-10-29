@@ -1,7 +1,7 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
 const c=vm.createContext({console,Set,Math});for(const f of ['boiler-data','boiler-systems','boiler-geometry','circuito-vapor-data','circuito-vapor-geometry'])vm.runInContext(fs.readFileSync('dist/'+f+'.js','utf8'),c);
 const run=s=>vm.runInContext(s,c),nodes=run('plantNodes'),edges=run('plantEdges'),mesh=run('buildPlantGeometry()');
-assert.equal(Object.keys(nodes).length,28);
+assert.equal(Object.keys(nodes).length,29);
 for(const n of Object.values(nodes)){assert(mesh.faces.some(f=>f.id===n.id),'missing model '+n.id);assert(mesh.anchors[n.id].every(Number.isFinite));assert(n.description&&n.note)}
 for(const f of mesh.faces)for(const p of f.v)assert(p.every(Number.isFinite));
 for(const e of edges){assert(nodes[e.from]&&nodes[e.to]);assert(e.points.length>=2);for(let i=1;i<e.points.length;i++)assert(Math.hypot(...e.points[i].map((v,k)=>v-e.points[i-1][k]))>0)}
@@ -15,4 +15,8 @@ assert.equal(edges.filter(e=>e.to==='sh2').length,1);assert.equal(edges.find(e=>
 for(const e of edges)for(const t of [0,.2,.5,.9,1])assert(run(`plantSample(${JSON.stringify(e.points)},${t})`).every(Number.isFinite));
 assert.equal(run("plantEdgeVisible(plantEdges[0],'cycle')"),false);assert.equal(run("plantEdgeVisible(plantEdges[0],'sea')"),true);
 const html=fs.readFileSync('dist/circuito-vapor.html','utf8'),js=fs.readFileSync('dist/circuito-vapor.js','utf8');assert(html.includes('boiler-geometry.js'));assert(html.includes('atemperador'));assert(js.includes('cancelAnimationFrame'));assert(js.includes('pointercancel'));assert(fs.readFileSync('dist/model.js','utf8').includes('circuito-vapor.html'));
-console.log('OK: 28 modelos, geometría finita, dos circuitos sin mezcla, cuatro puertos del condensador, recirculación natural, dos etapas en serie, reposición y dirección del flujo.');
+console.log('OK: 29 modelos, geometría finita, dos circuitos sin mezcla, cuatro puertos del condensador, recirculación natural, dos etapas en serie, reposición y dirección del flujo.');
+
+assert(mesh.faces.some(f=>f.id==='airheater'));
+assert(mesh.anchors.airheater[1]>mesh.anchors.furnace[1]);
+assert(mesh.faces.filter(f=>f.id==='furnace'&&!f.connection).every(f=>f.v.every(p=>p[1]<4)),'El hogar no debe incluir el precalentador elevado');

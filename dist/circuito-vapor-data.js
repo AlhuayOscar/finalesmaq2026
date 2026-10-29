@@ -29,6 +29,7 @@ const plantParts=[
  ['turbine','Turbina de vapor','cycle','Vapor en expansión',[-6,4.1,0],'turbine','El vapor se expande y produce trabajo en el rotor. El escape vuelve al condensador.','La potencia mecánica sale por el eje. No se representa una nueva entrada de agua.'],
  ['makeup','Reposición de pérdidas','makeup','Agua dulce tratada',[.15,-3.05,-1.3],'tank','Repone pérdidas con agua de calidad adecuada, ya producida y acondicionada.','Si procede del mar, antes requiere una planta de agua dulce y tratamiento. Esa planta queda fuera de este esquema.'],
  ['furnace','Hogar y quemadores','heat','Combustión',[4.1,1.56,0],'boiler','Aportan calor a las superficies de generación y sobrecalentamiento; los gases siguen hacia la recuperación de calor.','Los gases no se mezclan con el agua ni con el vapor.'],
+ ['airheater','Precalentador de aire','heat','Aire y gases separados',[6.595,5.245,-.165],'boiler','Recupera calor de los gases de salida para calentar el aire que llega a los quemadores. Es el bloque gris situado encima del economizador verde.','No es el hogar ni el economizador: el economizador precalienta agua; este equipo precalienta aire. Los conductos de aire y la salida final de gases no están dibujados.'],
 ];
 const plantNodes=Object.fromEntries(plantParts.map((p,i)=>[p[0],{id:p[0],number:i+1,name:p[1],group:p[2],fluid:p[3],p:p[4],shape:p[5],description:p[6],note:p[7]}]));
 const plantEdges=[];

@@ -7,8 +7,8 @@ function buildPlantGeometry(){
  function wheel(c,id,color){const pts=Array.from({length:13},(_,i)=>[c[0]+.2*Math.cos(i*Math.PI/6),c[1],c[2]+.2*Math.sin(i*Math.PI/6)]);pipe(pts,.025,id,color);for(const dx of [-.2,.2])cylinder(c,add(c,[dx,0,0]),.02,id,color)}
  function tank(p,id,color,r=.45,length=1.4){cylinder(add(p,[-length/2,0,0]),add(p,[length/2,0,0]),r,id,color,1,16);for(const x of [-length/2,length/2])cylinder(add(p,[x-.035,0,0]),add(p,[x+.035,0,0]),r*1.07,id,color);for(const x of [-.4,.4])box(add(p,[x,-r-.12,0]),[.13,.3,.55],id,'#597068')}
  const base=buildBoilerGeometry('D'),map=p=>[5+p[0]*1.1,2+p[1]*1.1,p[2]*1.1],omit=new Set(['superheater','desuperheater','outlet','takeoff']);
- for(const f of base.faces){if(omit.has(f.id))continue;const id=['screen','wall','floor','header'].includes(f.id)?'risers':['burner','airheater'].includes(f.id)?'furnace':f.id==='feed'?'upper':f.id;faces.push({v:f.v.map(p=>map(f.id==='down'&&p[1]>1?[p[0],p[1]-.14,p[2]]:p)),id,color:boilerParts[f.id][1],alpha:f.id==='furnace'?.12:1,drum:f.id==='upper',internal:f.internal,shade:f.shade})}
- for(const id of ['upper','lower','down','risers','economizer','separator','furnace'])if(base.anchors[id])anchors[id]=map(base.anchors[id]);
+ for(const f of base.faces){if(omit.has(f.id))continue;const id=['screen','wall','floor','header'].includes(f.id)?'risers':f.id==='burner'?'furnace':f.id==='feed'?'upper':f.id;faces.push({v:f.v.map(p=>map(f.id==='down'&&p[1]>1?[p[0],p[1]-.14,p[2]]:p)),id,color:boilerParts[f.id][1],alpha:f.id==='furnace'?.12:1,drum:f.id==='upper',internal:f.internal,shade:f.shade})}
+ for(const id of ['upper','lower','down','risers','economizer','separator','furnace','airheater'])if(base.anchors[id])anchors[id]=map(base.anchors[id]);
  for(const node of Object.values(plantNodes)){
   const {id,p,shape}=node,color=node.group==='sea'?'#508ca4':node.group==='makeup'?'#879b78':'#74a394';
   if(!anchors[id])anchors[id]=add(p,[0,.35,0]);

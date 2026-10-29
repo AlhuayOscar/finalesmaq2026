@@ -7,4 +7,5 @@ for(const size of [[830,600],[350,460]])for(const angles of [[-.16,.22],[.9,.6]]
  for(const p of points){const q=run(`plantCameraPoint(${JSON.stringify(p)},${JSON.stringify(f.target)},${angles[0]},${angles[1]})`);assert(Math.abs(q[0]*scale)<size[0]*.5);assert(Math.abs(q[1]*scale)<size[1]*.5)}
 }
 assert(run("plantFocusCamera(focusMesh,'feedPump',-.16,.22,830,600).zoom")>6);
-console.log('OK: enfoque de 28 piezas, 2 tamaños y 2 ángulos; piezas dentro del encuadre y tuberías excluidas.');
+console.log('OK: enfoque de 29 piezas, 2 tamaños y 2 ángulos; piezas dentro del encuadre y tuberías excluidas.');
+
